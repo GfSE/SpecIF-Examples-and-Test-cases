@@ -1,0 +1,190 @@
+{
+    "id": "P-Test-hierarchical-text",
+    "title": "A test with hierarchical text",
+    "specifVersion": "0.10.3",
+    "tool": "manual",
+    "rights": {
+        "title": "Creative Commons 4.0 CC BY-SA",
+        "type": "dcterms:rights",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    "createdAt": "2018-09-30T16:24:00+02:00",
+    "createdBy": {
+        "familyName": "v. Dungern",
+        "givenName": "Oskar",
+        "org": {
+            "organizationName": "adesso AG"
+        },
+        "email": {
+            "type": "text/html",
+            "value": "oskar.dungern@adesso.de"
+        }
+    },
+    "dataTypes": [{
+        "id": "DT-ShortString",
+        "title": "String[96]",
+        "description": "String with length 96",
+        "type": "xs:string",
+        "maxLength": 96,
+        "changedAt": "2017-05-28T18:59:00+01:00"
+    }, {
+        "id": "DT-FormattedText",
+        "title": "Formatted Text",
+        "type": "xhtml",
+        "maxLength": 1024,
+        "changedAt": "2017-05-28T18:59:00+01:00"
+    }],
+    "resourceTypes": [{
+        "id": "RT-Inf",
+        "title": "SpecIF:Paragraph",
+        "description": "Information with title and text.",
+        "creation": ["auto", "manual"],
+        "icon": "",
+        "propertyTypes": [{
+            "id": "PT-Inf-Name",
+            "title": "dcterms:title",
+            "dataType": "DT-ShortString",
+            "changedAt": "2017-05-28T18:59:00+01:00"
+        }, {
+            "id": "PT-Inf-Text",
+            "title": "dcterms:description",
+            "dataType": "DT-FormattedText",
+            "changedAt": "2017-05-28T18:59:00+01:00"
+        }],
+        "changedAt": "2017-05-28T18:59:00+01:00"
+	}, {
+        "id": "RT-chapter",
+        "title": "SpecIF:Heading",
+        "description": "Chapter title.",
+        "creation": ["auto", "manual"],
+		"isHeading": true,
+        "propertyTypes": [{
+            "id": "PT-chapter-Name",
+            "title": "dcterms:title",
+            "dataType": "DT-ShortString",
+			"changedAt": "2018-10-05T08:20:00+02:00"
+		}, {
+            "id": "PT-chapter-Text",
+            "title": "dcterms:description",
+            "dataType": "DT-FormattedText",
+			"changedAt": "2018-10-05T08:20:00+02:00"
+        }],
+        "changedAt": "2018-10-05T08:20:00+02:00"
+    }],
+    "statementTypes": [],
+    "hierarchyTypes": [{
+        "id": "HT-ACProject",
+        "title": "SpecIF:Hierarchy",
+        "description": "Root of a hierarchy (outline).",
+        "propertyTypes": [{
+            "id": "PT-ACProject-Name",
+            "title": "dcterms:title",
+            "dataType": "DT-ShortString",
+            "changedAt": "2017-05-28T18:59:00+01:00"
+        }],
+        "changedAt": "2017-05-28T18:59:00+01:00"
+    }],
+    "resources": [{
+        "id": "R-d5b994e50023b1a8015d578cf736b265-p-1",
+        "title": "multiple paragraphs",
+		"description": "The description property is of type xhtml and has both <div> and <p> enclosing.",
+        "resourceType": "RT-Inf",
+        "properties": [{
+            "title": "dcterms:title",
+            "propertyType": "PT-Inf-Name",
+            "value": "Text with multiple paragraphs"
+        }, {
+            "title": "dcterms:description",
+            "propertyType": "PT-Inf-Text",
+            "value": "<div><p>first paragraph, an empty paragraph follows:</p><p /><p>Zweiter Absatz.</p><p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p><p>troisième paragraphe.</p></div>"
+        }],
+		"changedAt": "2018-10-01T06:04:00+02:00"
+	},{
+        "id": "R-d5b994e50023b1a8015d578cf736b265-table-1",
+        "title": "a simple table",
+        "resourceType": "RT-Inf",
+        "properties": [{
+            "title": "dcterms:title",
+            "propertyType": "PT-Inf-Name",
+            "value": "Text with a simple table"
+        }, {
+            "title": "dcterms:description",
+            "propertyType": "PT-Inf-Text",
+            "value": "<div><table class=\"stdInlineWithBorder\"> <tbody> <tr> <th> Name </th> <th> Organisation </th> <th> Telephone </th> <th> Email </th> </tr> <tr> <td> Dr. Oskar Surname </td> <td> adesso AG </td> <td> </td> <td> <a href=\"mailto:oskar.surname@adesso.de\" >name.surname@adesso.de</a> </td> </tr> </tbody> </table></div>"
+        }],
+		"changedAt": "2018-10-01T08:04:00+02:00"
+	},{
+        "id": "R-d5b994e50023b1a8015d578cf736b265-chapter-1",
+        "title": "chapter title first level",
+		"description": "The description property is of type xhtml, but does have neither <div> nor <p> enclosing.",
+        "resourceType": "RT-chapter",
+        "properties": [{
+            "title": "dcterms:title",
+            "propertyType": "PT-chapter-Name",
+            "value": "chapter title first level (title property)"
+        }, {
+            "title": "dcterms:description",
+            "propertyType": "PT-chapter-Text",
+            "value": "Some introductory text at first level."
+        }],
+		"changedAt": "2018-10-05T08:25:00+02:00"
+	},{
+        "id": "R-d5b994e50023b1a8015d578cf736b265-chapter-2",
+        "title": "chapter title second level",
+        "resourceType": "RT-chapter",
+        "properties": [{
+            "title": "dcterms:title",
+            "propertyType": "PT-chapter-Name",
+            "value": "chapter title second level (title property)"
+        }, {
+            "title": "dcterms:description",
+            "propertyType": "PT-chapter-Text",
+            "value": "Some introductory text at second level."
+        }],
+		"changedAt": "2018-10-05T08:25:00+02:00"
+    }],
+    "statements": [],
+    "hierarchies": [{
+        "id": "SP-d5b994e50023b1a8015d578cf736b265",
+		"title": "A test with hierarchical text (hierarchy title)",
+        "hierarchyType": "HT-ACProject",
+        "properties": [{
+            "title": "dcterms:title",
+            "propertyType": "PT-ACProject-Name",
+            "value": "A test with hierarchical text (hierarchy property with title 'dcterms:title')"
+        }],
+        "nodes": [{
+            "id": "SH-d5b994e50023b1a8015d578cf736b265-p-1a",
+            "resource": "R-d5b994e50023b1a8015d578cf736b265-p-1",
+            "changedAt": "2017-08-17T21:20:00+02:00"
+		},{
+            "id": "SH-d5b994e50023b1a8015d578cf736b265-chapter-1",
+            "resource": "R-d5b994e50023b1a8015d578cf736b265-chapter-1",
+			"nodes": [{
+				"id": "SH-d5b994e50023b1a8015d578cf736b265-chapter-2",
+				"resource": "R-d5b994e50023b1a8015d578cf736b265-chapter-2",
+				"nodes": [{
+					"id": "SH-d5b994e50023b1a8015d578cf736b265-p-1b",
+					"resource": "R-d5b994e50023b1a8015d578cf736b265-p-1",
+					"changedAt": "2018-10-05T08:25:01+02:00"
+				}, {
+					"id": "SH-d5b994e50023b1a8015d578cf736b265-table-1a",
+					"resource": "R-d5b994e50023b1a8015d578cf736b265-table-1",
+					"changedAt": "2018-10-05T08:25:01+02:00"
+				}, {
+					"id": "SH-d5b994e50023b1a8015d578cf736b265-p-1c",
+					"resource": "R-d5b994e50023b1a8015d578cf736b265-p-1",
+					"changedAt": "2018-10-05T08:25:01+02:00"
+				}],
+				"changedAt": "2018-10-05T08:25:01+02:00"
+			}],
+            "changedAt": "2018-10-05T08:25:01+02:00"
+		},{
+            "id": "SH-d5b994e50023b1a8015d578cf736b265-table-1b",
+            "resource": "R-d5b994e50023b1a8015d578cf736b265-table-1",
+            "changedAt": "2018-10-05T08:25:01+02:00"
+		}],
+		"changedAt": "2018-10-05T08:25:01+02:00"
+    }],
+    "files": []
+}

@@ -1,0 +1,217 @@
+{
+    "id": "ACP-f5746754ffcd22a8011ff0a02b50b0d2-enumerated-properties",
+    "title": "Resource with enumerated properties (2018-04-30)",
+    "specifVersion": "0.10.4",
+    "generator": "Interactive-Spec",
+    "generatorVersion": "0.92.45",
+    "rights": {
+        "title": "Creative Commons 4.0 CC BY-SA",
+        "type": "dcterms:rights",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    "createdAt": "2018-06-10T10:36:54.058Z",
+    "createdBy": {
+        "familyName": "von Dungern",
+        "givenName": "Oskar",
+        "org": {
+            "organizationName": "adesso"
+        },
+        "email": {
+            "type": "text/html",
+            "value": "oskar.dungern@adesso.de"
+        }
+    },
+    "dataTypes": [{
+        "id": "DT-ShortString",
+        "title": "String [96]",
+        "description": "String with length 96",
+        "type": "xs:string",
+        "maxLength": 96,
+        "revision": 1,
+        "changedAt": "2017-05-28T19:59:00+02:00"
+    }, {
+        "id": "DT-FormattedText",
+        "title": "Formatted Text",
+        "type": "xhtml",
+        "maxLength": 8192,
+        "revision": 1,
+        "changedAt": "2017-05-28T19:59:00+02:00"
+    }, {
+        "id": "DT-Status",
+        "title": "SpecIF:Status",
+        "description": "Enumerated values for requirement status",
+        "type": "xs:enumeration",
+        "values": [{
+            "id": "V-Req-Status-0",
+            "title": "00_rejected"
+        }, {
+            "id": "V-Req-Status-1",
+            "title": "20_drafted"
+        }, {
+            "id": "V-Req-Status-2",
+            "title": "30_submitted"
+        }, {
+            "id": "V-Req-Status-3",
+            "title": "40_approved"
+        }, {
+            "id": "V-Req-Status-4",
+            "title": "70_lab-tested"
+        }],
+        "revision": 1,
+        "changedAt": "2017-05-28T19:59:00+02:00"
+    }, {
+        "id": "DT-Priority",
+        "title": "SpecIF:Priority",
+        "description": "Enumerated values for priority",
+        "type": "xs:enumeration",
+        "values": [{
+            "id": "V-Prio-0",
+            "title": "1_high"
+        }, {
+            "id": "V-Prio-1",
+            "title": "2_medium"
+        }, {
+            "id": "V-Prio-2",
+            "title": "3_low"
+        }],
+        "revision": 1,
+        "changedAt": "2017-05-28T19:59:00+02:00"
+    }, {
+        "id": "DT-Discipline",
+        "title": "Discipline",
+        "description": "Enumerated values for engineering discipline",
+        "type": "xs:enumeration",
+        "values": [{
+            "id": "V-discipline-0",
+            "title": "Mechanics"
+        }, {
+            "id": "V-discipline-1",
+            "title": "Electronics"
+        }, {
+            "id": "V-discipline-2",
+            "title": "Software"
+        }, {
+            "id": "V-discipline-3",
+            "title": "Safety"
+        }],
+        "revision": 1,
+        "changedAt": "2016-05-26T08:59:00+02:00"
+    }],
+    "resourceClasses": [{
+        "id": "RT-Req",
+        "title": "IREB:Requirement",
+        "description": "A 'Requirement' is a singular documented physical and functional need that a particular design, product or process must be able to perform.",
+        "icon": "&#8623;",
+        "instantiation": ["user"],
+        "propertyClasses": [{
+            "id": "PT-Req-ID",
+            "title": "dcterms:identifier",
+            "dataType": "DT-ShortString",
+            "revision": 1,
+            "changedAt": "2017-05-28T19:59:00+02:00"
+        }, {
+            "id": "PT-Req-Name",
+            "title": "dcterms:title",
+            "dataType": "DT-ShortString",
+            "revision": 1,
+            "changedAt": "2017-05-28T19:59:00+02:00"
+        }, {
+            "id": "PT-Req-Text",
+            "title": "dcterms:description",
+            "dataType": "DT-FormattedText",
+            "revision": 1,
+            "changedAt": "2017-05-28T19:59:00+02:00"
+        }, {
+            "id": "PT-Req-Status",
+            "title": "SpecIF:Status",
+            "dataType": "DT-Status",
+            "revision": 1,
+            "changedAt": "2017-05-28T19:59:00+02:00"
+        }, {
+            "id": "PT-Req-Priority",
+            "title": "SpecIF:Priority",
+            "dataType": "DT-Priority",
+            "revision": 1,
+            "changedAt": "2017-05-28T19:59:00+02:00"
+        }, {
+            "id": "PT-Req-discipline",
+            "title": "SpecIF:Discipline",
+            "dataType": "DT-Discipline",
+            "multiple": true,
+            "revision": 1,
+            "changedAt": "2017-05-28T19:59:00+02:00"
+        }],
+        "revision": 1,
+        "changedAt": "2017-05-28T19:59:00+02:00"
+    }],
+    "statementClasses": [],
+    "hierarchyClasses": [{
+        "id": "HT-ACProject",
+        "title": "SpecIF:Hierarchy",
+        "description": "Root of a specification (outline).",
+        "propertyClasses": [{
+            "id": "PT-ACProject-Name",
+            "title": "dcterms:title",
+            "dataType": "DT-ShortString",
+            "revision": 1,
+            "changedAt": "2017-05-28T19:59:00+02:00"
+        }, {
+            "id": "PT-ACProject-Text",
+            "title": "dcterms:description",
+            "dataType": "DT-FormattedText",
+            "revision": 1,
+            "changedAt": "2017-05-28T19:59:00+02:00"
+        }],
+        "revision": 1,
+        "changedAt": "2017-05-28T19:59:00+02:00"
+    }],
+    "resources": [{
+        "id": "Req-b958079c0000bca80137138e765b5347",
+        "title": "Login requires authentication",
+        "class": "RT-Req",
+        "properties": [{
+            "title": "dcterms:identifier",
+            "class": "PT-Req-ID",
+            "value": "Sec_005"
+        }, {
+            "title": "dcterms:title",
+            "class": "PT-Req-Name",
+            "value": "Resource with enumerated properties"
+        }, {
+            "title": "dcterms:description",
+            "class": "PT-Req-Text",
+            "value": "<div><p>This resource has three enumerated properties; 'Status' and 'Priority' are single-valued, 'Discipline' is multi-valued.</p><p>'Priority' is special, as it has no title attribute; so the title should be taken from the resource's class.</p></div>"
+        }, {
+            "title": "SpecIF:Status",
+            "class": "PT-Req-Status",
+            "value": "V-Req-Status-2"
+        }, {
+            "class": "PT-Req-Priority",
+            "value": "V-Prio-0"
+        }, {
+            "title": "Discipline",
+            "class": "PT-Req-discipline",
+            "value": "V-discipline-1,V-discipline-2"
+        }],
+        "revision": 32,
+        "changedAt": "2018-04-30T22:24:52+02:00",
+        "changedBy": "od"
+    }],
+    "statements": [],
+    "hierarchies": [{
+        "id": "SP-f5746754ffcd22a8011ff0a02b50b0d2",
+        "title": "Resource with enumerated properties",
+        "class": "HT-ACProject",
+        "revision": 303,
+        "changedAt": "2018-04-30T22:26:14+02:00",
+        "nodes": [{
+			"id": "N-5jxsuR7tgZo61ol2aoPyxjRdfNR",
+			"resource": "Req-b958079c0000bca80137138e765b5347",
+			"revision": 310,
+			"changedAt": "2018-05-11T13:09:26+02:00"
+		}],
+		"revision": 303,
+		"changedAt": "2018-04-30T22:26:15+02:00"
+    }],
+    "files": []
+}

@@ -1,0 +1,114 @@
+{
+    "id": "ACP-f5746754ffcd22a8011ff0a02b50b0d2-SpecIF-Intro",
+    "title": "SpecIF Intro",
+    "specifVersion": "0.10.4",
+    "generator": "Interactive-Spec",
+    "generatorVersion": "0.92.45",
+    "rights": {
+        "title": "Creative Commons 4.0 CC BY-SA",
+        "type": "dcterms:rights",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    "createdAt": "2018-06-10T10:36:54.058Z",
+    "createdBy": {
+        "familyName": "von Dungern",
+        "givenName": "Oskar",
+        "org": {
+            "organizationName": "adesso"
+        },
+        "email": {
+            "type": "text/html",
+            "value": "oskar.dungern@adesso.de"
+        }
+    },
+    "dataTypes": [{
+        "id": "DT-ShortString",
+        "title": "String [96]",
+        "description": "String with length 96",
+        "type": "xs:string",
+        "maxLength": 96,
+        "revision": 1,
+        "changedAt": "2017-05-28T19:59:00+02:00"
+    }, {
+        "id": "DT-FormattedText",
+        "title": "Formatted Text",
+        "type": "xhtml",
+        "maxLength": 8192,
+        "revision": 1,
+        "changedAt": "2017-05-28T19:59:00+02:00"
+    }],
+    "resourceClasses": [{
+        "id": "RT-Inf",
+        "title": "SpecIF:Paragraph",
+        "description": "Information with title and text for descriptive paragraphs.",
+        "instantiation": ["auto", "user"],
+        "propertyClasses": [{
+            "id": "PT-Inf-Name",
+            "title": "dcterms:title",
+            "dataType": "DT-ShortString",
+            "revision": 1,
+            "changedAt": "2017-05-28T19:59:00+02:00"
+        }, {
+            "id": "PT-Inf-Text",
+            "title": "dcterms:description",
+            "dataType": "DT-FormattedText",
+            "revision": 1,
+            "changedAt": "2017-05-28T19:59:00+02:00"
+        }],
+        "revision": 1,
+        "changedAt": "2017-05-28T19:59:00+02:00"
+    }],
+    "statementClasses": [],
+    "hierarchyClasses": [{
+        "id": "HT-Spec",
+        "title": "SpecIF:Hierarchy",
+        "description": "Root node of a specification (outline).",
+        "propertyClasses": [{
+            "id": "PT-Spec-Name",
+            "title": "dcterms:title",
+            "dataType": "DT-ShortString",
+            "revision": 1,
+            "changedAt": "2017-05-28T19:59:00+02:00"
+        }],
+        "revision": 1,
+        "changedAt": "2017-05-28T19:59:00+02:00"
+    }],
+    "resources": [{
+        "id": "Fld-f5746754ffcd22a8011ff0a02b50b0d2-info",
+        "title": "Project Information",
+        "class": "RT-Inf",
+        "properties": [{
+            "title": "dcterms:title",
+            "class": "PT-Inf-Name",
+            "value": "Project Information"
+        }, {
+            "title": "dcterms:description",
+            "class": "PT-Inf-Text",
+            "value": "<div><p><object data=\"https://specif.de\" ><object data=\"files_and_images/logo-specif.png\" type=\"image/png\" />Specification Integration Facility</object> </p> <p>This is a small show-case illustrating the basic concepts for documenting business processes and IT. In addition to the original text and diagrams you will find logical relations between the information elements. Most relations are derived automatically from the diagrams; the resulting semantic net lends itself for navigation, search and audit. </p> <p>The documentation represents and integrates: </p> <ul> <li> Organisation perspective: [[Organization Chart]] </li> <li> Business perspective: [[Business Landscape]] and Business Processes such as [[Process: Invoice Receipt Processing]] </li> <li> Application perspective: [[Application Landscape]] </li> <li> [[Requirements]]<br /> </li> </ul> <p>Integrating the perspectives means to (mostly automatically) tie a semantic net with relations: </p> <ul> <li> Diagrams 'show' a model element, thus any element 'knows' on which diagrams it appears, </li> <li> Components 'contain' sub-components, </li> <li> Events 'trigger' activities,<br /> </li> <li> Components 'satisfy' a requirement, </li> <li> .. and many more. </li> </ul> <p>Active hyperlinks make it easy to navigate along the relations. Insight is improved, navigation and audition are made more simple. For more information on the method applied, please refer to <a href=\"http://specif.de\" >Specification Integration Facility (SpecIF)</a>, an initiative of the <a href=\"http://gfse.de\" >Gesellschaft für Systems Engineering (GfSE)</a>. </p> <p>If you are using Firefox, Chrome or Edge as a browser, don't hesitate to click on the diagram elements. It will bring you to the next level of detail. </p> <p></p> <p>Stakeholders: </p> <table class=\"stdInlineWithBorder\"> <tbody> <tr> <th> Name </th> <th> Organisation </th> <th> Telephone </th> <th> Email </th> </tr> <tr> <td> Dr. Oskar v. Dungern </td> <td> adesso AG </td> <td> </td> <td> <a href=\"mailto:oskar.dungern@adesso.de\" >oskar.dungern@adesso.de</a> </td> </tr> </tbody> </table> <p><br /> </p> <p>Legend: </p> <p>To distinguish their type, element names are preceded by one of the following symbols: </p> <table class=\"stdInlineWithBorder\"> <tbody> <tr> <td> ▣ </td> <td> Plan </td> <td> A 'Diagram' is a graphical model view with a specific communication purpose, e.g. a business process or system composition. </td> </tr> <tr> <td> ■ </td> <td> Actor (Role, Function) </td> <td> An 'Actor' is a fundamental model element type representing an active entity, be it an activity, a process step, a function, a system component or a role. </td> </tr> <tr> <td> ● </td> <td> State (Information) </td> <td> A 'State' is a fundamental model element type representing a passive entity, be it a value, a condition, an information storage or even a physical shape. </td> </tr> <tr> <td> ♦ </td> <td> Event </td> <td> An 'Event' is a fundamental model element type representing a time reference, a change in condition/value or more generally a synchronisation primitive. </td> </tr> <tr> <td> ✶ </td> <td> Feature </td> <td> A 'Feature' is an intentional distinguishing characteristic of a system, often a unique selling proposition. </td> </tr> <tr> <td> ↯ </td> <td> Requirement </td> <td> A 'Requirement' is a singular documented physical and functional need that a particular design, product or process must be able to perform. </td> </tr> </tbody> </table></div>"
+        }],
+        "revision": 304,
+        "changedAt": "2018-05-04T17:16:16+02:00",
+        "changedBy": "od"
+    }],
+    "statements": [],
+    "hierarchies": [{
+        "id": "SP-f5746754ffcd22a8011ff0a02b50b0d2",
+        "title": "SpecIF Intro",
+        "class": "HT-Spec",
+        "properties": [{
+            "title": "dcterms:title",
+            "class": "PT-Spec-Name",
+            "value": "SpecIF Intro"
+        }],
+        "changedAt": "2018-04-30T22:26:14+02:00",
+        "nodes": [{
+            "id": "SH-f5746754ffcd22a8011ff0a02b50b0d2-info",
+            "resource": "Fld-f5746754ffcd22a8011ff0a02b50b0d2-info",
+            "changedAt": "2018-04-30T22:26:46+02:00"
+		}]
+    }],
+    "files": [{
+        "id": "files_and_images/logo-specif.png",
+        "type": "image/png"
+    }]
+}

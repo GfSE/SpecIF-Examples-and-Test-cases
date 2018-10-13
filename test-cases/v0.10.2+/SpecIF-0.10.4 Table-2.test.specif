@@ -1,0 +1,103 @@
+{
+    "id": "ACP-e742a488ffa122480162618a9010bff4",
+	"description": "",
+    "title": "Formatted text with table without body-tag (2018-05-17)",
+    "specifVersion": "0.10.4",
+    "generator": "ARCWAY Cockpit",
+    "generatorVersion": "3.6",
+    "rights": {
+        "title": "Creative Commons 4.0 CC BY-SA",
+        "type": "dcterms:rights",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    "createdAt": "2018-05-17T01:03:00+02:00",
+    "createdBy": {
+        "familyName": "von Dungern",
+        "givenName": "Oskar",
+        "org": {
+            "organizationName": "adesso AG"
+        },
+        "email": {
+            "type": "text/html",
+            "value": "oskar.dungern@adesso.de"
+        }
+    },
+    "dataTypes": [{
+        "id": "DT-ShortString",
+        "title": "String [96]",
+        "description": "String with length 96",
+        "type": "xs:string",
+        "maxLength": 96,
+        "changedAt": "2018-05-10T11:54:00+01:00"
+    }, {
+        "id": "DT-FormattedText",
+        "title": "Formatted Text with length 8192",
+        "type": "xhtml",
+        "maxLength": 8192,
+        "changedAt": "2018-05-10T11:54:00+01:00"
+    }],
+    "resourceClasses": [{
+        "id": "RT-Inf",
+        "title": "SpecIF:Paragraph",
+        "description": "Information mit Titel und Text für Textpassagen.",
+        "instantiation": ["auto","user"],
+        "propertyClasses": [{
+            "id": "PT-Inf-Name",
+            "title": "dcterms:title",
+            "dataType": "DT-ShortString",
+			"changedAt": "2018-05-10T11:54:00+01:00"
+        }, {
+            "id": "PT-Inf-Text",
+            "title": "dcterms:description",
+            "dataType": "DT-FormattedText",
+			"changedAt": "2018-05-10T11:54:00+01:00"
+        }],
+        "changedAt": "2018-05-10T11:54:00+01:00"
+    }],
+    "statementClasses": [],
+    "hierarchyClasses": [{
+        "id": "HT-ACProject",
+        "title": "SpecIF:Hierarchy",
+        "description": "Root of a project hierarchy (tree)",
+        "propertyClasses": [{
+            "id": "PT-ACProject-Name",
+            "title": "dcterms:title",
+            "dataType": "DT-ShortString",
+			"changedAt": "2018-05-10T11:54:00+01:00"
+        }],
+		"changedAt": "2018-05-10T11:54:00+01:00"
+    }],
+    "resources": [{
+        "id": "Inf-e742a488ffa122480162618a9010bff4-info",
+        "title": "Projektinformation",
+        "class": "RT-Inf",
+        "properties": [{
+            "title": "dcterms:title",
+            "class": "PT-Inf-Name",
+            "value": "Projektinformation"
+        }, {
+            "title": "dcterms:description",
+            "class": "PT-Inf-Text",
+            "value": "<div><p>Zur Unterscheidung ihres Typs ist den Elementnamen eines der folgenden Symbole vorangestellt:</p><table class=\"stdInlineWithBorder\"><tr><td>&#9635;</td><td>Plan</td><td>Ein 'Plan' ist eine graphische Modellsicht zur Vermittlung eines bestimmten Sachverhalts, z.B. ein Geschäftsprozess oder Systemaufbau.</td></tr><tr><td>&#9632;</td><td>Akteur (Rolle, Funktion)</td><td>Ein 'Akteur' ist ein fundamentaler Modellelement-Typ für ein aktives Objekt, z.B. eine Aktivität, ein Prozess-Schritt, eine Funktion, eine Systemkomponente oder eine Rolle.</td></tr><tr><td>&#9679;</td><td>Zustand (Information)</td><td>Ein 'Zustand' ist ein fundamentaler Modellelement-Typ für ein passives Objekt, z.B. ein Wert, ein Dokument, ein Informationsspeicher oder eine physische Beschaffenheit.</td></tr><tr><td>&#9830;</td><td>Ereignis</td><td>Ein 'Ereignis' ist ein fundamentaler Modellelement-Typ für eine zeitliche Referenz, eine Änderung einer Bedingung bzw. eines Zustandes oder generell ein Synchronisations-Mittel.</td></tr><tr><td>&#10038;</td><td>Produktmerkmal</td><td>Ein 'Produktmerkmal' ist eine beabsichtigte differenzierende Eigenschaft eines Systems, oft ein Alleinstellungsmerkmal.</td></tr><tr><td>&#8623;</td><td>Anforderung</td><td>Eine 'Anforderung' ist ein einzelnes dokumentiertes physisches oder funktionales Bedürfnis, das der betreffende Entwurf, das Produkt oder der Prozess erfüllen muss.</td></tr><tr><td>&#9755;</td><td>Annotation</td><td>Eine Interaction-Room 'Annotation' weist auf einen Punkt besonderen Interesses hin. Hierzu gehören Werte, die Kundenbedürfnisse widerspiegeln oder positiven Effekt auf die Ziele der Organisation haben, Produkteigenschaften, deren Umsetzung Nutzen/Aufwand verursacht, und Herausforderungen, die während der Entwicklung zu berücksichtigen sind.</td></tr></table></div>"
+        }],
+		"changedAt": "2018-05-17T01:03:00+02:00"
+    }],
+	"statements": [],
+	"hierarchies": [{
+        "id": "H-e742a488ffa122480162618a9010bff4",
+        "title": "Formatted text with table without body-tag (2018-05-17)",
+        "class": "HT-ACProject",
+		"properties": [{
+            "title": "dcterms:title",
+            "class": "PT-ACProject-Name",
+            "value": "Semantic Test (2018-05-17)"
+		}],
+        "nodes": [{
+			"id": "N-Inf-e742a488ffa122480162618a9010bff4-info",
+			"resource": "Inf-e742a488ffa122480162618a9010bff4-info",
+			"changedAt": "2018-05-17T01:03:00+02:00"
+		}],
+		"changedAt": "2018-05-17T01:03:00+02:00"
+    }],
+    "files": []
+}

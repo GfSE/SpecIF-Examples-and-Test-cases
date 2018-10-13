@@ -1,0 +1,165 @@
+﻿{
+    "id": "P-Test-e742a488ffa122480162618a9010bff4-png",
+    "title": "Text with PNG image (2018-10-09)",
+    "specifVersion": "0.10.4",
+    "generator": "ARCWAY Cockpit",
+    "generatorVersion": "3.6",
+    "rights": {
+        "title": "Creative Commons 4.0 CC BY-SA",
+        "type": "dcterms:rights",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    "createdAt": "2018-05-17T01:03:00+02:00",
+    "createdBy": {
+        "familyName": "von Dungern",
+        "givenName": "Oskar",
+        "org": {
+            "organizationName": "adesso AG"
+        },
+        "email": {
+            "type": "text/html",
+            "value": "oskar.dungern@adesso.de"
+        }
+    },
+    "dataTypes": [{
+        "id": "DT-ShortString",
+        "title": "String [96]",
+        "description": "String with length 96",
+        "type": "xs:string",
+        "maxLength": 96,
+        "changedAt": "2018-05-10T11:54:00+01:00"
+    }, {
+        "id": "DT-FormattedText",
+        "title": "Formatted Text with length 8192",
+        "type": "xhtml",
+        "maxLength": 8192,
+        "changedAt": "2018-05-10T11:54:00+01:00"
+    }],
+    "resourceClasses": [{
+        "id": "RT-Fld",
+        "title": "SpecIF:Heading",
+        "description": "Ordner mit Titel und Text für Kapitel oder Textpassagen.",
+        "instantiation": ["auto","user"],
+		"isHeading": true,
+        "propertyClasses": [{
+            "id": "PT-Fld-Name",
+            "title": "dcterms:title",
+            "dataType": "DT-ShortString",
+			"changedAt": "2018-05-10T11:54:00+01:00"
+        }, {
+            "id": "PT-Fld-Text",
+            "title": "dcterms:description",
+            "dataType": "DT-FormattedText",
+			"changedAt": "2018-05-10T11:54:00+01:00"
+        }],
+        "changedAt": "2018-05-10T11:54:00+01:00"
+	}, {
+        "id": "RT-Inf",
+        "title": "SpecIF:Paragraph",
+        "description": "Information mit Titel und Text für Textpassagen.",
+        "instantiation": ["auto","user"],
+        "propertyClasses": [{
+            "id": "PT-Inf-Name",
+            "title": "dcterms:title",
+            "dataType": "DT-ShortString",
+			"changedAt": "2018-05-10T11:54:00+01:00"
+        }, {
+            "id": "PT-Inf-Text",
+            "title": "dcterms:description",
+            "dataType": "DT-FormattedText",
+			"changedAt": "2018-05-10T11:54:00+01:00"
+        }],
+        "changedAt": "2018-05-10T11:54:00+01:00"
+	}, {
+        "id": "RT-Pln",
+        "title": "SpecIF:Diagram",
+        "description": "Ein 'Plan' ist eine graphische Modellsicht zur Vermittlung eines bestimmten Sachverhalts, z.B. ein Geschäftsprozess oder Systemaufbau.",
+        "instantiation": ["auto"],
+		"icon": "&#9635;",
+        "propertyClasses": [{
+            "id": "PT-Pln-Name",
+            "title": "dcterms:title",
+            "dataType": "DT-ShortString",
+			"changedAt": "2018-05-10T11:54:00+01:00"
+        }, {
+            "id": "PT-Pln-Text",
+            "title": "dcterms:description",
+            "dataType": "DT-FormattedText",
+			"changedAt": "2018-05-10T11:54:00+01:00"
+        }, {
+            "id": "PT-Pln-Diagram",
+            "title": "SpecIF:Diagram",
+            "dataType": "DT-FormattedText",
+			"changedAt": "2018-05-10T11:54:00+01:00"
+        }, {
+            "id": "PT-Pln-Notation",
+            "title": "SpecIF:Notation",
+            "dataType": "DT-ShortString",
+			"changedAt": "2018-05-10T11:54:00+01:00"
+        }],
+        "changedAt": "2018-05-10T11:54:00+01:00"
+    }],
+    "statementClasses": [],
+    "hierarchyClasses": [{
+        "id": "HT-ACProject",
+        "title": "SpecIF:Hierarchy",
+        "propertyClasses": [{
+            "id": "PT-ACProject-Name",
+            "title": "dcterms:title",
+            "dataType": "DT-ShortString",
+			"changedAt": "2018-05-10T11:54:00+01:00"
+        }, {
+            "id": "PT-ACProject-Text",
+            "title": "dcterms:description",
+            "dataType": "DT-FormattedText",
+			"changedAt": "2018-05-10T11:54:00+01:00"
+        }],
+		"changedAt": "2018-05-10T11:54:00+01:00"
+    }],
+    "resources": [{
+        "id": "Pln-e7431277ffa122480162940c0cd41366",
+        "title": "BPMN",
+        "class": "RT-Pln",
+        "properties": [{
+            "title": "dcterms:title",
+            "class": "PT-Pln-Name",
+            "value": "BPMN"
+        }, {
+            "title": "dcterms:description",
+            "class": "PT-Pln-Text",
+            "value": "<div></div>"
+        }, {
+            "title": "SpecIF:Diagram",
+            "class": "PT-Pln-Diagram",
+            "value": "<div><p>Some text before the image in it's own paragraph.</p><p class=\"inline-label\">Plan:</p><p>Some text before the image:<object type=\"image/png\" data=\"images\\e7431277ffa122480162940c0cd41366.png\">PNG Image</object>Some text after the image, but in the same paragraph.</p><p>Some text after the image in it's own paragraph.</p></div>"
+        }, {
+            "title": "SpecIF:Notation",
+            "class": "PT-Pln-Notation",
+            "value": "BPMN Process Model"
+        }],
+        "changedAt": "2018-05-01T17:08:00+02:00"
+    }],
+	"statements": [],
+	"hierarchies": [{
+        "id": "H-e742a488ffa122480162618a9010bff4",
+        "title": "Text with PNG image (2018-10-09)",
+        "class": "HT-ACProject",
+		"properties": [{
+            "title": "dcterms:title",
+            "class": "PT-ACProject-Name",
+            "value": "Text with PNG image (2018-10-09)"
+		}],
+        "nodes": [{
+                    "id": "N-Pln-e7431277ffa122480162940c0cd41366",
+                    "resource": "Pln-e7431277ffa122480162940c0cd41366",
+                    "changedAt": "2018-05-17T01:03:00+02:00"
+		}],
+		"changedAt": "2018-05-17T01:03:00+02:00"
+    }],
+    "files": [{
+		"id": "images/e7431277ffa122480162940c0cd41366.png",
+		"title": "PNG Image",
+		"type": "image/png",
+		"size": {"width":"1213px","height":"835px"}
+	}]
+}

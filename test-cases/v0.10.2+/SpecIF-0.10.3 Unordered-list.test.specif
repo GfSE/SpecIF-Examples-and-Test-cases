@@ -1,0 +1,102 @@
+{
+    "id": "P-Test-unordered-list",
+    "title": "A test with text containing an unordered list",
+    "specifVersion": "0.10.3",
+    "tool": "manual",
+    "rights": {
+        "title": "Creative Commons 4.0 CC BY-SA",
+        "type": "dcterms:rights",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    "createdAt": "2018-09-30T16:24:00+02:00",
+    "createdBy": {
+        "familyName": "von Dungern",
+        "givenName": "Oskar",
+        "org": {
+            "organizationName": "adesso AG"
+        },
+        "email": {
+            "type": "text/html",
+            "value": "oskar.dungern@adesso.de"
+        }
+    },
+    "dataTypes": [{
+        "id": "DT-ShortString",
+        "title": "String[96]",
+        "description": "String with length 96",
+        "type": "xs:string",
+        "maxLength": 96,
+        "changedAt": "2017-05-28T18:59:00+01:00"
+    }, {
+        "id": "DT-FormattedText",
+        "title": "Formatted Text",
+        "type": "xhtml",
+        "maxLength": 1024,
+        "changedAt": "2017-05-28T18:59:00+01:00"
+    }],
+    "resourceTypes": [{
+        "id": "RT-Inf",
+        "title": "SpecIF:Paragraph",
+        "description": "Information mit Titel und Text für Textpassagen.",
+        "creation": ["auto", "manual"],
+        "icon": "",
+        "propertyTypes": [{
+            "id": "PT-Inf-Name",
+            "title": "dcterms:title",
+            "dataType": "DT-ShortString",
+            "changedAt": "2017-05-28T18:59:00+01:00"
+        }, {
+            "id": "PT-Inf-Text",
+            "title": "dcterms:description",
+            "dataType": "DT-FormattedText",
+            "changedAt": "2017-05-28T18:59:00+01:00"
+        }],
+        "changedAt": "2017-05-28T18:59:00+01:00"
+    }],
+    "statementTypes": [],
+    "hierarchyTypes": [{
+        "id": "HT-ACProject",
+        "title": "SpecIF:Hierarchy",
+        "description": "Wurzel einer Spezifikation (Gliederung).",
+        "propertyTypes": [{
+            "id": "PT-ACProject-Name",
+            "title": "dcterms:title",
+            "dataType": "DT-ShortString",
+            "changedAt": "2017-05-28T18:59:00+01:00"
+        }],
+        "changedAt": "2017-05-28T18:59:00+01:00"
+    }],
+    "resources": [{
+        "id": "Inf-d5b994e50023b1a8015d578cf736b265-ul-1",
+        "title": "SpecIF:Paragraph",
+        "resourceType": "RT-Inf",
+        "properties": [{
+            "title": "dcterms:title",
+            "propertyType": "PT-Inf-Name",
+            "value": "Text with unordered-list"
+        }, {
+            "title": "dcterms:description",
+            "propertyType": "PT-Inf-Text",
+            "value": "<div><p>Text before list:</p><ul><li>first item</li><li>zweiter <b>[Punkt (bold)]</b></li><li>troisième élément</li></ul><p>Text after list.</p></div>"
+        }],
+		"changedAt": "2018-09-30T16:24:00+02:00"
+     }],
+    "statements": [],
+    "hierarchies": [{
+        "id": "SP-d5b994e50023b1a8015d578cf736b265",
+		"title": "A test with text containing an unordered list (hierarchy title)",
+        "hierarchyType": "HT-ACProject",
+        "properties": [{
+            "title": "dcterms:title",
+            "propertyType": "PT-ACProject-Name",
+            "value": "A test with text containing an unordered list (hierarchy property with title 'dcterms:title')"
+        }],
+        "nodes": [{
+            "id": "SH-Inf-d5b994e50023b1a8015d578cf736b265-ul-1",
+            "resource": "Inf-d5b994e50023b1a8015d578cf736b265-ul-1",
+            "changedAt": "2017-08-17T21:20:00+02:00"
+		}],
+		"changedAt": "2018-09-30T16:24:00+02:00"
+    }],
+    "files": []
+}

@@ -167,7 +167,7 @@
     }],
     "resources": [{
         "id": "Req-b958079c0000bca80137138e765b5347",
-        "title": "Login requires authentication",
+        "title": "Resource with enumerated properties",
         "class": "RT-Req",
         "properties": [{
             "title": "dcterms:identifier",

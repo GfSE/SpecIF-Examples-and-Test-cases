@@ -1,0 +1,281 @@
+{
+    "id": "ACP-f5746754ffcd22a8011ff0a02b50b0d2-two-hierarchies-1",
+    "title": "Multiple hierarchies",
+    "specifVersion": "0.10.4",
+    "generator": "Interactive-Spec",
+    "generatorVersion": "0.92.45",
+    "rights": {
+        "title": "Creative Commons 4.0 CC BY-SA",
+        "type": "dcterms:rights",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    "createdAt": "2018-06-10T10:36:54.058Z",
+    "createdBy": {
+        "familyName": "von Dungern",
+        "givenName": "Oskar",
+        "org": {
+            "organizationName": "adesso"
+        },
+        "email": {
+            "type": "text/html",
+            "value": "oskar.dungern@adesso.de"
+        }
+    },
+    "dataTypes": [{
+        "id": "DT-ShortString",
+        "title": "String [96]",
+        "description": "String with length 96",
+        "type": "xs:string",
+        "maxLength": 96,
+        "revision": 1,
+        "changedAt": "2017-05-28T19:59:00+02:00"
+    }, {
+        "id": "DT-Status",
+        "title": "SpecIF:Status",
+        "description": "Enumerated values for requirement status",
+        "type": "xs:enumeration",
+        "values": [{
+            "id": "V-Req-Status-0",
+            "title": "00_rejected"
+        }, {
+            "id": "V-Req-Status-1",
+            "title": "20_drafted"
+        }, {
+            "id": "V-Req-Status-2",
+            "title": "30_submitted"
+        }, {
+            "id": "V-Req-Status-3",
+            "title": "40_approved"
+        }, {
+            "id": "V-Req-Status-4",
+            "title": "70_lab-tested"
+        }],
+        "revision": 1,
+        "changedAt": "2017-05-28T19:59:00+02:00"
+    }, {
+        "id": "DT-Priority",
+        "title": "SpecIF:Priority",
+        "description": "Enumerated values for priority",
+        "type": "xs:enumeration",
+        "values": [{
+            "id": "V-Prio-0",
+            "title": "1_high"
+        }, {
+            "id": "V-Prio-1",
+            "title": "2_medium"
+        }, {
+            "id": "V-Prio-2",
+            "title": "3_low"
+        }],
+        "revision": 1,
+        "changedAt": "2017-05-28T19:59:00+02:00"
+    }, {
+        "id": "DT-Discipline",
+        "title": "Discipline",
+        "description": "Enumerated values for engineering discipline",
+        "type": "xs:enumeration",
+        "values": [{
+            "id": "V-discipline-0",
+            "title": "Mechanics"
+        }, {
+            "id": "V-discipline-1",
+            "title": "Electronics"
+        }, {
+            "id": "V-discipline-2",
+            "title": "Software"
+        }, {
+            "id": "V-discipline-3",
+            "title": "Safety"
+        }],
+        "revision": 1,
+        "changedAt": "2016-05-26T08:59:00+02:00"
+    }, {
+        "id": "DT-FormattedText",
+        "title": "Formatted Text",
+        "type": "xhtml",
+        "maxLength": 8192,
+        "revision": 1,
+        "changedAt": "2017-05-28T19:59:00+02:00"
+    }],
+    "resourceClasses": [{
+        "id": "RT-Inf",
+        "title": "SpecIF:Paragraph",
+        "description": "Information with title and text for descriptive paragraphs.",
+        "instantiation": ["auto", "user"],
+        "propertyClasses": [{
+            "id": "PT-Inf-Name",
+            "title": "dcterms:title",
+            "dataType": "DT-ShortString",
+            "revision": 1,
+            "changedAt": "2017-05-28T19:59:00+02:00"
+        }, {
+            "id": "PT-Inf-Text",
+            "title": "dcterms:description",
+            "dataType": "DT-FormattedText",
+            "revision": 1,
+            "changedAt": "2017-05-28T19:59:00+02:00"
+        }],
+        "revision": 1,
+        "changedAt": "2017-05-28T19:59:00+02:00"
+	}, {
+        "id": "RT-Req",
+        "title": "IREB:Requirement",
+        "description": "A 'Requirement' is a singular documented physical and functional need that a particular design, product or process must be able to perform.",
+        "icon": "&#8623;",
+        "instantiation": ["user"],
+        "propertyClasses": [{
+            "id": "PT-Req-ID",
+            "title": "dcterms:identifier",
+            "dataType": "DT-ShortString",
+            "revision": 1,
+            "changedAt": "2017-05-28T19:59:00+02:00"
+        }, {
+            "id": "PT-Req-Name",
+            "title": "dcterms:title",
+            "dataType": "DT-ShortString",
+            "revision": 1,
+            "changedAt": "2017-05-28T19:59:00+02:00"
+        }, {
+            "id": "PT-Req-Text",
+            "title": "dcterms:description",
+            "dataType": "DT-FormattedText",
+            "revision": 1,
+            "changedAt": "2017-05-28T19:59:00+02:00"
+        }, {
+            "id": "PT-Req-Status",
+            "title": "SpecIF:Status",
+            "dataType": "DT-Status",
+            "revision": 1,
+            "changedAt": "2017-05-28T19:59:00+02:00"
+        }, {
+            "id": "PT-Req-Priority",
+            "title": "SpecIF:Priority",
+            "dataType": "DT-Priority",
+            "revision": 1,
+            "changedAt": "2017-05-28T19:59:00+02:00"
+        }, {
+            "id": "PT-Req-discipline",
+            "title": "SpecIF:Discipline",
+            "dataType": "DT-Discipline",
+            "multiple": true,
+            "revision": 1,
+            "changedAt": "2017-05-28T19:59:00+02:00"
+        }],
+        "revision": 1,
+        "changedAt": "2017-05-28T19:59:00+02:00"
+    }],
+    "statementClasses": [],
+    "hierarchyClasses": [{
+        "id": "HT-Spec",
+        "title": "SpecIF:Hierarchy",
+        "description": "Root node of a specification (outline).",
+        "propertyClasses": [{
+            "id": "PT-Spec-Name",
+            "title": "dcterms:title",
+            "dataType": "DT-ShortString",
+            "revision": 1,
+            "changedAt": "2017-05-28T19:59:00+02:00"
+        }],
+        "revision": 1,
+        "changedAt": "2017-05-28T19:59:00+02:00"
+    }],
+    "resources": [{
+        "id": "Fld-f5746754ffcd22a8011ff0a02b50b0d2-info-1",
+        "title": "Project Information",
+        "class": "RT-Inf",
+        "properties": [{
+            "title": "dcterms:title",
+            "class": "PT-Inf-Name",
+            "value": "Project Information"
+        }, {
+            "title": "dcterms:description",
+            "class": "PT-Inf-Text",
+            "value": "<div><p><a href=\"https://specif.de\" >Specification Integration Facility</a> </p> <p>This is a small show-case illustrating the basic concepts for documenting business processes and IT. In addition to the original text and diagrams you will find logical relations between the information elements. Most relations are derived automatically from the diagrams; the resulting semantic net lends itself for navigation, search and audit. </p> <p>The documentation represents and integrates: </p> <ul> <li> Organisation perspective: [[Organization Chart]] </li> <li> Business perspective: [[Business Landscape]] and Business Processes such as [[Process: Invoice Receipt Processing]] </li> <li> Application perspective: [[Application Landscape]] </li> <li> [[Requirements]]<br /> </li> </ul> <p>Integrating the perspectives means to (mostly automatically) tie a semantic net with relations: </p> <ul> <li> Diagrams 'show' a model element, thus any element 'knows' on which diagrams it appears, </li> <li> Components 'contain' sub-components, </li> <li> Events 'trigger' activities,<br /> </li> <li> Components 'satisfy' a requirement, </li> <li> .. and many more. </li> </ul> <p>Active hyperlinks make it easy to navigate along the relations. Insight is improved, navigation and audition are made more simple. For more information on the method applied, please refer to <a href=\"http://specif.de\" >Specification Integration Facility (SpecIF)</a>, an initiative of the <a href=\"http://gfse.de\" >Gesellschaft für Systems Engineering (GfSE)</a>. </p> <p>If you are using Firefox, Chrome or Edge as a browser, don't hesitate to click on the diagram elements. It will bring you to the next level of detail. </p> <p></p> <p>Stakeholders: </p> <table class=\"stdInlineWithBorder\"> <tbody> <tr> <th> Name </th> <th> Organisation </th> <th> Telephone </th> <th> Email </th> </tr> <tr> <td> Dr. Oskar v. Dungern </td> <td> adesso AG </td> <td> </td> <td> <a href=\"mailto:oskar.dungern@adesso.de\" >oskar.dungern@adesso.de</a> </td> </tr> </tbody> </table> <p><br /> </p> <p>Legend: </p> <p>To distinguish their type, element names are preceded by one of the following symbols: </p> <table class=\"stdInlineWithBorder\"> <tbody> <tr> <td> ▣ </td> <td> Plan </td> <td> A 'Diagram' is a graphical model view with a specific communication purpose, e.g. a business process or system composition. </td> </tr> <tr> <td> ■ </td> <td> Actor (Role, Function) </td> <td> An 'Actor' is a fundamental model element type representing an active entity, be it an activity, a process step, a function, a system component or a role. </td> </tr> <tr> <td> ● </td> <td> State (Information) </td> <td> A 'State' is a fundamental model element type representing a passive entity, be it a value, a condition, an information storage or even a physical shape. </td> </tr> <tr> <td> ♦ </td> <td> Event </td> <td> An 'Event' is a fundamental model element type representing a time reference, a change in condition/value or more generally a synchronisation primitive. </td> </tr> <tr> <td> ✶ </td> <td> Feature </td> <td> A 'Feature' is an intentional distinguishing characteristic of a system, often a unique selling proposition. </td> </tr> <tr> <td> ↯ </td> <td> Requirement </td> <td> A 'Requirement' is a singular documented physical and functional need that a particular design, product or process must be able to perform. </td> </tr> </tbody> </table></div>"
+        }],
+        "revision": 304,
+        "changedAt": "2018-05-04T17:16:16+02:00",
+        "changedBy": "od"
+	}, {
+        "id": "Req-b958079c0000bca80137138e765b5347",
+        "title": "Resource with enumerated properties",
+        "class": "RT-Req",
+        "properties": [{
+            "title": "dcterms:identifier",
+            "class": "PT-Req-ID",
+            "value": "Sec_005"
+        }, {
+            "title": "dcterms:title",
+            "class": "PT-Req-Name",
+            "value": "Resource with enumerated properties"
+        }, {
+            "title": "dcterms:description",
+            "class": "PT-Req-Text",
+            "value": "<div><p>This resource has three enumerated properties; 'Status' and 'Priority' are single-valued, 'Discipline' is multi-valued.</p><p>'Priority' is special, as it has no title attribute; so the title should be taken from the resource's class.</p></div>"
+        }, {
+            "title": "SpecIF:Status",
+            "class": "PT-Req-Status",
+            "value": "V-Req-Status-2"
+        }, {
+            "class": "PT-Req-Priority",
+            "value": "V-Prio-0"
+        }, {
+            "title": "Discipline",
+            "class": "PT-Req-discipline",
+            "value": "V-discipline-1,V-discipline-2"
+        }],
+        "revision": 32,
+        "changedAt": "2018-04-30T22:24:52+02:00",
+        "changedBy": "od"
+	}, {
+        "id": "R-d5b994e50023b1a8015d578cf736b265-text-3",
+        "title": "a text with some character formatting, colors as RGB Hex like '#008000'",
+        "class": "RT-Inf",
+        "properties": [{
+            "title": "dcterms:title",
+            "class": "PT-Inf-Name",
+            "value": "Text with some character formatting, colors as RGB Hex like '#008000'"
+        }, {
+            "title": "dcterms:description",
+            "class": "PT-Inf-Text",
+            "value": "<p>Lorem <b>{ipsum (bold)}</b> dolor <i>[sit (italic)]</i> amet, <em>{consetetur sadipscing (emphasized)}</em><span style=\"color:#FF0000\">[elitr (span #FF0000)]</span>, sed diam <span style=\"color:#0000FF\"><b>{nonumy (span #0000FF, bold)}</b></span>  <em>[eirmod<span style=\"color:#008000\">{tempor (span #008000)}</span>(emphasized)]</em>, no <em><b>{[sea (bold)]</b>takimata (emphasized)}</em> Mojito!.</p>"
+        }],
+		"changedAt": "2018-10-01T08:04:00+02:00"
+    }],
+    "statements": [],
+    "hierarchies": [{
+        "id": "SP-f5746754ffcd22a8011ff0a02b50b0d2-1",
+        "title": "First Hierarchy: SpecIF Intro (hierarchy title)",
+        "class": "HT-Spec",
+        "properties": [{
+            "title": "dcterms:title",
+            "class": "PT-Spec-Name",
+            "value": "First Hierarchy: SpecIF Intro (title property)"
+        }],
+        "changedAt": "2018-04-30T22:26:14+02:00",
+        "nodes": [{
+            "id": "SH-f5746754ffcd22a8011ff0a02b50b0d2-info-1",
+            "resource": "Fld-f5746754ffcd22a8011ff0a02b50b0d2-info-1",
+            "changedAt": "2018-04-30T22:26:46+02:00"
+		}]
+	}, {
+        "id": "SP-f5746754ffcd22a8011ff0a02b50b0d2-2",
+        "title": "Second Hierarchy: Some formatted text (hierarchy title)",
+        "class": "HT-Spec",
+        "properties": [{
+            "title": "dcterms:title",
+            "class": "PT-Spec-Name",
+            "value": "Second Hierarchy: Some formatted text (title property)"
+        }],
+        "changedAt": "2018-04-30T22:26:14+02:00",
+        "nodes": [{
+            "id": "SH-Req-b958079c0000bca80137138e765b5347",
+            "resource": "Req-b958079c0000bca80137138e765b5347",
+            "changedAt": "2018-04-30T22:26:46+02:00"
+        }, {
+            "id": "SH-R-d5b994e50023b1a8015d578cf736b265-text-3",
+            "resource": "R-d5b994e50023b1a8015d578cf736b265-text-3",
+            "changedAt": "2018-04-30T22:26:46+02:00"
+		}]
+    }],
+    "files": []
+}

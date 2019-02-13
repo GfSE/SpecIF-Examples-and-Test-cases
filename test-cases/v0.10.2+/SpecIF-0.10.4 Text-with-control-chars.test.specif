@@ -1,0 +1,107 @@
+{
+    "id": "P-Test-TextWithControlChars",
+    "title": "A test with text containing control characters",
+    "specifVersion": "0.10.4",
+    "tool": "manual",
+    "rights": {
+        "title": "Creative Commons 4.0 CC BY-SA",
+        "type": "dcterms:rights",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    "createdAt": "2018-12-17T21:20:00+02:00",
+    "createdBy": {
+        "familyName": "von Dungern",
+        "givenName": "Oskar",
+        "org": {
+            "organizationName": "adesso AG"
+        },
+        "email": {
+            "type": "text/html",
+            "value": "oskar.dungern@adesso.de"
+        }
+    },
+    "dataTypes": [{
+        "id": "DT-ShortString",
+        "title": "String[96]",
+        "description": "String with length 96",
+        "type": "xs:string",
+        "maxLength": 96,
+        "changedAt": "2017-05-28T18:59:00+01:00"
+    }, {
+        "id": "DT-FormattedText",
+        "title": "Formatted Text",
+        "type": "xhtml",
+        "maxLength": 1024,
+        "changedAt": "2017-05-28T18:59:00+01:00"
+    }],
+    "resourceClasses": [{
+        "id": "OT-Inf",
+        "title": "SpecIF:Paragraph",
+        "description": "Information mit Titel und Text für Textpassagen.",
+        "creation": ["auto", "manual"],
+        "icon": "",
+        "propertyClasses": [{
+            "id": "AT-Inf-Name",
+            "title": "dcterms:title",
+            "dataType": "DT-ShortString",
+            "changedAt": "2017-05-28T18:59:00+01:00"
+        }, {
+            "id": "AT-Inf-Text",
+            "title": "dcterms:description",
+            "dataType": "DT-ShortString",
+            "changedAt": "2017-05-28T18:59:00+01:00"
+        }],
+        "changedAt": "2017-05-28T18:59:00+01:00"
+    }],
+    "statementClasses": [],
+    "hierarchyClasses": [{
+        "id": "ST-ACProject",
+        "title": "SpecIF:Hierarchy",
+        "description": "Wurzel einer Spezifikation (Gliederung).",
+        "propertyClasses": [{
+            "id": "AT-ACProject-Name",
+            "title": "dcterms:title",
+            "dataType": "DT-ShortString",
+            "changedAt": "2017-05-28T18:59:00+01:00"
+        }, {
+            "id": "AT-ACProject-Text",
+            "title": "dcterms:description",
+            "dataType": "DT-FormattedText",
+            "changedAt": "2017-05-28T18:59:00+01:00"
+        }],
+        "changedAt": "2017-05-28T18:59:00+01:00"
+    }],
+    "resources": [{
+        "id": "Inf-d5b994e50023b1a8015d578cf736b265-info",
+        "title": "SpecIF:Paragraph",
+        "class": "OT-Inf",
+        "properties": [{
+            "title": "dcterms:title",
+            "class": "AT-Inf-Name",
+            "value": "Projektinformation"
+        }, {
+            "title": "dcterms:description",
+            "class": "AT-Inf-Text",
+            "value": "\tEin Text nach Tabulator mit Umbruch\n und weiteren zwei Umbrüchen\n\nbevor es hiermit weiter geht."
+        }],
+		"changedAt": "2018-12-17T21:20:00+02:00"
+    }],
+    "statements": [],
+    "hierarchies": [{
+        "id": "SP-d5b994e50023b1a8015d578cf736b265",
+		"title": "Hierarchy Title: A test with text containing control characters",
+        "class": "ST-ACProject",
+        "properties": [{
+            "title": "dcterms:title",
+            "class": "AT-ACProject-Name",
+            "value": "A test with text containing control characters"
+        }],
+        "nodes": [{
+            "id": "SH-Inf-d5b994e50023b1a8015d578cf736b265-info",
+            "resource": "Inf-d5b994e50023b1a8015d578cf736b265-info",
+            "changedAt": "2017-08-17T21:20:00+02:00"
+		}],
+        "changedAt": "2017-08-17T21:20:00+02:00"
+    }],
+    "files": []
+}

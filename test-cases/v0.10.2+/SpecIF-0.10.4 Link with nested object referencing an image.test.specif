@@ -1,0 +1,134 @@
+{
+    "id": "ACP-f5746754ffcd22a8011ff0a02b50b0d2-nested-objects-2",
+    "title": "Link with nested object referencing an image (project title)",
+    "specifVersion": "0.10.4",
+    "generator": "Interactive-Spec",
+    "generatorVersion": "0.92.45",
+    "rights": {
+        "title": "Creative Commons 4.0 CC BY-SA",
+        "type": "dcterms:rights",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    "createdAt": "2018-06-10T10:36:54.058Z",
+    "createdBy": {
+        "familyName": "von Dungern",
+        "givenName": "Oskar",
+        "org": {
+            "organizationName": "adesso"
+        },
+        "email": {
+            "type": "text/html",
+            "value": "oskar.dungern@adesso.de"
+        }
+    },
+    "dataTypes": [{
+        "id": "DT-ShortString",
+        "title": "String [96]",
+        "description": "String with length 96",
+        "type": "xs:string",
+        "maxLength": 96,
+        "revision": 1,
+        "changedAt": "2017-05-28T19:59:00+02:00"
+    }, {
+        "id": "DT-FormattedText",
+        "title": "Formatted Text",
+        "type": "xhtml",
+        "maxLength": 8192,
+        "revision": 1,
+        "changedAt": "2017-05-28T19:59:00+02:00"
+    }],
+    "resourceClasses": [{
+        "id": "RT-Inf",
+        "title": "SpecIF:Paragraph",
+        "description": "Information with title and text for descriptive paragraphs.",
+        "instantiation": ["auto", "user"],
+        "propertyClasses": [{
+            "id": "PT-Inf-Name",
+            "title": "dcterms:title",
+            "dataType": "DT-ShortString",
+            "revision": 1,
+            "changedAt": "2017-05-28T19:59:00+02:00"
+        }, {
+            "id": "PT-Inf-Text",
+            "title": "dcterms:description",
+            "dataType": "DT-FormattedText",
+            "revision": 1,
+            "changedAt": "2017-05-28T19:59:00+02:00"
+        }],
+        "revision": 1,
+        "changedAt": "2017-05-28T19:59:00+02:00"
+    }],
+    "statementClasses": [],
+    "hierarchyClasses": [{
+        "id": "HT-Spec",
+        "title": "SpecIF:Hierarchy",
+        "description": "Root node of a specification (outline).",
+        "propertyClasses": [{
+            "id": "PT-Spec-Name",
+            "title": "dcterms:title",
+            "dataType": "DT-ShortString",
+            "revision": 1,
+            "changedAt": "2017-05-28T19:59:00+02:00"
+        }],
+        "revision": 1,
+        "changedAt": "2017-05-28T19:59:00+02:00"
+    }],
+    "resources": [{
+        "id": "Fld-f5746754ffcd22a8011ff0a02b50b0d2-info-21",
+        "title": "Project Information",
+        "class": "RT-Inf",
+        "properties": [{
+            "title": "dcterms:title",
+            "class": "PT-Inf-Name",
+            "value": "Link with an embedded full object tag pair"
+        }, {
+            "title": "dcterms:description",
+            "class": "PT-Inf-Text",
+            "value": "<div><p>A link with a nested object referencing an image like &lt;a href=\"https://adesso.de\"&gt; &lt;object data=\"files_and_images/Logo-adesso.png\" type=\"image/png\" &gt;adesso AG&lt;/object&gt;&lt;/a&gt;: <a href=\"https://adesso.de\"> <object data=\"files_and_images/Logo-adesso.png\" type=\"image/png\" >adesso AG</object></a> </p><p>This pattern is valid in XHTML and SpecIF, but not in ReqIF. To conform with the latter, it can be transformed to: &lt;object data=\"https://adesso.de\" &gt;&lt;object data=\"files_and_images/Logo-adesso.png\" type=\"image/png\" &gt;adesso AG&lt;/object&gt;&lt;/object&gt;</p></div>"
+        }],
+        "revision": 304,
+        "changedAt": "2018-05-04T17:16:16+02:00",
+        "changedBy": "od"
+    }, {
+        "id": "Fld-f5746754ffcd22a8011ff0a02b50b0d2-info-22",
+        "title": "Project Information",
+        "class": "RT-Inf",
+        "properties": [{
+            "title": "dcterms:title",
+            "class": "PT-Inf-Name",
+            "value": "Link with an embedded comprehensive object tag"
+        }, {
+            "title": "dcterms:description",
+            "class": "PT-Inf-Text",
+            "value": "<div><p>A link with a nested object referencing an image like &lt;a href=\"https://adesso.de\"&gt; &lt;object data=\"files_and_images/Logo-adesso.png\" type=\"image/png\" name=\"adesso AG\" /&gt;&lt;/a&gt;: <a href=\"https://adesso.de\"> <object data=\"files_and_images/Logo-adesso.png\" type=\"image/png\" name=\"adesso AG\" /></a> </p><p>This pattern is valid in XHTML and SpecIF, but not in ReqIF. To conform with the latter, it can be transformed to: &lt;object data=\"https://adesso.de\" &gt;&lt;object data=\"files_and_images/Logo-adesso.png\" type=\"image/png\" name=\"adesso AG\" /&gt;&lt;/object&gt;</p></div>"
+        }],
+        "revision": 304,
+        "changedAt": "2018-05-04T17:16:16+02:00",
+        "changedBy": "od"
+    }],
+    "statements": [],
+    "hierarchies": [{
+        "id": "SP-f5746754ffcd22a8011ff0a02b50b0d2",
+        "title": "Link with nested object referencing an image (hierarchy title)",
+        "class": "HT-Spec",
+        "properties": [{
+            "title": "dcterms:title",
+            "class": "PT-Spec-Name",
+            "value": "Link with nested object referencing an image (title property)"
+        }],
+        "changedAt": "2018-04-30T22:26:14+02:00",
+        "nodes": [{
+            "id": "SH-f5746754ffcd22a8011ff0a02b50b0d2-info-21",
+            "resource": "Fld-f5746754ffcd22a8011ff0a02b50b0d2-info-21",
+            "changedAt": "2018-04-30T22:26:46+02:00"
+		}, {
+            "id": "SH-f5746754ffcd22a8011ff0a02b50b0d2-info-22",
+            "resource": "Fld-f5746754ffcd22a8011ff0a02b50b0d2-info-22",
+            "changedAt": "2018-04-30T22:26:46+02:00"
+		}]
+    }],
+    "files": [{
+        "id": "files_and_images/Logo-adesso.png",
+        "type": "image/png"
+    }]
+}

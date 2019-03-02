@@ -73,11 +73,11 @@
         "properties": [{
             "title": "dcterms:title",
             "propertyType": "PT-Inf-Name",
-            "value": "Text with some special characters (title property)"
+            "value": "Text with some special characters like '<' and '&' (title property)"
         }, {
             "title": "dcterms:description",
             "propertyType": "PT-Inf-Text",
-            "value": "<p>I am < 2m tall and my weight is >20kg.</p>"
+            "value": "<p>I am < 2m tall & my weight is >20kg.</p>"
         }],
         "changedAt": "2017-10-04T09:20:00+02:00"
      }],

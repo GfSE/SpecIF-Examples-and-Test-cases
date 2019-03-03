@@ -1,0 +1,315 @@
+{
+    "id": "RequirementSpecification-template",
+    "title": "Requirement Specification Template",
+    "specifVersion": "0.10.6",
+    "generator": "Interactive-Spec",
+    "rights": {
+        "title": "Creative Commons 4.0 CC BY-SA",
+        "type": "dcterms:rights",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    "createdAt": "2018-02-28T09:20:27.323Z",
+    "createdBy": {
+        "familyName": "von Dungern",
+        "givenName": "Oskar",
+        "org": {
+            "organizationName": "adesso"
+        },
+        "email": {
+            "type": "text/html",
+            "value": "oskar.dungern@adesso.de"
+        }
+    },
+    "dataTypes": [{
+        "id": "DT-Boolean",
+        "title": "Boolean",
+        "type": "xs:boolean",
+        "revision": 1,
+        "changedAt": "2014-04-12T19:59:00+02:00"
+    }, {
+        "id": "DT-Byte",
+        "title": "Byte",
+        "type": "xs:integer",
+        "min": 0,
+        "max": 255,
+        "revision": 1,
+        "changedAt": "2014-04-12T19:59:00+02:00"
+    }, {
+        "id": "DT-Integer",
+        "title": "Integer",
+        "type": "xs:integer",
+        "min": -32768,
+        "max": 32767,
+        "revision": 1,
+        "changedAt": "2014-04-12T19:59:00+02:00"
+    }, {
+        "id": "DT-Real",
+        "title": "Real",
+        "type": "xs:double",
+        "accuracy": 3,
+        "min": -10000,
+        "max": 10000,
+        "revision": 1,
+        "changedAt": "2014-04-12T19:59:00+02:00"
+    }, {
+        "id": "DT-Decimal2",
+        "title": "Real with 2 Decimals",
+        "type": "xs:double",
+        "accuracy": 2,
+        "min": -10000,
+        "max": 10000,
+        "revision": 1,
+        "changedAt": "2014-04-12T19:59:00+02:00"
+    }, {
+        "id": "DT-Date",
+        "title": "Date or Timestamp",
+        "type": "xs:dateTime",
+        "revision": 1,
+        "changedAt": "2014-04-12T19:59:00+02:00"
+    }, {
+        "id": "DT-ShortString",
+        "title": "String[96]",
+        "type": "xs:string",
+        "maxLength": 96,
+        "revision": 1,
+        "changedAt": "2015-08-08T10:59:00+02:00"
+    }, {
+        "id": "DT-String",
+        "title": "String[512]",
+        "type": "xs:string",
+        "maxLength": 512,
+        "revision": 1,
+        "changedAt": "2015-08-08T10:59:00+02:00"
+    }, {
+        "id": "DT-Text",
+        "title": "ReqIF.Text",
+        "type": "xs:string",
+        "maxLength": 8191,
+        "revision": 1,
+        "changedAt": "2014-04-12T19:59:00+02:00"
+    }, {
+        "id": "DT-URL",
+        "title": "URL",
+        "type": "xs:string",
+        "maxLength": 1023,
+        "revision": 1,
+        "changedAt": "2014-04-12T19:59:00+02:00"
+    }, {
+        "id": "DT-EmailAddress",
+        "title": "E-mail",
+        "type": "xs:string",
+        "maxLength": 255,
+        "revision": 1,
+        "changedAt": "2014-04-12T19:59:00+02:00"
+    }, {
+        "id": "DT-FormattedText",
+        "title": "Formatted Text",
+        "type": "xhtml",
+        "maxLength": 8192,
+        "revision": 1,
+        "changedAt": "2014-04-12T19:59:00+02:00"
+    }, {
+        "id": "DT-Status",
+        "title": "SpecIF:Status",
+        "description": "Enumerated Values for the status property",
+        "type": "xs:enumeration",
+        "values": [{
+            "id": "V-Status-0",
+            "title": "00_duplicate"
+        }, {
+            "id": "V-Status-1",
+            "title": "00_rejected"
+        }, {
+            "id": "V-Status-2",
+            "title": "20_drafted"
+        }, {
+            "id": "V-Status-3",
+            "title": "30_submitted"
+        }, {
+            "id": "V-Status-4",
+            "title": "35_proposed"
+        }, {
+            "id": "V-Status-5",
+            "title": "40_approved"
+        }, {
+            "id": "V-Status-6",
+            "title": "60_feature-complete"
+        }, {
+            "id": "V-Status-7",
+            "title": "70_lab-tested"
+        }, {
+            "id": "V-Status-8",
+            "title": "80_released"
+        }],
+        "revision": 1,
+        "changedAt": "2014-04-12T19:59:00+02:00"
+    }, {
+        "id": "DT-Priority",
+        "title": "SpecIF:Priority",
+        "description": "Enumerated Values for the priority property",
+        "type": "xs:enumeration",
+        "values": [{
+            "id": "V-Prio-0",
+            "title": "SpecIF:priorityHigh"
+        }, {
+            "id": "V-Prio-1",
+            "title": "SpecIF:priorityMedium"
+        }, {
+            "id": "V-Prio-2",
+            "title": "SpecIF:priorityLow"
+        }],
+        "revision": 1,
+        "changedAt": "2014-04-12T19:59:00+02:00"
+    }, {
+        "id": "DT-Vote",
+        "title": "SpecIF:Vote",
+        "description": "Enumerated Values for the vote property",
+        "type": "xs:enumeration",
+        "values": [{
+            "id": "V-Vote-0",
+            "title": "+1"
+        }, {
+            "id": "V-Vote-1",
+            "title": "0"
+        }, {
+            "id": "V-Vote-2",
+            "title": "-1"
+        }],
+        "revision": 1,
+        "changedAt": "2014-04-12T19:59:00+02:00"
+    }],
+	"propertyClasses": [{
+		"id": "PC-Name",
+		"title": "dcterms:title",
+		"dataType": "DT-ShortString",
+		"revision": 1,
+		"changedAt": "2019-03-03T19:59:00+02:00"
+	}, {
+		"id": "PC-Text",
+		"title": "dcterms:description",
+		"dataType": "DT-FormattedText",
+		"revision": 1,
+		"changedAt": "2019-03-03T19:59:00+02:00"
+	}, {
+		"id": "PC-Status",
+		"title": "SpecIF:Status",
+		"dataType": "DT-Status",
+		"revision": 1,
+		"changedAt": "2019-03-03T19:59:00+02:00"
+	}, {
+		"id": "PC-Priority",
+		"title": "SpecIF:Priority",
+		"dataType": "DT-Priority",
+		"revision": 1,
+		"changedAt": "2019-03-03T19:59:00+02:00"
+	}, {
+		"id": "PC-Vote",
+		"title": "SpecIF:Vote",
+		"dataType": "DT-Vote",
+		"revision": 1,
+		"changedAt": "2019-03-03T19:59:00+02:00"
+	}],
+    "resourceClasses": [{
+        "id": "RC-Folder",
+        "title": "SpecIF:Folder",
+        "description": "The title and text of folders.",
+        "instantiation": ["user"],
+		"isHeading": true,
+        "propertyClasses": ["PC-Name","PC-Text"],
+        "revision": 1,
+		"changedAt": "2019-03-03T19:59:00+02:00"
+    }, {
+        "id": "RC-Requirement",
+        "title": "IREB:Requirement",
+        "description": "A singular documented need of what a particular product or service should be or perform.",
+        "icon": "&#8623;",
+        "instantiation": ["user"],
+        "propertyClasses": ["PC-Name","PC-Text","PC-Status","PC-Priority"],
+        "revision": 1,
+		"changedAt": "2019-03-03T19:59:00+02:00"
+    }, {
+        "id": "RC-Comment",
+        "title": "SpecIF:Comment",
+        "description": "A comment related to any resource, such as folder or requirement.",
+        "instantiation": ["auto"],
+        "propertyClasses": ["PC-Name","PC-Text","PC-Vote"],
+        "revision": 1,
+		"changedAt": "2019-03-03T19:59:00+02:00"
+    }],
+    "statementClasses": [{
+        "id": "SC-refines",
+        "title": "SpecIF:refines",
+        "description": "Statement: Requirement refines Requirement",
+        "instantiation": ["user"],
+        "subjectClasses": ["RC-Requirement"],
+        "objectClasses": ["RC-Requirement"],
+        "revision": 1,
+		"changedAt": "2019-03-03T19:59:00+02:00"
+    }, {
+        "id": "SC-duplicates",
+        "title": "SpecIF:duplicates",
+        "description": "Statement: Requirement duplicates Requirement",
+        "instantiation": ["user"],
+        "subjectClasses": ["RC-Requirement"],
+        "objectClasses": ["RC-Requirement"],
+        "revision": 1,
+		"changedAt": "2019-03-03T19:59:00+02:00"
+    }, {
+        "id": "SC-contradicts",
+        "title": "SpecIF:contradicts",
+        "description": "Statement: Requirement contradicts Requirement",
+        "instantiation": ["user"],
+        "propertyClasses": ["PC-Text"],
+        "subjectClasses": ["RC-Requirement"],
+        "objectClasses": ["RC-Requirement"],
+        "revision": 1,
+		"changedAt": "2019-03-03T19:59:00+02:00"
+    }, {
+        "id": "SC-commentRefersTo",
+        "title": "SpecIF:commentRefersTo",
+        "description": "Statement: Comment refersTo any resource",
+        "instantiation": ["auto"],
+        "subjectClasses": ["RC-Comment"],
+        "revision": 1,
+		"changedAt": "2019-03-03T19:59:00+02:00"
+    }],
+    "hierarchyClasses": [{
+        "id": "HC-Outline",
+        "title": "SpecIF:Hierarchy",
+        "description": "The root node of a hierarchy (outline) of folders and resources",
+        "propertyClasses": ["PC-Name","PC-Text"],
+        "revision": 1,
+		"changedAt": "2019-03-03T19:59:00+02:00"
+    }],
+    "resources": [{
+        "id": "Prj-Info",
+        "title": "Project Information",
+        "class": "RC-Folder",
+        "properties": [{
+            "title": "dcterms:title",
+            "class": "PC-Name",
+            "value": "Project Information"
+        }, {
+            "title": "dcterms:description",
+            "class": "PC-Text",
+            "value": "<div> </div>"
+        }],
+        "revision": 1,
+        "changedAt": "2014-04-12T19:59:00+02:00"
+    }],
+    "statements": [],
+    "hierarchies": [{
+        "id": "SP-Spec",
+        "title": "Requirement Specification",
+        "revision": 1,
+        "changedAt": "2014-04-12T19:59:00+02:00",
+        "class": "HC-Outline",
+        "nodes": [{
+            "id": "N-Prj-Info",
+            "resource": "Prj-Info",
+            "revision": 1,
+            "changedAt": "2014-04-12T19:59:00+02:00"
+        }]
+    }],
+    "files": []
+}

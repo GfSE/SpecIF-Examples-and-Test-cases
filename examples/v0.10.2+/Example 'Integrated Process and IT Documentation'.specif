@@ -759,7 +759,7 @@
         }, {
             "title": "dcterms:description",
             "class": "PT-Pln-Text",
-            "value": "<div> <p> The organigram shows the organisational structure of the company. Business functions of the [[business landscape]] are assigned to the particular organisational units in order to express the role the organisational unit plays in processes. </p> <p class=\"inline-label\"> Model View: </p><object data=\"files_and_images/f5746a42ffcd22a8011fa6d3e8c8ad1f.svg\" type=\"image/svg+xml\">Organization Chart</object> </div>"
+            "value": "<div> <div> <p> The organigram shows the organisational structure of the company. Business functions of the [[business landscape]] are assigned to the particular organisational units in order to express the role the organisational unit plays in processes. </p> <p class=\"inline-label\"> Model View: </p><object data=\"files_and_images/f5746a42ffcd22a8011fa6d3e8c8ad1f.svg\" type=\"image/svg+xml\">Organization Chart</object> </div></div>"
         }, {
             "title": "SpecIF:Notation",
             "class": "PT-Pln-Notation",
@@ -6409,51 +6409,51 @@
     }],
     "files": [{
         "id": "files_and_images/1c1e7f830000c3a8014169e0d5ff50ed.png",
-        "mimeType": "image/png"
+        "type": "image/png"
     }, {
         "id": "files_and_images/1c1e7f830000c3a8014169e0d5ff50ed.svg",
-        "mimeType": "image/svg+xml"
+        "type": "image/svg+xml"
     }, {
         "id": "files_and_images/color-coding-640.png",
-        "mimeType": "image/png"
+        "type": "image/png"
     }, {
         "id": "files_and_images/ed1d70350000c3a80140305fd24f28fd.png",
-        "mimeType": "image/png"
+        "type": "image/png"
     }, {
         "id": "files_and_images/ed1d70350000c3a80140305fd24f28fd.svg",
-        "mimeType": "image/svg+xml"
+        "type": "image/svg+xml"
     }, {
         "id": "files_and_images/f5746957ffcd22a8011f088ec8a5ac0e.png",
-        "mimeType": "image/png"
+        "type": "image/png"
     }, {
         "id": "files_and_images/f5746957ffcd22a8011f088ec8a5ac0e.svg",
-        "mimeType": "image/svg+xml"
+        "type": "image/svg+xml"
     }, {
         "id": "files_and_images/f5746a13ffcd22a8011f241e6c4f5163.png",
-        "mimeType": "image/png"
+        "type": "image/png"
     }, {
         "id": "files_and_images/f5746a13ffcd22a8011f241e6c4f5163.svg",
-        "mimeType": "image/svg+xml"
+        "type": "image/svg+xml"
     }, {
         "id": "files_and_images/f5746a42ffcd22a8011fa6d3e8c8ad1f.png",
-        "mimeType": "image/png"
+        "type": "image/png"
     }, {
         "id": "files_and_images/f5746a42ffcd22a8011fa6d3e8c8ad1f.svg",
-        "mimeType": "image/svg+xml"
+        "type": "image/svg+xml"
     }, {
         "id": "files_and_images/f5746a70ffcd22a8011f9ae87b935dc7.png",
-        "mimeType": "image/png"
+        "type": "image/png"
     }, {
         "id": "files_and_images/f5746a70ffcd22a8011f9ae87b935dc7.svg",
-        "mimeType": "image/svg+xml"
+        "type": "image/svg+xml"
     }, {
         "id": "files_and_images/Logo-adesso.png",
-        "mimeType": "image/png"
+        "type": "image/png"
     }, {
         "id": "files_and_images/model-elements_and_relations.png",
-        "mimeType": "image/png"
+        "type": "image/png"
     }, {
         "id": "files_and_images/Process-and-IT_Semantically-Integrated-Documentation.pdf",
-        "mimeType": "application/pdf"
+        "type": "application/pdf"
     }]
 }

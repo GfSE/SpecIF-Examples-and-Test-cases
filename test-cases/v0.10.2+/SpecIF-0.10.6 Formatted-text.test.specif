@@ -210,7 +210,7 @@
         }, {
             "title": "dcterms:description",
             "class": "PT-Text",
-            "value": "<p>Lorem <b>{ipsum (bold)}</b> dolor <i>[sit (italic)]</i> amet, <em>{consetetur sadipscing (emphasized)}</em><span style=\"color:red\">[elitr (span red)]</span>, sed diam <span style=\"color:blue\"><b>{nonumy (span blue, bold)}</b></span>  <em>[eirmod<span style=\"color:green\">{tempor (span green)}</span>(emphasized)]</em>, no <em><b>{[sea (bold)]</b>takimata (emphasized)}</em> Mojito!</p>"
+            "value": "<p>Lorem <b>{ipsum (bold)}</b> dolor <i>[sit (italic)]</i> amet, <em>{consetetur sadipscing (emphasized)}</em><span style=\"color:red\">[elitr (span red)]</span>, sed diam <span style=\"color:blue\"><b>{nonumy (span blue, bold)}</b></span>  <em>[eirmod<span style=\"color:green\">{tempor (span green)}</span>(emphasized)]</em>, no <b>{enso <em>[sea (emphasized)]</em>takimata (bold)}</b> Mojito!</p>"
         }],
 		"changedAt": "2018-10-01T08:04:00+02:00"
 	},{
@@ -224,7 +224,7 @@
         }, {
             "title": "dcterms:description",
             "class": "PT-Text",
-            "value": "<p>Lorem <b>{ipsum (bold)}</b> dolor <i>[sit (italic)]</i> amet, <em>{consetetur sadipscing (emphasized)}</em><span style=\"color:#FF0000\">[elitr (span #FF0000)]</span>, sed diam <span style=\"color:#0000FF\"><b>{nonumy (span #0000FF, bold)}</b></span>  <em>[eirmod<span style=\"color:#008000\">{tempor (span #008000)}</span>(emphasized)]</em>, no <em><b>{[sea (bold)]</b>takimata (emphasized)}</em> Mojito!.</p>"
+            "value": "<p>Lorem <b>{ipsum (bold)}</b> dolor <i>[sit (italic)]</i> amet, <em>{consetetur sadipscing (emphasized)}</em><span style=\"color:#FF0000\">[elitr (span #FF0000)]</span>, sed diam <span style=\"color:#0000FF\"><b>{nonumy (span #0000FF, bold)}</b></span>  <em>[eirmod<span style=\"color:#008000\">{tempor (span #008000)}</span>(emphasized)]</em>, no <b>{enso <em>[sea (emphasized)]</em>takimata (bold)}</b> Mojito!.</p>"
         }],
 		"changedAt": "2018-10-01T08:04:00+02:00"
 	},{

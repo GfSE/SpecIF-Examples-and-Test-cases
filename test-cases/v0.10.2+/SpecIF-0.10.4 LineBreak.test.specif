@@ -88,7 +88,7 @@
     }],
     "statements": [],
     "hierarchies": [{
-        "id": "SP-d5b994e50023b1a8015d578cf736b265",
+        "id": "H-Test-LineBreak",
 		"title": "Hierarchy Title: A test with text containing a line-break and a non-ASCII character",
         "class": "ST-ACProject",
         "properties": [{

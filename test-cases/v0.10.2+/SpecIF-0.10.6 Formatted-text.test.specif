@@ -1,5 +1,5 @@
 {
-    "id": "P-Test-formatted-text",
+    "id": "P-Test-formatted-text-1",
     "title": "A test with formatted text",
     "specifVersion": "0.10.6",
     "tool": "manual",
@@ -270,7 +270,7 @@
      }],
     "statements": [],
     "hierarchies": [{
-        "id": "SP-d5b994e50023b1a8015d578cf736b265",
+        "id": "H-P-Test-formatted-text-1",
 		"title": "A test with formatted text (hierarchy title)",
         "class": "HT-ACProject",
         "properties": [{

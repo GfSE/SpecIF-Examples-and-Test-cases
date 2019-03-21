@@ -431,7 +431,7 @@
 		"objectClasses": ["RC-Actor"]
 	}, {
 		"id": "SC-satisfies",
-		"title": "IREB:satisfies",
+		"title": "oslc_rm:satisfies",
 		"description": "Actor (&#x00AB;Component&#x00BB;) satisfies Actor (&#x00AB;Requirement&#x00BB;).",
 		"instantiation": ["auto", "user"],
 		"revision": 1,

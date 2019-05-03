@@ -1,0 +1,114 @@
+SpecIF constraints are violated (902): instance with identifier 'N-H-Test-LineBreak' must reference a valid class ()
+
+{
+	"id": "P-Test-LineBreak",
+	"title": "A test with text containing a line-break and a non-ASCII character",
+	"specifVersion": "0.10.8",
+	"generator": "Interactive-Spec",
+	"generatorVersion": "0.95.3",
+	"rights": {
+		"title": "Creative Commons 4.0 CC BY-SA",
+		"type": "dcterms:rights",
+		"url": "https://creativecommons.org/licenses/by-sa/4.0/"
+	},
+	"createdAt": "2019-05-03T13:41:24.407Z",
+	"createdBy": {
+		"familyName": "von Dungern",
+		"givenName": "Oskar",
+		"email": {
+			"type": "text/html",
+			"value": "oskar.dungern@adesso.de"
+		},
+		"org": {
+			"organizationName": "adesso AG"
+		}
+	},
+	"dataTypes": [{
+		"id": "DT-ShortString",
+		"title": "String[96]",
+		"description": "String with length 96",
+		"type": "xs:string",
+		"maxLength": 96,
+		"changedAt": "2017-05-28T18:59:00+01:00"
+	}, {
+		"id": "DT-FormattedText",
+		"title": "Formatted Text",
+		"type": "xhtml",
+		"maxLength": 1024,
+		"changedAt": "2017-05-28T18:59:00+01:00"
+	}],
+	"propertyClasses": [{
+		"id": "PT-Inf-Name",
+		"title": "dcterms:title",
+		"dataType": "DT-ShortString",
+		"changedAt": "2017-05-28T18:59:00+01:00"
+	}, {
+		"id": "PT-Inf-Text",
+		"title": "dcterms:description",
+		"dataType": "DT-FormattedText",
+		"changedAt": "2017-05-28T18:59:00+01:00"
+	}, {
+		"id": "PT-ACProject-Name",
+		"title": "dcterms:title",
+		"dataType": "DT-ShortString",
+		"changedAt": "2017-05-28T18:59:00+01:00"
+	}, {
+		"id": "PT-ACProject-Text",
+		"title": "dcterms:description",
+		"dataType": "DT-FormattedText",
+		"changedAt": "2017-05-28T18:59:00+01:00"
+	}],
+	"resourceClasses": [{
+		"id": "RT-Inf",
+		"title": "SpecIF:Paragraph",
+		"description": "Information mit Titel und Text für Textpassagen.",
+		"instantiation": ["auto", "user"],
+		"propertyClasses": ["PT-Inf-Name", "PT-Inf-Text"],
+		"changedAt": "2017-05-28T18:59:00+01:00"
+	}, {
+		"id": "HT-ACProject",
+		"title": "SpecIF:Hierarchy",
+		"description": "Wurzel einer Spezifikation (Gliederung).",
+		"propertyClasses": ["PT-ACProject-Name", "PT-ACProject-Text"],
+		"changedAt": "2017-05-28T18:59:00+01:00",
+		"isHeading": true
+	}],
+	"statementClasses": [],
+	"resources": [{
+		"id": "Inf-d5b994e50023b1a8015d578cf736b265-info",
+		"title": "SpecIF:Paragraph",
+		"class": "RT-Inf",
+		"properties": [{
+			"title": "dcterms:title",
+			"class": "PT-Inf-Name",
+			"value": "Projektinformation"
+		}, {
+			"title": "dcterms:description",
+			"class": "PT-Inf-Text",
+			"value": "<p>Ein Text vor dem Zeilenumbruch<br/>und ein weiterer nach demselben, ähh.</p>"
+		}],
+		"changedAt": "2018-12-17T21:20:00+02:00"
+	}, {
+		"id": "H-Test-LineBreak",
+		"title": "Hierarchy Title: A test with text containing a line-break and a non-ASCII character",
+		"class": "HT-ACProject",
+		"properties": [{
+			"title": "dcterms:title",
+			"class": "PT-ACProject-Name",
+			"value": "A test with text containing a line-break and a non-ASCII character"
+		}],
+		"changedAt": "2017-08-17T21:20:00+02:00"
+	}],
+	"statements": [],
+	"hierarchies": [{
+		"id": "N-H-Test-LineBreak",
+		"resource": "H-Test-LineBreak",
+		"nodes": [{
+			"id": "N-Inf-d5b994e50023b1a8015d578cf736b265-info",
+			"resource": "Inf-d5b994e50023b1a8015d578cf736b265-info",
+			"changedAt": "2017-08-17T21:20:00+02:00"
+		}],
+		"changedAt": "2017-08-17T21:20:00+02:00"
+	}],
+	"files": []
+}

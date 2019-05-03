@@ -94,7 +94,7 @@
         "properties": [{
             "title": "dcterms:title",
             "class": "AT-ACProject-Name",
-            "value": "Projektvorlage für Interaction Room (2017-08-17)"
+            "value": "A test with text containing a line-break and a non-ASCII character"
         }],
         "nodes": [{
             "id": "SH-Inf-d5b994e50023b1a8015d578cf736b265-info",

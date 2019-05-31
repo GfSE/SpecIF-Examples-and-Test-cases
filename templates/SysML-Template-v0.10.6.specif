@@ -1,8 +1,8 @@
 {
-	"id": "P-SysML-0003",
-	"title": "Template for SysML",
-	"description": "",
-	"specifVersion": "0.10.8",
+	"id": "P-ad200200057ae27e1653000005dd2afc",
+	"title": "Case-Study eHSUV with SysML",
+	"description": "System Specification of a hybrid SUV.",
+	"specifVersion": "0.10.6",
 	"generator": "Interactive-Spec",
 	"generatorVersion": "0.92.44",
 	"rights": {
@@ -425,13 +425,6 @@
 		"propertyClasses": ["PC-Text"],
 		"revision": 1,
 		"changedAt": "2019-03-16T19:59:00+02:00"
-	}, {
-		"id": "RC-SystemSpec",
-		"title": "SpecIF:Hierarchy",
-		"description": "Root node of a specification (outline).",
-		"propertyClasses": ["PC-Name","PC-Text"],
-		"revision": 1,
-		"changedAt": "2019-03-16T19:59:00+02:00"
 	}],
 	"statementClasses": [{
 		"id": "SC-shows",
@@ -603,6 +596,14 @@
 		"changedAt": "2019-03-16T19:59:00+02:00",
 		"subjectClasses": ["RC-Requirement"],
 		"objectClasses": ["RC-Requirement"]
+	}],
+	"hierarchyClasses": [{
+		"id": "HC-SystemSpec",
+		"title": "SpecIF:Hierarchy",
+		"description": "Root node of a specification (outline).",
+		"propertyClasses": ["PC-Name","PC-Text"],
+		"revision": 1,
+		"changedAt": "2019-03-16T19:59:00+02:00"
 	}],
 	"resources": [],
 	"statements": [],

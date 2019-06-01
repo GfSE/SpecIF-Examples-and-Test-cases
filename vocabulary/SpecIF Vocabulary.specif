@@ -59,19 +59,19 @@
         "description": "The status of the term.",
         "type": "xs:enumeration",
         "values": [{
-            "id": "V_SpecIF_Status-6",
+            "id": "V-SpecIF_Status-6",
             "title": "preferred"
         }, {
-            "id": "V_SpecIF_Status-5",
+            "id": "V-SpecIF_Status-5",
             "title": "equivalent"
         }, {
-            "id": "V_SpecIF_Status-3",
+            "id": "V-SpecIF_Status-3",
             "title": "submitted"
         }, {
-            "id": "V_SpecIF_Status-1",
+            "id": "V-SpecIF_Status-1",
             "title": "experimental"
         }, {
-            "id": "V_SpecIF_Status-9",
+            "id": "V-SpecIF_Status-9",
             "title": "deprecated"
         }],
         "revision": 1,
@@ -169,7 +169,7 @@
         "changedAt": "2018-02-15T10:07:30+01:00"
     }],
     "statementClasses": [{
-        "id": "SC-isSynonymResource",
+        "id": "SC-isSynonymousResource",
         "title": "SpecIF:isSynonymOf",
         "description": "Synonymous resource-term",
         "instantiation": ["user"],
@@ -178,7 +178,7 @@
         "subjectClasses": ["RC-ResourceTerm"],
         "objectClasses": ["RC-ResourceTerm"]
     }, {
-        "id": "SC-isSynonymPredicate",
+        "id": "SC-isSynonymousPredicate",
         "title": "SpecIF:isSynonymOf",
         "description": "Synonymous predicate-term",
         "instantiation": ["user"],
@@ -186,15 +186,6 @@
         "changedAt": "2017-12-12T21:16:54+01:00",
         "subjectClasses": ["RC-PredicateTerm"],
         "objectClasses": ["RC-PredicateTerm"]
-    }, {
-        "id": "SC-isSynonymousHierarchy",
-        "title": "SpecIF:isSynonymOf",
-        "description": "Synonymous hierarchy-term",
-        "instantiation": ["user"],
-        "revision": 1,
-        "changedAt": "2017-12-12T21:17:34+01:00",
-        "subjectClasses": ["RC-HierarchyTerm"],
-        "objectClasses": ["RC-HierarchyTerm"]
     }, {
         "id": "SC-isSynonymousProperty",
         "title": "SpecIF:isSynonymOf",
@@ -217,7 +208,7 @@
         "id": "SC-commentRefersTo",
         "title": "SpecIF:commentRefersTo",
         "description": "Comment refers to a model element ('resource' in general).",
-        "instantiation": ["auto"],
+        "instantiation": ["auto","user"],
         "revision": 1,
         "changedAt": "2018-02-15T10:07:31+01:00",
         "subjectClasses": ["ID_97a3420d-1287-48a9-b348-68d9e2fdaeea"]
@@ -225,12 +216,22 @@
         "id": "SC-isInverseOf",
         "title": "SpecIF:isInverseOf",
         "description": "Signifies that two terms are the inverse of each other, such as 'contains' and 'isContainedBy'.",
-        "instantiation": ["auto", "user"],
+        "instantiation": ["user"],
         "revision": 192,
         "changedAt": "2018-03-21T18:06:20+01:00",
         "changedBy": "od",
         "subjectClasses": ["RC-PredicateTerm"],
         "objectClasses": ["RC-PredicateTerm"]
+    }, {
+        "id": "SC-isSpecialisationOf",
+        "title": "SpecIF:isSpecialisationOf",
+        "description": "Signifies that two terms are the inverse of each other, such as 'contains' and 'isContainedBy'.",
+        "instantiation": ["user"],
+        "revision": 192,
+        "changedAt": "2018-03-21T18:06:20+01:00",
+        "changedBy": "od",
+        "subjectClasses": ["RC-ResourceTerm"],
+        "objectClasses": ["RC-ResourceTerm"]
     }],
     "hierarchyClasses": [{
         "id": "HT-SpecIF_Hierarchy",
@@ -240,7 +241,7 @@
         "changedAt": "2017-06-10T15:47:24+02:00"
     }],
     "resources": [{
-        "id": "O-tin9EEHaktoz8EgVGqpaYX5eLhe",
+        "id": "R-tin9EEHaktoz8EgVGqpaYX5eLhe",
         "title": "Introduction",
         "class": "RC-SpecIF_Heading",
         "properties": [{
@@ -256,13 +257,13 @@
         "changedAt": "2018-02-27T16:37:06+01:00",
         "changedBy": "od"
     }, {
-        "id": "F-1951722348",
-        "title": "Resource Classes",
+        "id": "F-Resource_Classes",
+        "title": "Resource Class Names",
         "class": "RC-SpecIF_Heading",
         "properties": [{
             "title": "dcterms:title",
             "class": "PC-title",
-            "value": "Resource Classes"
+            "value": "Resource Class Names"
         }, {
             "title": "dcterms:description",
             "class": "PC-description",
@@ -272,13 +273,13 @@
         "changedAt": "2018-06-11T22:21:30+02:00",
         "changedBy": "od"
     }, {
-        "id": "F-2122492873",
-        "title": "Statement Classes",
+        "id": "F-Statement_Classes",
+        "title": "Statement Class Names",
         "class": "RC-SpecIF_Heading",
         "properties": [{
             "title": "dcterms:title",
             "class": "PC-title",
-            "value": "Statement Classes"
+            "value": "Statement Class Names"
         }, {
             "title": "dcterms:description",
             "class": "PC-description",
@@ -304,7 +305,7 @@
         "changedAt": "2018-03-09T20:34:38+01:00",
         "changedBy": "od"
     }, {
-        "id": "F-687840215",
+        "id": "F-Property_Names",
         "title": "Property Names",
         "class": "RC-SpecIF_Heading",
         "properties": [{
@@ -320,7 +321,7 @@
         "changedAt": "2018-03-09T20:32:22+01:00",
         "changedBy": "od"
     }, {
-        "id": "R-ycFgNKLvEwYMQwxgpH3Scq3cmIT",
+        "id": "F-Property_Values",
         "title": "Property Values",
         "class": "RC-SpecIF_Heading",
         "properties": [{
@@ -336,7 +337,7 @@
         "changedAt": "2018-06-11T17:09:16+02:00",
         "changedBy": "od"
     }, {
-        "id": "O-155140541",
+        "id": "R-155140541",
         "title": "SpecIF:Heading",
         "class": "RC-ResourceTerm",
         "properties": [{
@@ -354,13 +355,13 @@
         }, {
             "title": "SpecIF:Status",
             "class": "PC-status",
-            "value": "V_SpecIF_Status-6"
+            "value": "V-SpecIF_Status-6"
         }],
         "revision": 5,
         "changedAt": "2018-02-17T14:51:40+01:00",
         "changedBy": "od"
     }, {
-        "id": "O-155140542",
+        "id": "R-155140542",
         "title": "SpecIF:Paragraph",
         "class": "RC-ResourceTerm",
         "properties": [{
@@ -378,13 +379,13 @@
         }, {
             "title": "SpecIF:Status",
             "class": "PC-status",
-            "value": "V_SpecIF_Status-6"
+            "value": "V-SpecIF_Status-6"
         }],
         "revision": 6,
         "changedAt": "2018-02-17T14:51:41+01:00",
         "changedBy": "od"
     }, {
-        "id": "O-155140543",
+        "id": "R-155140543",
         "title": "SpecIF:Diagram",
         "class": "RC-ResourceTerm",
         "properties": [{
@@ -402,13 +403,13 @@
         }, {
             "title": "SpecIF:Status",
             "class": "PC-status",
-            "value": "V_SpecIF_Status-6"
+            "value": "V-SpecIF_Status-6"
         }],
         "revision": 7,
         "changedAt": "2018-02-17T14:51:41+01:00",
         "changedBy": "od"
     }, {
-        "id": "O-155140544",
+        "id": "R-155140544",
         "title": "SpecIF:View",
         "class": "RC-ResourceTerm",
         "properties": [{
@@ -426,13 +427,13 @@
         }, {
             "title": "SpecIF:Status",
             "class": "PC-status",
-            "value": "V_SpecIF_Status-9"
+            "value": "V-SpecIF_Status-9"
         }],
         "revision": 8,
         "changedAt": "2018-02-17T14:51:41+01:00",
         "changedBy": "od"
     }, {
-        "id": "O-155140545",
+        "id": "R-155140545",
         "title": "FMC:Plan",
         "class": "RC-ResourceTerm",
         "properties": [{
@@ -450,13 +451,13 @@
         }, {
             "title": "SpecIF:Status",
             "class": "PC-status",
-            "value": "V_SpecIF_Status-5"
+            "value": "V-SpecIF_Status-5"
         }],
         "revision": 9,
         "changedAt": "2018-02-17T14:51:41+01:00",
         "changedBy": "od"
     }, {
-        "id": "O-155140546",
+        "id": "R-155140546",
         "title": "FMC:Actor",
         "class": "RC-ResourceTerm",
         "properties": [{
@@ -474,13 +475,13 @@
         }, {
             "title": "SpecIF:Status",
             "class": "PC-status",
-            "value": "V_SpecIF_Status-6"
+            "value": "V-SpecIF_Status-6"
         }],
         "revision": 158,
         "changedAt": "2018-03-04T12:19:29+01:00",
         "changedBy": "od"
     }, {
-        "id": "O-155140547",
+        "id": "R-155140547",
         "title": "FMC:State",
         "class": "RC-ResourceTerm",
         "properties": [{
@@ -498,13 +499,13 @@
         }, {
             "title": "SpecIF:Status",
             "class": "PC-status",
-            "value": "V_SpecIF_Status-6"
+            "value": "V-SpecIF_Status-6"
         }],
         "revision": 11,
         "changedAt": "2018-02-17T14:51:42+01:00",
         "changedBy": "od"
     }, {
-        "id": "O-155140548",
+        "id": "R-155140548",
         "title": "FMC:Event",
         "class": "RC-ResourceTerm",
         "properties": [{
@@ -522,13 +523,13 @@
         }, {
             "title": "SpecIF:Status",
             "class": "PC-status",
-            "value": "V_SpecIF_Status-6"
+            "value": "V-SpecIF_Status-6"
         }],
         "revision": 12,
         "changedAt": "2018-02-17T14:51:42+01:00",
         "changedBy": "od"
     }, {
-        "id": "O-155140549",
+        "id": "R-155140549",
         "title": "IREB:Requirement",
         "class": "RC-ResourceTerm",
         "properties": [{
@@ -546,13 +547,13 @@
         }, {
             "title": "SpecIF:Status",
             "class": "PC-status",
-            "value": "V_SpecIF_Status-6"
+            "value": "V-SpecIF_Status-6"
         }],
         "revision": 13,
         "changedAt": "2018-02-17T14:51:43+01:00",
         "changedBy": "od"
     }, {
-        "id": "O-514389523",
+        "id": "R-514389523",
         "title": "SpecIF:Feature",
         "class": "RC-ResourceTerm",
         "properties": [{
@@ -570,13 +571,13 @@
         }, {
             "title": "SpecIF:Status",
             "class": "PC-status",
-            "value": "V_SpecIF_Status-6"
+            "value": "V-SpecIF_Status-6"
         }],
         "revision": 14,
         "changedAt": "2018-02-17T14:51:43+01:00",
         "changedBy": "od"
     }, {
-        "id": "O-514389524",
+        "id": "R-514389524",
         "title": "SpecIF:Comment",
         "class": "RC-ResourceTerm",
         "properties": [{
@@ -594,7 +595,7 @@
         }, {
             "title": "SpecIF:Status",
             "class": "PC-status",
-            "value": "V_SpecIF_Status-6"
+            "value": "V-SpecIF_Status-6"
         }],
         "revision": 15,
         "changedAt": "2018-02-17T14:51:43+01:00",
@@ -618,7 +619,7 @@
         }, {
             "title": "SpecIF:Status",
             "class": "PC-status",
-            "value": "V_SpecIF_Status-1"
+            "value": "V-SpecIF_Status-1"
         }],
         "revision": 143,
         "changedAt": "2018-02-27T15:56:47+01:00",
@@ -642,13 +643,13 @@
         }, {
             "title": "SpecIF:Status",
             "class": "PC-status",
-            "value": "V_SpecIF_Status-1"
+            "value": "V-SpecIF_Status-1"
         }],
         "revision": 196,
         "changedAt": "2018-03-22T17:40:56+01:00",
         "changedBy": "od"
     }, {
-        "id": "O-514389525",
+        "id": "R-514389525",
         "title": "SpecIF:Note",
         "class": "RC-ResourceTerm",
         "properties": [{
@@ -666,13 +667,13 @@
         }, {
             "title": "SpecIF:Status",
             "class": "PC-status",
-            "value": "V_SpecIF_Status-6"
+            "value": "V-SpecIF_Status-6"
         }],
         "revision": 16,
         "changedAt": "2018-02-17T14:51:43+01:00",
         "changedBy": "od"
     }, {
-        "id": "O-514389526",
+        "id": "R-514389526",
         "title": "SpecIF:Issue",
         "class": "RC-ResourceTerm",
         "properties": [{
@@ -690,13 +691,13 @@
         }, {
             "title": "SpecIF:Status",
             "class": "PC-status",
-            "value": "V_SpecIF_Status-6"
+            "value": "V-SpecIF_Status-6"
         }],
         "revision": 17,
         "changedAt": "2018-02-17T14:51:43+01:00",
         "changedBy": "od"
     }, {
-        "id": "O-514389527",
+        "id": "R-514389527",
         "title": "IREB:Risk",
         "class": "RC-ResourceTerm",
         "properties": [{
@@ -714,13 +715,13 @@
         }, {
             "title": "SpecIF:Status",
             "class": "PC-status",
-            "value": "V_SpecIF_Status-6"
+            "value": "V-SpecIF_Status-6"
         }],
         "revision": 18,
         "changedAt": "2018-02-17T14:51:44+01:00",
         "changedBy": "od"
     }, {
-        "id": "O-RdL9JuGuFrBzNRNCP3l9Byk4jJ3",
+        "id": "R-RdL9JuGuFrBzNRNCP3l9Byk4jJ3",
         "title": "foaf:Person",
         "class": "RC-ResourceTerm",
         "properties": [{
@@ -738,13 +739,13 @@
         }, {
             "title": "SpecIF:Status",
             "class": "PC-status",
-            "value": "V_SpecIF_Status-6"
+            "value": "V-SpecIF_Status-6"
         }],
         "revision": 20,
         "changedAt": "2018-02-17T14:51:44+01:00",
         "changedBy": "od"
     }, {
-        "id": "O-1756321082",
+        "id": "R-1756321082",
         "title": "SpecIF:shows",
         "class": "RC-PredicateTerm",
         "properties": [{
@@ -762,13 +763,13 @@
         }, {
             "title": "SpecIF:Status",
             "class": "PC-status",
-            "value": "V_SpecIF_Status-6"
+            "value": "V-SpecIF_Status-6"
         }],
         "revision": 21,
         "changedAt": "2018-02-17T14:51:45+01:00",
         "changedBy": "od"
     }, {
-        "id": "O-1756321083",
+        "id": "R-1756321083",
         "title": "SpecIF:contains",
         "class": "RC-PredicateTerm",
         "properties": [{
@@ -786,13 +787,13 @@
         }, {
             "title": "SpecIF:Status",
             "class": "PC-status",
-            "value": "V_SpecIF_Status-6"
+            "value": "V-SpecIF_Status-6"
         }],
         "revision": 163,
         "changedAt": "2018-03-07T14:01:27+01:00",
         "changedBy": "od"
     }, {
-        "id": "O-852227586",
+        "id": "R-852227586",
         "title": "oslc_rm:satisfies",
         "class": "RC-PredicateTerm",
         "properties": [{
@@ -810,13 +811,13 @@
         }, {
             "title": "SpecIF:Status",
             "class": "PC-status",
-            "value": "V_SpecIF_Status-6"
+            "value": "V-SpecIF_Status-6"
         }],
         "revision": 164,
         "changedAt": "2018-03-07T15:32:44+01:00",
         "changedBy": "od"
     }, {
-        "id": "O-852227587",
+        "id": "R-852227587",
         "title": "oslc_rm:satisfiedBy",
         "class": "RC-PredicateTerm",
         "properties": [{
@@ -836,7 +837,7 @@
         "changedAt": "2018-02-17T14:51:45+01:00",
         "changedBy": "od"
     }, {
-        "id": "O-1756321084",
+        "id": "R-1756321084",
         "title": "SpecIF:satisfies",
         "class": "RC-PredicateTerm",
         "properties": [{
@@ -854,13 +855,13 @@
         }, {
             "title": "SpecIF:Status",
             "class": "PC-status",
-            "value": "V_SpecIF_Status-5"
+            "value": "V-SpecIF_Status-5"
         }],
         "revision": 25,
         "changedAt": "2018-02-17T14:51:46+01:00",
         "changedBy": "od"
     }, {
-        "id": "O-1756321085",
+        "id": "R-1756321085",
         "title": "SpecIF:implements",
         "class": "RC-PredicateTerm",
         "properties": [{
@@ -878,13 +879,13 @@
         }, {
             "title": "SpecIF:Status",
             "class": "PC-status",
-            "value": "V_SpecIF_Status-6"
+            "value": "V-SpecIF_Status-6"
         }],
         "revision": 26,
         "changedAt": "2018-02-17T14:51:46+01:00",
         "changedBy": "od"
     }, {
-        "id": "O-1756321086",
+        "id": "R-1756321086",
         "title": "SpecIF:reads",
         "class": "RC-PredicateTerm",
         "properties": [{
@@ -902,13 +903,13 @@
         }, {
             "title": "SpecIF:Status",
             "class": "PC-status",
-            "value": "V_SpecIF_Status-6"
+            "value": "V-SpecIF_Status-6"
         }],
         "revision": 26,
         "changedAt": "2018-02-17T14:51:46+01:00",
         "changedBy": "od"
     }, {
-        "id": "O-1756321087",
+        "id": "R-1756321087",
         "title": "SpecIF:writes",
         "class": "RC-PredicateTerm",
         "properties": [{
@@ -926,7 +927,7 @@
         }, {
             "title": "SpecIF:Status",
             "class": "PC-status",
-            "value": "V_SpecIF_Status-6"
+            "value": "V-SpecIF_Status-6"
         }],
         "revision": 27,
         "changedAt": "2018-02-17T14:51:46+01:00",
@@ -950,13 +951,13 @@
         }, {
             "title": "SpecIF:Status",
             "class": "PC-status",
-            "value": "V_SpecIF_Status-6"
+            "value": "V-SpecIF_Status-6"
         }],
         "revision": 28,
         "changedAt": "2018-02-17T14:51:47+01:00",
         "changedBy": "od"
     }, {
-        "id": "O-07g3XWyx81s5KxMfyzzP2tM1brk",
+        "id": "R-07g3XWyx81s5KxMfyzzP2tM1brk",
         "title": "SpecIF:follows",
         "class": "RC-PredicateTerm",
         "properties": [{
@@ -974,7 +975,7 @@
         }, {
             "title": "SpecIF:Status",
             "class": "PC-status",
-            "value": "V_SpecIF_Status-6"
+            "value": "V-SpecIF_Status-6"
         }],
         "revision": 29,
         "changedAt": "2018-02-17T14:51:47+01:00",
@@ -998,13 +999,13 @@
         }, {
             "title": "SpecIF:Status",
             "class": "PC-status",
-            "value": "V_SpecIF_Status-1"
+            "value": "V-SpecIF_Status-1"
         }],
         "revision": 190,
         "changedAt": "2018-03-21T18:03:15+01:00",
         "changedBy": "od"
     }, {
-        "id": "O-1756321088",
+        "id": "R-1756321088",
         "title": "SpecIF:signals",
         "class": "RC-PredicateTerm",
         "properties": [{
@@ -1022,13 +1023,13 @@
         }, {
             "title": "SpecIF:Status",
             "class": "PC-status",
-            "value": "V_SpecIF_Status-6"
+            "value": "V-SpecIF_Status-6"
         }],
         "revision": 30,
         "changedAt": "2018-02-17T14:51:47+01:00",
         "changedBy": "od"
     }, {
-        "id": "O-1756321089",
+        "id": "R-1756321089",
         "title": "SpecIF:triggers",
         "class": "RC-PredicateTerm",
         "properties": [{
@@ -1046,13 +1047,13 @@
         }, {
             "title": "SpecIF:Status",
             "class": "PC-status",
-            "value": "V_SpecIF_Status-6"
+            "value": "V-SpecIF_Status-6"
         }],
         "revision": 31,
         "changedAt": "2018-02-17T14:51:47+01:00",
         "changedBy": "od"
     }, {
-        "id": "O-1756321090",
+        "id": "R-1756321090",
         "title": "SpecIF:dependsOn",
         "class": "RC-PredicateTerm",
         "properties": [{
@@ -1070,23 +1071,23 @@
         }, {
             "title": "SpecIF:Status",
             "class": "PC-status",
-            "value": "V_SpecIF_Status-6"
+            "value": "V-SpecIF_Status-6"
         }],
         "revision": 32,
         "changedAt": "2018-02-17T14:51:48+01:00",
         "changedBy": "od"
     }, {
-        "id": "O-1388621258",
-        "title": "SpecIF:refines",
+        "id": "R-traces",
+        "title": "SysML:traces",
         "class": "RC-PredicateTerm",
         "properties": [{
             "title": "dcterms:title",
             "class": "PC-title",
-            "value": "SpecIF:refines"
+            "value": "SysML:traces"
         }, {
             "title": "dcterms:description",
             "class": "PC-description",
-            "value": "<p>A [[IREB:Requirement]] 'refines' another [[IREB:Requirement]].</p>"
+            "value": "<p>A [[IREB:Requirement]] <i>traces</i> another [[IREB:Requirement]].</p>"
         }, {
             "title": "SpecIF:Origin",
             "class": "PC-origin",
@@ -1094,13 +1095,61 @@
         }, {
             "title": "SpecIF:Status",
             "class": "PC-status",
-            "value": "V_SpecIF_Status-6"
+            "value": "V-SpecIF_Status-6"
         }],
         "revision": 33,
         "changedAt": "2018-02-17T14:51:48+01:00",
         "changedBy": "od"
     }, {
-        "id": "O-1388621257",
+        "id": "R-isDerivedFrom",
+        "title": "SysML:isDerivedFrom",
+        "class": "RC-PredicateTerm",
+        "properties": [{
+            "title": "dcterms:title",
+            "class": "PC-title",
+            "value": "SysML:isDerivedFrom"
+        }, {
+            "title": "dcterms:description",
+            "class": "PC-description",
+            "value": "<p>A [[IREB:Requirement]] <i>isDerivedFrom</i> another [[IREB:Requirement]].</p>"
+        }, {
+            "title": "SpecIF:Origin",
+            "class": "PC-origin",
+            "value": "http://specif.de"
+        }, {
+            "title": "SpecIF:Status",
+            "class": "PC-status",
+            "value": "V-SpecIF_Status-6"
+        }],
+        "revision": 33,
+        "changedAt": "2018-02-17T14:51:48+01:00",
+        "changedBy": "od"
+    }, {
+        "id": "R-refines",
+        "title": "IREB:refines",
+        "class": "RC-PredicateTerm",
+        "properties": [{
+            "title": "dcterms:title",
+            "class": "PC-title",
+            "value": "IREB:refines"
+        }, {
+            "title": "dcterms:description",
+            "class": "PC-description",
+            "value": "<p>A [[IREB:Requirement]] <i>refines</i> another [[IREB:Requirement]].</p>"
+        }, {
+            "title": "SpecIF:Origin",
+            "class": "PC-origin",
+            "value": "http://specif.de"
+        }, {
+            "title": "SpecIF:Status",
+            "class": "PC-status",
+            "value": "V-SpecIF_Status-6"
+        }],
+        "revision": 33,
+        "changedAt": "2018-02-17T14:51:48+01:00",
+        "changedBy": "od"
+    }, {
+        "id": "R-1388621257",
         "title": "SpecIF:duplicates",
         "class": "RC-PredicateTerm",
         "properties": [{
@@ -1118,13 +1167,13 @@
         }, {
             "title": "SpecIF:Status",
             "class": "PC-status",
-            "value": "V_SpecIF_Status-6"
+            "value": "V-SpecIF_Status-6"
         }],
         "revision": 34,
         "changedAt": "2018-02-17T14:51:48+01:00",
         "changedBy": "od"
     }, {
-        "id": "O-1388621256",
+        "id": "R-1388621256",
         "title": "SpecIF:contradicts",
         "class": "RC-PredicateTerm",
         "properties": [{
@@ -1142,13 +1191,37 @@
         }, {
             "title": "SpecIF:Status",
             "class": "PC-status",
-            "value": "V_SpecIF_Status-6"
+            "value": "V-SpecIF_Status-6"
         }],
         "revision": 35,
         "changedAt": "2018-02-17T14:51:49+01:00",
         "changedBy": "od"
     }, {
-        "id": "O-1388621255",
+        "id": "R-isAllocatedTo",
+        "title": "SysML:isAllocatedTo",
+        "class": "RC-PredicateTerm",
+        "properties": [{
+            "title": "dcterms:title",
+            "class": "PC-title",
+            "value": "SysML:isAllocatedTo"
+        }, {
+            "title": "dcterms:description",
+            "class": "PC-description",
+            "value": "<p>An [[FMC:Actor]] is allocated to another [[FMC:Actor]] (e.g. a logical function is allocated to a physical component.</p>"
+        }, {
+            "title": "SpecIF:Origin",
+            "class": "PC-origin",
+            "value": "http://specif.de"
+        }, {
+            "title": "SpecIF:Status",
+            "class": "PC-status",
+            "value": "V-SpecIF_Status-6"
+        }],
+        "revision": 36,
+        "changedAt": "2019-05-30T14:51:49+01:00",
+        "changedBy": "od"
+    }, {
+        "id": "R-isAssociatedWith",
         "title": "SpecIF:isAssociatedWith",
         "class": "RC-PredicateTerm",
         "properties": [{
@@ -1166,13 +1239,181 @@
         }, {
             "title": "SpecIF:Status",
             "class": "PC-status",
-            "value": "V_SpecIF_Status-6"
+            "value": "V-SpecIF_Status-6"
         }],
         "revision": 36,
         "changedAt": "2018-02-17T14:51:49+01:00",
         "changedBy": "od"
     }, {
-        "id": "O-1388621254",
+        "id": "R-1388621277",
+        "title": "SysML:isComposedOf",
+        "class": "RC-PredicateTerm",
+        "properties": [{
+            "title": "dcterms:title",
+            "class": "PC-title",
+            "value": "SysML:isComposedOf"
+        }, {
+            "title": "dcterms:description",
+            "class": "PC-description",
+            "value": "<p>An [[FMC:Actor]] is composed of another [[FMC:Actor]].</p>"
+        }, {
+            "title": "SpecIF:Origin",
+            "class": "PC-origin",
+            "value": "http://specif.de"
+        }, {
+            "title": "SpecIF:Status",
+            "class": "PC-status",
+            "value": "V-SpecIF_Status-6"
+        }],
+        "revision": 36,
+        "changedAt": "2019-05-30T14:51:49+01:00",
+        "changedBy": "od"
+    }, {
+        "id": "R-isAggregatedBy",
+        "title": "SysML:isAggregatedBy",
+        "class": "RC-PredicateTerm",
+        "properties": [{
+            "title": "dcterms:title",
+            "class": "PC-title",
+            "value": "SysML:isAggregatedBy"
+        }, {
+            "title": "dcterms:description",
+            "class": "PC-description",
+            "value": "<p>An [[FMC:Actor]] is aggregated by another [[FMC:Actor]].</p>"
+        }, {
+            "title": "SpecIF:Origin",
+            "class": "PC-origin",
+            "value": "http://specif.de"
+        }, {
+            "title": "SpecIF:Status",
+            "class": "PC-status",
+            "value": "V-SpecIF_Status-6"
+        }],
+        "revision": 36,
+        "changedAt": "2019-05-30T14:51:49+01:00",
+        "changedBy": "od"
+    }, {
+        "id": "R-uses",
+        "title": "SysML:uses",
+        "class": "RC-PredicateTerm",
+        "properties": [{
+            "title": "dcterms:title",
+            "class": "PC-title",
+            "value": "SysML:uses"
+        }, {
+            "title": "dcterms:description",
+            "class": "PC-description",
+            "value": ""
+        }, {
+            "title": "SpecIF:Origin",
+            "class": "PC-origin",
+            "value": "http://specif.de"
+        }, {
+            "title": "SpecIF:Status",
+            "class": "PC-status",
+            "value": "V-SpecIF_Status-6"
+        }],
+        "revision": 36,
+        "changedAt": "2019-05-31T14:51:49+01:00",
+        "changedBy": "od"
+    }, {
+        "id": "R-extends",
+        "title": "SysML:extends",
+        "class": "RC-PredicateTerm",
+        "properties": [{
+            "title": "dcterms:title",
+            "class": "PC-title",
+            "value": "SysML:extends"
+        }, {
+            "title": "dcterms:description",
+            "class": "PC-description",
+            "value": "<p>An [[FMC:Actor]] <<[[UseCase]]>> extends another [[FMC:Actor]] <<[[UseCase]]>>.</p>"
+        }, {
+            "title": "SpecIF:Origin",
+            "class": "PC-origin",
+            "value": "http://specif.de"
+        }, {
+            "title": "SpecIF:Status",
+            "class": "PC-status",
+            "value": "V-SpecIF_Status-6"
+        }],
+        "revision": 36,
+        "changedAt": "2019-05-31T14:51:49+01:00",
+        "changedBy": "od"
+    }, {
+        "id": "R-includes",
+        "title": "SysML:includes",
+        "class": "RC-PredicateTerm",
+        "properties": [{
+            "title": "dcterms:title",
+            "class": "PC-title",
+            "value": "SysML:includes"
+        }, {
+            "title": "dcterms:description",
+            "class": "PC-description",
+            "value": "<p>An [[FMC:Actor]] <<[[UseCase]]>> includes another [[FMC:Actor]] <<[[UseCase]]>>.</p>"
+        }, {
+            "title": "SpecIF:Origin",
+            "class": "PC-origin",
+            "value": "http://specif.de"
+        }, {
+            "title": "SpecIF:Status",
+            "class": "PC-status",
+            "value": "V-SpecIF_Status-6"
+        }],
+        "revision": 36,
+        "changedAt": "2019-05-31T14:51:49+01:00",
+        "changedBy": "od"
+    }, {
+        "id": "R-isGeneralisationOf",
+        "title": "SysML:isGeneralisationOf",
+        "class": "RC-PredicateTerm",
+        "properties": [{
+            "title": "dcterms:title",
+            "class": "PC-title",
+            "value": "SysML:isGeneralisationOf"
+        }, {
+            "title": "dcterms:description",
+            "class": "PC-description",
+            "value": "<p>An [[FMC:Actor]] is is generalisation of another [[FMC:Actor]]; similarly for [[FMC:State]] and [[FMC:Event]].</p>"
+        }, {
+            "title": "SpecIF:Origin",
+            "class": "PC-origin",
+            "value": "http://specif.de"
+        }, {
+            "title": "SpecIF:Status",
+            "class": "PC-status",
+            "value": "V-SpecIF_Status-6"
+        }],
+        "revision": 36,
+        "changedAt": "2019-05-30T14:51:49+01:00",
+        "changedBy": "od"
+    }, {
+        "id": "R-isSpecialisationOf",
+        "title": "SysML:isSpecialisationOf",
+        "class": "RC-PredicateTerm",
+        "properties": [{
+            "title": "dcterms:title",
+            "class": "PC-title",
+            "value": "SysML:isSpecialisationOf"
+        }, {
+            "title": "dcterms:description",
+            "class": "PC-description",
+            "value": "<p>An [[FMC:Actor]] is is specialisation of another [[FMC:Actor]]; similarly for [[FMC:State]] and [[FMC:Event]].</p>"
+        }, {
+            "title": "SpecIF:Origin",
+            "class": "PC-origin",
+            "value": "http://specif.de"
+        }, {
+            "title": "SpecIF:Status",
+            "class": "PC-status",
+            "value": "V-SpecIF_Status-6"
+        }],
+        "revision": 36,
+        "changedAt": "2019-05-30T14:51:49+01:00",
+        "changedBy": "od"
+    }, {
+        "id": "R-inheritsFrom",
         "title": "SpecIF:inheritsFrom",
         "class": "RC-PredicateTerm",
         "properties": [{
@@ -1190,13 +1431,85 @@
         }, {
             "title": "SpecIF:Status",
             "class": "PC-status",
-            "value": "V_SpecIF_Status-6"
+            "value": "V-SpecIF_Status-5"
         }],
         "revision": 37,
         "changedAt": "2018-02-17T14:51:49+01:00",
         "changedBy": "od"
     }, {
-        "id": "O-1388621253",
+        "id": "R-actorInheritsFrom",
+        "title": "SpecIF:actorInheritsFrom",
+        "class": "RC-PredicateTerm",
+        "properties": [{
+            "title": "dcterms:title",
+            "class": "PC-title",
+            "value": "SpecIF:actorInheritsFrom"
+        }, {
+            "title": "dcterms:description",
+            "class": "PC-description",
+            "value": "<p>A [[FMC:Actor]] inherits from another [[FMC:Actor]].</p>"
+        }, {
+            "title": "SpecIF:Origin",
+            "class": "PC-origin",
+            "value": "http://specif.de"
+        }, {
+            "title": "SpecIF:Status",
+            "class": "PC-status",
+            "value": "V-SpecIF_Status-6"
+        }],
+        "revision": 37,
+        "changedAt": "2019-05-30T14:51:49+01:00",
+        "changedBy": "od"
+    }, {
+        "id": "R-stateInheritsFrom",
+        "title": "SpecIF:stateInheritsFrom",
+        "class": "RC-PredicateTerm",
+        "properties": [{
+            "title": "dcterms:title",
+            "class": "PC-title",
+            "value": "SpecIF:stateInheritsFrom"
+        }, {
+            "title": "dcterms:description",
+            "class": "PC-description",
+            "value": "<p>A [[FMC:State]] inherits from another [[FMC:State]] (e.g. a class inherits from another class, as shown in a UML Class Diagram).</p>"
+        }, {
+            "title": "SpecIF:Origin",
+            "class": "PC-origin",
+            "value": "http://specif.de"
+        }, {
+            "title": "SpecIF:Status",
+            "class": "PC-status",
+            "value": "V-SpecIF_Status-6"
+        }],
+        "revision": 37,
+        "changedAt": "2019-05-30T14:51:49+01:00",
+        "changedBy": "od"
+    }, {
+        "id": "R-eventInheritsFrom",
+        "title": "SpecIF:eventInheritsFrom",
+        "class": "RC-PredicateTerm",
+        "properties": [{
+            "title": "dcterms:title",
+            "class": "PC-title",
+            "value": "SpecIF:eventInheritsFrom"
+        }, {
+            "title": "dcterms:description",
+            "class": "PC-description",
+            "value": "<p>A [[FMC:Event]] inherits from another [[FMC:Event]].</p>"
+        }, {
+            "title": "SpecIF:Origin",
+            "class": "PC-origin",
+            "value": "http://specif.de"
+        }, {
+            "title": "SpecIF:Status",
+            "class": "PC-status",
+            "value": "V-SpecIF_Status-6"
+        }],
+        "revision": 37,
+        "changedAt": "2019-05-30T14:51:49+01:00",
+        "changedBy": "od"
+    }, {
+        "id": "R-refersTo",
         "title": "SpecIF:refersTo",
         "class": "RC-PredicateTerm",
         "properties": [{
@@ -1214,13 +1527,37 @@
         }, {
             "title": "SpecIF:Status",
             "class": "PC-status",
-            "value": "V_SpecIF_Status-6"
+            "value": "V-SpecIF_Status-6"
         }],
         "revision": 38,
         "changedAt": "2018-02-17T14:51:49+01:00",
         "changedBy": "od"
     }, {
-        "id": "O-1388621252",
+        "id": "R-commentRefersTo",
+        "title": "SpecIF:commentRefersTo",
+        "class": "RC-PredicateTerm",
+        "properties": [{
+            "title": "dcterms:title",
+            "class": "PC-title",
+            "value": "SpecIF:commentRefersTo"
+        }, {
+            "title": "dcterms:description",
+            "class": "PC-description",
+            "value": "<p>A [[SpecIF:Comment]] 'refers to' any other resource.</p>"
+        }, {
+            "title": "SpecIF:Origin",
+            "class": "PC-origin",
+            "value": "http://specif.de"
+        }, {
+            "title": "SpecIF:Status",
+            "class": "PC-status",
+            "value": "V-SpecIF_Status-6"
+        }],
+        "revision": 38,
+        "changedAt": "2018-02-17T14:51:49+01:00",
+        "changedBy": "od"
+    }, {
+        "id": "R-1388621252",
         "title": "SpecIF:mentions",
         "class": "RC-PredicateTerm",
         "properties": [{
@@ -1238,13 +1575,13 @@
         }, {
             "title": "SpecIF:Status",
             "class": "PC-status",
-            "value": "V_SpecIF_Status-6"
+            "value": "V-SpecIF_Status-6"
         }],
         "revision": 38,
         "changedAt": "2018-02-17T14:51:49+01:00",
         "changedBy": "od"
     }, {
-        "id": "O-g4yCxQAgNQtEUffXpPaZOgWrtkQ",
+        "id": "R-g4yCxQAgNQtEUffXpPaZOgWrtkQ",
         "title": "SpecIF:isSynonymOf",
         "class": "RC-PredicateTerm",
         "properties": [{
@@ -1262,13 +1599,13 @@
         }, {
             "title": "SpecIF:Status",
             "class": "PC-status",
-            "value": "V_SpecIF_Status-6"
+            "value": "V-SpecIF_Status-6"
         }],
         "revision": 39,
         "changedAt": "2018-02-17T14:51:50+01:00",
         "changedBy": "od"
     }, {
-        "id": "R-AFRDjW5KgLsmjsqS7vSeHKFdAqD",
+        "id": "S-AFRDjW5KgLsmjsqS7vSeHKFdAqD",
         "title": "SpecIF:isInverseOf",
         "class": "RC-PredicateTerm",
         "properties": [{
@@ -1286,13 +1623,13 @@
         }, {
             "title": "SpecIF:Status",
             "class": "PC-status",
-            "value": "V_SpecIF_Status-1"
+            "value": "V-SpecIF_Status-1"
         }],
         "revision": 193,
         "changedAt": "2018-03-21T18:12:10+01:00",
         "changedBy": "od"
     }, {
-        "id": "O-xcniBEOFjE4wE1UmSDGWaz1dyR2",
+        "id": "R-xcniBEOFjE4wE1UmSDGWaz1dyR2",
         "title": "owl:sameAs",
         "class": "RC-PredicateTerm",
         "properties": [{
@@ -1310,13 +1647,13 @@
         }, {
             "title": "SpecIF:Status",
             "class": "PC-status",
-            "value": "V_SpecIF_Status-6"
+            "value": "V-SpecIF_Status-6"
         }],
         "revision": 40,
         "changedAt": "2018-02-17T14:51:50+01:00",
         "changedBy": "od"
     }, {
-        "id": "O-1388621251",
+        "id": "R-1388621251",
         "title": "SpecIF:sameAs",
         "class": "RC-PredicateTerm",
         "properties": [{
@@ -1334,13 +1671,13 @@
         }, {
             "title": "SpecIF:Status",
             "class": "PC-status",
-            "value": "V_SpecIF_Status-5"
+            "value": "V-SpecIF_Status-5"
         }],
         "revision": 41,
         "changedAt": "2018-02-17T14:51:50+01:00",
         "changedBy": "od"
     }, {
-        "id": "O-1021959454",
+        "id": "R-1021959454",
         "title": "SpecIF:Hierarchy",
         "class": "RC-HierarchyTerm",
         "properties": [{
@@ -1358,13 +1695,13 @@
         }, {
             "title": "SpecIF:Status",
             "class": "PC-status",
-            "value": "V_SpecIF_Status-6"
+            "value": "V-SpecIF_Status-6"
         }],
         "revision": 41,
         "changedAt": "2018-02-17T14:51:50+01:00",
         "changedBy": "od"
     }, {
-        "id": "O-1021959455",
+        "id": "R-1021959455",
         "title": "SpecIF:Outline",
         "class": "RC-HierarchyTerm",
         "properties": [{
@@ -1382,13 +1719,13 @@
         }, {
             "title": "SpecIF:Status",
             "class": "PC-status",
-            "value": "V_SpecIF_Status-5"
+            "value": "V-SpecIF_Status-5"
         }],
         "revision": 42,
         "changedAt": "2018-02-17T14:51:51+01:00",
         "changedBy": "od"
     }, {
-        "id": "O-65Rp2clJpdHWUbqNgbpxgKkccjt",
+        "id": "R-65Rp2clJpdHWUbqNgbpxgKkccjt",
         "title": "SpecIF:BillOfMaterials",
         "class": "RC-HierarchyTerm",
         "properties": [{
@@ -1406,13 +1743,13 @@
         }, {
             "title": "SpecIF:Status",
             "class": "PC-status",
-            "value": "V_SpecIF_Status-6"
+            "value": "V-SpecIF_Status-6"
         }],
         "revision": 43,
         "changedAt": "2018-02-17T14:51:51+01:00",
         "changedBy": "od"
     }, {
-        "id": "O-1357982106",
+        "id": "R-1357982106",
         "title": "dcterms:title",
         "class": "RC-PropertyTerm",
         "properties": [{
@@ -1430,13 +1767,13 @@
         }, {
             "title": "SpecIF:Status",
             "class": "PC-status",
-            "value": "V_SpecIF_Status-6"
+            "value": "V-SpecIF_Status-6"
         }],
         "revision": 44,
         "changedAt": "2018-02-17T14:51:51+01:00",
         "changedBy": "od"
     }, {
-        "id": "O-1357982107",
+        "id": "R-1357982107",
         "title": "dcterms:description",
         "class": "RC-PropertyTerm",
         "properties": [{
@@ -1454,13 +1791,13 @@
         }, {
             "title": "SpecIF:Status",
             "class": "PC-status",
-            "value": "V_SpecIF_Status-6"
+            "value": "V-SpecIF_Status-6"
         }],
         "revision": 45,
         "changedAt": "2018-02-17T14:51:51+01:00",
         "changedBy": "od"
     }, {
-        "id": "O-1357982109",
+        "id": "R-1357982109",
         "title": "dcterms:identifier",
         "class": "RC-PropertyTerm",
         "properties": [{
@@ -1478,13 +1815,13 @@
         }, {
             "title": "SpecIF:Status",
             "class": "PC-status",
-            "value": "V_SpecIF_Status-6"
+            "value": "V-SpecIF_Status-6"
         }],
         "revision": 46,
         "changedAt": "2018-02-17T14:51:52+01:00",
         "changedBy": "od"
     }, {
-        "id": "O-1357982108",
+        "id": "R-1357982108",
         "title": "SpecIF:Id",
         "class": "RC-PropertyTerm",
         "properties": [{
@@ -1502,13 +1839,13 @@
         }, {
             "title": "SpecIF:Status",
             "class": "PC-status",
-            "value": "V_SpecIF_Status-9"
+            "value": "V-SpecIF_Status-9"
         }],
         "revision": 47,
         "changedAt": "2018-02-17T14:51:52+01:00",
         "changedBy": "od"
     }, {
-        "id": "O-1357982110",
+        "id": "R-1357982110",
         "title": "dcterms:subject",
         "class": "RC-PropertyTerm",
         "properties": [{
@@ -1526,13 +1863,13 @@
         }, {
             "title": "SpecIF:Status",
             "class": "PC-status",
-            "value": "V_SpecIF_Status-6"
+            "value": "V-SpecIF_Status-6"
         }],
         "revision": 48,
         "changedAt": "2018-02-17T14:51:52+01:00",
         "changedBy": "od"
     }, {
-        "id": "O-1357982112",
+        "id": "R-1357982112",
         "title": "dcterms:creator",
         "class": "RC-PropertyTerm",
         "properties": [{
@@ -1550,13 +1887,13 @@
         }, {
             "title": "SpecIF:Status",
             "class": "PC-status",
-            "value": "V_SpecIF_Status-5"
+            "value": "V-SpecIF_Status-5"
         }],
         "revision": 115,
         "changedAt": "2018-02-17T17:59:59+01:00",
         "changedBy": "od"
     }, {
-        "id": "O-1357982111",
+        "id": "R-1357982111",
         "title": "SpecIF:createdBy",
         "class": "RC-PropertyTerm",
         "properties": [{
@@ -1574,13 +1911,13 @@
         }, {
             "title": "SpecIF:Status",
             "class": "PC-status",
-            "value": "V_SpecIF_Status-6"
+            "value": "V-SpecIF_Status-6"
         }],
         "revision": 50,
         "changedAt": "2018-02-17T14:51:52+01:00",
         "changedBy": "od"
     }, {
-        "id": "O-1357982114",
+        "id": "R-1357982114",
         "title": "dcterms:created",
         "class": "RC-PropertyTerm",
         "properties": [{
@@ -1598,13 +1935,13 @@
         }, {
             "title": "SpecIF:Status",
             "class": "PC-status",
-            "value": "V_SpecIF_Status-5"
+            "value": "V-SpecIF_Status-5"
         }],
         "revision": 51,
         "changedAt": "2018-02-17T14:51:53+01:00",
         "changedBy": "od"
     }, {
-        "id": "O-1357982113",
+        "id": "R-1357982113",
         "title": "SpecIF:createdAt",
         "class": "RC-PropertyTerm",
         "properties": [{
@@ -1622,13 +1959,13 @@
         }, {
             "title": "SpecIF:Status",
             "class": "PC-status",
-            "value": "V_SpecIF_Status-6"
+            "value": "V-SpecIF_Status-6"
         }],
         "revision": 52,
         "changedAt": "2018-02-17T14:51:53+01:00",
         "changedBy": "od"
     }, {
-        "id": "O-852227626",
+        "id": "R-852227626",
         "title": "SpecIF:changedBy",
         "class": "RC-PropertyTerm",
         "properties": [{
@@ -1646,13 +1983,13 @@
         }, {
             "title": "SpecIF:Status",
             "class": "PC-status",
-            "value": "V_SpecIF_Status-6"
+            "value": "V-SpecIF_Status-6"
         }],
         "revision": 53,
         "changedAt": "2018-02-17T14:51:53+01:00",
         "changedBy": "od"
     }, {
-        "id": "O-852227624",
+        "id": "R-852227624",
         "title": "dcterms:modified",
         "class": "RC-PropertyTerm",
         "properties": [{
@@ -1670,13 +2007,13 @@
         }, {
             "title": "SpecIF:Status",
             "class": "PC-status",
-            "value": "V_SpecIF_Status-5"
+            "value": "V-SpecIF_Status-5"
         }],
         "revision": 53,
         "changedAt": "2018-02-17T14:51:53+01:00",
         "changedBy": "od"
     }, {
-        "id": "O-852227625",
+        "id": "R-852227625",
         "title": "SpecIF:changedAt",
         "class": "RC-PropertyTerm",
         "properties": [{
@@ -1694,13 +2031,13 @@
         }, {
             "title": "SpecIF:Status",
             "class": "PC-status",
-            "value": "V_SpecIF_Status-6"
+            "value": "V-SpecIF_Status-6"
         }],
         "revision": 54,
         "changedAt": "2018-02-17T14:51:54+01:00",
         "changedBy": "od"
     }, {
-        "id": "O-852227623",
+        "id": "R-852227623",
         "title": "dcterms:contributor",
         "class": "RC-PropertyTerm",
         "properties": [{
@@ -1718,13 +2055,13 @@
         }, {
             "title": "SpecIF:Status",
             "class": "PC-status",
-            "value": "V_SpecIF_Status-6"
+            "value": "V-SpecIF_Status-6"
         }],
         "revision": 55,
         "changedAt": "2018-02-17T14:51:54+01:00",
         "changedBy": "od"
     }, {
-        "id": "O-852227622",
+        "id": "R-852227622",
         "title": "dcterms:rightsHolder",
         "class": "RC-PropertyTerm",
         "properties": [{
@@ -1742,13 +2079,13 @@
         }, {
             "title": "SpecIF:Status",
             "class": "PC-status",
-            "value": "V_SpecIF_Status-6"
+            "value": "V-SpecIF_Status-6"
         }],
         "revision": 56,
         "changedAt": "2018-02-17T14:51:54+01:00",
         "changedBy": "od"
     }, {
-        "id": "O-852227621",
+        "id": "R-852227621",
         "title": "dcterms:rights",
         "class": "RC-PropertyTerm",
         "properties": [{
@@ -1766,13 +2103,13 @@
         }, {
             "title": "SpecIF:Status",
             "class": "PC-status",
-            "value": "V_SpecIF_Status-6"
+            "value": "V-SpecIF_Status-6"
         }],
         "revision": 57,
         "changedAt": "2018-02-17T14:51:55+01:00",
         "changedBy": "od"
     }, {
-        "id": "O-852227620",
+        "id": "R-852227620",
         "title": "rdf:type",
         "class": "RC-PropertyTerm",
         "properties": [{
@@ -1790,13 +2127,13 @@
         }, {
             "title": "SpecIF:Status",
             "class": "PC-status",
-            "value": "V_SpecIF_Status-6"
+            "value": "V-SpecIF_Status-6"
         }],
         "revision": 58,
         "changedAt": "2018-02-17T14:51:55+01:00",
         "changedBy": "od"
     }, {
-        "id": "O-852227619",
+        "id": "R-852227619",
         "title": "oslc:shortTitle",
         "class": "RC-PropertyTerm",
         "properties": [{
@@ -1816,7 +2153,7 @@
         "changedAt": "2018-02-17T14:51:55+01:00",
         "changedBy": "od"
     }, {
-        "id": "O-852227618",
+        "id": "R-852227618",
         "title": "oslc:serviceProvider",
         "class": "RC-PropertyTerm",
         "properties": [{
@@ -1836,7 +2173,7 @@
         "changedAt": "2018-02-17T14:51:55+01:00",
         "changedBy": "od"
     }, {
-        "id": "O-852227617",
+        "id": "R-852227617",
         "title": "oslc:instanceShape",
         "class": "RC-PropertyTerm",
         "properties": [{
@@ -1856,7 +2193,7 @@
         "changedAt": "2018-02-17T14:51:56+01:00",
         "changedBy": "od"
     }, {
-        "id": "O-852227595",
+        "id": "R-852227595",
         "title": "oslc_rm:elaboratedBy",
         "class": "RC-PropertyTerm",
         "properties": [{
@@ -1876,7 +2213,7 @@
         "changedAt": "2018-02-17T14:51:56+01:00",
         "changedBy": "od"
     }, {
-        "id": "O-852227594",
+        "id": "R-852227594",
         "title": "oslc_rm:elaborates",
         "class": "RC-PropertyTerm",
         "properties": [{
@@ -1896,7 +2233,7 @@
         "changedAt": "2018-02-17T14:51:57+01:00",
         "changedBy": "od"
     }, {
-        "id": "O-852227593",
+        "id": "R-852227593",
         "title": "oslc_rm:specifiedBy",
         "class": "RC-PropertyTerm",
         "properties": [{
@@ -1916,7 +2253,7 @@
         "changedAt": "2018-02-17T14:51:57+01:00",
         "changedBy": "od"
     }, {
-        "id": "O-852227592",
+        "id": "R-852227592",
         "title": "oslc_rm:specifies",
         "class": "RC-PropertyTerm",
         "properties": [{
@@ -1936,7 +2273,7 @@
         "changedAt": "2018-02-17T14:51:57+01:00",
         "changedBy": "od"
     }, {
-        "id": "O-852227591",
+        "id": "R-852227591",
         "title": "oslc_rm:affectedBy",
         "class": "RC-PropertyTerm",
         "properties": [{
@@ -1956,7 +2293,7 @@
         "changedAt": "2018-02-17T14:51:57+01:00",
         "changedBy": "od"
     }, {
-        "id": "O-852227590",
+        "id": "R-852227590",
         "title": "oslc_rm:trackedBy",
         "class": "RC-PropertyTerm",
         "properties": [{
@@ -1976,7 +2313,7 @@
         "changedAt": "2018-02-17T14:51:57+01:00",
         "changedBy": "od"
     }, {
-        "id": "O-852227589",
+        "id": "R-852227589",
         "title": "oslc_rm:implementedBy",
         "class": "RC-PropertyTerm",
         "properties": [{
@@ -1996,7 +2333,7 @@
         "changedAt": "2018-02-17T14:51:58+01:00",
         "changedBy": "od"
     }, {
-        "id": "O-852227588",
+        "id": "R-852227588",
         "title": "oslc_rm:validatedBy",
         "class": "RC-PropertyTerm",
         "properties": [{
@@ -2016,7 +2353,7 @@
         "changedAt": "2018-02-17T14:51:58+01:00",
         "changedBy": "od"
     }, {
-        "id": "O-852227564",
+        "id": "R-852227564",
         "title": "oslc_rm:decomposedBy",
         "class": "RC-PropertyTerm",
         "properties": [{
@@ -2036,7 +2373,7 @@
         "changedAt": "2018-02-17T14:51:58+01:00",
         "changedBy": "od"
     }, {
-        "id": "O-852227563",
+        "id": "R-852227563",
         "title": "oslc_rm:decomposes",
         "class": "RC-PropertyTerm",
         "properties": [{
@@ -2056,7 +2393,7 @@
         "changedAt": "2018-02-17T14:51:58+01:00",
         "changedBy": "od"
     }, {
-        "id": "O-852227562",
+        "id": "R-852227562",
         "title": "oslc_rm:constrainedBy",
         "class": "RC-PropertyTerm",
         "properties": [{
@@ -2076,7 +2413,7 @@
         "changedAt": "2018-02-17T14:51:58+01:00",
         "changedBy": "od"
     }, {
-        "id": "O-852227561",
+        "id": "R-852227561",
         "title": "oslc_rm:constrains",
         "class": "RC-PropertyTerm",
         "properties": [{
@@ -2096,7 +2433,7 @@
         "changedAt": "2018-02-17T14:51:59+01:00",
         "changedBy": "od"
     }, {
-        "id": "O-852227560",
+        "id": "R-852227560",
         "title": "SpecIF:Type",
         "class": "RC-PropertyTerm",
         "properties": [{
@@ -2110,13 +2447,13 @@
         }, {
             "title": "SpecIF:Status",
             "class": "PC-status",
-            "value": "V_SpecIF_Status-6"
+            "value": "V-SpecIF_Status-6"
         }],
         "revision": 73,
         "changedAt": "2018-02-17T14:51:59+01:00",
         "changedBy": "od"
     }, {
-        "id": "O-852227559",
+        "id": "R-852227559",
         "title": "SpecIF:Category",
         "class": "RC-PropertyTerm",
         "properties": [{
@@ -2134,13 +2471,13 @@
         }, {
             "title": "SpecIF:Status",
             "class": "PC-status",
-            "value": "V_SpecIF_Status-6"
+            "value": "V-SpecIF_Status-6"
         }],
         "revision": 189,
         "changedAt": "2018-03-21T11:31:10+01:00",
         "changedBy": "od"
     }, {
-        "id": "O-852227558",
+        "id": "R-852227558",
         "title": "SpecIF:Notation",
         "class": "RC-PropertyTerm",
         "properties": [{
@@ -2158,13 +2495,13 @@
         }, {
             "title": "SpecIF:Status",
             "class": "PC-status",
-            "value": "V_SpecIF_Status-6"
+            "value": "V-SpecIF_Status-6"
         }],
         "revision": 75,
         "changedAt": "2018-02-17T14:52:00+01:00",
         "changedBy": "od"
     }, {
-        "id": "R-mrvz0s0g60YP4yZshfKD5zkN6pM",
+        "id": "S-mrvz0s0g60YP4yZshfKD5zkN6pM",
         "title": "SpecIF:Stereotype",
         "class": "RC-PropertyTerm",
         "properties": [{
@@ -2182,13 +2519,13 @@
         }, {
             "title": "SpecIF:Status",
             "class": "PC-status",
-            "value": "V_SpecIF_Status-1"
+            "value": "V-SpecIF_Status-1"
         }],
         "revision": 152,
         "changedAt": "2018-03-03T23:28:44+01:00",
         "changedBy": "od"
     }, {
-        "id": "O-852227557",
+        "id": "R-852227557",
         "title": "SpecIF:Status",
         "class": "RC-PropertyTerm",
         "properties": [{
@@ -2206,13 +2543,13 @@
         }, {
             "title": "SpecIF:Status",
             "class": "PC-status",
-            "value": "V_SpecIF_Status-6"
+            "value": "V-SpecIF_Status-6"
         }],
         "revision": 76,
         "changedAt": "2018-02-17T14:52:00+01:00",
         "changedBy": "od"
     }, {
-        "id": "O-852227556",
+        "id": "R-852227556",
         "title": "SpecIF:Probability",
         "class": "RC-PropertyTerm",
         "properties": [{
@@ -2226,13 +2563,13 @@
         }, {
             "title": "SpecIF:Status",
             "class": "PC-status",
-            "value": "V_SpecIF_Status-6"
+            "value": "V-SpecIF_Status-6"
         }],
         "revision": 77,
         "changedAt": "2018-02-17T14:52:00+01:00",
         "changedBy": "od"
     }, {
-        "id": "O-852227555",
+        "id": "R-852227555",
         "title": "SpecIF:Priority",
         "class": "RC-PropertyTerm",
         "properties": [{
@@ -2250,13 +2587,13 @@
         }, {
             "title": "SpecIF:Status",
             "class": "PC-status",
-            "value": "V_SpecIF_Status-6"
+            "value": "V-SpecIF_Status-6"
         }],
         "revision": 78,
         "changedAt": "2018-02-17T14:52:00+01:00",
         "changedBy": "od"
     }, {
-        "id": "O-852227533",
+        "id": "R-852227533",
         "title": "SpecIF:Responsible",
         "class": "RC-PropertyTerm",
         "properties": [{
@@ -2274,13 +2611,13 @@
         }, {
             "title": "SpecIF:Status",
             "class": "PC-status",
-            "value": "V_SpecIF_Status-6"
+            "value": "V-SpecIF_Status-6"
         }],
         "revision": 79,
         "changedAt": "2018-02-17T14:52:01+01:00",
         "changedBy": "od"
     }, {
-        "id": "O-852227532",
+        "id": "R-852227532",
         "title": "SpecIF:Milestone",
         "class": "RC-PropertyTerm",
         "properties": [{
@@ -2298,13 +2635,13 @@
         }, {
             "title": "SpecIF:Status",
             "class": "PC-status",
-            "value": "V_SpecIF_Status-6"
+            "value": "V-SpecIF_Status-6"
         }],
         "revision": 80,
         "changedAt": "2018-02-17T14:52:01+01:00",
         "changedBy": "od"
     }, {
-        "id": "O-852227531",
+        "id": "R-852227531",
         "title": "SpecIF:DueDate",
         "class": "RC-PropertyTerm",
         "properties": [{
@@ -2322,13 +2659,13 @@
         }, {
             "title": "SpecIF:Status",
             "class": "PC-status",
-            "value": "V_SpecIF_Status-6"
+            "value": "V-SpecIF_Status-6"
         }],
         "revision": 81,
         "changedAt": "2018-02-17T14:52:01+01:00",
         "changedBy": "od"
     }, {
-        "id": "O-852227529",
+        "id": "R-852227529",
         "title": "SpecIF:Benefit",
         "class": "RC-PropertyTerm",
         "properties": [{
@@ -2342,13 +2679,13 @@
         }, {
             "title": "SpecIF:Status",
             "class": "PC-status",
-            "value": "V_SpecIF_Status-6"
+            "value": "V-SpecIF_Status-6"
         }],
         "revision": 82,
         "changedAt": "2018-02-17T14:52:01+01:00",
         "changedBy": "od"
     }, {
-        "id": "O-852227528",
+        "id": "R-852227528",
         "title": "SpecIF:Damage",
         "class": "RC-PropertyTerm",
         "properties": [{
@@ -2362,13 +2699,13 @@
         }, {
             "title": "SpecIF:Status",
             "class": "PC-status",
-            "value": "V_SpecIF_Status-6"
+            "value": "V-SpecIF_Status-6"
         }],
         "revision": 83,
         "changedAt": "2018-02-17T14:52:01+01:00",
         "changedBy": "od"
     }, {
-        "id": "O-852227527",
+        "id": "R-852227527",
         "title": "SpecIF:Icon",
         "class": "RC-PropertyTerm",
         "properties": [{
@@ -2386,13 +2723,13 @@
         }, {
             "title": "SpecIF:Status",
             "class": "PC-status",
-            "value": "V_SpecIF_Status-6"
+            "value": "V-SpecIF_Status-6"
         }],
         "revision": 84,
         "changedAt": "2018-02-17T14:52:02+01:00",
         "changedBy": "od"
     }, {
-        "id": "O-852227526",
+        "id": "R-852227526",
         "title": "SpecIF:Tag",
         "class": "RC-PropertyTerm",
         "properties": [{
@@ -2406,13 +2743,13 @@
         }, {
             "title": "SpecIF:Status",
             "class": "PC-status",
-            "value": "V_SpecIF_Status-6"
+            "value": "V-SpecIF_Status-6"
         }],
         "revision": 85,
         "changedAt": "2018-02-17T14:52:02+01:00",
         "changedBy": "od"
     }, {
-        "id": "O-RLzT8IxJQGTRMn7b14PH3v6eEFU",
+        "id": "R-RLzT8IxJQGTRMn7b14PH3v6eEFU",
         "title": "SpecIF:Instantiation",
         "class": "RC-PropertyTerm",
         "properties": [{
@@ -2430,13 +2767,13 @@
         }, {
             "title": "SpecIF:Status",
             "class": "PC-status",
-            "value": "V_SpecIF_Status-6"
+            "value": "V-SpecIF_Status-6"
         }],
         "revision": 86,
         "changedAt": "2018-02-17T14:52:02+01:00",
         "changedBy": "od"
     }, {
-        "id": "O-852227525",
+        "id": "R-852227525",
         "title": "SpecIF:Creation",
         "class": "RC-PropertyTerm",
         "properties": [{
@@ -2454,13 +2791,13 @@
         }, {
             "title": "SpecIF:Status",
             "class": "PC-status",
-            "value": "V_SpecIF_Status-9"
+            "value": "V-SpecIF_Status-9"
         }],
         "revision": 87,
         "changedAt": "2018-02-17T14:52:03+01:00",
         "changedBy": "od"
     }, {
-        "id": "O-852227524",
+        "id": "R-852227524",
         "title": "SpecIF:Origin",
         "class": "RC-PropertyTerm",
         "properties": [{
@@ -2478,13 +2815,13 @@
         }, {
             "title": "SpecIF:Status",
             "class": "PC-status",
-            "value": "V_SpecIF_Status-6"
+            "value": "V-SpecIF_Status-6"
         }],
         "revision": 88,
         "changedAt": "2018-02-17T14:52:03+01:00",
         "changedBy": "od"
     }, {
-        "id": "O-P1rwoI2N0vrJtJRTsdbTiSI6TWC",
+        "id": "R-P1rwoI2N0vrJtJRTsdbTiSI6TWC",
         "title": "SpecIF:Subject",
         "class": "RC-PropertyTerm",
         "properties": [{
@@ -2502,13 +2839,13 @@
         }, {
             "title": "SpecIF:Status",
             "class": "PC-status",
-            "value": "V_SpecIF_Status-6"
+            "value": "V-SpecIF_Status-6"
         }],
         "revision": 89,
         "changedAt": "2018-02-17T14:52:03+01:00",
         "changedBy": "od"
     }, {
-        "id": "O-852227502",
+        "id": "R-852227502",
         "title": "SpecIF:Source",
         "class": "RC-PropertyTerm",
         "properties": [{
@@ -2526,13 +2863,13 @@
         }, {
             "title": "SpecIF:Status",
             "class": "PC-status",
-            "value": "V_SpecIF_Status-9"
+            "value": "V-SpecIF_Status-9"
         }],
         "revision": 90,
         "changedAt": "2018-02-17T14:52:03+01:00",
         "changedBy": "od"
     }, {
-        "id": "O-BUqnNuFYckxT4WBUDNGstLBqEFI",
+        "id": "R-BUqnNuFYckxT4WBUDNGstLBqEFI",
         "title": "SpecIF:Object",
         "class": "RC-PropertyTerm",
         "properties": [{
@@ -2550,13 +2887,13 @@
         }, {
             "title": "SpecIF:Status",
             "class": "PC-status",
-            "value": "V_SpecIF_Status-6"
+            "value": "V-SpecIF_Status-6"
         }],
         "revision": 91,
         "changedAt": "2018-02-17T14:52:04+01:00",
         "changedBy": "od"
     }, {
-        "id": "O-852227501",
+        "id": "R-852227501",
         "title": "SpecIF:Target",
         "class": "RC-PropertyTerm",
         "properties": [{
@@ -2574,13 +2911,13 @@
         }, {
             "title": "SpecIF:Status",
             "class": "PC-status",
-            "value": "V_SpecIF_Status-9"
+            "value": "V-SpecIF_Status-9"
         }],
         "revision": 92,
         "changedAt": "2018-02-17T14:52:04+01:00",
         "changedBy": "od"
     }, {
-        "id": "O-852227500",
+        "id": "R-852227500",
         "title": "SpecIF:FitCriteria",
         "class": "RC-PropertyTerm",
         "properties": [{
@@ -2594,13 +2931,13 @@
         }, {
             "title": "SpecIF:Status",
             "class": "PC-status",
-            "value": "V_SpecIF_Status-6"
+            "value": "V-SpecIF_Status-6"
         }],
         "revision": 93,
         "changedAt": "2018-02-17T14:52:04+01:00",
         "changedBy": "od"
     }, {
-        "id": "R-KfuNty0y1UnJlW1JYcd1pY5aohX",
+        "id": "S-KfuNty0y1UnJlW1JYcd1pY5aohX",
         "title": "SpecIF:OrdinalMark",
         "class": "RC-PropertyTerm",
         "properties": [{
@@ -2618,13 +2955,13 @@
         }, {
             "title": "SpecIF:Status",
             "class": "PC-status",
-            "value": "V_SpecIF_Status-1"
+            "value": "V-SpecIF_Status-1"
         }],
         "revision": 148,
         "changedAt": "2018-02-27T16:34:34+01:00",
         "changedBy": "od"
     }, {
-        "id": "O-852227378",
+        "id": "R-852227378",
         "title": "HIS:OemComment",
         "class": "RC-PropertyTerm",
         "properties": [{
@@ -2638,13 +2975,13 @@
         }, {
             "title": "SpecIF:Status",
             "class": "PC-status",
-            "value": "V_SpecIF_Status-6"
+            "value": "V-SpecIF_Status-6"
         }],
         "revision": 94,
         "changedAt": "2018-02-17T14:52:04+01:00",
         "changedBy": "od"
     }, {
-        "id": "O-852227377",
+        "id": "R-852227377",
         "title": "HIS:OemStatus",
         "class": "RC-PropertyTerm",
         "properties": [{
@@ -2658,13 +2995,13 @@
         }, {
             "title": "SpecIF:Status",
             "class": "PC-status",
-            "value": "V_SpecIF_Status-6"
+            "value": "V-SpecIF_Status-6"
         }],
         "revision": 95,
         "changedAt": "2018-02-17T14:52:05+01:00",
         "changedBy": "od"
     }, {
-        "id": "O-852227376",
+        "id": "R-852227376",
         "title": "HIS:SupplierComment",
         "class": "RC-PropertyTerm",
         "properties": [{
@@ -2678,13 +3015,13 @@
         }, {
             "title": "SpecIF:Status",
             "class": "PC-status",
-            "value": "V_SpecIF_Status-6"
+            "value": "V-SpecIF_Status-6"
         }],
         "revision": 96,
         "changedAt": "2018-02-17T14:52:05+01:00",
         "changedBy": "od"
     }, {
-        "id": "O-852227375",
+        "id": "R-852227375",
         "title": "HIS:SupplierStatus",
         "class": "RC-PropertyTerm",
         "properties": [{
@@ -2698,7 +3035,7 @@
         }, {
             "title": "SpecIF:Status",
             "class": "PC-status",
-            "value": "V_SpecIF_Status-6"
+            "value": "V-SpecIF_Status-6"
         }],
         "revision": 97,
         "changedAt": "2018-02-17T14:52:05+01:00",
@@ -2722,7 +3059,7 @@
         }, {
             "title": "SpecIF:Status",
             "class": "PC-status",
-            "value": "V_SpecIF_Status-1"
+            "value": "V-SpecIF_Status-1"
         }],
         "revision": 98,
         "changedAt": "2018-02-17T14:52:06+01:00",
@@ -2746,7 +3083,7 @@
         }, {
             "title": "SpecIF:Status",
             "class": "PC-status",
-            "value": "V_SpecIF_Status-1"
+            "value": "V-SpecIF_Status-1"
         }],
         "revision": 99,
         "changedAt": "2018-02-17T14:52:06+01:00",
@@ -2770,7 +3107,7 @@
         }, {
             "title": "SpecIF:Status",
             "class": "PC-status",
-            "value": "V_SpecIF_Status-1"
+            "value": "V-SpecIF_Status-1"
         }],
         "revision": 100,
         "changedAt": "2018-02-17T14:52:06+01:00",
@@ -2794,7 +3131,7 @@
         }, {
             "title": "SpecIF:Status",
             "class": "PC-status",
-            "value": "V_SpecIF_Status-1"
+            "value": "V-SpecIF_Status-1"
         }],
         "revision": 101,
         "changedAt": "2018-02-17T14:52:07+01:00",
@@ -2818,7 +3155,7 @@
         }, {
             "title": "SpecIF:Status",
             "class": "PC-status",
-            "value": "V_SpecIF_Status-1"
+            "value": "V-SpecIF_Status-1"
         }],
         "revision": 102,
         "changedAt": "2018-02-17T14:52:07+01:00",
@@ -2842,7 +3179,7 @@
         }, {
             "title": "SpecIF:Status",
             "class": "PC-status",
-            "value": "V_SpecIF_Status-1"
+            "value": "V-SpecIF_Status-1"
         }],
         "revision": 103,
         "changedAt": "2018-02-17T14:52:08+01:00",
@@ -2866,7 +3203,7 @@
         }, {
             "title": "SpecIF:Status",
             "class": "PC-status",
-            "value": "V_SpecIF_Status-1"
+            "value": "V-SpecIF_Status-1"
         }],
         "revision": 104,
         "changedAt": "2018-02-17T14:52:09+01:00",
@@ -2890,7 +3227,7 @@
         }, {
             "title": "SpecIF:Status",
             "class": "PC-status",
-            "value": "V_SpecIF_Status-1"
+            "value": "V-SpecIF_Status-1"
         }],
         "revision": 105,
         "changedAt": "2018-02-17T14:52:09+01:00",
@@ -2914,7 +3251,7 @@
         }, {
             "title": "SpecIF:Status",
             "class": "PC-status",
-            "value": "V_SpecIF_Status-1"
+            "value": "V-SpecIF_Status-1"
         }],
         "revision": 105,
         "changedAt": "2018-02-17T14:52:09+01:00",
@@ -2938,13 +3275,13 @@
         }, {
             "title": "SpecIF:Status",
             "class": "PC-status",
-            "value": "V_SpecIF_Status-1"
+            "value": "V-SpecIF_Status-1"
         }],
         "revision": 106,
         "changedAt": "2018-02-17T14:52:10+01:00",
         "changedBy": "od"
     }, {
-        "id": "O-514389528",
+        "id": "R-514389528",
         "title": "IREB:Stakeholder",
         "class": "RC-ResourceTerm",
         "properties": [{
@@ -2962,7 +3299,7 @@
         }, {
             "title": "SpecIF:Status",
             "class": "PC-status",
-            "value": "V_SpecIF_Status-6"
+            "value": "V-SpecIF_Status-6"
         }],
         "revision": 168,
         "changedAt": "2018-03-09T20:31:17+01:00",
@@ -2982,7 +3319,7 @@
         }, {
             "title": "SpecIF:Status",
             "class": "PC-status",
-            "value": "V_SpecIF_Status-1"
+            "value": "V-SpecIF_Status-1"
         }],
         "revision": 174,
         "changedAt": "2018-03-10T05:35:15+01:00",
@@ -3006,7 +3343,7 @@
         }, {
             "title": "SpecIF:Status",
             "class": "PC-status",
-            "value": "V_SpecIF_Status-1"
+            "value": "V-SpecIF_Status-1"
         }],
         "revision": 186,
         "changedAt": "2018-03-10T09:46:34+01:00",
@@ -3030,7 +3367,7 @@
         }, {
             "title": "SpecIF:Status",
             "class": "PC-status",
-            "value": "V_SpecIF_Status-1"
+            "value": "V-SpecIF_Status-1"
         }],
         "revision": 185,
         "changedAt": "2018-03-10T09:46:22+01:00",
@@ -3054,7 +3391,7 @@
         }, {
             "title": "SpecIF:Status",
             "class": "PC-status",
-            "value": "V_SpecIF_Status-1"
+            "value": "V-SpecIF_Status-1"
         }],
         "revision": 187,
         "changedAt": "2018-03-10T09:46:52+01:00",
@@ -3074,7 +3411,7 @@
         }, {
             "title": "SpecIF:Status",
             "class": "PC-status",
-            "value": "V_SpecIF_Status-1"
+            "value": "V-SpecIF_Status-1"
         }],
         "revision": 175,
         "changedAt": "2018-03-10T09:39:08+01:00",
@@ -3094,7 +3431,7 @@
         }, {
             "title": "SpecIF:Status",
             "class": "PC-status",
-            "value": "V_SpecIF_Status-1"
+            "value": "V-SpecIF_Status-1"
         }],
         "revision": 159,
         "changedAt": "2018-03-04T12:28:41+01:00",
@@ -3114,150 +3451,185 @@
         }, {
             "title": "SpecIF:Status",
             "class": "PC-status",
-            "value": "V_SpecIF_Status-1"
+            "value": "V-SpecIF_Status-1"
         }],
         "revision": 160,
         "changedAt": "2018-03-04T12:28:57+01:00",
         "changedBy": "od"
     }],
     "statements": [{
-        "id": "R-5kuWbbYlQeTxOJRDzezblBCpEZw",
+        "id": "S-5kuWbbYlQeTxOJRDzezblBCpEZw",
         "title": "SpecIF:isSynonymOf",
-        "class": "SC-isSynonymResource",
+        "class": "SC-isSynonymousResource",
         "revision": 107,
         "changedAt": "2018-02-17T14:52:12+01:00",
         "changedBy": "od",
-        "subject": "O-155140545",
-        "object": "O-155140543"
+        "subject": "R-155140545",
+        "object": "R-155140543"
     }, {
-        "id": "R-Bwybpr6umzTLlY62iqmbKBtgfjn",
+        "id": "S-Bwybpr6umzTLlY62iqmbKBtgfjn",
         "title": "SpecIF:isSynonymOf",
-        "class": "SC-isSynonymResource",
+        "class": "SC-isSynonymousResource",
         "revision": 107,
         "changedAt": "2018-02-17T14:52:12+01:00",
         "changedBy": "od",
-        "subject": "O-155140544",
-        "object": "O-155140543"
+        "subject": "R-155140544",
+        "object": "R-155140543"
     }, {
-        "id": "R-dKP8V2aQvr9VNDOzkUQkiibbgPc",
+        "id": "S-dKP8V2aQvr9VNDOzkUQkiibbgPc",
         "title": "SpecIF:isSynonymOf",
         "description": "undefined undefined undefined",
-        "class": "SC-isSynonymResource",
+        "class": "SC-isSynonymousResource",
         "revision": 162,
         "changedAt": "2018-03-04T20:26:30+01:00",
         "changedBy": "od",
         "subject": "R-g1Ghq3cGM7c3By1DQKNLFynTHBX",
         "object": "R-VTZmZzQOMOVPCHvAQ3SZGUo9dVh"
     }, {
-        "id": "R-meC349nO8cw2QL9dcG6sVYFyX6J",
+        "id": "S-meC349nO8cw2QL9dcG6sVYFyX6J",
         "title": "SpecIF:isSynonymOf",
-        "class": "SC-isSynonymPredicate",
+        "class": "SC-isSynonymousPredicate",
         "revision": 107,
         "changedAt": "2018-02-17T14:52:12+01:00",
         "changedBy": "od",
-        "subject": "O-1756321084",
-        "object": "O-852227586"
+        "subject": "R-1756321084",
+        "object": "R-852227586"
     }, {
-        "id": "R-nPIg3KgiRRhB0UAvf2teL9WBsE5",
+        "id": "S-nPIg3KgiRRhB0UAvf2teL9WBsE5",
         "title": "SpecIF:isInverseOf",
         "description": "undefined undefined undefined",
         "class": "SC-isInverseOf",
         "revision": 194,
         "changedAt": "2018-03-21T18:13:29+01:00",
         "changedBy": "od",
-        "subject": "O-852227587",
-        "object": "O-852227586"
+        "subject": "R-852227587",
+        "object": "R-852227586"
     }, {
-        "id": "R-MbR3JrRuyDKbUZTBgRdyB7mXspy",
+        "id": "S-MbR3JrRuyDKbUZTBgRdyB7mXspy",
         "title": "SpecIF:isInverseOf",
-        "description": "undefined undefined undefined",
         "class": "SC-isInverseOf",
         "revision": 195,
         "changedAt": "2018-03-21T18:14:10+01:00",
         "changedBy": "od",
-        "subject": "O-07g3XWyx81s5KxMfyzzP2tM1brk",
+        "subject": "R-07g3XWyx81s5KxMfyzzP2tM1brk",
         "object": "R-ior1aP0HS9zfiBkoYok4rx9GiZw"
     }, {
-        "id": "R-e83R47P87bSg4tpnNWkGjReGEpO",
+        "id": "S-NcR3JrRuyDKbUZTBgRdyB7mXsqz",
+        "title": "SpecIF:isInverseOf",
+        "class": "SC-isInverseOf",
+        "revision": 195,
+        "changedAt": "2018-03-21T18:14:10+01:00",
+        "changedBy": "od",
+        "subject": "R-isGeneralisationOf",
+        "object": "R-isSpecialisationOf"
+    }, {
+        "id": "S-e83R47P87bSg4tpnNWkGjReGEpO",
         "title": "SpecIF:isSynonymOf",
-        "class": "SC-isSynonymPredicate",
+        "class": "SC-isSynonymousPredicate",
         "revision": 108,
         "changedAt": "2018-02-17T14:52:13+01:00",
         "changedBy": "od",
-        "subject": "O-1388621251",
-        "object": "O-xcniBEOFjE4wE1UmSDGWaz1dyR2"
+        "subject": "R-1388621251",
+        "object": "R-xcniBEOFjE4wE1UmSDGWaz1dyR2"
     }, {
-        "id": "R-aooCXfLJJ35AiiuxGRwDZtY5PM5",
+        "id": "S-aooCXfLJJ35AiiuxGRwDZtY5PM5",
         "title": "SpecIF:isSynonymOf",
-        "class": "SC-isSynonymousHierarchy",
+        "class": "SC-isSynonymousResource",
         "revision": 109,
         "changedAt": "2018-02-17T14:52:13+01:00",
         "changedBy": "od",
-        "subject": "O-1021959455",
-        "object": "O-1021959454"
+        "subject": "R-1021959455",
+        "object": "R-1021959454"
     }, {
-        "id": "R-fGCqTwmsViXTlCIWsp8YiKNJzWL",
+        "id": "S-fGCqTwmsViXTlCIWsp8YiKNJzWL",
         "title": "SpecIF:isSynonymOf",
         "class": "SC-isSynonymousProperty",
         "revision": 109,
         "changedAt": "2018-02-17T14:52:13+01:00",
         "changedBy": "od",
-        "subject": "O-1357982108",
-        "object": "O-1357982109"
+        "subject": "R-1357982108",
+        "object": "R-1357982109"
     }, {
-        "id": "R-zjc9uLwpl8izNzojd6IOM7cmKOd",
+        "id": "S-zjc9uLwpl8izNzojd6IOM7cmKOd",
         "title": "SpecIF:isSynonymOf",
         "class": "SC-isSynonymousProperty",
         "revision": 110,
         "changedAt": "2018-02-17T14:52:14+01:00",
         "changedBy": "od",
-        "subject": "O-1357982111",
-        "object": "O-1357982112"
+        "subject": "R-1357982111",
+        "object": "R-1357982112"
     }, {
-        "id": "R-BR1qqyIvfjFhjv1wJrgRg6hsk97",
+        "id": "S-BR1qqyIvfjFhjv1wJrgRg6hsk97",
         "title": "SpecIF:isSynonymOf",
         "class": "SC-isSynonymousProperty",
         "revision": 111,
         "changedAt": "2018-02-17T14:52:14+01:00",
         "changedBy": "od",
-        "subject": "O-1357982113",
-        "object": "O-1357982114"
+        "subject": "R-1357982113",
+        "object": "R-1357982114"
     }, {
-        "id": "R-Ngk94QAuisg24gvDzAbalLVeiQX",
+        "id": "S-Ngk94QAuisg24gvDzAbalLVeiQX",
         "title": "SpecIF:isSynonymOf",
         "class": "SC-isSynonymousProperty",
         "revision": 111,
         "changedAt": "2018-02-17T14:52:14+01:00",
         "changedBy": "od",
-        "subject": "O-852227625",
-        "object": "O-852227624"
+        "subject": "R-852227625",
+        "object": "R-852227624"
     }, {
-        "id": "R-ZECgxcynXNbKcF7rsqRvNOh9vwD",
+        "id": "S-ZECgxcynXNbKcF7rsqRvNOh9vwD",
         "title": "SpecIF:isSynonymOf",
         "class": "SC-isSynonymousProperty",
         "revision": 112,
         "changedAt": "2018-02-17T14:52:15+01:00",
         "changedBy": "od",
-        "subject": "O-852227525",
-        "object": "O-RLzT8IxJQGTRMn7b14PH3v6eEFU"
+        "subject": "R-852227525",
+        "object": "R-RLzT8IxJQGTRMn7b14PH3v6eEFU"
     }, {
-        "id": "R-4RXktcPIC19tR1QSGDDJ6QWFLJY",
+        "id": "S-4RXktcPIC19tR1QSGDDJ6QWFLJY",
         "title": "SpecIF:isSynonymOf",
         "class": "SC-isSynonymousProperty",
         "revision": 113,
         "changedAt": "2018-02-17T14:52:15+01:00",
         "changedBy": "od",
-        "subject": "O-852227502",
-        "object": "O-P1rwoI2N0vrJtJRTsdbTiSI6TWC"
+        "subject": "R-852227502",
+        "object": "R-P1rwoI2N0vrJtJRTsdbTiSI6TWC"
     }, {
-        "id": "R-W9lXi7lJP9DQsg4Jj4qbLuQYaEx",
+        "id": "S-W9lXi7lJP9DQsg4Jj4qbLuQYaEx",
         "title": "SpecIF:isSynonymOf",
         "class": "SC-isSynonymousProperty",
         "revision": 114,
         "changedAt": "2018-02-17T14:52:15+01:00",
         "changedBy": "od",
-        "subject": "O-852227501",
-        "object": "O-BUqnNuFYckxT4WBUDNGstLBqEFI"
+        "subject": "R-852227501",
+        "object": "R-BUqnNuFYckxT4WBUDNGstLBqEFI"
+    }, {
+        "id": "S-X0lXi7lJP9DQsg4Jj4qbLuQYaFy",
+        "title": "SpecIF:isSpecialisationOf",
+        "class": "SC-isSpecialisationOf",
+        "revision": 114,
+        "changedAt": "2019-05-31T14:52:15+01:00",
+        "changedBy": "od",
+        "subject": "R-actorInheritsFrom",
+        "object": "R-inheritsFrom"
+    }, {
+        "id": "S-Y1lXi7lJP9DQsg4Jj4qbLuQYaGz",
+        "title": "SpecIF:isSpecialisationOf",
+        "class": "SC-isSpecialisationOf",
+        "revision": 114,
+        "changedAt": "2019-05-31T14:52:15+01:00",
+        "changedBy": "od",
+        "subject": "R-stateInheritsFrom",
+        "object": "R-inheritsFrom"
+    }, {
+        "id": "S-Z2lXi7lJP9DQsg4Jj4qbLuQYaHa",
+        "title": "SpecIF:isSpecialisationOf",
+        "class": "SC-isSpecialisationOf",
+        "revision": 114,
+        "changedAt": "2019-05-31T14:52:15+01:00",
+        "changedBy": "od",
+        "subject": "R-eventInheritsFrom",
+        "object": "R-inheritsFrom"
     }],
     "hierarchies": [{
         "id": "H-SpecIF_Vocabulary",
@@ -3267,65 +3639,65 @@
         "changedAt": "2018-02-17T14:52:15+01:00",
         "nodes": [{
             "id": "N-e3Y3q4b87MshvncwbAPHc92LLNf",
-            "resource": "O-tin9EEHaktoz8EgVGqpaYX5eLhe",
+            "resource": "R-tin9EEHaktoz8EgVGqpaYX5eLhe",
             "revision": 114,
             "changedAt": "2018-02-17T14:52:31+01:00"
         }, {
             "id": "N-YpyUlWVLwxYblBgWOr154btbA9u",
-            "resource": "F-1951722348",
+            "resource": "F-Resource_Classes",
             "nodes": [{
                 "id": "N-KjJlzrW8mJrFGZ1q7t3mLBg02CX",
-                "resource": "O-155140541",
+                "resource": "R-155140541",
                 "revision": 114,
                 "changedAt": "2018-02-17T14:52:28+01:00"
             }, {
                 "id": "N-HqQoqmbVrKv9reTLYcGGweeVUC4",
-                "resource": "O-155140542",
+                "resource": "R-155140542",
                 "revision": 114,
                 "changedAt": "2018-02-17T14:52:28+01:00"
             }, {
                 "id": "N-vocjQYmvtlIzcGsieVchOGhCUmb",
-                "resource": "O-155140543",
+                "resource": "R-155140543",
                 "revision": 114,
                 "changedAt": "2018-02-17T14:52:28+01:00"
             }, {
                 "id": "N-rtsxeVw90JsJmIPM9LSO7Z9cE1D",
-                "resource": "O-155140544",
+                "resource": "R-155140544",
                 "revision": 114,
                 "changedAt": "2018-02-17T14:52:28+01:00"
             }, {
                 "id": "N-aDipkrcGQWqRCsDTfGKKfnKMr9M",
-                "resource": "O-155140545",
+                "resource": "R-155140545",
                 "revision": 114,
                 "changedAt": "2018-02-17T14:52:28+01:00"
             }, {
                 "id": "N-4NoXVcSzSs07Htg4959SJnDEm0D",
-                "resource": "O-155140546",
+                "resource": "R-155140546",
                 "revision": 114,
                 "changedAt": "2018-02-17T14:52:28+01:00"
             }, {
                 "id": "N-yeUw4dc3iTxk7PHLdQo7efxLvBc",
-                "resource": "O-155140547",
+                "resource": "R-155140547",
                 "revision": 114,
                 "changedAt": "2018-02-17T14:52:28+01:00"
             }, {
                 "id": "N-8HwdIxFap0pTQ5JiE31I1BQJ15z",
-                "resource": "O-155140548",
+                "resource": "R-155140548",
                 "revision": 114,
                 "changedAt": "2018-02-17T14:52:28+01:00"
             }, {
                 "id": "N-JissrCtZ51CD04LeneSqolLFJpA",
-                "resource": "O-155140549",
+                "resource": "R-155140549",
                 "revision": 114,
                 "changedAt": "2018-02-17T14:52:28+01:00"
             }, {
                 "id": "N-v8YxQqDKzXEnykcbfS7D6f5CB1c",
-                "resource": "O-514389523",
+                "resource": "R-514389523",
                 "revision": 114,
                 "changedAt": "2018-02-17T14:52:28+01:00"
             }, {
                 "id": "N-XisJ7vr5N28sDkLVe4uGatwJgi1",
-                "resource": "O-514389524",
+                "resource": "R-514389524",
                 "revision": 114,
                 "changedAt": "2018-02-17T14:52:28+01:00"
             }, {
@@ -3340,68 +3712,83 @@
                 "changedAt": "2018-03-04T20:25:44+01:00"
             }, {
                 "id": "N-UpGSMqEaXmhNKuB2gcS5NOs9uXL",
-                "resource": "O-514389525",
+                "resource": "R-514389525",
                 "revision": 114,
                 "changedAt": "2018-02-17T14:52:28+01:00"
             }, {
                 "id": "N-EketT8luQMKOKzCUrvz7cfWgTeG",
-                "resource": "O-514389526",
+                "resource": "R-514389526",
                 "revision": 114,
                 "changedAt": "2018-02-17T14:52:28+01:00"
             }, {
                 "id": "N-F2XR1vBsAk5fI9gRQTKQadvtc7n",
-                "resource": "O-514389527",
+                "resource": "R-514389527",
                 "revision": 114,
                 "changedAt": "2018-02-17T14:52:28+01:00"
             }, {
                 "id": "N-2ACxqwuJw0kO1Y9s4eLWIhnv5zr",
-                "resource": "O-RdL9JuGuFrBzNRNCP3l9Byk4jJ3",
+                "resource": "R-RdL9JuGuFrBzNRNCP3l9Byk4jJ3",
                 "revision": 114,
                 "changedAt": "2018-02-17T14:52:28+01:00"
+            }, {
+                "id": "N-WUSHigeiOdbxJtKX74NzxxRxpi5",
+                "resource": "R-1021959454",
+                "revision": 114,
+                "changedAt": "2018-02-17T14:52:24+01:00"
+            }, {
+                "id": "N-GC56rw2qe8DKtrWSBMEyTJM610r",
+                "resource": "R-1021959455",
+                "revision": 114,
+                "changedAt": "2018-02-17T14:52:24+01:00"
+            }, {
+                "id": "N-U1w8mlecYF8EuKkouuiiFhTZsJc",
+                "resource": "R-65Rp2clJpdHWUbqNgbpxgKkccjt",
+                "revision": 114,
+                "changedAt": "2018-02-17T14:52:24+01:00"
             }],
             "revision": 114,
             "changedAt": "2018-02-17T14:52:28+01:00"
         }, {
             "id": "N-blM4lfyHM55YlbfBZ3NWj4SYwa3",
-            "resource": "F-2122492873",
+            "resource": "F-Statement_Classes",
             "nodes": [{
                 "id": "N-KySdnxpGEFIs3FWCaOlzbpLVEq4",
-                "resource": "O-1756321082",
+                "resource": "R-1756321082",
                 "revision": 114,
                 "changedAt": "2018-02-17T14:52:25+01:00"
             }, {
                 "id": "N-XOHFIppWE5FE2xOAOHrjtimCl62",
-                "resource": "O-1756321083",
+                "resource": "R-1756321083",
                 "revision": 114,
                 "changedAt": "2018-02-17T14:52:25+01:00"
             }, {
                 "id": "N-YShAhKHuxcyBV85xnVLD1iXE53o",
-                "resource": "O-852227586",
+                "resource": "R-852227586",
                 "revision": 114,
                 "changedAt": "2018-02-17T14:52:25+01:00"
             }, {
                 "id": "N-Bz5EAzJMVmCGQ5rdGyIQyTdpKPr",
-                "resource": "O-852227587",
+                "resource": "R-852227587",
                 "revision": 114,
                 "changedAt": "2018-02-17T14:52:25+01:00"
             }, {
                 "id": "N-AZb2Puo1yiua5GW3iQcf6Ll4evL",
-                "resource": "O-1756321084",
+                "resource": "R-1756321084",
                 "revision": 114,
                 "changedAt": "2018-02-17T14:52:25+01:00"
             }, {
                 "id": "N-fXa8K2B7zc1zHFiKmjYoFP81oxH",
-                "resource": "O-1756321085",
+                "resource": "R-1756321085",
                 "revision": 114,
                 "changedAt": "2018-02-17T14:52:25+01:00"
             }, {
                 "id": "N-OzBNLw3q0pSW1ttm4VXctpWESTK",
-                "resource": "O-1756321086",
+                "resource": "R-1756321086",
                 "revision": 114,
                 "changedAt": "2018-02-17T14:52:25+01:00"
             }, {
                 "id": "N-xcO79WgBHxRRy44CI6eaBTPBULY",
-                "resource": "O-1756321087",
+                "resource": "R-1756321087",
                 "revision": 114,
                 "changedAt": "2018-02-17T14:52:25+01:00"
             }, {
@@ -3411,7 +3798,7 @@
                 "changedAt": "2018-02-17T14:52:25+01:00"
             }, {
                 "id": "N-sAslV9Rfa6y0QRhdd5lkXtQM8KP",
-                "resource": "O-07g3XWyx81s5KxMfyzzP2tM1brk",
+                "resource": "R-07g3XWyx81s5KxMfyzzP2tM1brk",
                 "revision": 114,
                 "changedAt": "2018-02-17T14:52:25+01:00"
             }, {
@@ -3421,389 +3808,438 @@
                 "changedAt": "2018-03-21T18:03:26+01:00"
             }, {
                 "id": "N-XkbLoVWs5EytTT1tVPQZSLUGRAh",
-                "resource": "O-1756321088",
+                "resource": "R-1756321088",
                 "revision": 114,
                 "changedAt": "2018-02-17T14:52:25+01:00"
             }, {
                 "id": "N-YtJk55oYR0oCfHAEQVcsFWnfHDy",
-                "resource": "O-1756321089",
+                "resource": "R-1756321089",
                 "revision": 114,
                 "changedAt": "2018-02-17T14:52:25+01:00"
             }, {
                 "id": "N-mUckm6RNYvmHvENPaGE8GLdQqYd",
-                "resource": "O-1756321090",
+                "resource": "R-1756321090",
                 "revision": 114,
                 "changedAt": "2018-02-17T14:52:25+01:00"
             }, {
+                "id": "N-eqTd4xwYmpHBzNsXfYJeoaQSG7H",
+                "resource": "R-traces",
+                "revision": 114,
+                "changedAt": "2019-05-31T14:52:25+01:00"
+            }, {
+                "id": "N-dpTd4xwYmpHBzNsXfYJeoaQSG6G",
+                "resource": "R-isDerivedFrom",
+                "revision": 114,
+                "changedAt": "2019-05-31T14:52:25+01:00"
+            }, {
                 "id": "N-coTd4xwYmpHBzNsXfYJeoaQSG5F",
-                "resource": "O-1388621258",
+                "resource": "R-refines",
                 "revision": 114,
                 "changedAt": "2018-02-17T14:52:25+01:00"
             }, {
                 "id": "N-7kNm9mqPVLTBwLRAfjpMPdYAlM7",
-                "resource": "O-1388621257",
+                "resource": "R-1388621257",
                 "revision": 114,
                 "changedAt": "2018-02-17T14:52:25+01:00"
             }, {
                 "id": "N-IbH3wgrzdJdItoKNmBBclMNfGX9",
-                "resource": "O-1388621256",
+                "resource": "R-1388621256",
                 "revision": 114,
                 "changedAt": "2018-02-17T14:52:25+01:00"
+            }, {
+                "id": "N-qEgSojoH8KY2IPsmY49TGtgVWjz",
+                "resource": "R-isAllocatedTo",
+                "revision": 114,
+                "changedAt": "2019-05-30T14:52:25+01:00"
             }, {
                 "id": "N-qEgSojoH8KY2IPsmY49TGtgVWiy",
-                "resource": "O-1388621255",
+                "resource": "R-isAssociatedWith",
                 "revision": 114,
                 "changedAt": "2018-02-17T14:52:25+01:00"
             }, {
+                "id": "N-qEgSojoH8KY2IPsmY49TGtgVWka",
+                "resource": "R-1388621277",
+                "revision": 114,
+                "changedAt": "2019-05-30T14:52:25+01:00"
+            }, {
+                "id": "N-qEgSojoH8KY2IPsmY49TGtgVWlb",
+                "resource": "R-isAggregatedBy",
+                "revision": 114,
+                "changedAt": "2019-05-30T14:52:25+01:00"
+            }, {
+                "id": "N-sGgSojoH8KY2IPsmY49TGtgVWme",
+                "resource": "R-uses",
+                "revision": 114,
+                "changedAt": "2019-05-30T14:52:25+01:00"
+            }, {
+                "id": "N-sGgSojoH8KY2IPsmY49TGtgVWoe",
+                "resource": "R-extends",
+                "revision": 114,
+                "changedAt": "2019-05-30T14:52:25+01:00"
+            }, {
+                "id": "N-tHgSojoH8KY2IPsmY49TGtgVWpf",
+                "resource": "R-includes",
+                "revision": 114,
+                "changedAt": "2019-05-30T14:52:25+01:00"
+            }, {
+                "id": "N-rFgSojoH8KY2IPsmY49TGtgVWnd",
+                "resource": "R-isSpecialisationOf",
+                "revision": 114,
+                "changedAt": "2019-05-30T14:52:25+01:00"
+            }, {
+                "id": "N-qEgSojoH8KY2IPsmY49TGtgVWmc",
+                "resource": "R-isGeneralisationOf",
+                "revision": 114,
+                "changedAt": "2019-05-30T14:52:25+01:00"
+            }, {
                 "id": "N-BSQa9h5AoCUdhDRQ0QCodbesRwM",
-                "resource": "O-1388621254",
+                "resource": "R-inheritsFrom",
+                "revision": 114,
+                "changedAt": "2018-02-17T14:52:25+01:00"
+            }, {
+                "id": "N-BSQa9h5AoCUdhDRQ0QCodbesRxN",
+                "resource": "R-actorInheritsFrom",
+                "revision": 114,
+                "changedAt": "2018-02-17T14:52:25+01:00"
+            }, {
+                "id": "N-BSQa9h5AoCUdhDRQ0QCodbesRyO",
+                "resource": "R-stateInheritsFrom",
+                "revision": 114,
+                "changedAt": "2018-02-17T14:52:25+01:00"
+            }, {
+                "id": "N-BSQa9h5AoCUdhDRQ0QCodbesRzP",
+                "resource": "R-eventInheritsFrom",
                 "revision": 114,
                 "changedAt": "2018-02-17T14:52:25+01:00"
             }, {
                 "id": "N-nBJ6HWgL8at84MLchAGeg5cp1S6",
-                "resource": "O-1388621253",
+                "resource": "R-refersTo",
                 "revision": 114,
                 "changedAt": "2018-02-17T14:52:25+01:00"
             }, {
+                "id": "N-nBJ6HWgL8at84MLchAGeg5cp1S7",
+                "resource": "R-commentRefersTo",
+                "revision": 114,
+                "changedAt": "2019-05-30T14:52:25+01:00"
+            }, {
                 "id": "N-xGrckoxdiKqIeSY7YedvmC7kalH",
-                "resource": "O-1388621252",
+                "resource": "R-1388621252",
                 "revision": 114,
                 "changedAt": "2018-02-17T14:52:25+01:00"
             }, {
                 "id": "N-tCoNou4Vy0jg11GcgwFN4yIVEBI",
-                "resource": "O-g4yCxQAgNQtEUffXpPaZOgWrtkQ",
+                "resource": "R-g4yCxQAgNQtEUffXpPaZOgWrtkQ",
                 "revision": 114,
                 "changedAt": "2018-02-17T14:52:25+01:00"
             }, {
                 "id": "N-619Vx52xDjbSf6UzxYWViNTglQb",
-                "resource": "R-AFRDjW5KgLsmjsqS7vSeHKFdAqD",
+                "resource": "S-AFRDjW5KgLsmjsqS7vSeHKFdAqD",
                 "revision": 193,
                 "changedAt": "2018-03-21T18:12:11+01:00"
             }, {
                 "id": "N-qdmsJfeShpKnhQiJ92lGxjPV7M2",
-                "resource": "O-xcniBEOFjE4wE1UmSDGWaz1dyR2",
+                "resource": "R-xcniBEOFjE4wE1UmSDGWaz1dyR2",
                 "revision": 114,
                 "changedAt": "2018-02-17T14:52:25+01:00"
             }, {
                 "id": "N-BwuY2TKdrS2V3yPdPtDzOqJgQvE",
-                "resource": "O-1388621251",
+                "resource": "R-1388621251",
                 "revision": 114,
                 "changedAt": "2018-02-17T14:52:25+01:00"
             }],
             "revision": 114,
             "changedAt": "2018-02-17T14:52:25+01:00"
         }, {
-            "id": "N-RKGVaxD8nqWlNnrSVbAUH32coCK",
-            "resource": "F-94519597",
-            "nodes": [{
-                "id": "N-WUSHigeiOdbxJtKX74NzxxRxpi5",
-                "resource": "O-1021959454",
-                "revision": 114,
-                "changedAt": "2018-02-17T14:52:24+01:00"
-            }, {
-                "id": "N-GC56rw2qe8DKtrWSBMEyTJM610r",
-                "resource": "O-1021959455",
-                "revision": 114,
-                "changedAt": "2018-02-17T14:52:24+01:00"
-            }, {
-                "id": "N-U1w8mlecYF8EuKkouuiiFhTZsJc",
-                "resource": "O-65Rp2clJpdHWUbqNgbpxgKkccjt",
-                "revision": 114,
-                "changedAt": "2018-02-17T14:52:24+01:00"
-            }],
-            "revision": 114,
-            "changedAt": "2018-02-17T14:52:24+01:00"
-        }, {
             "id": "N-33z8X0jqbMdrd8PJDKyt2ke4yAB",
-            "resource": "F-687840215",
+            "resource": "F-Property_Names",
             "nodes": [{
                 "id": "N-Q2iEU7IWLqAhfuUeV2djjKkuxYV",
-                "resource": "O-1357982106",
+                "resource": "R-1357982106",
                 "revision": 114,
                 "changedAt": "2018-02-17T14:52:17+01:00"
             }, {
                 "id": "N-Cq5BTag28vYhDh9aoVU3WDCEtUN",
-                "resource": "O-1357982107",
+                "resource": "R-1357982107",
                 "revision": 114,
                 "changedAt": "2018-02-17T14:52:17+01:00"
             }, {
                 "id": "N-vFFGM9zVUGiyZbRs5ddeGjyMktS",
-                "resource": "O-1357982109",
+                "resource": "R-1357982109",
                 "revision": 114,
                 "changedAt": "2018-02-17T14:52:17+01:00"
             }, {
                 "id": "N-qVBdscNpFTvcONx3957GKvtvyDD",
-                "resource": "O-1357982108",
+                "resource": "R-1357982108",
                 "revision": 114,
                 "changedAt": "2018-02-17T14:52:17+01:00"
             }, {
                 "id": "N-5GGDvjtPsrjShmvF1XIHaeocJGu",
-                "resource": "O-1357982110",
+                "resource": "R-1357982110",
                 "revision": 114,
                 "changedAt": "2018-02-17T14:52:17+01:00"
             }, {
                 "id": "N-7nRT3nl3NrfATb6sGTPCiaByEVy",
-                "resource": "O-1357982112",
+                "resource": "R-1357982112",
                 "revision": 114,
                 "changedAt": "2018-02-17T14:52:17+01:00"
             }, {
                 "id": "N-TQfOznkePQ87xl5o2CtnScu3vsf",
-                "resource": "O-1357982111",
+                "resource": "R-1357982111",
                 "revision": 114,
                 "changedAt": "2018-02-17T14:52:17+01:00"
             }, {
                 "id": "N-DgcjPa6niGjfvDeVyGvBr42gb2O",
-                "resource": "O-1357982114",
+                "resource": "R-1357982114",
                 "revision": 114,
                 "changedAt": "2018-02-17T14:52:17+01:00"
             }, {
                 "id": "N-AYy1dzvFEDooobzlxvxN7vUWHTG",
-                "resource": "O-1357982113",
+                "resource": "R-1357982113",
                 "revision": 114,
                 "changedAt": "2018-02-17T14:52:17+01:00"
             }, {
                 "id": "N-p1zm6hV2SkV3gbIxBakZIUACGs8",
-                "resource": "O-852227626",
+                "resource": "R-852227626",
                 "revision": 114,
                 "changedAt": "2018-02-17T14:52:17+01:00"
             }, {
                 "id": "N-nwjIiUBlXEfQVLKSelVCWhIoD58",
-                "resource": "O-852227624",
+                "resource": "R-852227624",
                 "revision": 114,
                 "changedAt": "2018-02-17T14:52:17+01:00"
             }, {
                 "id": "N-64InD1OmrYuR9I4Xq1Jck9gXFep",
-                "resource": "O-852227625",
+                "resource": "R-852227625",
                 "revision": 114,
                 "changedAt": "2018-02-17T14:52:17+01:00"
             }, {
                 "id": "N-ye6Fih24y3z2cOJcw2CjlbptNee",
-                "resource": "O-852227623",
+                "resource": "R-852227623",
                 "revision": 114,
                 "changedAt": "2018-02-17T14:52:17+01:00"
             }, {
                 "id": "N-v3e2JzAPbyNk7gHMUgOykllUtI2",
-                "resource": "O-852227622",
+                "resource": "R-852227622",
                 "revision": 114,
                 "changedAt": "2018-02-17T14:52:17+01:00"
             }, {
                 "id": "N-OKWppJ8xwrAESJjRwdU2VJTl2MS",
-                "resource": "O-852227621",
+                "resource": "R-852227621",
                 "revision": 114,
                 "changedAt": "2018-02-17T14:52:17+01:00"
             }, {
                 "id": "N-2GuGsKiURU1DIbIwbEWa8RQ0CAN",
-                "resource": "O-852227620",
+                "resource": "R-852227620",
                 "revision": 114,
                 "changedAt": "2018-02-17T14:52:17+01:00"
             }, {
                 "id": "N-s6an46q9UXBSxqPd2yIFGDX1eGd",
-                "resource": "O-852227619",
+                "resource": "R-852227619",
                 "revision": 114,
                 "changedAt": "2018-02-17T14:52:17+01:00"
             }, {
                 "id": "N-4A7xmKKeXKNISqd6Tgj8tzyGFC1",
-                "resource": "O-852227618",
+                "resource": "R-852227618",
                 "revision": 114,
                 "changedAt": "2018-02-17T14:52:18+01:00"
             }, {
                 "id": "N-H4w11ymx36OcrO7jT8LeAQBwf6n",
-                "resource": "O-852227617",
+                "resource": "R-852227617",
                 "revision": 114,
                 "changedAt": "2018-02-17T14:52:18+01:00"
             }, {
                 "id": "N-Hk83njHHd3B5rW6hgHH6WB7BhMv",
-                "resource": "O-852227595",
+                "resource": "R-852227595",
                 "revision": 114,
                 "changedAt": "2018-02-17T14:52:18+01:00"
             }, {
                 "id": "N-3bVAkogM3vj6azeXHC7OkpwYvaa",
-                "resource": "O-852227594",
+                "resource": "R-852227594",
                 "revision": 114,
                 "changedAt": "2018-02-17T14:52:18+01:00"
             }, {
                 "id": "N-nXLNrTd1ItxoojSsU27wxSb5wGC",
-                "resource": "O-852227593",
+                "resource": "R-852227593",
                 "revision": 114,
                 "changedAt": "2018-02-17T14:52:18+01:00"
             }, {
                 "id": "N-wHyRWxHgf0lrC6n8tqq85M9cIJ8",
-                "resource": "O-852227592",
+                "resource": "R-852227592",
                 "revision": 114,
                 "changedAt": "2018-02-17T14:52:18+01:00"
             }, {
                 "id": "N-Oker0xNXoPR04q5WCwwGOuK3J4U",
-                "resource": "O-852227591",
+                "resource": "R-852227591",
                 "revision": 114,
                 "changedAt": "2018-02-17T14:52:18+01:00"
             }, {
                 "id": "N-UKyUrxRxSVfYpO1mN7Ou1p9b7CF",
-                "resource": "O-852227590",
+                "resource": "R-852227590",
                 "revision": 114,
                 "changedAt": "2018-02-17T14:52:18+01:00"
             }, {
                 "id": "N-s3nOxspSY7on9jRmzikNpIg8lEw",
-                "resource": "O-852227589",
+                "resource": "R-852227589",
                 "revision": 114,
                 "changedAt": "2018-02-17T14:52:18+01:00"
             }, {
                 "id": "N-CQvy6KRvxlf6RyEthyIVQjWfDAy",
-                "resource": "O-852227588",
+                "resource": "R-852227588",
                 "revision": 114,
                 "changedAt": "2018-02-17T14:52:18+01:00"
             }, {
                 "id": "N-EKotuJgI6AO3hijDTXVq7pslGGS",
-                "resource": "O-852227564",
+                "resource": "R-852227564",
                 "revision": 114,
                 "changedAt": "2018-02-17T14:52:18+01:00"
             }, {
                 "id": "N-Lh6gzAhq42cjjrUUp3uAUsGTp2k",
-                "resource": "O-852227563",
+                "resource": "R-852227563",
                 "revision": 114,
                 "changedAt": "2018-02-17T14:52:18+01:00"
             }, {
                 "id": "N-sHg1I5YqLe9AWhVgB6wwDvJRCR3",
-                "resource": "O-852227562",
+                "resource": "R-852227562",
                 "revision": 114,
                 "changedAt": "2018-02-17T14:52:18+01:00"
             }, {
                 "id": "N-GLlxKnzbVa6WnmxcVbTRx1hXc3l",
-                "resource": "O-852227561",
+                "resource": "R-852227561",
                 "revision": 114,
                 "changedAt": "2018-02-17T14:52:18+01:00"
             }, {
                 "id": "N-yOGFazhghnXbj8RhMdleGUBMimw",
-                "resource": "O-852227560",
+                "resource": "R-852227560",
                 "revision": 114,
                 "changedAt": "2018-02-17T14:52:18+01:00"
             }, {
                 "id": "N-IvuTgzU2GEPNSaayUZOqFHGtIQc",
-                "resource": "O-852227559",
+                "resource": "R-852227559",
                 "revision": 114,
                 "changedAt": "2018-02-17T14:52:18+01:00"
             }, {
                 "id": "N-N37bwjT6B6xoS5skBUnACQfY1dv",
-                "resource": "O-852227558",
+                "resource": "R-852227558",
                 "revision": 114,
                 "changedAt": "2018-02-17T14:52:18+01:00"
             }, {
                 "id": "N-GUzezCumNJk11W16EJGZOIxjOLX",
-                "resource": "R-mrvz0s0g60YP4yZshfKD5zkN6pM",
+                "resource": "S-mrvz0s0g60YP4yZshfKD5zkN6pM",
                 "revision": 150,
                 "changedAt": "2018-03-03T23:11:42+01:00"
             }, {
                 "id": "N-shreSSUp4ai11OKEcopqQDGLb9K",
-                "resource": "O-852227557",
+                "resource": "R-852227557",
                 "revision": 114,
                 "changedAt": "2018-02-17T14:52:18+01:00"
             }, {
                 "id": "N-BocglJooTcOC1rBpeOyX8pgC1oy",
-                "resource": "O-852227556",
+                "resource": "R-852227556",
                 "revision": 114,
                 "changedAt": "2018-02-17T14:52:18+01:00"
             }, {
                 "id": "N-iygfcBrzE3U4F3ogNRj8NlybHPS",
-                "resource": "O-852227555",
+                "resource": "R-852227555",
                 "revision": 114,
                 "changedAt": "2018-02-17T14:52:18+01:00"
             }, {
                 "id": "N-LnwIXgxRaAoVKJb4OdcMJWD8Dun",
-                "resource": "O-852227533",
+                "resource": "R-852227533",
                 "revision": 114,
                 "changedAt": "2018-02-17T14:52:18+01:00"
             }, {
                 "id": "N-fyPWqD0PE5CgcQ7aGJhCnF7DQgh",
-                "resource": "O-852227532",
+                "resource": "R-852227532",
                 "revision": 114,
                 "changedAt": "2018-02-17T14:52:18+01:00"
             }, {
                 "id": "N-FyHFdDQvm4nvX2eLYiUc577f3By",
-                "resource": "O-852227531",
+                "resource": "R-852227531",
                 "revision": 114,
                 "changedAt": "2018-02-17T14:52:18+01:00"
             }, {
                 "id": "N-U6YGbQKyvmCvkUerixQP7wi8eCE",
-                "resource": "O-852227529",
+                "resource": "R-852227529",
                 "revision": 114,
                 "changedAt": "2018-02-17T14:52:18+01:00"
             }, {
                 "id": "N-wMiX2I4BmvAvPDcBAIAz7vos9IG",
-                "resource": "O-852227528",
+                "resource": "R-852227528",
                 "revision": 114,
                 "changedAt": "2018-02-17T14:52:18+01:00"
             }, {
                 "id": "N-zJocp9JjHG2elHEEdSxJnWJEACU",
-                "resource": "O-852227527",
+                "resource": "R-852227527",
                 "revision": 114,
                 "changedAt": "2018-02-17T14:52:18+01:00"
             }, {
                 "id": "N-ebrdGYUINTLQi3HqgVfz5TSqIlg",
-                "resource": "O-852227526",
+                "resource": "R-852227526",
                 "revision": 114,
                 "changedAt": "2018-02-17T14:52:18+01:00"
             }, {
                 "id": "N-EU6Gnj2cDIpkaAVSU9ETdcqxanL",
-                "resource": "O-RLzT8IxJQGTRMn7b14PH3v6eEFU",
+                "resource": "R-RLzT8IxJQGTRMn7b14PH3v6eEFU",
                 "revision": 114,
                 "changedAt": "2018-02-17T14:52:18+01:00"
             }, {
                 "id": "N-stf8PszPw7lBKtVSC3YJagFCKEC",
-                "resource": "O-852227525",
+                "resource": "R-852227525",
                 "revision": 114,
                 "changedAt": "2018-02-17T14:52:18+01:00"
             }, {
                 "id": "N-PIwgZ5wmwLe2JPqrTin805c1oPC",
-                "resource": "O-852227524",
+                "resource": "R-852227524",
                 "revision": 114,
                 "changedAt": "2018-02-17T14:52:18+01:00"
             }, {
                 "id": "N-XDPeQ3wF5aO2UeMzW8WVfAXDTko",
-                "resource": "O-P1rwoI2N0vrJtJRTsdbTiSI6TWC",
+                "resource": "R-P1rwoI2N0vrJtJRTsdbTiSI6TWC",
                 "revision": 114,
                 "changedAt": "2018-02-17T14:52:18+01:00"
             }, {
                 "id": "N-YPiexPDJ9UynFi78wIiG8OMMm1A",
-                "resource": "O-852227502",
+                "resource": "R-852227502",
                 "revision": 114,
                 "changedAt": "2018-02-17T14:52:18+01:00"
             }, {
                 "id": "N-5Vex22LZPJlwhATXG00Xs7zkkrf",
-                "resource": "O-BUqnNuFYckxT4WBUDNGstLBqEFI",
+                "resource": "R-BUqnNuFYckxT4WBUDNGstLBqEFI",
                 "revision": 114,
                 "changedAt": "2018-02-17T14:52:18+01:00"
             }, {
                 "id": "N-vrhNq111NEtgB8PKy83TKafuYrE",
-                "resource": "O-852227501",
+                "resource": "R-852227501",
                 "revision": 114,
                 "changedAt": "2018-02-17T14:52:18+01:00"
             }, {
                 "id": "N-nzg687uNVeX1Bkgiiwz7RsBS4L8",
-                "resource": "O-852227500",
+                "resource": "R-852227500",
                 "revision": 114,
                 "changedAt": "2018-02-17T14:52:18+01:00"
             }, {
                 "id": "N-aRJak5MMJE0ztirhTNrhCUsi1cB",
-                "resource": "R-KfuNty0y1UnJlW1JYcd1pY5aohX",
+                "resource": "S-KfuNty0y1UnJlW1JYcd1pY5aohX",
                 "revision": 119,
                 "changedAt": "2018-02-26T13:37:55+01:00"
             }, {
                 "id": "N-LaFofNCyuemBgXXLoQLLkzoK35D",
-                "resource": "O-852227378",
+                "resource": "R-852227378",
                 "revision": 114,
                 "changedAt": "2018-02-17T14:52:18+01:00"
             }, {
                 "id": "N-xowsp9qMG4tCuaeWLorAMmzrwnc",
-                "resource": "O-852227377",
+                "resource": "R-852227377",
                 "revision": 114,
                 "changedAt": "2018-02-17T14:52:18+01:00"
             }, {
                 "id": "N-I5wLfSIRpjyuc3cULm8hMnYJYlX",
-                "resource": "O-852227376",
+                "resource": "R-852227376",
                 "revision": 114,
                 "changedAt": "2018-02-17T14:52:18+01:00"
             }, {
                 "id": "N-J8OItqGIlXNEcdKXttuKugnccc2",
-                "resource": "O-852227375",
+                "resource": "R-852227375",
                 "revision": 114,
                 "changedAt": "2018-02-17T14:52:18+01:00"
             }],
@@ -3811,7 +4247,7 @@
             "changedAt": "2018-02-17T14:52:17+01:00"
         }, {
             "id": "N-GXf6xVO7XO5ciMypRwD5WDR6DHR",
-            "resource": "R-ycFgNKLvEwYMQwxgpH3Scq3cmIT",
+            "resource": "F-Property_Values",
             "nodes": [{
                 "id": "N-OyEnQ8RpOVVEjP0ZNn6hax16JPf",
                 "resource": "R-Cl12pC9IJQGkMfpUEBVjiXbqcEI",
@@ -3864,7 +4300,7 @@
                 "changedAt": "2018-02-17T14:52:16+01:00"
             }, {
                 "id": "N-XQoURtf9c9yHCNNEW13uiHlwPlX",
-                "resource": "O-514389528",
+                "resource": "R-514389528",
                 "revision": 164,
                 "changedAt": "2018-03-09T20:28:09+01:00"
             }, {

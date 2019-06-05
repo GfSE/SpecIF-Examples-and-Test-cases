@@ -136,14 +136,6 @@
         "revision": 1,
         "changedAt": "2017-06-10T15:47:24+02:00"
     }, {
-        "id": "RC-HierarchyTerm",
-        "title": "HierarchyTerm",
-        "description": "A term for hierarchies belonging to the SpecIF vocabulary",
-        "instantiation": ["auto", "user"],
-        "propertyClasses": ["PC-title","PC-description","PC-origin","PC-status"],
-        "revision": 1,
-        "changedAt": "2017-06-10T15:47:24+02:00"
-    }, {
         "id": "RC-PropertyTerm",
         "title": "Property-Term",
         "description": "A term for attributes belonging to the SpecIF vocabulary",
@@ -241,7 +233,7 @@
         "changedAt": "2017-06-10T15:47:24+02:00"
     }],
     "resources": [{
-        "id": "R-tin9EEHaktoz8EgVGqpaYX5eLhe",
+        "id": "R-Introduction",
         "title": "Introduction",
         "class": "RC-SpecIF_Heading",
         "properties": [{
@@ -257,7 +249,7 @@
         "changedAt": "2018-02-27T16:37:06+01:00",
         "changedBy": "od"
     }, {
-        "id": "F-Resource_Classes",
+        "id": "F-Resource_Class_Names",
         "title": "Resource Class Names",
         "class": "RC-SpecIF_Heading",
         "properties": [{
@@ -273,7 +265,7 @@
         "changedAt": "2018-06-11T22:21:30+02:00",
         "changedBy": "od"
     }, {
-        "id": "F-Statement_Classes",
+        "id": "F-Statement_Class_Names",
         "title": "Statement Class Names",
         "class": "RC-SpecIF_Heading",
         "properties": [{
@@ -1615,7 +1607,7 @@
         }, {
             "title": "dcterms:description",
             "class": "PC-description",
-            "value": "<p>A term is the inverse of another term.</p><p>For example, a system 'B' <em>contains</em> a component '11', thus '11' <em>isContainedBy system 'B'</em></p>."
+            "value": "<p>A term is the inverse of another term.</p><p>For example, a system 'B' <em>contains</em> a component '11', thus '11' <em>isContainedBy</em> 'B'.</p>"
         }, {
             "title": "SpecIF:Origin",
             "class": "PC-origin",
@@ -1679,7 +1671,7 @@
     }, {
         "id": "R-1021959454",
         "title": "SpecIF:Hierarchy",
-        "class": "RC-HierarchyTerm",
+        "class": "RC-ResourceTerm",
         "properties": [{
             "title": "dcterms:title",
             "class": "PC-title",
@@ -1703,7 +1695,7 @@
     }, {
         "id": "R-1021959455",
         "title": "SpecIF:Outline",
-        "class": "RC-HierarchyTerm",
+        "class": "RC-ResourceTerm",
         "properties": [{
             "title": "dcterms:title",
             "class": "PC-title",
@@ -1727,7 +1719,7 @@
     }, {
         "id": "R-65Rp2clJpdHWUbqNgbpxgKkccjt",
         "title": "SpecIF:BillOfMaterials",
-        "class": "RC-HierarchyTerm",
+        "class": "RC-ResourceTerm",
         "properties": [{
             "title": "dcterms:title",
             "class": "PC-title",
@@ -3639,12 +3631,12 @@
         "changedAt": "2018-02-17T14:52:15+01:00",
         "nodes": [{
             "id": "N-e3Y3q4b87MshvncwbAPHc92LLNf",
-            "resource": "R-tin9EEHaktoz8EgVGqpaYX5eLhe",
+            "resource": "R-Introduction",
             "revision": 114,
             "changedAt": "2018-02-17T14:52:31+01:00"
         }, {
             "id": "N-YpyUlWVLwxYblBgWOr154btbA9u",
-            "resource": "F-Resource_Classes",
+            "resource": "F-Resource_Class_Names",
             "nodes": [{
                 "id": "N-KjJlzrW8mJrFGZ1q7t3mLBg02CX",
                 "resource": "R-155140541",
@@ -3750,7 +3742,7 @@
             "changedAt": "2018-02-17T14:52:28+01:00"
         }, {
             "id": "N-blM4lfyHM55YlbfBZ3NWj4SYwa3",
-            "resource": "F-Statement_Classes",
+            "resource": "F-Statement_Class_Names",
             "nodes": [{
                 "id": "N-KySdnxpGEFIs3FWCaOlzbpLVEq4",
                 "resource": "R-1756321082",

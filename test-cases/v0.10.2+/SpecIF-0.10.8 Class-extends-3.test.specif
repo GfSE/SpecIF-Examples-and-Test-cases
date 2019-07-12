@@ -1,0 +1,170 @@
+{
+    "id": "P-Test-goodExtends-3",
+    "title": "A test with good 'extends', i.e. type specialisations",
+    "specifVersion": "0.10.8",
+    "tool": "manual",
+    "rights": {
+        "title": "Creative Commons 4.0 CC BY-SA",
+        "type": "dcterms:rights",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    "changedAt": "2019-04-05T01:20:00+02:00",
+    "createdBy": {
+        "email": {
+            "value": "oskar.surname@adesso.de"
+        }
+    },
+    "dataTypes": [{
+        "id": "DT-ShortString",
+        "title": "String[96]",
+        "description": "String with length 96",
+        "type": "xs:string",
+        "maxLength": 96,
+        "changedAt": "2017-05-28T18:59:00+01:00"
+    }, {
+        "id": "DT-FormattedText",
+        "title": "Formatted Text",
+        "type": "xhtml",
+        "maxLength": 1024,
+        "changedAt": "2017-05-28T19:59:00+02:00"
+    }],
+    "propertyClasses": [{
+		"id": "PC-Name",
+		"title": "dcterms:title",
+		"dataType": "DT-ShortString",
+		"changedAt": "2017-05-28T18:59:00+01:00"
+	}, {
+		"id": "PC-Text",
+		"title": "dcterms:description",
+		"dataType": "DT-FormattedText",
+		"changedAt": "2017-05-28T18:59:00+01:00"
+	}, {
+		"id": "PC-Other-1",
+		"title": "Other property 1",
+		"value": "Default Value for PC-Other-1",
+		"dataType": "DT-ShortString",
+		"changedAt": "2017-05-28T19:59:00+02:00"
+	}, {
+		"id": "PC-Other-2",
+		"title": "Other property 2",
+		"dataType": "DT-ShortString",
+		"changedAt": "2017-05-28T19:59:00+02:00"
+    }],
+    "resourceClasses": [{
+        "id": "RT-Inf",
+        "title": "SpecIF:Paragraph",
+		"isHeading": true,
+        "propertyClasses": ["PC-Name","PC-Text"],
+        "changedAt": "2019-04-05T01:20:00+02:00"
+	},{
+        "id": "RT-Inf-Extended-1",
+        "title": "SpecIF:Paragraph",
+		"extends": "RT-Inf",
+        "propertyClasses": ["PC-Other-1"],
+        "changedAt": "2019-04-05T01:20:00+02:00"
+	},{
+        "id": "RT-Inf-Extended-2",
+        "title": "SpecIF:Paragraph",
+		"extends": "RT-Inf",
+        "propertyClasses": ["PC-Other-1","PC-Other-2"],
+        "changedAt": "2019-04-05T01:20:00+02:00"
+    }],
+    "statementClasses": [],
+    "resources": [{
+        "id": "Inf-274",
+        "title": "Title 1",
+        "description": "A test with good 'extends', i.e. type specialisations",
+        "class": "RT-Inf",
+        "changedAt": "2019-04-05T01:20:00+02:00"
+    },{
+        "id": "Inf-275",
+        "title": "Title 2",
+        "description": "Basic Information",
+        "class": "RT-Inf",
+        "properties": [{
+            "title": "dcterms:title",
+            "class": "PC-Name",
+            "value": "Title text 2"
+        }, {
+            "title": "dcterms:description",
+            "class": "PC-Text",
+            "value": "<p>Formatted <b>description</b> 2</p>"
+        }],
+        "changedAt": "2019-04-05T01:20:00+02:00"
+    },{
+        "id": "Inf-276",
+        "title": "Title 3",
+        "description": "Extended Information 3",
+        "class": "RT-Inf-Extended-1",
+        "properties": [{
+            "title": "dcterms:title",
+            "class": "PC-Name",
+            "value": "Title text 3"
+        }, {
+            "title": "dcterms:description",
+            "class": "PC-Text",
+            "value": "<p>Formatted <b>description</b> 3</p>"
+        }, {
+            "title": "Other-1",
+            "class": "PC-Other-1",
+            "value": "Value of Other-1"
+        }],
+        "changedAt": "2019-04-05T01:20:00+02:00"
+    },{
+        "id": "Inf-277",
+        "title": "Title 4",
+        "description": "Extended Information 4",
+        "class": "RT-Inf-Extended-2",
+        "properties": [{
+            "title": "dcterms:title",
+            "class": "PC-Name",
+            "value": "Title text 4"
+        }, {
+            "title": "dcterms:description",
+            "class": "PC-Text",
+            "value": "<p>Formatted <b>description</b> 4<br/>Property 'Other-1' is missing, so the property class' title and value are shown.</p>"
+        }, {
+            "title": "Other-2",
+            "class": "PC-Other-2",
+            "value": "Value of Other-2"
+        }],
+        "changedAt": "2019-07-12T01:20:00+02:00"
+    },{
+        "id": "Inf-278",
+        "title": "Title 5",
+        "description": "Extended Information 5",
+        "class": "RT-Inf-Extended-2",
+        "properties": [{
+            "title": "dcterms:title",
+            "class": "PC-Name",
+            "value": "Title text 5"
+        }, {
+            "title": "dcterms:description",
+            "class": "PC-Text",
+            "value": "<p>Formatted <b>description</b> 5<br/>Properties 'Other-1' and 'Other-2' come in a wrong sequence.<br/>Title of 'Other-2' is missing, so the property class' title is shown.</p>"
+        }, {
+            "class": "PC-Other-2",
+            "value": "Value of Other-2"
+        }, {
+            "title": "Other-1",
+            "class": "PC-Other-1",
+            "value": "Value of Other-1"
+        }],
+        "changedAt": "2019-07-12T01:20:00+02:00"
+    }],
+    "statements": [],
+    "hierarchies": [{
+        "id": "H-Test-Revisions",
+        "resource": "Inf-274",
+        "nodes": [{
+            "resource": "Inf-275"
+        },{
+            "resource": "Inf-276"
+        },{
+            "resource": "Inf-277"
+        },{
+            "resource": "Inf-278"
+        }],
+        "changedAt": "2019-04-05T01:20:00+02:00"
+    }]
+}

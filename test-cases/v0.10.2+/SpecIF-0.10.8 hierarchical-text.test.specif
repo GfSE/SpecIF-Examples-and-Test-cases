@@ -11,11 +11,11 @@
     },
     "createdAt": "2019-06-04T08:44:52.483Z",
     "createdBy": {
-        "familyName": "v. Dungern",
+        "familyName": "Surname",
         "givenName": "Oskar",
         "email": {
             "type": "text/html",
-            "value": "oskar.dungern@adesso.de"
+            "value": "oskar.surname@adesso.de"
         },
         "org": {
             "organizationName": "adesso AG"

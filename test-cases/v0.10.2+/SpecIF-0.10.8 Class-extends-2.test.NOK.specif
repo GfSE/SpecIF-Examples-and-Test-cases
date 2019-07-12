@@ -1,0 +1,112 @@
+{
+    "id": "P-Test-goodExtends",
+    "title": "A test with an invalid 'extends', i.e. type specialisation",
+    "specifVersion": "0.10.8",
+    "tool": "manual",
+    "rights": {
+        "title": "Creative Commons 4.0 CC BY-SA",
+        "type": "dcterms:rights",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    "changedAt": "2019-04-05T01:20:00+02:00",
+    "createdBy": {
+        "email": {
+            "value": "oskar.surname@adesso.de"
+        }
+    },
+    "dataTypes": [{
+        "id": "DT-ShortString",
+        "title": "String[96]",
+        "description": "String with length 96",
+        "type": "xs:string",
+        "maxLength": 96,
+        "changedAt": "2017-05-28T18:59:00+01:00"
+    }, {
+        "id": "DT-FormattedText",
+        "title": "Formatted Text",
+        "type": "xhtml",
+        "maxLength": 1024,
+        "changedAt": "2017-05-28T19:59:00+02:00"
+    }],
+    "propertyClasses": [{
+		"id": "PC-Name",
+		"title": "dcterms:title",
+		"dataType": "DT-ShortString",
+		"changedAt": "2017-05-28T18:59:00+01:00"
+	}, {
+		"id": "PC-Text",
+		"title": "dcterms:description",
+		"dataType": "DT-FormattedText",
+		"changedAt": "2017-05-28T18:59:00+01:00"
+	}, {
+		"id": "PC-Status",
+		"title": "SpecIF:Status",
+		"dataType": "DT-ShortString",
+		"changedAt": "2017-05-28T19:59:00+02:00"
+    }],
+    "resourceClasses": [{
+        "id": "RT-Inf",
+        "title": "SpecIF:Paragraph",
+        "propertyClasses": ["PC-Name","PC-Text"],
+        "changedAt": "2019-04-05T01:20:00+02:00"
+	},{
+        "id": "RT-Inf-Extended",
+        "title": "SpecIF:Paragraph",
+		"extends": "link-to-nowhere",
+        "propertyClasses": ["PC-Status"],
+        "changedAt": "2019-04-05T01:20:00+02:00"
+    }],
+    "statementClasses": [],
+    "resources": [{
+        "id": "Inf-274",
+        "title": "Title 1",
+        "description": "A test with an invalid 'extends', i.e. type specialisation",
+        "class": "RT-Inf",
+        "changedAt": "2019-04-05T01:20:00+02:00"
+    },{
+        "id": "Inf-275",
+        "title": "Title 2",
+        "description": "Basic Information",
+        "class": "RT-Inf",
+        "properties": [{
+            "title": "dcterms:title",
+            "class": "PC-Name",
+            "value": "Title text"
+        }, {
+            "title": "dcterms:description",
+            "class": "PC-Text",
+            "value": "<p>Formatted <b>description</b></p>"
+        }],
+        "changedAt": "2019-04-05T01:20:00+02:00"
+    },{
+        "id": "Inf-276",
+        "title": "Title 3",
+        "description": "Extended Information",
+        "class": "RT-Inf-Extended",
+        "properties": [{
+            "title": "dcterms:title",
+            "class": "PC-Name",
+            "value": "Title text"
+        }, {
+            "title": "dcterms:description",
+            "class": "PC-Text",
+            "value": "<p>Formatted <b>description</b></p>"
+        }, {
+            "title": "SpecIF:Status",
+            "class": "PC-Status",
+            "value": "submitted (free text)"
+        }],
+        "changedAt": "2019-04-05T01:20:00+02:00"
+    }],
+    "statements": [],
+    "hierarchies": [{
+        "id": "H-Test-Revisions",
+        "resource": "Inf-274",
+        "nodes": [{
+            "resource": "Inf-275"
+        },{
+            "resource": "Inf-276"
+        }],
+        "changedAt": "2019-04-05T01:20:00+02:00"
+    }]
+}

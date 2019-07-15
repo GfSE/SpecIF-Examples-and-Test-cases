@@ -38,38 +38,28 @@ SpecIF constraints are violated (902): instance with identifier 'N-H-Test-LineBr
 		"changedAt": "2017-05-28T18:59:00+01:00"
 	}],
 	"propertyClasses": [{
-		"id": "PT-Inf-Name",
+		"id": "PC-Name",
 		"title": "dcterms:title",
 		"dataType": "DT-ShortString",
 		"changedAt": "2017-05-28T18:59:00+01:00"
 	}, {
-		"id": "PT-Inf-Text",
-		"title": "dcterms:description",
-		"dataType": "DT-FormattedText",
-		"changedAt": "2017-05-28T18:59:00+01:00"
-	}, {
-		"id": "PT-ACProject-Name",
-		"title": "dcterms:title",
-		"dataType": "DT-ShortString",
-		"changedAt": "2017-05-28T18:59:00+01:00"
-	}, {
-		"id": "PT-ACProject-Text",
+		"id": "PC-Text",
 		"title": "dcterms:description",
 		"dataType": "DT-FormattedText",
 		"changedAt": "2017-05-28T18:59:00+01:00"
 	}],
 	"resourceClasses": [{
-		"id": "RT-Inf",
+		"id": "RC-Inf",
 		"title": "SpecIF:Paragraph",
 		"description": "Information mit Titel und Text für Textpassagen.",
 		"instantiation": ["auto", "user"],
-		"propertyClasses": ["PT-Inf-Name", "PT-Inf-Text"],
+		"propertyClasses": ["PC-Name", "PC-Text"],
 		"changedAt": "2017-05-28T18:59:00+01:00"
 	}, {
-		"id": "HT-ACProject",
+		"id": "HC-ACProject",
 		"title": "SpecIF:Hierarchy",
 		"description": "Wurzel einer Spezifikation (Gliederung).",
-		"propertyClasses": ["PT-ACProject-Name", "PT-ACProject-Text"],
+		"propertyClasses": ["PC-Name", "PC-Text"],
 		"changedAt": "2017-05-28T18:59:00+01:00",
 		"isHeading": true
 	}],
@@ -77,24 +67,24 @@ SpecIF constraints are violated (902): instance with identifier 'N-H-Test-LineBr
 	"resources": [{
 		"id": "Inf-d5b994e50023b1a8015d578cf736b265-info",
 		"title": "SpecIF:Paragraph",
-		"class": "RT-Inf",
+		"class": "RC-Inf",
 		"properties": [{
 			"title": "dcterms:title",
-			"class": "PT-Inf-Name",
+			"class": "PC-Name",
 			"value": "Projektinformation"
 		}, {
 			"title": "dcterms:description",
-			"class": "PT-Inf-Text",
+			"class": "PC-Text",
 			"value": "<p>Ein Text vor dem Zeilenumbruch<br/>und ein weiterer nach demselben, ähh.</p>"
 		}],
 		"changedAt": "2018-12-17T21:20:00+02:00"
 	}, {
 		"id": "H-Test-LineBreak",
 		"title": "Hierarchy Title: A test with text containing a line-break and a non-ASCII character",
-		"class": "HT-ACProject",
+		"class": "HC-ACProject",
 		"properties": [{
 			"title": "dcterms:title",
-			"class": "PT-ACProject-Name",
+			"class": "PC-Name",
 			"value": "A test with text containing a line-break and a non-ASCII character"
 		}],
 		"changedAt": "2017-08-17T21:20:00+02:00"

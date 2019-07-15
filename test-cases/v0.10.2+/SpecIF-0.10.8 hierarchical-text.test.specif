@@ -36,51 +36,36 @@
         "changedAt": "2017-05-28T18:59:00+01:00"
     }],
     "propertyClasses": [{
-        "id": "PT-Inf-Name",
+        "id": "PC-Name",
         "title": "dcterms:title",
         "dataType": "DT-ShortString",
         "changedAt": "2017-05-28T18:59:00+01:00"
     }, {
-        "id": "PT-Inf-Text",
+        "id": "PC-Text",
         "title": "dcterms:description",
         "dataType": "DT-FormattedText",
-        "changedAt": "2017-05-28T18:59:00+01:00"
-    }, {
-        "id": "PT-chapter-Name",
-        "title": "dcterms:title",
-        "dataType": "DT-ShortString",
-        "changedAt": "2018-10-05T08:20:00+02:00"
-    }, {
-        "id": "PT-chapter-Text",
-        "title": "dcterms:description",
-        "dataType": "DT-FormattedText",
-        "changedAt": "2018-10-05T08:20:00+02:00"
-    }, {
-        "id": "PT-ACProject-Name",
-        "title": "dcterms:title",
-        "dataType": "DT-ShortString",
         "changedAt": "2017-05-28T18:59:00+01:00"
     }],
     "resourceClasses": [{
-        "id": "RT-Inf",
+        "id": "RC-Inf",
         "title": "SpecIF:Paragraph",
         "description": "Information with title and text.",
         "instantiation": ["auto", "user"],
-        "propertyClasses": ["PT-Inf-Name", "PT-Inf-Text"],
+        "propertyClasses": ["PC-Name", "PC-Text"],
         "changedAt": "2017-05-28T18:59:00+01:00"
     }, {
-        "id": "RT-chapter",
+        "id": "RC-chapter",
         "title": "SpecIF:Heading",
         "description": "Chapter title.",
         "instantiation": ["auto", "user"],
-        "propertyClasses": ["PT-chapter-Name", "PT-chapter-Text"],
+        "propertyClasses": ["PC-Name", "PC-Text"],
         "changedAt": "2018-10-05T08:20:00+02:00",
         "isHeading": true
     }, {
-        "id": "HT-ACProject",
+        "id": "RC-ACProject",
         "title": "SpecIF:Hierarchy",
         "description": "Root of a hierarchy (outline).",
-        "propertyClasses": ["PT-ACProject-Name"],
+        "propertyClasses": ["PC-Name"],
         "changedAt": "2017-05-28T18:59:00+01:00",
         "isHeading": true
     }],
@@ -89,28 +74,28 @@
         "id": "R-d5b994e50023b1a8015d578cf736b265-p-1",
         "title": "multiple paragraphs",
         "description": "The description property is of type xhtml and has both <div> and <p> enclosing.",
-        "class": "RT-Inf",
+        "class": "RC-Inf",
         "properties": [{
             "title": "dcterms:title",
-            "class": "PT-Inf-Name",
+            "class": "PC-Name",
             "value": "Text with multiple paragraphs"
         }, {
             "title": "dcterms:description",
-            "class": "PT-Inf-Text",
+            "class": "PC-Text",
             "value": "<div><p>first paragraph, an empty paragraph follows:</p><p /><p>Zweiter Absatz.</p><p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p><p>troisième paragraphe.</p></div>"
         }],
         "changedAt": "2018-10-01T06:04:00+02:00"
     }, {
         "id": "R-d5b994e50023b1a8015d578cf736b265-table-1",
         "title": "a simple table",
-        "class": "RT-Inf",
+        "class": "RC-Inf",
         "properties": [{
             "title": "dcterms:title",
-            "class": "PT-Inf-Name",
+            "class": "PC-Name",
             "value": "Text with a simple table"
         }, {
             "title": "dcterms:description",
-            "class": "PT-Inf-Text",
+            "class": "PC-Text",
             "value": "<div><table class=\"stdInlineWithBorder\"> <tbody> <tr> <th> Name </th> <th> Organisation </th> <th> Telephone </th> <th> Email </th> </tr> <tr> <td> Dr. Oskar Surname </td> <td> adesso AG </td> <td> </td> <td> <a href=\"mailto:oskar.surname@adesso.de\" >name.surname@adesso.de</a> </td> </tr> </tbody> </table></div>"
         }],
         "changedAt": "2018-10-01T08:04:00+02:00"
@@ -118,75 +103,67 @@
         "id": "R-d5b994e50023b1a8015d578cf736b265-chapter-1",
         "title": "chapter title first level",
         "description": "The description property is of type xhtml, but does have neither <div> nor <p> enclosing.",
-        "class": "RT-chapter",
+        "class": "RC-chapter",
         "properties": [{
             "title": "dcterms:title",
-            "class": "PT-chapter-Name",
+            "class": "PC-Name",
             "value": "chapter title first level (title property)"
         }, {
             "title": "dcterms:description",
-            "class": "PT-chapter-Text",
+            "class": "PC-Text",
             "value": "Some introductory text at first level."
         }],
         "changedAt": "2018-10-05T08:25:00+02:00"
     }, {
         "id": "R-d5b994e50023b1a8015d578cf736b265-chapter-2",
         "title": "chapter title second level",
-        "class": "RT-chapter",
+        "class": "RC-chapter",
         "properties": [{
             "title": "dcterms:title",
-            "class": "PT-chapter-Name",
+            "class": "PC-Name",
             "value": "chapter title second level (title property)"
         }, {
             "title": "dcterms:description",
-            "class": "PT-chapter-Text",
+            "class": "PC-Text",
             "value": "Some introductory text at second level."
         }],
         "changedAt": "2018-10-05T08:25:00+02:00"
     }, {
         "id": "SP-d5b994e50023b1a8015d578cf736b265",
         "title": "A test with hierarchical text (hierarchy title)",
-        "class": "HT-ACProject",
+        "class": "RC-ACProject",
         "properties": [{
             "title": "dcterms:title",
-            "class": "PT-ACProject-Name",
+            "class": "PC-Name",
             "value": "A test with hierarchical text (hierarchy property with title 'dcterms:title')"
         }],
         "changedAt": "2018-10-05T08:25:01+02:00"
     }],
     "statements": [],
     "hierarchies": [{
-        "id": "N-SP-d5b994e50023b1a8015d578cf736b265",
         "resource": "SP-d5b994e50023b1a8015d578cf736b265",
         "changedAt": "2018-10-05T08:25:01+02:00",
         "nodes": [{
-            "id": "SH-d5b994e50023b1a8015d578cf736b265-p-1a",
             "resource": "R-d5b994e50023b1a8015d578cf736b265-p-1",
             "changedAt": "2017-08-17T21:20:00+02:00"
         }, {
-            "id": "SH-d5b994e50023b1a8015d578cf736b265-chapter-1",
             "resource": "R-d5b994e50023b1a8015d578cf736b265-chapter-1",
             "changedAt": "2018-10-05T08:25:01+02:00",
             "nodes": [{
-                "id": "SH-d5b994e50023b1a8015d578cf736b265-chapter-2",
                 "resource": "R-d5b994e50023b1a8015d578cf736b265-chapter-2",
                 "changedAt": "2018-10-05T08:25:01+02:00",
                 "nodes": [{
-                    "id": "SH-d5b994e50023b1a8015d578cf736b265-p-1b",
                     "resource": "R-d5b994e50023b1a8015d578cf736b265-p-1",
                     "changedAt": "2018-10-05T08:25:01+02:00"
                 }, {
-                    "id": "SH-d5b994e50023b1a8015d578cf736b265-table-1a",
                     "resource": "R-d5b994e50023b1a8015d578cf736b265-table-1",
                     "changedAt": "2018-10-05T08:25:01+02:00"
                 }, {
-                    "id": "SH-d5b994e50023b1a8015d578cf736b265-p-1c",
                     "resource": "R-d5b994e50023b1a8015d578cf736b265-p-1",
                     "changedAt": "2018-10-05T08:25:01+02:00"
                 }]
             }]
         }, {
-            "id": "SH-d5b994e50023b1a8015d578cf736b265-table-1b",
             "resource": "R-d5b994e50023b1a8015d578cf736b265-table-1",
             "changedAt": "2018-10-05T08:25:01+02:00"
         }]

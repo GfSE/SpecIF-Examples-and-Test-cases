@@ -1,0 +1,131 @@
+﻿{
+    "id": "P-Test-e742a488ffa122480162618a9010bff4-svg",
+    "title": "Text with SVG image (2019-07-18)",
+    "specifVersion": "0.10.8",
+    "generator": "",
+    "generatorVersion": "",
+    "rights": {
+        "title": "Creative Commons 4.0 CC BY-SA",
+        "type": "dcterms:rights",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    "createdAt": "2018-05-17T01:03:00+02:00",
+    "createdBy": {
+        "familyName": "von Dungern",
+        "givenName": "Oskar",
+        "org": {
+            "organizationName": "adesso AG"
+        },
+        "email": {
+            "type": "text/html",
+            "value": "oskar.dungern@adesso.de"
+        }
+    },
+    "dataTypes": [{
+        "id": "DT-ShortString",
+        "title": "String [96]",
+        "description": "String with length 96",
+        "type": "xs:string",
+        "maxLength": 96,
+        "changedAt": "2018-05-10T11:54:00+01:00"
+    }, {
+        "id": "DT-FormattedText",
+        "title": "Formatted Text with length 8192",
+        "type": "xhtml",
+        "maxLength": 8192,
+        "changedAt": "2018-05-10T11:54:00+01:00"
+    }],
+	"propertyClasses": [{
+		"id": "PC-Name",
+		"title": "dcterms:title",
+		"dataType": "DT-ShortString",
+		"changedAt": "2018-05-10T11:54:00+01:00"
+	}, {
+		"id": "PC-Text",
+		"title": "dcterms:description",
+		"dataType": "DT-FormattedText",
+		"changedAt": "2018-05-10T11:54:00+01:00"
+	}, {
+		"id": "PC-Diagram",
+		"title": "SpecIF:Diagram",
+		"dataType": "DT-FormattedText",
+		"changedAt": "2018-05-10T11:54:00+01:00"
+	}, {
+		"id": "PC-Notation",
+		"title": "SpecIF:Notation",
+		"dataType": "DT-ShortString",
+		"changedAt": "2018-05-10T11:54:00+01:00"
+	}],
+    "resourceClasses": [{
+        "id": "RC-Fld",
+        "title": "SpecIF:Heading",
+        "description": "Ordner mit Titel und Text für Kapitel oder Textpassagen.",
+        "instantiation": ["auto","user"],
+        "propertyClasses": ["PC-Name","PC-Text"],
+		"isHeading": true,
+        "changedAt": "2018-05-10T11:54:00+01:00"
+	}, {
+        "id": "RC-Inf",
+        "title": "SpecIF:Paragraph",
+        "description": "Information mit Titel und Text für Textpassagen.",
+        "instantiation": ["auto","user"],
+        "propertyClasses": ["PC-Name","PC-Text"],
+        "changedAt": "2018-05-10T11:54:00+01:00"
+	}, {
+        "id": "RC-Pln",
+        "title": "SpecIF:Diagram",
+        "description": "Ein 'Plan' ist eine graphische Modellsicht zur Vermittlung eines bestimmten Sachverhalts, z.B. ein Geschäftsprozess oder Systemaufbau.",
+        "instantiation": ["auto"],
+		"icon": "&#9635;",
+        "propertyClasses": ["PC-Name","PC-Text","PC-Diagram","PC-Notation"],
+        "changedAt": "2018-05-10T11:54:00+01:00"
+	}, {
+        "id": "HC-ACProject",
+        "title": "SpecIF:Hierarchy",
+        "propertyClasses": ["PC-Name","PC-Text"],
+		"changedAt": "2018-05-10T11:54:00+01:00"
+    }],
+    "statementClasses": [],
+    "resources": [{
+        "id": "Pln-e7431277ffa122480162940c0cd41366",
+        "title": "Legend",
+        "class": "RC-Pln",
+        "properties": [{
+            "class": "PC-Name",
+            "value": "Legend"
+        }, {
+            "class": "PC-Diagram",
+            "value": "<div><p>Some text before the image in it's own paragraph.</p><p class=\"inline-label\">Plan:</p><p>Some text before the image:<object type=\"image/svg+xml\" data=\"27420ffc0000c3a8013ab527ca1b71f5.svg\">SVG Image</object>Some text after the image, but in the same paragraph.</p><p>Some text after the image in it's own paragraph.</p></div>"
+        }, {
+            "class": "PC-Notation",
+            "value": "FMC Block Diagram"
+        }],
+        "changedAt": "2018-05-01T17:08:00+02:00"
+	}, {
+        "id": "R-e742a488ffa122480162618a9010bff4",
+        "title": "Text with SVG image (2018-10-09)",
+        "class": "HC-ACProject",
+		"properties": [{
+            "class": "PC-Name",
+            "value": "Text with SVG image (2018-10-09)"
+		}],
+		"changedAt": "2018-05-17T01:03:00+02:00"
+    }],
+	"statements": [],
+	"hierarchies": [{
+        "id": "H-e742a488ffa122480162618a9010bff4",
+        "resource": "R-e742a488ffa122480162618a9010bff4",
+        "nodes": [{
+                    "id": "N-Pln-e7431277ffa122480162940c0cd41366",
+                    "resource": "Pln-e7431277ffa122480162940c0cd41366",
+                    "changedAt": "2018-05-17T01:03:00+02:00"
+		}],
+		"changedAt": "2018-05-17T01:03:00+02:00"
+    }],
+    "files": [{
+		"id": "F-67845657",
+		"title": "27420ffc0000c3a8013ab527ca1b71f5.svg",
+		"type": "image/svg+xml",
+		"changedAt": "2018-11-24T17:49:22.000Z"
+	}]
+}

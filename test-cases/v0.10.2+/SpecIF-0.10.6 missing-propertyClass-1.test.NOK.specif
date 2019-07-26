@@ -64,44 +64,44 @@
     }],
     "resources": [{
         "id": "R-d5b994e50023b1a8015d578cf736b265-text-1",
-        "title": "a text with some special characters (resource title)",
+        "title": "Resource title of Text-1",
         "class": "RT-Inf",
         "properties": [{
             "title": "dcterms:title",
             "class": "PT-Name",
-            "value": "Text with some special characters (title property)"
+            "value": "Title property of Text-1"
         }, {
             "title": "dcterms:description",
-            "class": "PT-Text-1",
-            "value": "<p>I am < 2m tall and my weight is >20kg.</p>"
+            "class": "PT-Text",
+            "value": "<p>Description of Text-1.</p>"
         }],
         "changedAt": "2017-10-04T09:20:00+02:00"
 	},{
         "id": "R-d5b994e50023b1a8015d578cf736b265-text-2",
-        "title": "a text with some special characters (resource title)",
+        "title": "Resource title of Text-2",
         "class": "RT-Inf",
         "properties": [{
             "title": "dcterms:title",
             "class": "PT-Name",
-            "value": "Text with some special characters (title property)"
+            "value": "Title property of Text-2"
         }, {
             "title": "dcterms:description",
-            "class": "PT-Text",
-            "value": "<p>I am < 2m tall and my weight is >20kg.</p>"
+            "class": "PT-Somewhere",
+            "value": "<p>Description of Text-2.<br/>The property class is not defined.</p>"
         }],
         "changedAt": "2017-10-04T09:20:00+02:00"
 	},{
         "id": "R-d5b994e50023b1a8015d578cf736b265-text-3",
-        "title": "a text with some special characters (resource title)",
+        "title": "Resource title of Text-3",
         "class": "RT-Inf",
         "properties": [{
             "title": "dcterms:title",
             "class": "PT-Name",
-            "value": "Text with some special characters (title property)"
+            "value": "Title property of Text-3"
         }, {
             "title": "dcterms:description",
             "class": "PT-Text",
-            "value": "<p>I am < 2m tall and my weight is >20kg.</p>"
+            "value": "<p>Description of Text-3.</p>"
         }],
         "changedAt": "2017-10-04T09:20:00+02:00"
      }],

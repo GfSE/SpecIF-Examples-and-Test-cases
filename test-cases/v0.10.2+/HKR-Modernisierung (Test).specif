@@ -1,0 +1,438 @@
+{
+    "id": "ACP-80d2b3080017050b01696bca7d218ae9-test",
+	"description": "",
+    "title": "HKR Modernisierung Facharchitektur (Test with empty properties)",
+    "description": "Test with empty properties",
+    "specifVersion": "0.10.4",
+    "generator": "ARCWAY Cockpit",
+    "generatorVersion": "3.6",
+    "rights": {
+        "title": "Creative Commons 4.0 CC BY-SA",
+        "type": "dcterms:rights",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    "createdAt": "2019-04-11T19:39:00+02:00",
+    "createdBy": {
+        "familyName": "von Dungern",
+        "givenName": "Oskar",
+        "org": {
+            "organizationName": "adesso AG"
+        },
+        "email": {
+            "type": "text/html",
+            "value": "oskar.dungern@adesso.de"
+        }
+    },
+    "dataTypes": [{
+        "id": "DT-Boolean",
+        "title": "Boolean",
+        "type": "xs:boolean",
+        "changedAt": "2018-05-10T11:54:00+01:00"
+    }, {
+        "id": "DT-Integer",
+        "title": "Integer",
+        "type": "xs:integer",
+		"min": -32768,
+		"max": 32767,
+        "changedAt": "2018-05-10T11:54:00+01:00"
+    }, {
+        "id": "DT-Real",
+        "title": "Real",
+        "type": "xs:double",
+		"min": -10000.0,
+		"max": 10000.0,
+		"accuracy": 5,
+        "changedAt": "2018-05-10T11:54:00+01:00"
+    }, {
+        "id": "DT-Date",
+        "title": "Date or Timestamp",
+        "type": "xs:dateTime",
+        "changedAt": "2018-05-10T11:54:00+01:00"
+    }, {
+        "id": "DT-ShortString",
+        "title": "String [256]",
+        "description": "String with length 256",
+        "type": "xs:string",
+        "maxLength": 256,
+        "changedAt": "2018-05-10T11:54:00+01:00"
+    }, {
+        "id": "DT-String",
+        "title": "String [512]",
+        "description": "String with length 512",
+        "type": "xs:string",
+        "maxLength": 512,
+        "changedAt": "2018-05-10T11:54:00+01:00"
+    }, {
+        "id": "DT-Text",
+        "title": "dcterms:description",
+        "description": "String with length 32768",
+        "type": "xs:string",
+        "maxLength": 32768,
+        "changedAt": "2018-05-10T11:54:00+01:00"
+    }, {
+        "id": "DT-FormattedText",
+        "title": "Formatted Text with length 32768",
+        "type": "xhtml",
+        "maxLength": 32768,
+        "changedAt": "2018-05-10T11:54:00+01:00"
+    }, {
+        "id": "DT-Req-Status",
+        "title": "SpecIF:Status",
+        "description": "Enumerated values for requirement status",
+        "type": "xs:enumeration",
+        "values": [{
+            "id": "V-Req-Status-0",
+            "title": "00_abgelehnt"
+        }, {
+            "id": "V-Req-Status-1",
+            "title": "00_nicht-anwendbar"
+        }, {
+            "id": "V-Req-Status-2",
+            "title": "00_redundant"
+        }, {
+            "id": "V-Req-Status-3",
+            "title": "00_veraltet"
+        }, {
+            "id": "V-Req-Status-4",
+            "title": "10_initial"
+        }, {
+            "id": "V-Req-Status-5",
+            "title": "20_bearbeitet"
+        }, {
+            "id": "V-Req-Status-6",
+            "title": "30_entscheidungsreif"
+        }, {
+            "id": "V-Req-Status-7",
+            "title": "40_genehmigt"
+        }],
+        "changedAt": "2018-05-10T11:54:00+01:00"
+    }, {
+        "id": "DT-Req-Priority",
+        "title": "SpecIF:Priority",
+        "description": "Enumerated values for requirement priority",
+        "type": "xs:enumeration",
+        "values": [{
+            "id": "V-Req-Prio-0",
+            "title": "gering (S)"
+        }, {
+            "id": "V-Req-Prio-1",
+            "title": "hoch (L)"
+        }, {
+            "id": "V-Req-Prio-2",
+            "title": "mittel (M)"
+        }],
+        "changedAt": "2018-05-10T11:54:00+01:00"
+    }, {
+        "id": "DT-Req-custom.IREB-type",
+        "title": "Art",
+        "description": "Enumerated values for requirement custom.IREB-type",
+        "type": "xs:enumeration",
+		"values": [{
+			"id": "V-Req-custom.IREB-type-0",
+			"title": "«unbestimmt»"
+        }, {
+			"id": "V-Req-custom.IREB-type-1",
+			"title": "Funktionale Anforderung"
+        }, {
+			"id": "V-Req-custom.IREB-type-2",
+			"title": "Qualitäts-Anforderung"
+        }, {
+			"id": "V-Req-custom.IREB-type-3",
+			"title": "Randbedingung"
+        }],
+		"changedAt": "2018-05-10T11:54:00+01:00"
+    }, {
+        "id": "DT-Req-custom.his-supplier-status",
+        "title": "Korrektor Status",
+        "description": "Enumerated values for requirement custom.his-supplier-status",
+        "type": "xs:enumeration",
+		"values": [{
+			"id": "V-Req-custom.his-supplier-status-0",
+			"title": "«leer»"
+        }, {
+			"id": "V-Req-custom.his-supplier-status-1",
+			"title": "akzeptiert"
+        }, {
+			"id": "V-Req-custom.his-supplier-status-2",
+			"title": "eingeschränkt-akzeptiert"
+        }, {
+			"id": "V-Req-custom.his-supplier-status-3",
+			"title": "nicht-akzeptiert"
+        }, {
+			"id": "V-Req-custom.his-supplier-status-4",
+			"title": "zu-klären"
+        }],
+		"changedAt": "2018-05-10T11:54:00+01:00"
+    }, {
+        "id": "DT-Req-custom.his-oem-status",
+        "title": "Autor Status",
+        "description": "Enumerated values for requirement custom.his-oem-status",
+        "type": "xs:enumeration",
+		"values": [{
+			"id": "V-Req-custom.his-oem-status-0",
+			"title": "«leer»"
+        }, {
+			"id": "V-Req-custom.his-oem-status-1",
+			"title": "Bewertung-akzeptiert"
+        }, {
+			"id": "V-Req-custom.his-oem-status-2",
+			"title": "Bewertung-nicht-akzeptiert"
+        }, {
+			"id": "V-Req-custom.his-oem-status-3",
+			"title": "zu-bewerten"
+        }, {
+			"id": "V-Req-custom.his-oem-status-4",
+			"title": "nicht-zu-bewerten"
+        }],
+		"changedAt": "2018-05-10T11:54:00+01:00"
+    }],
+    "resourceClasses": [{
+        "id": "RC-Fld",
+        "title": "SpecIF:Heading",
+        "description": "Ordner mit Titel und Text für Kapitel oder Textpassagen.",
+        "instantiation": ["auto","user"],
+		"isHeading": true,
+        "propertyClasses": [{
+            "id": "PC-Fld-Name",
+            "title": "dcterms:title",
+            "dataType": "DT-ShortString",
+			"changedAt": "2018-05-10T11:54:00+01:00"
+        }, {
+            "id": "PC-Fld-Text",
+            "title": "dcterms:description",
+            "dataType": "DT-FormattedText",
+			"changedAt": "2018-05-10T11:54:00+01:00"
+        }],
+        "changedAt": "2018-05-10T11:54:00+01:00"
+	}, {
+        "id": "RC-Req",
+        "title": "IREB:Requirement",
+        "description": "Eine 'Anforderung' ist ein einzelnes dokumentiertes physisches oder funktionales Bedürfnis, das der betreffende Entwurf, das Produkt oder der Prozess erfüllen muss.",
+		"icon": "&#8623;",
+        "instantiation": ["user"],
+        "propertyClasses": [{
+            "id": "PC-Req-ID",
+            "title": "dcterms:identifier",
+            "dataType": "DT-ShortString",
+			"changedAt": "2018-05-10T11:54:00+01:00"
+        }, {
+            "id": "PC-Req-Name",
+            "title": "dcterms:title",
+            "dataType": "DT-ShortString",
+			"changedAt": "2018-05-10T11:54:00+01:00"
+        }, {
+            "id": "PC-Req-Text",
+            "title": "dcterms:description",
+            "dataType": "DT-FormattedText",
+			"changedAt": "2018-05-10T11:54:00+01:00"
+        }, {
+            "id": "PC-Req-Status",
+            "title": "SpecIF:Status",
+            "dataType": "DT-Req-Status",
+			"changedAt": "2018-05-10T11:54:00+01:00"
+        }, {
+            "id": "PC-Req-Priority",
+            "title": "SpecIF:Priority",
+            "dataType": "DT-Req-Priority",
+			"changedAt": "2018-05-10T11:54:00+01:00"
+		}, {
+			"id": "PC-Req-custom.internal-comments",
+			"title": "Interner Kommentar",
+	        "dataType": "DT-FormattedText",
+			"changedAt": "2018-05-10T11:54:00+01:00"
+		}, {
+			"id": "PC-Req-custom.IREB-type",
+			"title": "Art",
+			"dataType": "DT-Req-custom.IREB-type",
+			"changedAt": "2018-05-10T11:54:00+01:00"
+		}, {
+			"id": "PC-Req-custom.initiator",
+			"title": "SpecIF:Origin",
+			"dataType": "DT-String",
+			"changedAt": "2018-05-10T11:54:00+01:00"
+		}, {
+			"id": "PC-Req-custom.fitCriterion",
+			"title": "Abnahme-Kriterium",
+			"dataType": "DT-FormattedText",
+			"changedAt": "2018-05-10T11:54:00+01:00"
+		}, {
+			"id": "PC-Req-custom.his-supplier-status",
+			"title": "Korrektor Status",
+			"dataType": "DT-Req-custom.his-supplier-status",
+			"changedAt": "2018-05-10T11:54:00+01:00"
+		}, {
+			"id": "PC-Req-custom.his-supplier-comment",
+			"title": "Korrektor Kommentar",
+			"dataType": "DT-String",
+			"changedAt": "2018-05-10T11:54:00+01:00"
+		}, {
+			"id": "PC-Req-custom.his-oem-status",
+			"title": "Autor Status",
+			"dataType": "DT-Req-custom.his-oem-status",
+			"changedAt": "2018-05-10T11:54:00+01:00"
+		}, {
+			"id": "PC-Req-custom.his-oem-comment",
+			"title": "Autor Kommentar",
+			"dataType": "DT-String",
+			"changedAt": "2018-05-10T11:54:00+01:00"
+	    }],
+        "changedAt": "2018-05-10T11:54:00+01:00"
+    }],
+    "statementClasses": [{
+		"id": "SC-Dependency",
+        "title": "SpecIF:dependsOn",
+        "description": "Anforderung ist abhängig von Anforderung",
+        "instantiation": ["user"],
+        "subjectClasses": ["RC-Req"],
+        "objectClasses": ["RC-Req"],
+        "changedAt": "2018-05-10T11:54:00+01:00"
+    }],
+    "hierarchyClasses": [{
+        "id": "HC-ACProject",
+        "title": "SpecIF:Hierarchy",
+        "description": "Wurzel einer Spezifikation (Gliederung).",
+        "propertyClasses": [{
+            "id": "PC-ACProject-Name",
+            "title": "dcterms:title",
+            "dataType": "DT-ShortString",
+			"changedAt": "2018-05-10T11:54:00+01:00"
+        }, {
+            "id": "PC-ACProject-Text",
+            "title": "dcterms:description",
+            "dataType": "DT-FormattedText",
+			"changedAt": "2018-05-10T11:54:00+01:00"
+        }],
+		"changedAt": "2018-05-10T11:54:00+01:00"
+    }],
+    "resources": [{
+ 		"id": "Fld-80d2c0040017050b01695a66f7ee1d19",
+		"title": "Anforderungen",
+        "class": "RC-Fld",
+        "properties": [{
+            "title": "dcterms:title",
+            "class": "PC-Fld-Name",
+            "value": "Anforderungen"
+        }, {
+            "title": "dcterms:description",
+            "class": "PC-Fld-Text",
+			"value": "<div></div>"
+		}],
+        "changedAt": "2019-04-11T19:39:00+02:00"
+    }, {
+        "id": "Req-80d2c0040017050b01695a809bd4f928",
+        "title": "Politische Handlungsfähigkeit",
+        "class": "RC-Req",
+        "properties": [{
+            "title": "dcterms:identifier",
+            "class": "PC-Req-ID",
+            "value": "GOAL_001"
+        }, {
+            "title": "dcterms:title",
+            "class": "PC-Req-Name",
+            "value": "Politische Handlungsfähigkeit"
+        }, {
+            "title": "dcterms:description",
+            "class": "PC-Req-Text",
+            "value": "<div><p>Die IT-Verfahren der Haushaltsabteilung unterstützen auch in Zukunft die politischen Entscheidungsträger anforderungsgerecht und in hoher Qualität. Die politische Handlungsfähigkeit wird auf allen Ebenen des Haushaltskreislaufs, d. h. für die Haushaltsaufstellung, den Haushaltsvollzug sowie die Haushalts- und Vermögensrechnung sichergestellt.</p></div>"
+        }, {
+            "title": "SpecIF:Status",
+            "class": "PC-Req-Status",
+            "value": ""
+        }, {
+            "title": "SpecIF:Priority",
+            "class": "PC-Req-Priority",
+            "value": ""
+		}, {
+            "class": "PC-Req-custom.initiator",
+			"value": "Strategische Weiterentwicklung der IT-Verfahren der Haushaltsabteilung (Zielbild)"
+		}],
+        "changedAt": "2019-03-21T16:21:00+01:00"
+    }, {
+        "id": "Req-80d2c0040017050b01695a7a6b5895e3",
+        "title": "Kontinuierliche Verwaltungsmodernisierung",
+        "class": "RC-Req",
+        "properties": [{
+            "title": "dcterms:identifier",
+            "class": "PC-Req-ID",
+            "value": "GOAL_002"
+        }, {
+            "title": "dcterms:title",
+            "class": "PC-Req-Name",
+            "value": "Kontinuierliche Verwaltungsmodernisierung"
+        }, {
+            "title": "dcterms:description",
+            "class": "PC-Req-Text",
+            "value": "<div><p>Moderne IT ist ein wichtiger Baustein zur Weiterentwicklung und Optimierung haushaltsbezogener Verwaltungsprozesse. Damit wird das Transformationsvorhaben einen wesentlichen Beitrag zu einer kontinuierlichen Verwaltungsmodernisierung im Bereich des Bundeshaushalts leisten. Der Wirkungskreis umfasst hierbei neben der Bundesebene insbesondere auch die mittelbare Bundesverwaltung sowie Landes- und Kommunalverwaltungen.</p></div>"
+        }, {
+            "title": "SpecIF:Status",
+            "class": "PC-Req-Status",
+            "value": ""
+        }, {
+            "title": "SpecIF:Priority",
+            "class": "PC-Req-Priority",
+            "value": ""
+		}, {
+            "class": "PC-Req-custom.initiator",
+			"value": "Strategische Weiterentwicklung der IT-Verfahren der Haushaltsabteilung (Zielbild)"
+		}],
+        "changedAt": "2019-03-21T16:22:00+01:00"
+    }, {
+        "id": "Req-80d2c0040017050b01695a88696e6559",
+        "title": "Benutzerkomfort und Benutzerfreundlichkeit",
+        "class": "RC-Req",
+        "properties": [{
+            "class": "PC-Req-ID",
+            "value": "GOAL_003"
+        }, {
+            "class": "PC-Req-Name",
+            "value": "Benutzerkomfort und Benutzerfreundlichkeit"
+        }, {
+            "class": "PC-Req-Text",
+            "value": "<div><p>Künftige fachliche Anforderungen des Nutzerkreises stehen im Zentrum der Weiterentwicklung der IT-Verfahren. Der heutige Serviceumfang der Verfahrenslandschaft wird gegenüber den Nutzern bedarfsgerecht ausgebaut. Benutzerkomfort und Benutzerfreundlichkeit inklusive Barrierefreiheit stehen dabei im Fokus.</p></div>"
+        }, {
+            "class": "PC-Req-Status",
+            "value": ""
+        }, {
+            "class": "PC-Req-Priority",
+            "value": ""
+		}, {
+            "class": "PC-Req-custom.initiator",
+			"value": "Strategische Weiterentwicklung der IT-Verfahren der Haushaltsabteilung (Zielbild)"
+        }, {
+            "class": "PC-Req-custom.fitCriterion",
+            "value": "<div/>"
+		}],
+        "changedAt": "2019-03-21T16:22:00+01:00"
+    }],
+	"statements": [],
+	"hierarchies": [{
+        "id": "H-80d2b3080017050b01696bca7d218ae9",
+        "title": "Test with empty properties",
+        "class": "HC-ACProject",
+		"properties": [{
+            "title": "dcterms:title",
+            "class": "PC-ACProject-Name",
+            "value": "Test with empty properties"
+		}],
+        "nodes": [{
+			"id": "N-Fld-80d2c0040017050b01695a66f7ee1d19",
+			"resource": "Fld-80d2c0040017050b01695a66f7ee1d19",
+			"nodes": [{
+				"id": "N-Req-80d2c0040017050b01695a809bd4f928",
+				"resource": "Req-80d2c0040017050b01695a809bd4f928",
+				"changedAt": "2019-04-11T19:39:00+02:00"
+	        }, {
+				"id": "N-Req-80d2c0040017050b01695a7a6b5895e3",
+				"resource": "Req-80d2c0040017050b01695a7a6b5895e3",
+				"changedAt": "2019-04-11T19:39:00+02:00"
+	        }, {
+				"id": "N-Req-80d2c0040017050b01695a88696e6559",
+				"resource": "Req-80d2c0040017050b01695a88696e6559",
+				"changedAt": "2019-04-11T19:39:00+02:00"
+			}],
+			"changedAt": "2019-04-11T19:39:00+02:00"
+		}],
+		"changedAt": "2019-04-11T19:39:00+02:00"
+	}],
+    "files": []
+}

@@ -323,7 +323,7 @@
         }, {
             "title": "dcterms:description",
             "class": "PC-description",
-            "value": "<p>These are terms for certain enumerated property values. Not only the property titles, but also any enumerated value must be mapped between different systems or domains; therefore using defined terms is an issue. Of course, like any other vocabulary term, any term used as property value for transmission or storage can be translated for display.</p><p>This is still experimental. Please let us know what you think: <a href=\"mailto:oskar.dungern@adesso.de\" >Dr. Oskar von Dungern</a> from <a href=\"http://adesso.de\">adesso AG</a>.</p>"
+            "value": "<p>These are terms for certain enumerated property values. Not only the property titles, but also any enumerated value must be mapped between different systems or domains; therefore using defined terms is beneficial. Of course, like any other vocabulary term, any term used as property value for transmission or storage can be translated for display.</p><p>This is still experimental. Please let us know what you think: <a href=\"mailto:oskar.dungern@adesso.de\" >Dr. Oskar von Dungern</a> from <a href=\"http://adesso.de\">adesso AG</a>.</p>"
         }],
         "revision": 199,
         "changedAt": "2018-06-11T17:09:16+02:00",
@@ -459,7 +459,7 @@
         }, {
             "title": "dcterms:description",
             "class": "PC-description",
-            "value": "<p>An 'Actor' is a fundamental model element type representing an active entity, be it an activity, a process step, a function, a system component or a role.</p><p>It is advised to specify the particular use of FMC:Actor with a [[SpecIF:SubClass]] property. The values of that property can be defined terms, such as [[BPMN:Timer]].</p>"
+            "value": "<p>An 'Actor' is a fundamental model element type representing an active entity, be it an activity, a process step, a function, a system component or a role.</p><p>It is advised to specify the particular use of FMC:Actor with a [[dcterms:type]] property. The values of that property can be defined terms, such as [[BPMN:Timer]].</p>"
         }, {
             "title": "SpecIF:Origin",
             "class": "PC-origin",
@@ -2517,6 +2517,30 @@
         "changedAt": "2018-03-03T23:28:44+01:00",
         "changedBy": "od"
     }, {
+        "id": "R-mrvz0s0g60YP4yZshfKD5zkO8nO",
+        "title": "dcterms:type",
+        "class": "RC-PropertyTerm",
+        "properties": [{
+            "title": "dcterms:title",
+            "class": "PC-title",
+            "value": "dcterms:type"
+        }, {
+            "title": "dcterms:description",
+            "class": "PC-description",
+            "value": "<p>Describes the role or sub-type of a model-element. For example, a [[FMC:Actor]] may represent a <i>System Function</i>, a <i>System Component</i> or a <i>User Role</i>. Similarly, in the context of process modelling, a FMC:Actor may represent a <i>Process Step</i> or again a <i>User Role</i>. So, all of these are meaningful values for a FMC:Actors property named dcterms:type.</p>"
+        }, {
+            "title": "SpecIF:Origin",
+            "class": "PC-origin",
+            "value": "http://specif.de"
+        }, {
+            "title": "SpecIF:Status",
+            "class": "PC-status",
+            "value": "V-SpecIF_Status-1"
+        }],
+        "revision": 152,
+        "changedAt": "2018-03-03T23:28:44+01:00",
+        "changedBy": "od"
+    }, {
         "id": "R-mrvz0s0g60YP4yZshfKD5zkO7mN",
         "title": "SpecIF:SubClass",
         "class": "RC-PropertyTerm",
@@ -2535,7 +2559,7 @@
         }, {
             "title": "SpecIF:Status",
             "class": "PC-status",
-            "value": "V-SpecIF_Status-1"
+            "value": "V-SpecIF_Status-9"
         }],
         "revision": 152,
         "changedAt": "2018-03-03T23:28:44+01:00",
@@ -3307,7 +3331,7 @@
         }, {
             "title": "dcterms:description",
             "class": "PC-description",
-            "value": "<p>A person or organization that has a (direct or indirect) influence on a system’s requirements. Indirect influence also includes situations where a person or organization is impacted by the system. <small>(<i>source: <a href=\"https://www.ireb.org/content/downloads/1-cpre-glossary/ireb_cpre_glossary_17.pdf\">IREB CPRE Glossary</a></i>)</small></p><p>This is a subclass of [[FMC:Actor]], more precisely a value of it's property [[SpecIF:SubClass]].</p>"
+            "value": "<p>A person or organization that has a (direct or indirect) influence on a system’s requirements. Indirect influence also includes situations where a person or organization is impacted by the system. <small>(<i>source: <a href=\"https://www.ireb.org/content/downloads/1-cpre-glossary/ireb_cpre_glossary_17.pdf\">IREB CPRE Glossary</a></i>)</small></p><p>This is a subclass of [[FMC:Actor]], more precisely a value of it's property [[dcterms:type]].</p>"
         }, {
             "title": "SpecIF:Origin",
             "class": "PC-origin",
@@ -3331,7 +3355,7 @@
         }, {
             "title": "dcterms:description",
             "class": "PC-description",
-            "value": "<p>This is a subclass of [[FMC:Actor]]; more precisely a value of it's property [[SpecIF:SubClass]].</p>"
+            "value": "<p>This is a subclass of [[FMC:Actor]]; more precisely a value of it's property [[dcterms:type]].</p>"
         }, {
             "title": "SpecIF:Status",
             "class": "PC-status",
@@ -3351,7 +3375,7 @@
         }, {
             "title": "dcterms:description",
             "class": "PC-description",
-            "value": "<p>A defined value for the [[SpecIF:SubClass]] property of [[FMC:Event]] when used to represent a general start event.</p>"
+            "value": "<p>A defined value for the [[dcterms:type]] property of [[FMC:Event]] when used to represent a general start event.</p>"
         }, {
             "title": "SpecIF:Origin",
             "class": "PC-origin",
@@ -3375,7 +3399,7 @@
         }, {
             "title": "dcterms:description",
             "class": "PC-description",
-            "value": "<p>A defined value for the [[SpecIF:SubClass]] property of [[FMC:Event]] when used to represent a general intermediate event.</p>"
+            "value": "<p>A defined value for the [[dcterms:type]] property of [[FMC:Event]] when used to represent a general intermediate event.</p>"
         }, {
             "title": "SpecIF:Origin",
             "class": "PC-origin",
@@ -3399,7 +3423,7 @@
         }, {
             "title": "dcterms:description",
             "class": "PC-description",
-            "value": "<p>A defined value for the [[SpecIF:SubClass]] property of [[FMC:Event]] when used to represent a general end event.</p>"
+            "value": "<p>A defined value for the [[dcterms:type]] property of [[FMC:Event]] when used to represent a general end event.</p>"
         }, {
             "title": "SpecIF:Origin",
             "class": "PC-origin",
@@ -3423,7 +3447,7 @@
         }, {
             "title": "dcterms:description",
             "class": "PC-description",
-            "value": "<p>A defined value for the [[SpecIF:SubClass]] property of [[FMC:Actor]] when used to represent a process step.</p>"
+            "value": "<p>A defined value for the [[dcterms:type]] property of [[FMC:Actor]] when used to represent a process step.</p>"
         }, {
             "title": "SpecIF:Status",
             "class": "PC-status",
@@ -3443,7 +3467,7 @@
         }, {
             "title": "dcterms:description",
             "class": "PC-description",
-            "value": "<p>A defined value for the [[SpecIF:SubClass]] property of [[FMC:Actor]] when used to represent a 'Join' element in models created with BPMN.</p>"
+            "value": "<p>A defined value for the [[dcterms:type]] property of [[FMC:Actor]] when used to represent a 'Join' element in models created with BPMN.</p>"
         }, {
             "title": "SpecIF:Status",
             "class": "PC-status",
@@ -3463,7 +3487,7 @@
         }, {
             "title": "dcterms:description",
             "class": "PC-description",
-            "value": "<p>A defined value for the [[SpecIF:SubClass]] property of [[FMC:Actor]] when used to represent a 'Timer' element in models created with BPMN.</p>"
+            "value": "<p>A defined value for the [[dcterms:type]] property of [[FMC:Actor]] when used to represent a 'Timer' element in models created with BPMN.</p>"
         }, {
             "title": "SpecIF:Status",
             "class": "PC-status",
@@ -3494,7 +3518,6 @@
     }, {
         "id": "S-dKP8V2aQvr9VNDOzkUQkiibbgPc",
         "title": "SpecIF:isSynonymOf",
-        "description": "undefined undefined undefined",
         "class": "SC-isSynonymousResource",
         "revision": 162,
         "changedAt": "2018-03-04T20:26:30+01:00",
@@ -3518,11 +3541,19 @@
         "changedAt": "2018-02-17T14:52:12+01:00",
         "changedBy": "od",
         "subject": "R-mrvz0s0g60YP4yZshfKD5zkN6pM",
-        "object": "R-mrvz0s0g60YP4yZshfKD5zkO7mN"
+        "object": "R-mrvz0s0g60YP4yZshfKD5zkO8nO"
+    }, {
+        "id": "S-meC349nO8cw2QL9dcG6sVYFaZ8L",
+        "title": "SpecIF:isSynonymOf",
+        "class": "SC-isSynonymousPredicate",
+        "revision": 107,
+        "changedAt": "2018-02-17T14:52:12+01:00",
+        "changedBy": "od",
+        "subject": "R-mrvz0s0g60YP4yZshfKD5zkO7mN",
+        "object": "R-mrvz0s0g60YP4yZshfKD5zkO8nO"
     }, {
         "id": "S-nPIg3KgiRRhB0UAvf2teL9WBsE5",
         "title": "SpecIF:isInverseOf",
-        "description": "undefined undefined undefined",
         "class": "SC-isInverseOf",
         "revision": 194,
         "changedAt": "2018-03-21T18:13:29+01:00",
@@ -4148,12 +4179,17 @@
                 "revision": 114,
                 "changedAt": "2018-02-17T14:52:18+01:00"
             }, {
-                "id": "N-GUzezCumNJk11W16EJGZOIxjOLX",
+                "id": "N-mrvz0s0g60YP4yZshfKD5zkO8nO",
+                "resource": "R-mrvz0s0g60YP4yZshfKD5zkO8nO",
+                "revision": 150,
+                "changedAt": "2018-03-03T23:11:42+01:00"
+            }, {
+                "id": "N-mrvz0s0g60YP4yZshfKD5zkN6pM",
                 "resource": "R-mrvz0s0g60YP4yZshfKD5zkN6pM",
                 "revision": 150,
                 "changedAt": "2018-03-03T23:11:42+01:00"
             }, {
-                "id": "N-GUzezCumNJk11W16EJGZOIxkPMY",
+                "id": "N-mrvz0s0g60YP4yZshfKD5zkO7mN",
                 "resource": "R-mrvz0s0g60YP4yZshfKD5zkO7mN",
                 "revision": 150,
                 "changedAt": "2018-03-03T23:11:42+01:00"

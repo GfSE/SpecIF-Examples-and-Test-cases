@@ -1751,7 +1751,7 @@
         }, {
             "title": "dcterms:description",
             "class": "PC-description",
-            "value": "<p>A name given to the resource. <small>(<i>source: <a href=\"http://dublincore.org/documents/dcmi-terms/\">DCMI</a></i>)</small></p><p>Title (reference: Dublin Core) of the resource represented as rich text in XHTML content. SHOULD include only content that is valid inside an XHTML &lt;span&gt; element. <small>(<i>source: <a href=\"http://open-services.net/\">OSLC</a></i>)</small></p>"
+            "value": "<p>A name given to the resource. <small>(<i>source: <a href=\"http://purl.org/dc/elements/1.1/title\">DCMI</a></i>)</small></p><p>Title (reference: Dublin Core) of the resource represented as rich text in XHTML content. SHOULD include only content that is valid inside an XHTML &lt;span&gt; element. <small>(<i>source: <a href=\"http://open-services.net/\">OSLC</a></i>)</small></p>"
         }, {
             "title": "SpecIF:Origin",
             "class": "PC-origin",
@@ -1775,7 +1775,7 @@
         }, {
             "title": "dcterms:description",
             "class": "PC-description",
-            "value": "<p>An account of the resource. <small>(<i>source: <a href=\"http://dublincore.org/documents/dcmi-terms/\">DCMI</a></i>)</small></p><p>Descriptive text (reference: Dublin Core) about resource represented as rich text in XHTML content. SHOULD include only content that is valid and suitable inside an XHTML &lt;div&gt; element. <small>(<i>source: <a href=\"http://open-services.net/\">OSLC</a></i>)</small></p>"
+            "value": "<p>An account of the resource. <small>(<i>source: <a href=\"http://purl.org/dc/elements/1.1/description\">DCMI</a></i>)</small></p><p>Descriptive text (reference: Dublin Core) about resource represented as rich text in XHTML content. SHOULD include only content that is valid and suitable inside an XHTML &lt;div&gt; element. <small>(<i>source: <a href=\"http://open-services.net/\">OSLC</a></i>)</small></p>"
         }, {
             "title": "SpecIF:Origin",
             "class": "PC-origin",
@@ -1799,7 +1799,7 @@
         }, {
             "title": "dcterms:description",
             "class": "PC-description",
-            "value": "<p>A unique reference to the resource within a given context. <small>(<i>source: <a href=\"http://dublincore.org/documents/dcmi-terms/\">DCMI</a></i>)</small></p><p>An identifier for a resource. This identifier may be unique with a scope that is defined by the RM provider. Assigned by the service provider when a resource is created. Not intended for end-user display. <small>(<i>source: <a href=\"http://open-services.net/\">OSLC</a></i>)</small></p>"
+            "value": "<p>A unique reference to the resource within a given context. <small>(<i>source: <a href=\"http://purl.org/dc/elements/1.1/identifier\">DCMI</a></i>)</small></p><p>An identifier for a resource. This identifier may be unique with a scope that is defined by the RM provider. Assigned by the service provider when a resource is created. Not intended for end-user display. <small>(<i>source: <a href=\"http://open-services.net/\">OSLC</a></i>)</small></p>"
         }, {
             "title": "SpecIF:Origin",
             "class": "PC-origin",
@@ -1847,7 +1847,7 @@
         }, {
             "title": "dcterms:description",
             "class": "PC-description",
-            "value": "<p>The topic of the resource. <small>(<i>source: <a href=\"http://dublincore.org/documents/dcmi-terms/\">DCMI</a></i>)</small></p><p>Tag or keyword for a resource. Each occurrence of a dcterms:subject property denotes an additional tag for the resource. <small>(<i>source: <a href=\"http://open-services.net/\">OSLC</a></i>)</small></p>"
+            "value": "<p>The topic of the resource. <small>(<i>source: <a href=\"http://purl.org/dc/elements/1.1/subject\">DCMI</a></i>)</small></p><p>Tag or keyword for a resource. Each occurrence of a dcterms:subject property denotes an additional tag for the resource. <small>(<i>source: <a href=\"http://open-services.net/\">OSLC</a></i>)</small></p>"
         }, {
             "title": "SpecIF:Origin",
             "class": "PC-origin",
@@ -1871,7 +1871,7 @@
         }, {
             "title": "dcterms:description",
             "class": "PC-description",
-            "value": "<p>An entity primarily responsible for making the resource. <small>(<i>source: <a href=\"http://dublincore.org/documents/dcmi-terms/\">DCMI</a></i>)</small></p><p>Creator(s) of resource (reference: Dublin Core). It is likely that the target resource will be a [[foaf:Person]] but that is not necessarily the case. <small>(<i>source: <a href=\"http://open-services.net/\">OSLC</a></i>)</small></p>"
+            "value": "<p>An entity primarily responsible for making the resource. <small>(<i>source: <a href=\"http://purl.org/dc/elements/1.1/creator\">DCMI</a></i>)</small></p><p>Creator(s) of resource (reference: Dublin Core). It is likely that the target resource will be a [[foaf:Person]] but that is not necessarily the case. <small>(<i>source: <a href=\"http://open-services.net/\">OSLC</a></i>)</small></p>"
         }, {
             "title": "SpecIF:Origin",
             "class": "PC-origin",
@@ -1919,7 +1919,7 @@
         }, {
             "title": "dcterms:description",
             "class": "PC-description",
-            "value": "<p>Timestamp of resource creation. <small>(<i>source: <a href=\"http://dublincore.org/documents/dcmi-terms/\">DCMI</a></i>)</small></p>"
+            "value": "<p>Timestamp of resource creation. <small>(<i>source: <a href=\"http://purl.org/dc/terms/created\">DCMI</a></i>)</small></p>"
         }, {
             "title": "SpecIF:Origin",
             "class": "PC-origin",
@@ -1991,7 +1991,7 @@
         }, {
             "title": "dcterms:description",
             "class": "PC-description",
-            "value": "<p>Timestamp last latest resource modification. <small>(<i>source: <a href=\"http://dublincore.org/documents/dcmi-terms/\">DCMI</a></i>)</small></p>"
+            "value": "<p>Timestamp last latest resource modification. <small>(<i>source: <a href=\"http://purl.org/dc/terms/modified\">DCMI</a></i>)</small></p>"
         }, {
             "title": "SpecIF:Origin",
             "class": "PC-origin",
@@ -2039,7 +2039,7 @@
         }, {
             "title": "dcterms:description",
             "class": "PC-description",
-            "value": "<p>A resource responsible for making contributions to the resource. <small>(<i>source: <a href=\"http://dublincore.org/documents/dcmi-terms/\">DCMI</a></i>)</small></p>"
+            "value": "<p>A resource responsible for making contributions to the resource. <small>(<i>source: <a href=\"http://purl.org/dc/elements/1.1/contributor\">DCMI</a></i>)</small></p>"
         }, {
             "title": "SpecIF:Origin",
             "class": "PC-origin",
@@ -2063,7 +2063,7 @@
         }, {
             "title": "dcterms:description",
             "class": "PC-description",
-            "value": "<p>A person or organization owning or managing rights over the resource. <small>(<i>source: <a href=\"http://dublincore.org/documents/dcmi-terms/\">DCMI</a></i>)</small></p>"
+            "value": "<p>A person or organization owning or managing rights over the resource. <small>(<i>source: <a href=\"http://purl.org/dc/terms/rightsHolder\">DCMI</a></i>)</small></p>"
         }, {
             "title": "SpecIF:Origin",
             "class": "PC-origin",
@@ -2087,7 +2087,7 @@
         }, {
             "title": "dcterms:description",
             "class": "PC-description",
-            "value": "<p>Information about rights held in and over the resource.  <small>(<i>source: <a href=\"http://dublincore.org/documents/dcmi-terms/\">DCMI</a></i>)</small></p>"
+            "value": "<p>Information about rights held in and over the resource.  <small>(<i>source: <a href=\"http://purl.org/dc/elements/1.1/rights\">DCMI</a></i>)</small></p>"
         }, {
             "title": "SpecIF:Origin",
             "class": "PC-origin",
@@ -2503,7 +2503,7 @@
         }, {
             "title": "dcterms:description",
             "class": "PC-description",
-            "value": "<p>Describes the role or sub-type of a model-element. For example, a [[FMC:Actor]] may represent a <i>System Function</i>, a <i>System Component</i> or a <i>User Role</i>. Similarly, in the context of process modelling, a FMC:Actor may represent a <i>Process Step</i> or again a <i>User Role</i>. So, all of these are meaningful values for a FMC:Actors property named SpecIF:Stereotype.</p>"
+            "value": "<p>Describes the role or sub-type of a model-element. For example, a [[FMC:Actor]] may represent a <i>System Function</i>, a <i>System Component</i> or a <i>User Role</i>. Similarly, in the context of process modelling, a FMC:Actor may represent a <i>Process Step</i> or again a <i>User Role</i>. So, all of these are meaningful values for a FMC:Actor's property named SpecIF:Stereotype.</p>"
         }, {
             "title": "SpecIF:Origin",
             "class": "PC-origin",
@@ -2527,11 +2527,11 @@
         }, {
             "title": "dcterms:description",
             "class": "PC-description",
-            "value": "<p>Describes the role or sub-type of a model-element. For example, a [[FMC:Actor]] may represent a <i>System Function</i>, a <i>System Component</i> or a <i>User Role</i>. Similarly, in the context of process modelling, a FMC:Actor may represent a <i>Process Step</i> or again a <i>User Role</i>. So, all of these are meaningful values for a FMC:Actors property named dcterms:type.</p>"
+            "value": "<p>The nature or genre of the resource. <small>(<i>source: <a href=\"http://purl.org/dc/elements/1.1/type\">DCMI</a></i>)</small></p><p>Recommended best practice is to use a controlled vocabulary such as the DCMI Type Vocabulary [DCMITYPE]. To describe the file format, physical medium, or dimensions of the resource, use the Format element.</p><p>For example, a [[FMC:Actor]] may represent a <i>System Function</i>, a <i>System Component</i> or a <i>User Role</i>. Similarly, in the context of process modelling, a FMC:Actor may represent a <i>Process Step</i> or again a <i>User Role</i>. So, all of these are meaningful values for a FMC:Actor's property named dcterms:type.</p>"
         }, {
             "title": "SpecIF:Origin",
             "class": "PC-origin",
-            "value": "http://specif.de"
+            "value": "http://dublincore.org/specifications/"
         }, {
             "title": "SpecIF:Status",
             "class": "PC-status",
@@ -2551,7 +2551,7 @@
         }, {
             "title": "dcterms:description",
             "class": "PC-description",
-            "value": "<p>Describes the role or sub-type of a model-element. For example, a [[FMC:Actor]] may represent a <i>System Function</i>, a <i>System Component</i> or a <i>User Role</i>. Similarly, in the context of process modelling, a FMC:Actor may represent a <i>Process Step</i> or again a <i>User Role</i>. So, all of these are meaningful values for a FMC:Actors property named SpecIF:SubClass.</p>"
+            "value": "<p>Describes the role or sub-type of a model-element. For example, a [[FMC:Actor]] may represent a <i>System Function</i>, a <i>System Component</i> or a <i>User Role</i>. Similarly, in the context of process modelling, a FMC:Actor may represent a <i>Process Step</i> or again a <i>User Role</i>. So, all of these are meaningful values for a FMC:Actor's property named SpecIF:SubClass.</p>"
         }, {
             "title": "SpecIF:Origin",
             "class": "PC-origin",

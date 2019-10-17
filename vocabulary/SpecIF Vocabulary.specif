@@ -207,7 +207,7 @@
     }, {
         "id": "SC-isInverseOf",
         "title": "SpecIF:isInverseOf",
-        "description": "Signifies that two terms are the inverse of each other, such as 'contains' and 'isContainedBy'.",
+        "description": "Signifies that two terms are the inverse of each other, such as <i>contains</i> and <i>isContainedBy</i>.",
         "instantiation": ["user"],
         "revision": 192,
         "changedAt": "2018-03-21T18:06:20+01:00",
@@ -217,7 +217,7 @@
     }, {
         "id": "SC-isSpecialisationOf",
         "title": "SpecIF:isSpecialisationOf",
-        "description": "Signifies that two terms are the inverse of each other, such as 'contains' and 'isContainedBy'.",
+        "description": "Signifies that two terms are the inverse of each other, such as <i>contains</i> and <i>isContainedBy</i>.",
         "instantiation": ["user"],
         "revision": 192,
         "changedAt": "2018-03-21T18:06:20+01:00",
@@ -1151,7 +1151,7 @@
         }, {
             "title": "dcterms:description",
             "class": "PC-description",
-            "value": "<p>A [[IREB:Requirement]] 'duplicates' another [[IREB:Requirement]].</p>"
+            "value": "<p>A [[IREB:Requirement]] <i>duplicates</i> another [[IREB:Requirement]].</p>"
         }, {
             "title": "SpecIF:Origin",
             "class": "PC-origin",
@@ -1175,7 +1175,7 @@
         }, {
             "title": "dcterms:description",
             "class": "PC-description",
-            "value": "<p>A [[IREB:Requirement]] 'contradicts' another [[IREB:Requirement]].</p>"
+            "value": "<p>A [[IREB:Requirement]] <i>contradicts</i> another [[IREB:Requirement]].</p>"
         }, {
             "title": "SpecIF:Origin",
             "class": "PC-origin",
@@ -1511,7 +1511,7 @@
         }, {
             "title": "dcterms:description",
             "class": "PC-description",
-            "value": "<p>A [[SpecIF:Comment]], [[SpecIF:Note]] or [[SpecIF:Issue]] 'refers to' any other resource.</p>"
+            "value": "<p>A [[SpecIF:Comment]], [[SpecIF:Note]] or [[SpecIF:Issue]] <i>refers to</i> any other resource.</p>"
         }, {
             "title": "SpecIF:Origin",
             "class": "PC-origin",
@@ -1535,7 +1535,7 @@
         }, {
             "title": "dcterms:description",
             "class": "PC-description",
-            "value": "<p>A [[SpecIF:Comment]] 'refers to' any other resource.</p>"
+            "value": "<p>A [[SpecIF:Comment]] <i>refers to</i> any other resource.</p>"
         }, {
             "title": "SpecIF:Origin",
             "class": "PC-origin",
@@ -2195,7 +2195,7 @@
         }, {
             "title": "dcterms:description",
             "class": "PC-description",
-            "value": "The subject is elaborated by the object. For example, a user requirement is elaborated by a use case."
+            "value": "The subject is elaborated by the object."
         }, {
             "title": "SpecIF:Origin",
             "class": "PC-origin",
@@ -2215,7 +2215,7 @@
         }, {
             "title": "dcterms:description",
             "class": "PC-description",
-            "value": "The object is elaborated by the subject."
+            "value": "The object is elaborated by the subject. For example, a use case elaborates a requirement."
         }, {
             "title": "SpecIF:Origin",
             "class": "PC-origin",
@@ -2235,7 +2235,7 @@
         }, {
             "title": "dcterms:description",
             "class": "PC-description",
-            "value": "The subject is specified by the object. For example, a requirement is elaborated by a model element."
+            "value": "The subject is specified by the object."
         }, {
             "title": "SpecIF:Origin",
             "class": "PC-origin",
@@ -2255,7 +2255,7 @@
         }, {
             "title": "dcterms:description",
             "class": "PC-description",
-            "value": "The object is specified by the subject."
+            "value": "The object is specified by the subject. For example, a requirement specifies a model element."
         }, {
             "title": "SpecIF:Origin",
             "class": "PC-origin",
@@ -2355,7 +2355,7 @@
         }, {
             "title": "dcterms:description",
             "class": "PC-description",
-            "value": "The subject is decomposed by the object. For example, a system requirement is decomposed into a collection of system requirements."
+            "value": "The subject is decomposed by the object."
         }, {
             "title": "SpecIF:Origin",
             "class": "PC-origin",
@@ -2375,7 +2375,7 @@
         }, {
             "title": "dcterms:description",
             "class": "PC-description",
-            "value": "The object is decomposed by the subject."
+            "value": "The object is decomposed by the subject. For example, a collection of subsystems decomposes a system."
         }, {
             "title": "SpecIF:Origin",
             "class": "PC-origin",
@@ -2395,7 +2395,7 @@
         }, {
             "title": "dcterms:description",
             "class": "PC-description",
-            "value": "The subject is constrained by the object. For example, a functional requirement is constrained by a safety requirement."
+            "value": "The subject is constrained by the object."
         }, {
             "title": "SpecIF:Origin",
             "class": "PC-origin",
@@ -2415,7 +2415,7 @@
         }, {
             "title": "dcterms:description",
             "class": "PC-description",
-            "value": "The object is constrained by the subject."
+            "value": "The object is constrained by the subject. For example, a safety requirement constrains a functional requirement."
         }, {
             "title": "SpecIF:Origin",
             "class": "PC-origin",
@@ -2455,7 +2455,7 @@
         }, {
             "title": "dcterms:description",
             "class": "PC-description",
-            "value": "<p>The 'Category' (class) of the resource, usually with an enumerated value.</p><p>Useful categories for requirements have been defined by the IREB, namely 'Function', 'Quality' and 'Constraint'.</p>"
+            "value": "<p>The <i>Category</i> (class) of the resource, usually with an enumerated value.</p><p>Useful categories for requirements have been defined by the IREB, namely 'Function', 'Quality' and 'Constraint'.</p>"
         }, {
             "title": "SpecIF:Origin",
             "class": "PC-origin",
@@ -2575,7 +2575,7 @@
         }, {
             "title": "dcterms:description",
             "class": "PC-description",
-            "value": "The 'Status', e.g. lifecycle state, of the resource."
+            "value": "The <i>Status</i>, e.g. lifecycle state, of the resource."
         }, {
             "title": "SpecIF:Origin",
             "class": "PC-origin",
@@ -2619,7 +2619,7 @@
         }, {
             "title": "dcterms:description",
             "class": "PC-description",
-            "value": "The 'Priority' of the resource."
+            "value": "The <i>Priority</i> of the resource."
         }, {
             "title": "SpecIF:Origin",
             "class": "PC-origin",
@@ -2643,7 +2643,7 @@
         }, {
             "title": "dcterms:description",
             "class": "PC-description",
-            "value": "The 'Person' being responsible for the resource."
+            "value": "The <i>Person</i> being responsible for the resource."
         }, {
             "title": "SpecIF:Origin",
             "class": "PC-origin",
@@ -2667,7 +2667,7 @@
         }, {
             "title": "dcterms:description",
             "class": "PC-description",
-            "value": "A target 'Milestone' to implement the resource."
+            "value": "A target <i>Milestone</i> to implement the resource."
         }, {
             "title": "SpecIF:Origin",
             "class": "PC-origin",
@@ -2691,7 +2691,7 @@
         }, {
             "title": "dcterms:description",
             "class": "PC-description",
-            "value": "A 'Due Date' for the resource."
+            "value": "A <i>Due Date</i> for the resource."
         }, {
             "title": "SpecIF:Origin",
             "class": "PC-origin",
@@ -3561,6 +3561,42 @@
         "subject": "R-852227587",
         "object": "R-852227586"
     }, {
+        "id": "S-nPIg3KgiRRhB0UAvf2teL9XCtF6",
+        "title": "SpecIF:isInverseOf",
+        "class": "SC-isInverseOf",
+        "revision": 194,
+        "changedAt": "2018-03-21T18:13:29+01:00",
+        "changedBy": "od",
+        "subject": "R-852227595",
+        "object": "R-852227594"
+    }, {
+        "id": "S-nPIg3KgiRRhB0UAvf2teL9YDuG7",
+        "title": "SpecIF:isInverseOf",
+        "class": "SC-isInverseOf",
+        "revision": 194,
+        "changedAt": "2018-03-21T18:13:29+01:00",
+        "changedBy": "od",
+        "subject": "R-852227593",
+        "object": "R-852227592"
+    }, {
+        "id": "S-nPIg3KgiRRhB0UAvf2teL9ZEvH8",
+        "title": "SpecIF:isInverseOf",
+        "class": "SC-isInverseOf",
+        "revision": 194,
+        "changedAt": "2018-03-21T18:13:29+01:00",
+        "changedBy": "od",
+        "subject": "R-852227564",
+        "object": "R-852227563"
+    }, {
+        "id": "S-nPIg3KgiRRhB0UAvf2teL9AFwI9",
+        "title": "SpecIF:isInverseOf",
+        "class": "SC-isInverseOf",
+        "revision": 194,
+        "changedAt": "2018-03-21T18:13:29+01:00",
+        "changedBy": "od",
+        "subject": "R-852227562",
+        "object": "R-852227561"
+    }, {
         "id": "S-MbR3JrRuyDKbUZTBgRdyB7mXspy",
         "title": "SpecIF:isInverseOf",
         "class": "SC-isInverseOf",
@@ -3818,6 +3854,16 @@
                 "revision": 114,
                 "changedAt": "2018-02-17T14:52:25+01:00"
             }, {
+                "id": "N-AZb2Puo1yiua5GW3iQcf6Ll4evL",
+                "resource": "R-1756321084",
+                "revision": 114,
+                "changedAt": "2018-02-17T14:52:25+01:00"
+            }, {
+                "id": "N-fXa8K2B7zc1zHFiKmjYoFP81oxH",
+                "resource": "R-1756321085",
+                "revision": 114,
+                "changedAt": "2018-02-17T14:52:25+01:00"
+            }, {
                 "id": "N-YShAhKHuxcyBV85xnVLD1iXE53o",
                 "resource": "R-852227586",
                 "revision": 114,
@@ -3828,15 +3874,65 @@
                 "revision": 114,
                 "changedAt": "2018-02-17T14:52:25+01:00"
             }, {
-                "id": "N-AZb2Puo1yiua5GW3iQcf6Ll4evL",
-                "resource": "R-1756321084",
+                "id": "N-3bVAkogM3vj6azeXHC7OkpwYvaa",
+                "resource": "R-852227594",
                 "revision": 114,
-                "changedAt": "2018-02-17T14:52:25+01:00"
+                "changedAt": "2018-02-17T14:52:18+01:00"
             }, {
-                "id": "N-fXa8K2B7zc1zHFiKmjYoFP81oxH",
-                "resource": "R-1756321085",
+                "id": "N-Hk83njHHd3B5rW6hgHH6WB7BhMv",
+                "resource": "R-852227595",
                 "revision": 114,
-                "changedAt": "2018-02-17T14:52:25+01:00"
+                "changedAt": "2018-02-17T14:52:18+01:00"
+            }, {
+                "id": "N-wHyRWxHgf0lrC6n8tqq85M9cIJ8",
+                "resource": "R-852227592",
+                "revision": 114,
+                "changedAt": "2018-02-17T14:52:18+01:00"
+            }, {
+                "id": "N-nXLNrTd1ItxoojSsU27wxSb5wGC",
+                "resource": "R-852227593",
+                "revision": 114,
+                "changedAt": "2018-02-17T14:52:18+01:00"
+            }, {
+                "id": "N-Oker0xNXoPR04q5WCwwGOuK3J4U",
+                "resource": "R-852227591",
+                "revision": 114,
+                "changedAt": "2018-02-17T14:52:18+01:00"
+            }, {
+                "id": "N-UKyUrxRxSVfYpO1mN7Ou1p9b7CF",
+                "resource": "R-852227590",
+                "revision": 114,
+                "changedAt": "2018-02-17T14:52:18+01:00"
+            }, {
+                "id": "N-s3nOxspSY7on9jRmzikNpIg8lEw",
+                "resource": "R-852227589",
+                "revision": 114,
+                "changedAt": "2018-02-17T14:52:18+01:00"
+            }, {
+                "id": "N-CQvy6KRvxlf6RyEthyIVQjWfDAy",
+                "resource": "R-852227588",
+                "revision": 114,
+                "changedAt": "2018-02-17T14:52:18+01:00"
+            }, {
+                "id": "N-Lh6gzAhq42cjjrUUp3uAUsGTp2k",
+                "resource": "R-852227563",
+                "revision": 114,
+                "changedAt": "2018-02-17T14:52:18+01:00"
+            }, {
+                "id": "N-EKotuJgI6AO3hijDTXVq7pslGGS",
+                "resource": "R-852227564",
+                "revision": 114,
+                "changedAt": "2018-02-17T14:52:18+01:00"
+            }, {
+                "id": "N-GLlxKnzbVa6WnmxcVbTRx1hXc3l",
+                "resource": "R-852227561",
+                "revision": 114,
+                "changedAt": "2018-02-17T14:52:18+01:00"
+            }, {
+                "id": "N-sHg1I5YqLe9AWhVgB6wwDvJRCR3",
+                "resource": "R-852227562",
+                "revision": 114,
+                "changedAt": "2018-02-17T14:52:18+01:00"
             }, {
                 "id": "N-OzBNLw3q0pSW1ttm4VXctpWESTK",
                 "resource": "R-1756321086",
@@ -4101,66 +4197,6 @@
             }, {
                 "id": "N-H4w11ymx36OcrO7jT8LeAQBwf6n",
                 "resource": "R-852227617",
-                "revision": 114,
-                "changedAt": "2018-02-17T14:52:18+01:00"
-            }, {
-                "id": "N-Hk83njHHd3B5rW6hgHH6WB7BhMv",
-                "resource": "R-852227595",
-                "revision": 114,
-                "changedAt": "2018-02-17T14:52:18+01:00"
-            }, {
-                "id": "N-3bVAkogM3vj6azeXHC7OkpwYvaa",
-                "resource": "R-852227594",
-                "revision": 114,
-                "changedAt": "2018-02-17T14:52:18+01:00"
-            }, {
-                "id": "N-nXLNrTd1ItxoojSsU27wxSb5wGC",
-                "resource": "R-852227593",
-                "revision": 114,
-                "changedAt": "2018-02-17T14:52:18+01:00"
-            }, {
-                "id": "N-wHyRWxHgf0lrC6n8tqq85M9cIJ8",
-                "resource": "R-852227592",
-                "revision": 114,
-                "changedAt": "2018-02-17T14:52:18+01:00"
-            }, {
-                "id": "N-Oker0xNXoPR04q5WCwwGOuK3J4U",
-                "resource": "R-852227591",
-                "revision": 114,
-                "changedAt": "2018-02-17T14:52:18+01:00"
-            }, {
-                "id": "N-UKyUrxRxSVfYpO1mN7Ou1p9b7CF",
-                "resource": "R-852227590",
-                "revision": 114,
-                "changedAt": "2018-02-17T14:52:18+01:00"
-            }, {
-                "id": "N-s3nOxspSY7on9jRmzikNpIg8lEw",
-                "resource": "R-852227589",
-                "revision": 114,
-                "changedAt": "2018-02-17T14:52:18+01:00"
-            }, {
-                "id": "N-CQvy6KRvxlf6RyEthyIVQjWfDAy",
-                "resource": "R-852227588",
-                "revision": 114,
-                "changedAt": "2018-02-17T14:52:18+01:00"
-            }, {
-                "id": "N-EKotuJgI6AO3hijDTXVq7pslGGS",
-                "resource": "R-852227564",
-                "revision": 114,
-                "changedAt": "2018-02-17T14:52:18+01:00"
-            }, {
-                "id": "N-Lh6gzAhq42cjjrUUp3uAUsGTp2k",
-                "resource": "R-852227563",
-                "revision": 114,
-                "changedAt": "2018-02-17T14:52:18+01:00"
-            }, {
-                "id": "N-sHg1I5YqLe9AWhVgB6wwDvJRCR3",
-                "resource": "R-852227562",
-                "revision": 114,
-                "changedAt": "2018-02-17T14:52:18+01:00"
-            }, {
-                "id": "N-GLlxKnzbVa6WnmxcVbTRx1hXc3l",
-                "resource": "R-852227561",
                 "revision": 114,
                 "changedAt": "2018-02-17T14:52:18+01:00"
             }, {

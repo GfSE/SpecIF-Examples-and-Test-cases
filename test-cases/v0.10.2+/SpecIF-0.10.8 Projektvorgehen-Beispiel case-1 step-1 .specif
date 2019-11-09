@@ -1,0 +1,1321 @@
+{
+	"id": "P-Projektvorgehen-1-1",
+	"title": "Projektvorgehen-Beispiel case:1 step:1",
+	"specifVersion": "0.10.8",
+	"generator": "Interactive-Spec",
+	"generatorVersion": "0.95.3",
+	"rights":
+	{
+		"title": "Creative Commons 4.0 CC BY-SA",
+		"type": "dcterms:rights",
+		"url": "https://creativecommons.org/licenses/by-sa/4.0/"
+	},
+	"createdAt": "2019-06-04T08:27:54.336Z",
+	"createdBy":
+	{
+		"familyName": "von Dungern",
+		"givenName": "Oskar",
+		"email":
+		{
+			"type": "text/html",
+			"value": "oskar.dungern@adesso.de"
+		},
+		"org":
+		{
+			"organizationName": "adesso AG"
+		}
+	},
+	"dataTypes": [
+	{
+		"id": "DT-ShortString",
+		"title": "String[96]",
+		"description": "String with length 96",
+		"type": "xs:string",
+		"maxLength": 96,
+		"changedAt": "2018-05-10T11:54:00+01:00"
+	},
+	{
+		"id": "DT-Text",
+		"title": "dcterms:description",
+		"description": "String with length 8192",
+		"type": "xs:string",
+		"maxLength": 8192,
+		"changedAt": "2018-05-10T11:54:00+01:00"
+	},
+	{
+		"id": "DT-FormattedText",
+		"title": "Formatted Text with length 8192",
+		"type": "xhtml",
+		"maxLength": 8192,
+		"changedAt": "2018-05-10T11:54:00+01:00"
+	}],
+	"propertyClasses": [
+	{
+		"id": "PT-Fld-Name",
+		"title": "dcterms:title",
+		"dataType": "DT-ShortString",
+		"changedAt": "2018-05-10T11:54:00+01:00"
+	},
+	{
+		"id": "PT-Fld-Text",
+		"title": "dcterms:description",
+		"dataType": "DT-FormattedText",
+		"changedAt": "2018-05-10T11:54:00+01:00"
+	},
+	{
+		"id": "PT-Inf-Name",
+		"title": "dcterms:title",
+		"dataType": "DT-ShortString",
+		"changedAt": "2018-05-10T11:54:00+01:00"
+	},
+	{
+		"id": "PT-Inf-Text",
+		"title": "dcterms:description",
+		"dataType": "DT-FormattedText",
+		"changedAt": "2018-05-10T11:54:00+01:00"
+	},
+	{
+		"id": "PC-Type",
+		"title": "dcterms:type",
+		"dataType": "DT-ShortString",
+		"changedAt": "2019-11-07T12:00:00+01:00"
+	},	
+	{
+		"id": "PT-Pln-Name",
+		"title": "dcterms:title",
+		"dataType": "DT-ShortString",
+		"changedAt": "2018-05-10T11:54:00+01:00"
+	},
+	{
+		"id": "PT-Pln-Text",
+		"title": "dcterms:description",
+		"dataType": "DT-FormattedText",
+		"changedAt": "2018-05-10T11:54:00+01:00"
+	},
+	{
+		"id": "PT-Pln-Diagram",
+		"title": "SpecIF:Diagram",
+		"dataType": "DT-FormattedText",
+		"changedAt": "2018-05-10T11:54:00+01:00"
+	},
+	{
+		"id": "PT-Pln-Notation",
+		"title": "SpecIF:Notation",
+		"dataType": "DT-ShortString",
+		"changedAt": "2018-05-10T11:54:00+01:00"
+	},
+	{
+		"id": "PT-Act-Name",
+		"title": "dcterms:title",
+		"dataType": "DT-ShortString",
+		"changedAt": "2018-05-10T11:54:00+01:00"
+	},
+	{
+		"id": "PT-Act-Text",
+		"title": "dcterms:description",
+		"dataType": "DT-FormattedText",
+		"changedAt": "2018-05-10T11:54:00+01:00"
+	},
+	{
+		"id": "PT-Sta-Name",
+		"title": "dcterms:title",
+		"dataType": "DT-ShortString",
+		"changedAt": "2018-05-10T11:54:00+01:00"
+	},
+	{
+		"id": "PT-Sta-Text",
+		"title": "dcterms:description",
+		"dataType": "DT-FormattedText",
+		"changedAt": "2018-05-10T11:54:00+01:00"
+	},
+	{
+		"id": "PT-Evt-Name",
+		"title": "dcterms:title",
+		"dataType": "DT-ShortString",
+		"changedAt": "2018-05-10T11:54:00+01:00"
+	},
+	{
+		"id": "PT-Evt-Text",
+		"title": "dcterms:description",
+		"dataType": "DT-FormattedText",
+		"changedAt": "2018-05-10T11:54:00+01:00"
+	},
+	{
+		"id": "PT-ACProject-Name",
+		"title": "dcterms:title",
+		"dataType": "DT-ShortString",
+		"changedAt": "2018-05-10T11:54:00+01:00"
+	},
+	{
+		"id": "PT-ACProject-Text",
+		"title": "dcterms:description",
+		"dataType": "DT-FormattedText",
+		"changedAt": "2018-05-10T11:54:00+01:00"
+	}],
+	"resourceClasses": [
+	{
+		"id": "RT-Fld",
+		"title": "SpecIF:Heading",
+		"description": "Ordner mit Titel und Text für Kapitel oder Textpassagen.",
+		"instantiation": ["auto", "user"],
+		"propertyClasses": ["PT-Fld-Name", "PT-Fld-Text", "PC-Type"],
+		"changedAt": "2018-05-10T11:54:00+01:00",
+		"isHeading": true
+	},
+	{
+		"id": "RT-Inf",
+		"title": "SpecIF:Paragraph",
+		"description": "Information mit Titel und Text für Textpassagen.",
+		"instantiation": ["auto", "user"],
+		"propertyClasses": ["PT-Inf-Name", "PT-Inf-Text"],
+		"changedAt": "2018-05-10T11:54:00+01:00"
+	},
+	{
+		"id": "RT-Pln",
+		"title": "SpecIF:Diagram",
+		"description": "Ein 'Plan' ist eine graphische Modellsicht zur Vermittlung eines bestimmten Sachverhalts, z.B. ein Geschäftsprozess oder Systemaufbau.",
+		"icon": "&#9635;",
+		"instantiation": ["user"],
+		"propertyClasses": ["PT-Pln-Name", "PT-Pln-Text", "PT-Pln-Diagram", "PT-Pln-Notation"],
+		"changedAt": "2018-05-10T11:54:00+01:00"
+	},
+	{
+		"id": "RT-Act",
+		"title": "FMC:Actor",
+		"description": "Ein 'Akteur' ist ein fundamentaler Modellelement-Typ für ein aktives Objekt, z.B. eine Aktivität, ein Prozess-Schritt, eine Funktion, eine Systemkomponente oder eine Rolle.",
+		"icon": "&#9632;",
+		"instantiation": ["auto"],
+		"propertyClasses": ["PT-Act-Name", "PT-Act-Text", "PC-Type"],
+		"changedAt": "2018-05-10T11:54:00+01:00"
+	},
+	{
+		"id": "RT-Sta",
+		"title": "FMC:State",
+		"description": "Ein 'Zustand' ist ein fundamentaler Modellelement-Typ für ein passives Objekt, z.B. ein Wert, ein Dokument, ein Informationsspeicher oder eine physische Beschaffenheit.",
+		"icon": "&#9679;",
+		"instantiation": ["auto"],
+		"propertyClasses": ["PT-Sta-Name", "PT-Sta-Text", "PC-Type"],
+		"changedAt": "2018-05-10T11:54:00+01:00"
+	},
+	{
+		"id": "RT-Evt",
+		"title": "FMC:Event",
+		"description": "Ein 'Ereignis' ist ein fundamentaler Modellelement-Typ für eine zeitliche Referenz, eine Änderung einer Bedingung bzw. eines Zustandes oder generell ein Synchronisations-Mittel.",
+		"icon": "&#9830;",
+		"instantiation": ["auto"],
+		"propertyClasses": ["PT-Evt-Name", "PT-Evt-Text", "PC-Type"],
+		"changedAt": "2018-05-10T11:54:00+01:00"
+	},
+	{
+		"id": "HT-ACProject",
+		"title": "SpecIF:Hierarchy",
+		"description": "Wurzel einer Spezifikation (Gliederung).",
+		"propertyClasses": ["PT-ACProject-Name", "PT-ACProject-Text"],
+		"changedAt": "2018-05-10T11:54:00+01:00",
+		"isHeading": true
+	}],
+	"statementClasses": [
+	{
+		"id": "ST-Visibility",
+		"title": "SpecIF:shows",
+		"description": "Plan zeigt Modellelement",
+		"instantiation": ["auto"],
+		"changedAt": "2018-05-10T11:54:00+01:00",
+		"subjectClasses": ["RT-Pln"],
+		"objectClasses": ["RT-Act", "RT-Sta", "RT-Evt"]
+	},
+	{
+		"id": "ST-Containment",
+		"title": "SpecIF:contains",
+		"description": "Modellelement enthält Modellelement",
+		"instantiation": ["auto"],
+		"changedAt": "2018-05-10T11:54:00+01:00",
+		"subjectClasses": ["RT-Act", "RT-Sta", "RT-Evt"],
+		"objectClasses": ["RT-Act", "RT-Sta", "RT-Evt"]
+	},
+	{
+		"id": "ST-Writing",
+		"title": "SpecIF:writes",
+		"description": "Akteur (Rolle, Funktion) schreibt Zustand (Information)",
+		"instantiation": ["auto"],
+		"changedAt": "2018-05-10T11:54:00+01:00",
+		"subjectClasses": ["RT-Act"],
+		"objectClasses": ["RT-Sta"]
+	},
+	{
+		"id": "ST-Reading",
+		"title": "SpecIF:reads",
+		"description": "Akteur (Rolle, Funktion) liest Zustand (Information)",
+		"instantiation": ["auto"],
+		"changedAt": "2018-05-10T11:54:00+01:00",
+		"subjectClasses": ["RT-Act"],
+		"objectClasses": ["RT-Sta"]
+	},
+	{
+		"id": "ST-Sending",
+		"title": "SpecIF:sendsTo",
+		"description": "Akteur (Rolle, Funktion) sendet an Akteur (Rolle, Funktion)",
+		"instantiation": ["auto"],
+		"changedAt": "2018-05-10T11:54:00+01:00",
+		"subjectClasses": ["RT-Act"],
+		"objectClasses": ["RT-Act"]
+	},
+	{
+		"id": "ST-Precedence",
+		"title": "SpecIF:precedes",
+		"description": "Modellelement kommt vor Modellelement",
+		"instantiation": ["auto"],
+		"changedAt": "2018-05-10T11:54:00+01:00",
+		"subjectClasses": ["RT-Act", "RT-Evt"],
+		"objectClasses": ["RT-Act", "RT-Evt"]
+	}],
+	"resources": [
+	{
+		"id": "Inf-e742a488ffa122480162618a9010bff4-info",
+		"title": "Projektinformation",
+		"class": "RT-Inf",
+		"properties": [
+		{
+			"title": "dcterms:title",
+			"class": "PT-Inf-Name",
+			"value": "Projektinformation"
+		},
+		{
+			"title": "dcterms:description",
+			"class": "PT-Inf-Text",
+			"value": "<div><p><object type=\"image/png\" data=\"files_and_images/adesso-logo.png\">Projektinformation</object></p><p class=\"inline-label\">Legende:</p><p>Zur Unterscheidung ihres Typs ist den Elementnamen eines der folgenden Symbole vorangestellt:</p><table class=\"stdInlineWithBorder\"><tr><td>&#9635;</td><td>Plan</td><td>Ein 'Plan' ist eine graphische Modellsicht zur Vermittlung eines bestimmten Sachverhalts, z.B. ein Geschäftsprozess oder Systemaufbau.</td></tr><tr><td>&#9632;</td><td>Akteur (Rolle, Funktion)</td><td>Ein 'Akteur' ist ein fundamentaler Modellelement-Typ für ein aktives Objekt, z.B. eine Aktivität, ein Prozess-Schritt, eine Funktion, eine Systemkomponente oder eine Rolle.</td></tr><tr><td>&#9679;</td><td>Zustand (Information)</td><td>Ein 'Zustand' ist ein fundamentaler Modellelement-Typ für ein passives Objekt, z.B. ein Wert, ein Dokument, ein Informationsspeicher oder eine physische Beschaffenheit.</td></tr><tr><td>&#9830;</td><td>Ereignis</td><td>Ein 'Ereignis' ist ein fundamentaler Modellelement-Typ für eine zeitliche Referenz, eine Änderung einer Bedingung bzw. eines Zustandes oder generell ein Synchronisations-Mittel.</td></tr><tr><td>&#10038;</td><td>Produktmerkmal</td><td>Ein 'Produktmerkmal' ist eine beabsichtigte differenzierende Eigenschaft eines Systems, oft ein Alleinstellungsmerkmal.</td></tr><tr><td>&#8623;</td><td>Anforderung</td><td>Eine 'Anforderung' ist ein einzelnes dokumentiertes physisches oder funktionales Bedürfnis, das der betreffende Entwurf, das Produkt oder der Prozess erfüllen muss.</td></tr><tr><td>&#9755;</td><td>Annotation</td><td>Eine Interaction-Room 'Annotation' weist auf einen Punkt besonderen Interesses hin. Hierzu gehören Werte, die Kundenbedürfnisse widerspiegeln oder positiven Effekt auf die Ziele der Organisation haben, Produkteigenschaften, deren Umsetzung Nutzen/Aufwand verursacht, und Herausforderungen, die während der Entwicklung zu berücksichtigen sind.</td></tr></table></div>"
+		}],
+		"changedAt": "2018-05-17T01:03:00+02:00"
+	},
+	{
+		"id": "Fld-e742a488ffa122480162618a9010bff4-glossary",
+		"title": "Modellelemente (Glossar)",
+		"class": "RT-Fld",
+		"properties": [
+		{
+			"title": "dcterms:title",
+			"class": "PT-Fld-Name",
+			"value": "Modellelemente (Glossar)"
+		},
+		{
+			"title": "dcterms:type",
+			"class": "PC-Type",
+			"value": "SpecIF:Glossary"
+		}],
+		"changedAt": "2018-05-10T11:54:00+01:00"
+	},
+	{
+		"id": "Fld-e742a488ffa122480162618a9010bff4-Act",
+		"title": "Typ 'Akteur'",
+		"class": "RT-Fld",
+		"properties": [
+		{
+			"title": "dcterms:title",
+			"class": "PT-Fld-Name",
+			"value": "Typ 'Akteur'"
+		},
+		{
+			"title": "dcterms:description",
+			"class": "PT-Fld-Text",
+			"value": "<div><p>Ein 'Akteur' ist ein fundamentaler Modellelement-Typ für ein aktives Objekt, z.B. eine Aktivität, ein Prozess-Schritt, eine Funktion, eine Systemkomponente oder eine Rolle.</p></div>"
+		}],
+		"changedAt": "2018-05-10T11:54:00+01:00"
+	},
+	{
+		"id": "Fld-e742a488ffa122480162618a9010bff4-Sta",
+		"title": "Typ 'Zustand'",
+		"class": "RT-Fld",
+		"properties": [
+		{
+			"title": "dcterms:title",
+			"class": "PT-Fld-Name",
+			"value": "Typ 'Zustand'"
+		},
+		{
+			"title": "dcterms:description",
+			"class": "PT-Fld-Text",
+			"value": "<div><p>Ein 'Zustand' ist ein fundamentaler Modellelement-Typ für ein passives Objekt, z.B. ein Wert, ein Dokument, ein Informationsspeicher oder eine physische Beschaffenheit.</p></div>"
+		}],
+		"changedAt": "2018-05-10T11:54:00+01:00"
+	},
+	{
+		"id": "Fld-e742a488ffa122480162618a9010bff4-Evt",
+		"title": "Typ 'Ereignis'",
+		"class": "RT-Fld",
+		"properties": [
+		{
+			"title": "dcterms:title",
+			"class": "PT-Fld-Name",
+			"value": "Typ 'Ereignis'"
+		},
+		{
+			"title": "dcterms:description",
+			"class": "PT-Fld-Text",
+			"value": "<div><p>Ein 'Ereignis' ist ein fundamentaler Modellelement-Typ für eine zeitliche Referenz, eine Änderung einer Bedingung bzw. eines Zustandes oder generell ein Synchronisations-Mittel.</p></div>"
+		}],
+		"changedAt": "2018-05-10T11:54:00+01:00"
+	},
+	{
+		"id": "MEl-e7cd8e77ffa122480162846150854728",
+		"title": "FiCo-Data",
+		"class": "RT-Sta",
+		"properties": [
+		{
+			"title": "dcterms:title",
+			"class": "PT-Sta-Name",
+			"value": "FiCo-Data"
+		},
+		{
+			"title": "dcterms:description",
+			"class": "PT-Sta-Text",
+			"value": "<div>Die Finanzdaten des Projekts, wie Angebotsvolumen, Tagessatz und anderes.</div>"
+		}],
+		"changedAt": "2018-04-21T12:43:00+02:00"
+	},
+	{
+		"id": "MEl-e7cd8e77ffa122480162846150854617",
+		"title": "Daten-1",
+		"class": "RT-Sta",
+		"properties": [
+		{
+			"title": "dcterms:title",
+			"class": "PT-Sta-Name",
+			"value": "Daten-1"
+		},
+		{
+			"title": "dcterms:description",
+			"class": "PT-Sta-Text",
+			"value": "<div></div>"
+		}],
+		"changedAt": "2018-04-21T12:43:00+02:00"
+	},
+	{
+		"id": "MEl-1559da920023b1a8016397053d794b7b",
+		"title": "Daten-1b",
+		"class": "RT-Sta",
+		"properties": [
+		{
+			"title": "dcterms:title",
+			"class": "PT-Sta-Name",
+			"value": "Daten-1b"
+		},
+		{
+			"title": "dcterms:description",
+			"class": "PT-Sta-Text",
+			"value": "<div></div>"
+		}],
+		"changedAt": "2018-04-30T09:00:00+02:00"
+	},
+	{
+		"id": "MEl-155a1b450023b1a80163c114577f9a3f",
+		"title": "Daten-2b",
+		"class": "RT-Sta",
+		"properties": [
+		{
+			"title": "dcterms:title",
+			"class": "PT-Sta-Name",
+			"value": "Daten-2b"
+		},
+		{
+			"title": "dcterms:description",
+			"class": "PT-Sta-Text",
+			"value": "<div>This business data object plays an important role in '[[Kommunikation mit Fachobjekten]]'; therefore it must be implemented early!</div>"
+		}],
+		"changedAt": "2018-04-30T09:00:00+02:00"
+	},
+	{
+		"id": "MEl-155a52ed0023b1a80163457dc8078cc9",
+		"title": "Daten-4b",
+		"class": "RT-Sta",
+		"properties": [
+		{
+			"title": "dcterms:title",
+			"class": "PT-Sta-Name",
+			"value": "Daten-4b"
+		},
+		{
+			"title": "dcterms:description",
+			"class": "PT-Sta-Text",
+			"value": "<div></div>"
+		}],
+		"changedAt": "2018-04-30T09:00:00+02:00"
+	},
+	{
+		"id": "MEl-e7d01cf1ffa122480162027255b356cc",
+		"title": "Ende-1",
+		"class": "RT-Evt",
+		"properties": [
+		{
+			"title": "dcterms:title",
+			"class": "PT-Evt-Name",
+			"value": "Ende-1"
+		},
+		{
+			"title": "dcterms:description",
+			"class": "PT-Evt-Text",
+			"value": "<div></div>"
+		}],
+		"changedAt": "2018-04-21T12:46:00+02:00"
+	},
+	{
+		"id": "MEl-e7456991ffa1224801622521f692d722",
+		"title": "Fall-a",
+		"class": "RT-Sta",
+		"properties": [
+		{
+			"title": "dcterms:title",
+			"class": "PT-Sta-Name",
+			"value": "Fall-a"
+		},
+		{
+			"title": "dcterms:description",
+			"class": "PT-Sta-Text",
+			"value": "<div></div>"
+		}],
+		"changedAt": "2018-04-21T10:16:00+02:00"
+	},
+	{
+		"id": "MEl-e7464edcffa12248016267bbfd941ff6",
+		"title": "Fall-b",
+		"class": "RT-Sta",
+		"properties": [
+		{
+			"title": "dcterms:title",
+			"class": "PT-Sta-Name",
+			"value": "Fall-b"
+		},
+		{
+			"title": "dcterms:description",
+			"class": "PT-Sta-Text",
+			"value": "<div></div>"
+		}],
+		"changedAt": "2018-04-21T10:16:00+02:00"
+	},
+	{
+		"id": "MEl-1531b8dc0023b1a801630a6d41db1663",
+		"title": "Funktion-1",
+		"class": "RT-Act",
+		"properties": [
+		{
+			"title": "dcterms:title",
+			"class": "PT-Act-Name",
+			"value": "Funktion-1"
+		},
+		{
+			"title": "dcterms:description",
+			"class": "PT-Act-Text",
+			"value": "<div></div>"
+		}],
+		"changedAt": "2018-04-30T08:16:00+02:00"
+	},
+	{
+		"id": "MEl-15590feb0023b1a801631879d9d2cacf",
+		"title": "Funktion-1b",
+		"class": "RT-Act",
+		"properties": [
+		{
+			"title": "dcterms:title",
+			"class": "PT-Act-Name",
+			"value": "Funktion-1b"
+		},
+		{
+			"title": "dcterms:description",
+			"class": "PT-Act-Text",
+			"value": "<div></div>"
+		}],
+		"changedAt": "2018-04-30T08:59:00+02:00"
+	},
+	{
+		"id": "MEl-153224c00023b1a801636b7e65a81221",
+		"title": "Funktion-2",
+		"class": "RT-Act",
+		"properties": [
+		{
+			"title": "dcterms:title",
+			"class": "PT-Act-Name",
+			"value": "Funktion-2"
+		},
+		{
+			"title": "dcterms:description",
+			"class": "PT-Act-Text",
+			"value": "<div></div>"
+		}],
+		"changedAt": "2018-04-30T08:16:00+02:00"
+	},
+	{
+		"id": "MEl-15593e690023b1a8016301246ced34f2",
+		"title": "Funktion-2b",
+		"class": "RT-Act",
+		"properties": [
+		{
+			"title": "dcterms:title",
+			"class": "PT-Act-Name",
+			"value": "Funktion-2b"
+		},
+		{
+			"title": "dcterms:description",
+			"class": "PT-Act-Text",
+			"value": "<div></div>"
+		}],
+		"changedAt": "2018-04-30T08:59:00+02:00"
+	},
+	{
+		"id": "MEl-153252c30023b1a80163af57df650d27",
+		"title": "Funktion-3",
+		"class": "RT-Act",
+		"properties": [
+		{
+			"title": "dcterms:title",
+			"class": "PT-Act-Name",
+			"value": "Funktion-3"
+		},
+		{
+			"title": "dcterms:description",
+			"class": "PT-Act-Text",
+			"value": "<div></div>"
+		}],
+		"changedAt": "2018-04-30T08:16:00+02:00"
+	},
+	{
+		"id": "MEl-1559669e0023b1a801630b8695588b62",
+		"title": "Funktion-3b",
+		"class": "RT-Act",
+		"properties": [
+		{
+			"title": "dcterms:title",
+			"class": "PT-Act-Name",
+			"value": "Funktion-3b"
+		},
+		{
+			"title": "dcterms:description",
+			"class": "PT-Act-Text",
+			"value": "<div></div>"
+		}],
+		"changedAt": "2018-04-30T08:59:00+02:00"
+	},
+	{
+		"id": "MEl-15328b550023b1a801632f02eaa61bf2",
+		"title": "Funktion-4",
+		"class": "RT-Act",
+		"properties": [
+		{
+			"title": "dcterms:title",
+			"class": "PT-Act-Name",
+			"value": "Funktion-4"
+		},
+		{
+			"title": "dcterms:description",
+			"class": "PT-Act-Text",
+			"value": "<div></div>"
+		}],
+		"changedAt": "2018-04-30T08:17:00+02:00"
+	},
+	{
+		"id": "MEl-15598ce80023b1a801634e1a63f5e053",
+		"title": "Funktion-4b",
+		"class": "RT-Act",
+		"properties": [
+		{
+			"title": "dcterms:title",
+			"class": "PT-Act-Name",
+			"value": "Funktion-4b"
+		},
+		{
+			"title": "dcterms:description",
+			"class": "PT-Act-Text",
+			"value": "<div></div>"
+		}],
+		"changedAt": "2018-04-30T08:59:00+02:00"
+	},
+	{
+		"id": "MEl-e7435a1fffa12248016217e23841174a",
+		"title": "Rolle-1",
+		"class": "RT-Act",
+		"properties": [
+		{
+			"title": "dcterms:title",
+			"class": "PT-Act-Name",
+			"value": "Rolle-1"
+		},
+		{
+			"title": "dcterms:description",
+			"class": "PT-Act-Text",
+			"value": "<div></div>"
+		}],
+		"changedAt": "2018-04-21T10:12:00+02:00"
+	},
+	{
+		"id": "MEl-e7caa98dffa1224801625e240114a0f3",
+		"title": "Rolle-2",
+		"class": "RT-Act",
+		"properties": [
+		{
+			"title": "dcterms:title",
+			"class": "PT-Act-Name",
+			"value": "Rolle-2"
+		},
+		{
+			"title": "dcterms:description",
+			"class": "PT-Act-Text",
+			"value": "<div></div>"
+		}],
+		"changedAt": "2018-04-21T12:40:00+02:00"
+	},
+	{
+		"id": "MEl-e743bccbffa1224801627c9038ee4775",
+		"title": "Schritt-1",
+		"class": "RT-Act",
+		"properties": [
+		{
+			"title": "dcterms:title",
+			"class": "PT-Act-Name",
+			"value": "Schritt-1"
+		},
+		{
+			"title": "dcterms:description",
+			"class": "PT-Act-Text",
+			"value": "<div></div>"
+		}],
+		"changedAt": "2018-04-21T10:13:00+02:00"
+	},
+	{
+		"id": "MEl-e744c180ffa12248016261d08fda8380",
+		"title": "Schritt-2a",
+		"class": "RT-Act",
+		"properties": [
+		{
+			"title": "dcterms:title",
+			"class": "PT-Act-Name",
+			"value": "Schritt-2a"
+		},
+		{
+			"title": "dcterms:description",
+			"class": "PT-Act-Text",
+			"value": "<div></div>"
+		}],
+		"changedAt": "2018-04-21T10:14:00+02:00"
+	},
+	{
+		"id": "MEl-e746032dffa1224801628b878f9b130a",
+		"title": "Schritt-2b",
+		"class": "RT-Act",
+		"properties": [
+		{
+			"title": "dcterms:title",
+			"class": "PT-Act-Name",
+			"value": "Schritt-2b"
+		},
+		{
+			"title": "dcterms:description",
+			"class": "PT-Act-Text",
+			"value": "<div></div>"
+		}],
+		"changedAt": "2018-04-21T10:15:00+02:00"
+	},
+	{
+		"id": "MEl-e7cb13d0ffa1224801625af2b46741ae",
+		"title": "Schritt-3",
+		"class": "RT-Act",
+		"properties": [
+		{
+			"title": "dcterms:title",
+			"class": "PT-Act-Name",
+			"value": "Schritt-3"
+		},
+		{
+			"title": "dcterms:description",
+			"class": "PT-Act-Text",
+			"value": "<div></div>"
+		}],
+		"changedAt": "2018-04-21T12:41:00+02:00"
+	},
+	{
+		"id": "MEl-e7cd28c1ffa122480162bf8e23a28143",
+		"title": "Schritt-4",
+		"class": "RT-Act",
+		"properties": [
+		{
+			"title": "dcterms:title",
+			"class": "PT-Act-Name",
+			"value": "Schritt-4"
+		},
+		{
+			"title": "dcterms:description",
+			"class": "PT-Act-Text",
+			"value": "<div></div>"
+		}],
+		"changedAt": "2018-04-21T12:43:00+02:00"
+	},
+	{
+		"id": "MEl-e7cae239ffa122480162947b6945db30",
+		"title": "Start-2",
+		"class": "RT-Evt",
+		"properties": [
+		{
+			"title": "dcterms:title",
+			"class": "PT-Evt-Name",
+			"value": "Start-2"
+		},
+		{
+			"title": "dcterms:description",
+			"class": "PT-Evt-Text",
+			"value": "<div></div>"
+		}],
+		"changedAt": "2018-04-21T12:40:00+02:00"
+	},
+	{
+		"id": "H-e742a488ffa122480162618a9010bff4",
+		"title": "Semantic Test (2018-05-17)",
+		"description": "This is the root node of a project hierarchy (tree)",
+		"class": "HT-ACProject",
+		"properties": [
+		{
+			"title": "dcterms:title",
+			"class": "PT-ACProject-Name",
+			"value": "Semantic Test (2018-05-17)"
+		}],
+		"changedAt": "2018-05-17T01:03:00+02:00"
+	}],
+	"statements": [
+	{
+		"id": "SPre-e7d01cf1ffa122480162027255b356cc-e744c180ffa12248016261d08fda8380",
+		"title": "SpecIF:precedes",
+		"description": "'Schritt-2a' kommt vor 'Ende-1'",
+		"class": "ST-Precedence",
+		"changedAt": "2018-05-17T01:03:00+02:00",
+		"subject": "MEl-e744c180ffa12248016261d08fda8380",
+		"object": "MEl-e7d01cf1ffa122480162027255b356cc"
+	},
+	{
+		"id": "SPre-e7d01cf1ffa122480162027255b356cc-e746032dffa1224801628b878f9b130a",
+		"title": "SpecIF:precedes",
+		"description": "'Schritt-2b' kommt vor 'Ende-1'",
+		"class": "ST-Precedence",
+		"changedAt": "2018-05-17T01:03:00+02:00",
+		"subject": "MEl-e746032dffa1224801628b878f9b130a",
+		"object": "MEl-e7d01cf1ffa122480162027255b356cc"
+	},
+	{
+		"id": "SPre-e7d01cf1ffa122480162027255b356cc-e7cb13d0ffa1224801625af2b46741ae",
+		"title": "SpecIF:precedes",
+		"description": "'Schritt-3' kommt vor 'Ende-1'",
+		"class": "ST-Precedence",
+		"changedAt": "2018-05-17T01:03:00+02:00",
+		"subject": "MEl-e7cb13d0ffa1224801625af2b46741ae",
+		"object": "MEl-e7d01cf1ffa122480162027255b356cc"
+	},
+	{
+		"id": "SPre-e7d01cf1ffa122480162027255b356cc-e7cd28c1ffa122480162bf8e23a28143",
+		"title": "SpecIF:precedes",
+		"description": "'Schritt-4' kommt vor 'Ende-1'",
+		"class": "ST-Precedence",
+		"changedAt": "2018-05-17T01:03:00+02:00",
+		"subject": "MEl-e7cd28c1ffa122480162bf8e23a28143",
+		"object": "MEl-e7d01cf1ffa122480162027255b356cc"
+	},
+	{
+		"id": "SPre-e7d01cf1ffa122480162027255b356cc-e7cd28c1ffa122480162bf8e23a28143-DUPL",
+		"title": "SpecIF:precedes",
+		"description": "'Schritt-4' kommt vor 'Ende-1'",
+		"class": "ST-Precedence",
+		"changedAt": "2018-05-17T01:03:00+02:00",
+		"subject": "MEl-e7cd28c1ffa122480162bf8e23a28143",
+		"object": "MEl-e7d01cf1ffa122480162027255b356cc"
+	},
+	{
+		"id": "SSnd-153224c00023b1a801636b7e65a81221-1531b8dc0023b1a801630a6d41db1663",
+		"title": "SpecIF:sendsTo",
+		"description": "'Funktion-2' sendet an 'Funktion-1'",
+		"class": "ST-Sending",
+		"changedAt": "2018-05-17T01:03:00+02:00",
+		"subject": "MEl-153224c00023b1a801636b7e65a81221",
+		"object": "MEl-1531b8dc0023b1a801630a6d41db1663"
+	},
+	{
+		"id": "SSnd-153224c00023b1a801636b7e65a81221-1531b8dc0023b1a801630a6d41db1663-DUPL",
+		"title": "SpecIF:sendsTo",
+		"description": "'Funktion-2' sendet an 'Funktion-1'",
+		"class": "ST-Sending",
+		"changedAt": "2018-05-17T01:03:00+02:00",
+		"subject": "MEl-153224c00023b1a801636b7e65a81221",
+		"object": "MEl-1531b8dc0023b1a801630a6d41db1663"
+	},
+	{
+		"id": "SSnd-15328b550023b1a801632f02eaa61bf2-1531b8dc0023b1a801630a6d41db1663",
+		"title": "SpecIF:sendsTo",
+		"description": "'Funktion-4' sendet an 'Funktion-1'",
+		"class": "ST-Sending",
+		"changedAt": "2018-05-17T01:03:00+02:00",
+		"subject": "MEl-15328b550023b1a801632f02eaa61bf2",
+		"object": "MEl-1531b8dc0023b1a801630a6d41db1663"
+	},
+	{
+		"id": "SWri-15590feb0023b1a801631879d9d2cacf-1559da920023b1a8016397053d794b7b",
+		"title": "SpecIF:writes",
+		"description": "'Funktion-1b' schreibt 'Daten-1b'",
+		"class": "ST-Writing",
+		"changedAt": "2018-05-17T01:03:00+02:00",
+		"subject": "MEl-15590feb0023b1a801631879d9d2cacf",
+		"object": "MEl-1559da920023b1a8016397053d794b7b"
+	},
+	{
+		"id": "SRea-15590feb0023b1a801631879d9d2cacf-1559da920023b1a8016397053d794b7b",
+		"title": "SpecIF:reads",
+		"description": "'Funktion-1b' liest 'Daten-1b'",
+		"class": "ST-Reading",
+		"changedAt": "2018-05-17T01:03:00+02:00",
+		"subject": "MEl-15590feb0023b1a801631879d9d2cacf",
+		"object": "MEl-1559da920023b1a8016397053d794b7b"
+	},
+	{
+		"id": "SWri-15590feb0023b1a801631879d9d2cacf-155a52ed0023b1a80163457dc8078cc9",
+		"title": "SpecIF:writes",
+		"description": "'Funktion-1b' schreibt 'Daten-4b'",
+		"class": "ST-Writing",
+		"changedAt": "2018-05-17T01:03:00+02:00",
+		"subject": "MEl-15590feb0023b1a801631879d9d2cacf",
+		"object": "MEl-155a52ed0023b1a80163457dc8078cc9"
+	},
+	{
+		"id": "SRea-15590feb0023b1a801631879d9d2cacf-155a52ed0023b1a80163457dc8078cc9",
+		"title": "SpecIF:reads",
+		"description": "'Funktion-1b' liest 'Daten-4b'",
+		"class": "ST-Reading",
+		"changedAt": "2018-05-17T01:03:00+02:00",
+		"subject": "MEl-15590feb0023b1a801631879d9d2cacf",
+		"object": "MEl-155a52ed0023b1a80163457dc8078cc9"
+	},
+	{
+		"id": "SSnd-1531b8dc0023b1a801630a6d41db1663-153224c00023b1a801636b7e65a81221",
+		"title": "SpecIF:sendsTo",
+		"description": "'Funktion-1' sendet an 'Funktion-2'",
+		"class": "ST-Sending",
+		"changedAt": "2018-05-17T01:03:00+02:00",
+		"subject": "MEl-1531b8dc0023b1a801630a6d41db1663",
+		"object": "MEl-153224c00023b1a801636b7e65a81221"
+	},
+	{
+		"id": "SWri-15593e690023b1a8016301246ced34f2-1559da920023b1a8016397053d794b7b",
+		"title": "SpecIF:writes",
+		"description": "'Funktion-2b' schreibt 'Daten-1b'",
+		"class": "ST-Writing",
+		"changedAt": "2018-05-17T01:03:00+02:00",
+		"subject": "MEl-15593e690023b1a8016301246ced34f2",
+		"object": "MEl-1559da920023b1a8016397053d794b7b"
+	},
+	{
+		"id": "SRea-15593e690023b1a8016301246ced34f2-1559da920023b1a8016397053d794b7b",
+		"title": "SpecIF:reads",
+		"description": "'Funktion-2b' liest 'Daten-1b'",
+		"class": "ST-Reading",
+		"changedAt": "2018-05-17T01:03:00+02:00",
+		"subject": "MEl-15593e690023b1a8016301246ced34f2",
+		"object": "MEl-1559da920023b1a8016397053d794b7b"
+	},
+	{
+		"id": "SWri-15593e690023b1a8016301246ced34f2-155a1b450023b1a80163c114577f9a3f",
+		"title": "SpecIF:writes",
+		"description": "'Funktion-2b' schreibt 'Daten-2b'",
+		"class": "ST-Writing",
+		"changedAt": "2018-05-17T01:03:00+02:00",
+		"subject": "MEl-15593e690023b1a8016301246ced34f2",
+		"object": "MEl-155a1b450023b1a80163c114577f9a3f"
+	},
+	{
+		"id": "SSnd-153224c00023b1a801636b7e65a81221-153252c30023b1a80163af57df650d27",
+		"title": "SpecIF:sendsTo",
+		"description": "'Funktion-2' sendet an 'Funktion-3'",
+		"class": "ST-Sending",
+		"changedAt": "2018-05-17T01:03:00+02:00",
+		"subject": "MEl-153224c00023b1a801636b7e65a81221",
+		"object": "MEl-153252c30023b1a80163af57df650d27"
+	},
+	{
+		"id": "SRea-1559669e0023b1a801630b8695588b62-155a1b450023b1a80163c114577f9a3f",
+		"title": "SpecIF:reads",
+		"description": "'Funktion-3b' liest 'Daten-2b'",
+		"class": "ST-Reading",
+		"changedAt": "2018-05-17T01:03:00+02:00",
+		"subject": "MEl-1559669e0023b1a801630b8695588b62",
+		"object": "MEl-155a1b450023b1a80163c114577f9a3f"
+	},
+	{
+		"id": "SSnd-1531b8dc0023b1a801630a6d41db1663-15328b550023b1a801632f02eaa61bf2",
+		"title": "SpecIF:sendsTo",
+		"description": "'Funktion-1' sendet an 'Funktion-4'",
+		"class": "ST-Sending",
+		"changedAt": "2018-05-17T01:03:00+02:00",
+		"subject": "MEl-1531b8dc0023b1a801630a6d41db1663",
+		"object": "MEl-15328b550023b1a801632f02eaa61bf2"
+	},
+	{
+		"id": "SWri-15598ce80023b1a801634e1a63f5e053-155a52ed0023b1a80163457dc8078cc9",
+		"title": "SpecIF:writes",
+		"description": "'Funktion-4b' schreibt 'Daten-4b'",
+		"class": "ST-Writing",
+		"changedAt": "2018-05-17T01:03:00+02:00",
+		"subject": "MEl-15598ce80023b1a801634e1a63f5e053",
+		"object": "MEl-155a52ed0023b1a80163457dc8078cc9"
+	},
+	{
+		"id": "SRea-15598ce80023b1a801634e1a63f5e053-155a52ed0023b1a80163457dc8078cc9",
+		"title": "SpecIF:reads",
+		"description": "'Funktion-4b' liest 'Daten-4b'",
+		"class": "ST-Reading",
+		"changedAt": "2018-05-17T01:03:00+02:00",
+		"subject": "MEl-15598ce80023b1a801634e1a63f5e053",
+		"object": "MEl-155a52ed0023b1a80163457dc8078cc9"
+	},
+	{
+		"id": "SCtn-e7435a1fffa12248016217e23841174a-e7456991ffa1224801622521f692d722",
+		"title": "SpecIF:contains",
+		"description": "'Rolle-1' enthält 'Fall-a'",
+		"class": "ST-Containment",
+		"changedAt": "2018-05-17T01:03:00+02:00",
+		"subject": "MEl-e7435a1fffa12248016217e23841174a",
+		"object": "MEl-e7456991ffa1224801622521f692d722"
+	},
+	{
+		"id": "SCtn-e7435a1fffa12248016217e23841174a-e7464edcffa12248016267bbfd941ff6",
+		"title": "SpecIF:contains",
+		"description": "'Rolle-1' enthält 'Fall-b'",
+		"class": "ST-Containment",
+		"changedAt": "2018-05-17T01:03:00+02:00",
+		"subject": "MEl-e7435a1fffa12248016217e23841174a",
+		"object": "MEl-e7464edcffa12248016267bbfd941ff6"
+	},
+	{
+		"id": "SCtn-e7435a1fffa12248016217e23841174a-e743bccbffa1224801627c9038ee4775",
+		"title": "SpecIF:contains",
+		"description": "'Rolle-1' enthält 'Schritt-1'",
+		"class": "ST-Containment",
+		"changedAt": "2018-05-17T01:03:00+02:00",
+		"subject": "MEl-e7435a1fffa12248016217e23841174a",
+		"object": "MEl-e743bccbffa1224801627c9038ee4775"
+	},
+	{
+		"id": "SCtn-e7435a1fffa12248016217e23841174a-e744c180ffa12248016261d08fda8380",
+		"title": "SpecIF:contains",
+		"description": "'Rolle-1' enthält 'Schritt-2a'",
+		"class": "ST-Containment",
+		"changedAt": "2018-05-17T01:03:00+02:00",
+		"subject": "MEl-e7435a1fffa12248016217e23841174a",
+		"object": "MEl-e744c180ffa12248016261d08fda8380"
+	},
+	{
+		"id": "SCtn-e7435a1fffa12248016217e23841174a-e746032dffa1224801628b878f9b130a",
+		"title": "SpecIF:contains",
+		"description": "'Rolle-1' enthält 'Schritt-2b'",
+		"class": "ST-Containment",
+		"changedAt": "2018-05-17T01:03:00+02:00",
+		"subject": "MEl-e7435a1fffa12248016217e23841174a",
+		"object": "MEl-e746032dffa1224801628b878f9b130a"
+	},
+	{
+		"id": "SCtn-e7caa98dffa1224801625e240114a0f3-e7d01cf1ffa122480162027255b356cc",
+		"title": "SpecIF:contains",
+		"description": "'Rolle-2' enthält 'Ende-1'",
+		"class": "ST-Containment",
+		"changedAt": "2018-05-17T01:03:00+02:00",
+		"subject": "MEl-e7caa98dffa1224801625e240114a0f3",
+		"object": "MEl-e7d01cf1ffa122480162027255b356cc"
+	},
+	{
+		"id": "SCtn-e7caa98dffa1224801625e240114a0f3-e7cb13d0ffa1224801625af2b46741ae",
+		"title": "SpecIF:contains",
+		"description": "'Rolle-2' enthält 'Schritt-3'",
+		"class": "ST-Containment",
+		"changedAt": "2018-05-17T01:03:00+02:00",
+		"subject": "MEl-e7caa98dffa1224801625e240114a0f3",
+		"object": "MEl-e7cb13d0ffa1224801625af2b46741ae"
+	},
+	{
+		"id": "SCtn-e7caa98dffa1224801625e240114a0f3-e7cd28c1ffa122480162bf8e23a28143",
+		"title": "SpecIF:contains",
+		"description": "'Rolle-2' enthält 'Schritt-4'",
+		"class": "ST-Containment",
+		"changedAt": "2018-05-17T01:03:00+02:00",
+		"subject": "MEl-e7caa98dffa1224801625e240114a0f3",
+		"object": "MEl-e7cd28c1ffa122480162bf8e23a28143"
+	},
+	{
+		"id": "SCtn-e7caa98dffa1224801625e240114a0f3-e7cae239ffa122480162947b6945db30",
+		"title": "SpecIF:contains",
+		"description": "'Rolle-2' enthält 'Start-2'",
+		"class": "ST-Containment",
+		"changedAt": "2018-05-17T01:03:00+02:00",
+		"subject": "MEl-e7caa98dffa1224801625e240114a0f3",
+		"object": "MEl-e7cae239ffa122480162947b6945db30"
+	},
+	{
+		"id": "SWri-e744c180ffa12248016261d08fda8380-e7cd8e77ffa122480162846150854617",
+		"title": "SpecIF:writes",
+		"description": "'Schritt-2a' schreibt 'Daten-1'",
+		"class": "ST-Writing",
+		"changedAt": "2018-05-17T01:03:00+02:00",
+		"subject": "MEl-e744c180ffa12248016261d08fda8380",
+		"object": "MEl-e7cd8e77ffa122480162846150854617"
+	},
+	{
+		"id": "SRea-e744c180ffa12248016261d08fda8380-e7cd8e77ffa122480162846150854617",
+		"title": "SpecIF:reads",
+		"description": "'Schritt-2a' liest 'Daten-1'",
+		"class": "ST-Reading",
+		"changedAt": "2018-05-17T01:03:00+02:00",
+		"subject": "MEl-e744c180ffa12248016261d08fda8380",
+		"object": "MEl-e7cd8e77ffa122480162846150854617"
+	},
+	{
+		"id": "SPre-e744c180ffa12248016261d08fda8380-e743bccbffa1224801627c9038ee4775",
+		"title": "SpecIF:precedes",
+		"description": "'Schritt-1' kommt vor 'Schritt-2a'",
+		"class": "ST-Precedence",
+		"changedAt": "2018-05-17T01:03:00+02:00",
+		"subject": "MEl-e743bccbffa1224801627c9038ee4775",
+		"object": "MEl-e744c180ffa12248016261d08fda8380"
+	},
+	{
+		"id": "SSnd-e7cb13d0ffa1224801625af2b46741ae-e746032dffa1224801628b878f9b130a",
+		"title": "SpecIF:sendsTo",
+		"description": "'Schritt-3' sendet an 'Schritt-2b'",
+		"class": "ST-Sending",
+		"changedAt": "2018-05-17T01:03:00+02:00",
+		"subject": "MEl-e7cb13d0ffa1224801625af2b46741ae",
+		"object": "MEl-e746032dffa1224801628b878f9b130a"
+	},
+	{
+		"id": "SPre-e746032dffa1224801628b878f9b130a-e743bccbffa1224801627c9038ee4775",
+		"title": "SpecIF:precedes",
+		"description": "'Schritt-1' kommt vor 'Schritt-2b'",
+		"class": "ST-Precedence",
+		"changedAt": "2018-05-17T01:03:00+02:00",
+		"subject": "MEl-e743bccbffa1224801627c9038ee4775",
+		"object": "MEl-e746032dffa1224801628b878f9b130a"
+	},
+	{
+		"id": "SSnd-e746032dffa1224801628b878f9b130a-e7cb13d0ffa1224801625af2b46741ae",
+		"title": "SpecIF:sendsTo",
+		"description": "'Schritt-2b' sendet an 'Schritt-3'",
+		"class": "ST-Sending",
+		"changedAt": "2018-05-17T01:03:00+02:00",
+		"subject": "MEl-e746032dffa1224801628b878f9b130a",
+		"object": "MEl-e7cb13d0ffa1224801625af2b46741ae"
+	},
+	{
+		"id": "SPre-e7cb13d0ffa1224801625af2b46741ae-e7cae239ffa122480162947b6945db30",
+		"title": "SpecIF:precedes",
+		"description": "'Start-2' kommt vor 'Schritt-3'",
+		"class": "ST-Precedence",
+		"changedAt": "2018-05-17T01:03:00+02:00",
+		"subject": "MEl-e7cae239ffa122480162947b6945db30",
+		"object": "MEl-e7cb13d0ffa1224801625af2b46741ae"
+	},
+	{
+		"id": "SWri-e7cd28c1ffa122480162bf8e23a28143-e7cd8e77ffa122480162846150854617",
+		"title": "SpecIF:writes",
+		"description": "'Schritt-4' schreibt 'Daten-1'",
+		"class": "ST-Writing",
+		"changedAt": "2018-05-17T01:03:00+02:00",
+		"subject": "MEl-e7cd28c1ffa122480162bf8e23a28143",
+		"object": "MEl-e7cd8e77ffa122480162846150854617"
+	},
+	{
+		"id": "SRea-e7cd28c1ffa122480162bf8e23a28143-e7cd8e77ffa122480162846150854617",
+		"title": "SpecIF:reads",
+		"description": "'Schritt-4' liest 'Daten-1'",
+		"class": "ST-Reading",
+		"changedAt": "2018-05-17T01:03:00+02:00",
+		"subject": "MEl-e7cd28c1ffa122480162bf8e23a28143",
+		"object": "MEl-e7cd8e77ffa122480162846150854617"
+	},
+	{
+		"id": "SPre-e7cd28c1ffa122480162bf8e23a28143-e7cb13d0ffa1224801625af2b46741ae",
+		"title": "SpecIF:precedes",
+		"description": "'Schritt-3' kommt vor 'Schritt-4'",
+		"class": "ST-Precedence",
+		"changedAt": "2018-05-17T01:03:00+02:00",
+		"subject": "MEl-e7cb13d0ffa1224801625af2b46741ae",
+		"object": "MEl-e7cd28c1ffa122480162bf8e23a28143"
+	}],
+	"hierarchies": [
+	{
+		"id": "N-H-e742a488ffa122480162618a9010bff4",
+		"resource": "H-e742a488ffa122480162618a9010bff4",
+		"changedAt": "2018-05-17T01:03:00+02:00",
+		"nodes": [
+		{
+			"id": "N-Inf-e742a488ffa122480162618a9010bff4-info",
+			"resource": "Inf-e742a488ffa122480162618a9010bff4-info",
+			"changedAt": "2018-05-17T01:03:00+02:00"
+		},
+		{
+			"id": "N-Fld-e742a488ffa122480162618a9010bff4-glossary",
+			"resource": "Fld-e742a488ffa122480162618a9010bff4-glossary",
+			"changedAt": "2018-05-10T11:54:00+01:00",
+			"nodes": [
+			{
+				"id": "N-Fld-e742a488ffa122480162618a9010bff4-Act",
+				"resource": "Fld-e742a488ffa122480162618a9010bff4-Act",
+				"changedAt": "2018-05-10T11:54:00+01:00",
+				"nodes": [
+				{
+					"id": "N-MEl-1531b8dc0023b1a801630a6d41db1663",
+					"resource": "MEl-1531b8dc0023b1a801630a6d41db1663",
+					"changedAt": "2018-05-17T01:03:00+02:00"
+				},
+				{
+					"id": "N-MEl-15590feb0023b1a801631879d9d2cacf",
+					"resource": "MEl-15590feb0023b1a801631879d9d2cacf",
+					"changedAt": "2018-05-17T01:03:00+02:00"
+				},
+				{
+					"id": "N-MEl-153224c00023b1a801636b7e65a81221",
+					"resource": "MEl-153224c00023b1a801636b7e65a81221",
+					"changedAt": "2018-05-17T01:03:00+02:00"
+				},
+				{
+					"id": "N-MEl-15593e690023b1a8016301246ced34f2",
+					"resource": "MEl-15593e690023b1a8016301246ced34f2",
+					"changedAt": "2018-05-17T01:03:00+02:00"
+				},
+				{
+					"id": "N-MEl-153252c30023b1a80163af57df650d27",
+					"resource": "MEl-153252c30023b1a80163af57df650d27",
+					"changedAt": "2018-05-17T01:03:00+02:00"
+				},
+				{
+					"id": "N-MEl-1559669e0023b1a801630b8695588b62",
+					"resource": "MEl-1559669e0023b1a801630b8695588b62",
+					"changedAt": "2018-05-17T01:03:00+02:00"
+				},
+				{
+					"id": "N-MEl-15328b550023b1a801632f02eaa61bf2",
+					"resource": "MEl-15328b550023b1a801632f02eaa61bf2",
+					"changedAt": "2018-05-17T01:03:00+02:00"
+				},
+				{
+					"id": "N-MEl-15598ce80023b1a801634e1a63f5e053",
+					"resource": "MEl-15598ce80023b1a801634e1a63f5e053",
+					"changedAt": "2018-05-17T01:03:00+02:00"
+				},
+				{
+					"id": "N-MEl-e7435a1fffa12248016217e23841174a",
+					"resource": "MEl-e7435a1fffa12248016217e23841174a",
+					"changedAt": "2018-05-17T01:03:00+02:00"
+				},
+				{
+					"id": "N-MEl-e7caa98dffa1224801625e240114a0f3",
+					"resource": "MEl-e7caa98dffa1224801625e240114a0f3",
+					"changedAt": "2018-05-17T01:03:00+02:00"
+				},
+				{
+					"id": "N-MEl-e743bccbffa1224801627c9038ee4775",
+					"resource": "MEl-e743bccbffa1224801627c9038ee4775",
+					"changedAt": "2018-05-17T01:03:00+02:00"
+				},
+				{
+					"id": "N-MEl-e744c180ffa12248016261d08fda8380",
+					"resource": "MEl-e744c180ffa12248016261d08fda8380",
+					"changedAt": "2018-05-17T01:03:00+02:00"
+				},
+				{
+					"id": "N-MEl-e746032dffa1224801628b878f9b130a",
+					"resource": "MEl-e746032dffa1224801628b878f9b130a",
+					"changedAt": "2018-05-17T01:03:00+02:00"
+				},
+				{
+					"id": "N-MEl-e7cb13d0ffa1224801625af2b46741ae",
+					"resource": "MEl-e7cb13d0ffa1224801625af2b46741ae",
+					"changedAt": "2018-05-17T01:03:00+02:00"
+				},
+				{
+					"id": "N-MEl-e7cd28c1ffa122480162bf8e23a28143",
+					"resource": "MEl-e7cd28c1ffa122480162bf8e23a28143",
+					"changedAt": "2018-05-17T01:03:00+02:00"
+				}]
+			},
+			{
+				"id": "N-Fld-e742a488ffa122480162618a9010bff4-Sta",
+				"resource": "Fld-e742a488ffa122480162618a9010bff4-Sta",
+				"changedAt": "2018-05-10T11:54:00+01:00",
+				"nodes": [
+				{
+					"id": "N-MEl-e7cd8e77ffa122480162846150854728",
+					"resource": "MEl-e7cd8e77ffa122480162846150854728",
+					"changedAt": "2018-05-17T01:03:00+02:00"
+				},
+				{
+					"id": "N-MEl-e7cd8e77ffa122480162846150854617",
+					"resource": "MEl-e7cd8e77ffa122480162846150854617",
+					"changedAt": "2018-05-17T01:03:00+02:00"
+				},
+				{
+					"id": "N-MEl-1559da920023b1a8016397053d794b7b",
+					"resource": "MEl-1559da920023b1a8016397053d794b7b",
+					"changedAt": "2018-05-17T01:03:00+02:00"
+				},
+				{
+					"id": "N-MEl-155a1b450023b1a80163c114577f9a3f",
+					"resource": "MEl-155a1b450023b1a80163c114577f9a3f",
+					"changedAt": "2018-05-17T01:03:00+02:00"
+				},
+				{
+					"id": "N-MEl-155a52ed0023b1a80163457dc8078cc9",
+					"resource": "MEl-155a52ed0023b1a80163457dc8078cc9",
+					"changedAt": "2018-05-17T01:03:00+02:00"
+				},
+				{
+					"id": "N-MEl-e7456991ffa1224801622521f692d722",
+					"resource": "MEl-e7456991ffa1224801622521f692d722",
+					"changedAt": "2018-05-17T01:03:00+02:00"
+				},
+				{
+					"id": "N-MEl-e7464edcffa12248016267bbfd941ff6",
+					"resource": "MEl-e7464edcffa12248016267bbfd941ff6",
+					"changedAt": "2018-05-17T01:03:00+02:00"
+				}]
+			},
+			{
+				"id": "N-Fld-e742a488ffa122480162618a9010bff4-Evt",
+				"resource": "Fld-e742a488ffa122480162618a9010bff4-Evt",
+				"changedAt": "2018-05-10T11:54:00+01:00",
+				"nodes": [
+				{
+					"id": "N-MEl-e7d01cf1ffa122480162027255b356cc",
+					"resource": "MEl-e7d01cf1ffa122480162027255b356cc",
+					"changedAt": "2018-05-17T01:03:00+02:00"
+				},
+				{
+					"id": "N-MEl-e7cae239ffa122480162947b6945db30",
+					"resource": "MEl-e7cae239ffa122480162947b6945db30",
+					"changedAt": "2018-05-17T01:03:00+02:00"
+				}]
+			}]
+		}]
+	}],
+	"files": [
+	{
+		"id": "F-1728676693",
+		"title": "files_and_images/153172e80023b1a801639f2cd8868d02.png",
+		"type": "image/png",
+		"changedAt": "2018-05-17T01:03:02.000Z"
+	},
+	{
+		"id": "F--625540472",
+		"title": "files_and_images/15586ba50023b1a8016345d736abd50a.png",
+		"type": "image/png",
+		"changedAt": "2018-05-17T01:03:02.000Z"
+	},
+	{
+		"id": "F--414189923",
+		"title": "files_and_images/ArcWayLogo_236x236.png",
+		"type": "image/png",
+		"changedAt": "2018-05-17T01:03:02.000Z"
+	},
+	{
+		"id": "F--546575976",
+		"title": "files_and_images/e7431277ffa122480162940c0cd41366.png",
+		"type": "image/png",
+		"changedAt": "2018-05-17T01:03:02.000Z"
+	}]
+}

@@ -1,0 +1,3238 @@
+{
+    "id": "ACP-50f2bc440029b1a8016ef884388572ce",
+    "description": "Diese Applikations-Landkarte gehört zu einem Prozess gleichen Namens. In diesem Beispiel wird die Modellintegration mittels SpecIF demonstriert. Hierzu wird zuerst der SpecIF-Export aus ARCWAY geladen und dann der Prozess mit der Methode &apos;Adopt&apos; hinzugefügt. Bereits existierende Modellelemente gleichen Namens (dcterms:title) und Typs werden vom Prozess übernommen und so entsteht das semantisch integrierte Modell.",
+    "title": "Projektvorgehen-Beispiel (2020-02-23)",
+    "specifVersion": "0.10.4",
+    "generator": "ARCWAY Cockpit",
+    "generatorVersion": "3.6",
+    "rights": {
+        "title": "Creative Commons 4.0 CC BY-SA",
+        "type": "dcterms:rights",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    "createdAt": "2020-02-23T09:52:00+01:00",
+    "createdBy": {
+        "familyName": "von Dungern",
+        "givenName": "Oskar",
+        "org": {
+            "organizationName": "adesso AG"
+        },
+        "email": {
+            "type": "text/html",
+            "value": "oskar.dungern@adesso.de"
+        }
+    },
+    "dataTypes": [{
+        "id": "DT-Boolean",
+        "title": "Boolean",
+        "type": "xs:boolean",
+        "changedAt": "2018-05-10T11:54:00+01:00"
+    }, {
+        "id": "DT-Integer",
+        "title": "Integer",
+        "type": "xs:integer",
+        "min": -32768,
+        "max": 32767,
+        "changedAt": "2018-05-10T11:54:00+01:00"
+    }, {
+        "id": "DT-Real",
+        "title": "Real",
+        "type": "xs:double",
+        "min": -10000.0,
+        "max": 10000.0,
+        "accuracy": 5,
+        "changedAt": "2018-05-10T11:54:00+01:00"
+    }, {
+        "id": "DT-Date",
+        "title": "Date or Timestamp",
+        "type": "xs:dateTime",
+        "changedAt": "2018-05-10T11:54:00+01:00"
+    }, {
+        "id": "DT-ShortString",
+        "title": "String [96]",
+        "description": "String with length 96",
+        "type": "xs:string",
+        "maxLength": 96,
+        "changedAt": "2018-05-10T11:54:00+01:00"
+    }, {
+        "id": "DT-String",
+        "title": "String [512]",
+        "description": "String with length 512",
+        "type": "xs:string",
+        "maxLength": 512,
+        "changedAt": "2018-05-10T11:54:00+01:00"
+    }, {
+        "id": "DT-Text",
+        "title": "dcterms:description",
+        "description": "String with length 8192",
+        "type": "xs:string",
+        "maxLength": 8192,
+        "changedAt": "2018-05-10T11:54:00+01:00"
+    }, {
+        "id": "DT-FormattedText",
+        "title": "Formatted Text with length 8192",
+        "type": "xhtml",
+        "maxLength": 8192,
+        "changedAt": "2018-05-10T11:54:00+01:00"
+    }, {
+        "id": "DT-Req-Status",
+        "title": "SpecIF:Status",
+        "description": "Enumerated values for requirement status",
+        "type": "xs:enumeration",
+        "values": [{
+            "id": "V-Req-Status-0",
+            "title": "00_abgelehnt"
+        }, {
+            "id": "V-Req-Status-1",
+            "title": "00_nicht-anwendbar"
+        }, {
+            "id": "V-Req-Status-2",
+            "title": "00_redundant"
+        }, {
+            "id": "V-Req-Status-3",
+            "title": "00_veraltet"
+        }, {
+            "id": "V-Req-Status-4",
+            "title": "10_initial"
+        }, {
+            "id": "V-Req-Status-5",
+            "title": "20_bearbeitet"
+        }, {
+            "id": "V-Req-Status-6",
+            "title": "30_entscheidungsreif"
+        }, {
+            "id": "V-Req-Status-7",
+            "title": "40_genehmigt"
+        }],
+        "changedAt": "2018-05-10T11:54:00+01:00"
+    }, {
+        "id": "DT-Req-Priority",
+        "title": "SpecIF:Priority",
+        "description": "Enumerated values for requirement priority",
+        "type": "xs:enumeration",
+        "values": [{
+            "id": "V-Req-Prio-0",
+            "title": "gering (S)"
+        }, {
+            "id": "V-Req-Prio-1",
+            "title": "hoch (L)"
+        }, {
+            "id": "V-Req-Prio-2",
+            "title": "mittel (M)"
+        }],
+        "changedAt": "2018-05-10T11:54:00+01:00"
+    }, {
+        "id": "DT-Diagram-custom.status",
+        "title": "SpecIF:Status",
+        "description": "Enumerated values for plan custom.status",
+        "type": "xs:enumeration",
+        "values": [{
+            "id": "V-Diagram-custom.status-0",
+            "title": "00_abgelehnt"
+        }, {
+            "id": "V-Diagram-custom.status-1",
+            "title": "00_nicht-anwendbar"
+        }, {
+            "id": "V-Diagram-custom.status-2",
+            "title": "00_redundant"
+        }, {
+            "id": "V-Diagram-custom.status-3",
+            "title": "00_veraltet"
+        }, {
+            "id": "V-Diagram-custom.status-4",
+            "title": "10_initial"
+        }, {
+            "id": "V-Diagram-custom.status-5",
+            "title": "20_bearbeitet"
+        }, {
+            "id": "V-Diagram-custom.status-6",
+            "title": "30_entscheidungsreif"
+        }, {
+            "id": "V-Diagram-custom.status-7",
+            "title": "40_genehmigt"
+        }],
+        "changedAt": "2018-05-10T11:54:00+01:00"
+    }, {
+        "id": "DT-Diagram-custom.IR-canvas-type",
+        "title": "Typ",
+        "description": "Enumerated values for plan custom.IR-canvas-type",
+        "type": "xs:enumeration",
+        "values": [{
+            "id": "V-Diagram-custom.IR-canvas-type-0",
+            "title": "Prozess"
+        }, {
+            "id": "V-Diagram-custom.IR-canvas-type-1",
+            "title": "System-Integration"
+        }, {
+            "id": "V-Diagram-custom.IR-canvas-type-2",
+            "title": "Fachobjekte"
+        }, {
+            "id": "V-Diagram-custom.IR-canvas-type-3",
+            "title": "Merkmale"
+        }, {
+            "id": "V-Diagram-custom.IR-canvas-type-4",
+            "title": "Interaktion"
+        }, {
+            "id": "V-Diagram-custom.IR-canvas-type-5",
+            "title": "Kontaktpunkte"
+        }, {
+            "id": "V-Diagram-custom.IR-canvas-type-6",
+            "title": "Partner"
+        }, {
+            "id": "V-Diagram-custom.IR-canvas-type-7",
+            "title": "Physische Objekte"
+        }],
+        "changedAt": "2018-05-10T11:54:00+01:00"
+    }, {
+        "id": "DT-Diagram-custom.his-supplier-status",
+        "title": "HIS:SupplierStatus",
+        "description": "Enumerated values for plan custom.his-supplier-status",
+        "type": "xs:enumeration",
+        "values": [{
+            "id": "V-Diagram-custom.his-supplier-status-0",
+            "title": "«leer»"
+        }, {
+            "id": "V-Diagram-custom.his-supplier-status-1",
+            "title": "akzeptiert"
+        }, {
+            "id": "V-Diagram-custom.his-supplier-status-2",
+            "title": "eingeschränkt-akzeptiert"
+        }, {
+            "id": "V-Diagram-custom.his-supplier-status-3",
+            "title": "nicht-akzeptiert"
+        }, {
+            "id": "V-Diagram-custom.his-supplier-status-4",
+            "title": "zu-klären"
+        }],
+        "changedAt": "2018-05-10T11:54:00+01:00"
+    }, {
+        "id": "DT-Diagram-custom.his-oem-status",
+        "title": "HIS:OemStatus",
+        "description": "Enumerated values for plan custom.his-oem-status",
+        "type": "xs:enumeration",
+        "values": [{
+            "id": "V-Diagram-custom.his-oem-status-0",
+            "title": "«leer»"
+        }, {
+            "id": "V-Diagram-custom.his-oem-status-1",
+            "title": "Bewertung-akzeptiert"
+        }, {
+            "id": "V-Diagram-custom.his-oem-status-2",
+            "title": "Bewertung-nicht-akzeptiert"
+        }, {
+            "id": "V-Diagram-custom.his-oem-status-3",
+            "title": "zu-bewerten"
+        }, {
+            "id": "V-Diagram-custom.his-oem-status-4",
+            "title": "nicht-zu-bewerten"
+        }],
+        "changedAt": "2018-05-10T11:54:00+01:00"
+    }, {
+        "id": "DT-Req-custom.IREB-type",
+        "title": "Art",
+        "description": "Enumerated values for requirement custom.IREB-type",
+        "type": "xs:enumeration",
+        "values": [{
+            "id": "V-Req-custom.IREB-type-0",
+            "title": "«unbestimmt»"
+        }, {
+            "id": "V-Req-custom.IREB-type-1",
+            "title": "Funktionale Anforderung"
+        }, {
+            "id": "V-Req-custom.IREB-type-2",
+            "title": "Qualitäts-Anforderung"
+        }, {
+            "id": "V-Req-custom.IREB-type-3",
+            "title": "Randbedingung"
+        }],
+        "changedAt": "2018-05-10T11:54:00+01:00"
+    }, {
+        "id": "DT-Req-custom.Category",
+        "title": "Kategorie",
+        "description": "Enumerated values for requirement custom.Category",
+        "type": "xs:enumeration",
+        "values": [{
+            "id": "V-Req-custom.Category-0",
+            "title": "Top Level Goal"
+        }, {
+            "id": "V-Req-custom.Category-1",
+            "title": "Use Case"
+        }, {
+            "id": "V-Req-custom.Category-2",
+            "title": "Feature"
+        }, {
+            "id": "V-Req-custom.Category-3",
+            "title": "User Experience"
+        }, {
+            "id": "V-Req-custom.Category-4",
+            "title": "Reliability and Availability"
+        }, {
+            "id": "V-Req-custom.Category-5",
+            "title": "Performance and Capacity"
+        }, {
+            "id": "V-Req-custom.Category-6",
+            "title": "Security"
+        }, {
+            "id": "V-Req-custom.Category-7",
+            "title": "Robustness"
+        }, {
+            "id": "V-Req-custom.Category-8",
+            "title": "Ease of Operation"
+        }, {
+            "id": "V-Req-custom.Category-9",
+            "title": "Technical Constraint"
+        }, {
+            "id": "V-Req-custom.Category-10",
+            "title": "Design Constraint"
+        }, {
+            "id": "V-Req-custom.Category-11",
+            "title": "Programming Guideline"
+        }, {
+            "id": "V-Req-custom.Category-12",
+            "title": "Documentation"
+        }],
+        "changedAt": "2018-05-10T11:54:00+01:00"
+    }, {
+        "id": "DT-Req-custom.Release",
+        "title": "Release",
+        "description": "Enumerated values for requirement custom.Release",
+        "type": "xs:enumeration",
+        "values": [{
+            "id": "V-Req-custom.Release-0",
+            "title": "recurring"
+        }],
+        "changedAt": "2018-05-10T11:54:00+01:00"
+    }, {
+        "id": "DT-Req-custom.his-supplier-status",
+        "title": "HIS:SupplierStatus",
+        "description": "Enumerated values for requirement custom.his-supplier-status",
+        "type": "xs:enumeration",
+        "values": [{
+            "id": "V-Req-custom.his-supplier-status-0",
+            "title": "«leer»"
+        }, {
+            "id": "V-Req-custom.his-supplier-status-1",
+            "title": "akzeptiert"
+        }, {
+            "id": "V-Req-custom.his-supplier-status-2",
+            "title": "eingeschränkt-akzeptiert"
+        }, {
+            "id": "V-Req-custom.his-supplier-status-3",
+            "title": "nicht-akzeptiert"
+        }, {
+            "id": "V-Req-custom.his-supplier-status-4",
+            "title": "zu-klären"
+        }],
+        "changedAt": "2018-05-10T11:54:00+01:00"
+    }, {
+        "id": "DT-Req-custom.his-oem-status",
+        "title": "HIS:OemStatus",
+        "description": "Enumerated values for requirement custom.his-oem-status",
+        "type": "xs:enumeration",
+        "values": [{
+            "id": "V-Req-custom.his-oem-status-0",
+            "title": "«leer»"
+        }, {
+            "id": "V-Req-custom.his-oem-status-1",
+            "title": "Bewertung-akzeptiert"
+        }, {
+            "id": "V-Req-custom.his-oem-status-2",
+            "title": "Bewertung-nicht-akzeptiert"
+        }, {
+            "id": "V-Req-custom.his-oem-status-3",
+            "title": "zu-bewerten"
+        }, {
+            "id": "V-Req-custom.his-oem-status-4",
+            "title": "nicht-zu-bewerten"
+        }],
+        "changedAt": "2018-05-10T11:54:00+01:00"
+    }, {
+        "id": "DT-Req-custom.IR-annotation-class",
+        "title": "Klasse",
+        "description": "Enumerated values for requirement custom.IR-annotation-class",
+        "type": "xs:enumeration",
+        "values": [{
+            "id": "V-Req-custom.IR-annotation-class-0",
+            "title": "Werte-Treiber"
+        }, {
+            "id": "V-Req-custom.IR-annotation-class-1",
+            "title": "Aufwands-Treiber"
+        }, {
+            "id": "V-Req-custom.IR-annotation-class-2",
+            "title": "Risiko-Treiber"
+        }],
+        "changedAt": "2018-05-10T11:54:00+01:00"
+    }, {
+        "id": "DT-Req-custom.IR-annotation-subclass",
+        "title": "Unterklasse",
+        "description": "Enumerated values for requirement custom.IR-annotation-subclass",
+        "type": "xs:enumeration",
+        "values": [{
+            "id": "V-Req-custom.IR-annotation-subclass-0",
+            "title": "Wertvoll für das Geschäft"
+        }, {
+            "id": "V-Req-custom.IR-annotation-subclass-1",
+            "title": "Wertvoll für den Anwender"
+        }, {
+            "id": "V-Req-custom.IR-annotation-subclass-2",
+            "title": "Innovation"
+        }, {
+            "id": "V-Req-custom.IR-annotation-subclass-3",
+            "title": "Häufiger Gebrauch"
+        }, {
+            "id": "V-Req-custom.IR-annotation-subclass-4",
+            "title": "Zeitbeschränkung"
+        }, {
+            "id": "V-Req-custom.IR-annotation-subclass-5",
+            "title": "Präzision"
+        }, {
+            "id": "V-Req-custom.IR-annotation-subclass-6",
+            "title": "Zuverlässigkeit"
+        }, {
+            "id": "V-Req-custom.IR-annotation-subclass-7",
+            "title": "Sicherheit"
+        }, {
+            "id": "V-Req-custom.IR-annotation-subclass-8",
+            "title": "Bedienerfreundlichkeit"
+        }, {
+            "id": "V-Req-custom.IR-annotation-subclass-9",
+            "title": "Attraktivität"
+        }, {
+            "id": "V-Req-custom.IR-annotation-subclass-10",
+            "title": "Flexibilität"
+        }, {
+            "id": "V-Req-custom.IR-annotation-subclass-11",
+            "title": "Mobilität"
+        }, {
+            "id": "V-Req-custom.IR-annotation-subclass-12",
+            "title": "Schnittstelle"
+        }, {
+            "id": "V-Req-custom.IR-annotation-subclass-13",
+            "title": "Automation"
+        }, {
+            "id": "V-Req-custom.IR-annotation-subclass-14",
+            "title": "Manuelle Aufgabe"
+        }, {
+            "id": "V-Req-custom.IR-annotation-subclass-15",
+            "title": "Richtlinie"
+        }, {
+            "id": "V-Req-custom.IR-annotation-subclass-16",
+            "title": "Komplexität"
+        }, {
+            "id": "V-Req-custom.IR-annotation-subclass-17",
+            "title": "Unveränderbarkeit"
+        }, {
+            "id": "V-Req-custom.IR-annotation-subclass-18",
+            "title": "Veralteter Stand"
+        }, {
+            "id": "V-Req-custom.IR-annotation-subclass-19",
+            "title": "Verbesserungsbedarf"
+        }, {
+            "id": "V-Req-custom.IR-annotation-subclass-20",
+            "title": "Externe Resource"
+        }, {
+            "id": "V-Req-custom.IR-annotation-subclass-21",
+            "title": "Unsicherheit"
+        }],
+        "changedAt": "2018-05-10T11:54:00+01:00"
+    }, {
+        "id": "DT-Req-custom.IR-annotation-benefit",
+        "title": "Potentieller Nutzen",
+        "description": "Enumerated values for requirement custom.IR-annotation-benefit",
+        "type": "xs:enumeration",
+        "values": [{
+            "id": "V-Req-custom.IR-annotation-benefit-0",
+            "title": "klein (S)"
+        }, {
+            "id": "V-Req-custom.IR-annotation-benefit-1",
+            "title": "mittel (M)"
+        }, {
+            "id": "V-Req-custom.IR-annotation-benefit-2",
+            "title": "groß (L)"
+        }],
+        "changedAt": "2018-05-10T11:54:00+01:00"
+    }, {
+        "id": "DT-Req-custom.IR-annotation-risk",
+        "title": "Potentielles Risiko",
+        "description": "Enumerated values for requirement custom.IR-annotation-risk",
+        "type": "xs:enumeration",
+        "values": [{
+            "id": "V-Req-custom.IR-annotation-risk-0",
+            "title": "klein (S)"
+        }, {
+            "id": "V-Req-custom.IR-annotation-risk-1",
+            "title": "mittel (M)"
+        }, {
+            "id": "V-Req-custom.IR-annotation-risk-2",
+            "title": "groß (L)"
+        }],
+        "changedAt": "2018-05-10T11:54:00+01:00"
+    }, {
+        "id": "DT-Req-custom.IR-annotation-frequency",
+        "title": "Änderungshäufigkeit",
+        "description": "Enumerated values for requirement custom.IR-annotation-frequency",
+        "type": "xs:enumeration",
+        "values": [{
+            "id": "V-Req-custom.IR-annotation-frequency-0",
+            "title": "klein (S)"
+        }, {
+            "id": "V-Req-custom.IR-annotation-frequency-1",
+            "title": "mittel (M)"
+        }, {
+            "id": "V-Req-custom.IR-annotation-frequency-2",
+            "title": "groß (L)"
+        }],
+        "changedAt": "2018-05-10T11:54:00+01:00"
+    }, {
+        "id": "DT-Req-custom.IR-annotation-difficulty",
+        "title": "Schwierigkeit",
+        "description": "Enumerated values for requirement custom.IR-annotation-difficulty",
+        "type": "xs:enumeration",
+        "values": [{
+            "id": "V-Req-custom.IR-annotation-difficulty-0",
+            "title": "klein (S)"
+        }, {
+            "id": "V-Req-custom.IR-annotation-difficulty-1",
+            "title": "mittel (M)"
+        }, {
+            "id": "V-Req-custom.IR-annotation-difficulty-2",
+            "title": "groß (L)"
+        }],
+        "changedAt": "2018-05-10T11:54:00+01:00"
+    }],
+    "resourceClasses": [{
+        "id": "RC-Folder",
+        "title": "SpecIF:Heading",
+        "description": "Ordner mit Titel und Text für Kapitel oder Textpassagen.",
+        "instantiation": ["auto", "user"],
+        "isHeading": true,
+        "propertyClasses": [{
+            "id": "PC-Folder-Name",
+            "title": "dcterms:title",
+            "dataType": "DT-ShortString",
+            "changedAt": "2018-05-10T11:54:00+01:00"
+        }, {
+            "id": "PC-Folder-Text",
+            "title": "dcterms:description",
+            "dataType": "DT-FormattedText",
+            "changedAt": "2018-05-10T11:54:00+01:00"
+        }, {
+            "id": "PC-Folder-Type",
+            "title": "dcterms:type",
+            "dataType": "DT-ShortString",
+            "changedAt": "2018-05-10T11:54:00+01:00"
+        }],
+        "changedAt": "2018-05-10T11:54:00+01:00"
+    }, {
+        "id": "RC-Diagram",
+        "title": "SpecIF:Diagram",
+        "description": "Ein 'Plan' ist eine graphische Modellsicht zur Vermittlung eines bestimmten Sachverhalts, z.B. ein Geschäftsprozess oder Systemaufbau.",
+        "instantiation": ["user"],
+        "icon": "&#9635;",
+        "propertyClasses": [{
+            "id": "PC-Diagram-Name",
+            "title": "dcterms:title",
+            "dataType": "DT-ShortString",
+            "changedAt": "2018-05-10T11:54:00+01:00"
+        }, {
+            "id": "PC-Diagram-Text",
+            "title": "dcterms:description",
+            "dataType": "DT-FormattedText",
+            "changedAt": "2018-05-10T11:54:00+01:00"
+        }, {
+            "id": "PC-Diagram-Diagram",
+            "title": "SpecIF:Diagram",
+            "dataType": "DT-FormattedText",
+            "changedAt": "2018-05-10T11:54:00+01:00"
+        }, {
+            "id": "PC-Diagram-Notation",
+            "title": "SpecIF:Notation",
+            "dataType": "DT-ShortString",
+            "changedAt": "2018-05-10T11:54:00+01:00"
+        }, {
+            "id": "PC-Diagram-custom.status",
+            "title": "SpecIF:Status",
+            "dataType": "DT-Diagram-custom.status",
+            "changedAt": "2018-05-10T11:54:00+01:00"
+        }, {
+            "id": "PC-Diagram-custom.IR-canvas-type",
+            "title": "Typ",
+            "dataType": "DT-Diagram-custom.IR-canvas-type",
+            "changedAt": "2018-05-10T11:54:00+01:00"
+        }, {
+            "id": "PC-Diagram-custom.his-supplier-status",
+            "title": "HIS:SupplierStatus",
+            "dataType": "DT-Diagram-custom.his-supplier-status",
+            "changedAt": "2018-05-10T11:54:00+01:00"
+        }, {
+            "id": "PC-Diagram-custom.his-supplier-comment",
+            "title": "HIS:SupplierComment",
+            "dataType": "DT-FormattedText",
+            "changedAt": "2018-05-10T11:54:00+01:00"
+        }, {
+            "id": "PC-Diagram-custom.his-oem-status",
+            "title": "HIS:OemStatus",
+            "dataType": "DT-Diagram-custom.his-oem-status",
+            "changedAt": "2018-05-10T11:54:00+01:00"
+        }, {
+            "id": "PC-Diagram-custom.his-oem-comment",
+            "title": "HIS:OemComment",
+            "dataType": "DT-FormattedText",
+            "changedAt": "2018-05-10T11:54:00+01:00"
+        }],
+        "changedAt": "2018-05-10T11:54:00+01:00"
+    }, {
+        "id": "RC-Actor",
+        "title": "FMC:Actor",
+        "description": "Ein 'Akteur' ist ein fundamentaler Modellelement-Typ für ein aktives Objekt, z.B. eine Aktivität, ein Prozess-Schritt, eine Funktion, eine Systemkomponente oder eine Rolle.",
+        "instantiation": ["auto"],
+        "icon": "&#9632;",
+        "propertyClasses": [{
+            "id": "PC-Actor-Name",
+            "title": "dcterms:title",
+            "dataType": "DT-ShortString",
+            "changedAt": "2018-05-10T11:54:00+01:00"
+        }, {
+            "id": "PC-Actor-Text",
+            "title": "dcterms:description",
+            "dataType": "DT-FormattedText",
+            "changedAt": "2018-05-10T11:54:00+01:00"
+        }, {
+            "id": "PC-Actor-Type",
+            "title": "dcterms:type",
+            "dataType": "DT-ShortString",
+            "changedAt": "2018-05-10T11:54:00+01:00"
+        }],
+        "changedAt": "2018-05-10T11:54:00+01:00"
+    }, {
+        "id": "RC-State",
+        "title": "FMC:State",
+        "description": "Ein 'Zustand' ist ein fundamentaler Modellelement-Typ für ein passives Objekt, z.B. ein Wert, ein Dokument, ein Informationsspeicher oder eine physische Beschaffenheit.",
+        "instantiation": ["auto"],
+        "icon": "&#9679;",
+        "propertyClasses": [{
+            "id": "PC-State-Name",
+            "title": "dcterms:title",
+            "dataType": "DT-ShortString",
+            "changedAt": "2018-05-10T11:54:00+01:00"
+        }, {
+            "id": "PC-State-Text",
+            "title": "dcterms:description",
+            "dataType": "DT-FormattedText",
+            "changedAt": "2018-05-10T11:54:00+01:00"
+        }, {
+            "id": "PC-State-Type",
+            "title": "dcterms:type",
+            "dataType": "DT-ShortString",
+            "changedAt": "2018-05-10T11:54:00+01:00"
+        }],
+        "changedAt": "2018-05-10T11:54:00+01:00"
+    }, {
+        "id": "RC-Event",
+        "title": "FMC:Event",
+        "description": "Ein 'Ereignis' ist ein fundamentaler Modellelement-Typ für eine zeitliche Referenz, eine Änderung einer Bedingung bzw. eines Zustandes oder generell ein Synchronisations-Mittel.",
+        "instantiation": ["auto"],
+        "icon": "&#9830;",
+        "propertyClasses": [{
+            "id": "PC-Event-Name",
+            "title": "dcterms:title",
+            "dataType": "DT-ShortString",
+            "changedAt": "2018-05-10T11:54:00+01:00"
+        }, {
+            "id": "PC-Event-Text",
+            "title": "dcterms:description",
+            "dataType": "DT-FormattedText",
+            "changedAt": "2018-05-10T11:54:00+01:00"
+        }, {
+            "id": "PC-Event-Type",
+            "title": "dcterms:type",
+            "dataType": "DT-ShortString",
+            "changedAt": "2018-05-10T11:54:00+01:00"
+        }],
+        "changedAt": "2018-05-10T11:54:00+01:00"
+    }, {
+        "id": "RC-Req-default",
+        "title": "Anforderung (default)",
+        "instantiation": ["user"],
+        "propertyClasses": [{
+            "id": "PC-Req-default-ID",
+            "title": "dcterms:identifier",
+            "dataType": "DT-ShortString",
+            "changedAt": "2018-05-10T11:54:00+01:00"
+        }, {
+            "id": "PC-Req-default-Name",
+            "title": "dcterms:title",
+            "dataType": "DT-ShortString",
+            "changedAt": "2018-05-10T11:54:00+01:00"
+        }, {
+            "id": "PC-Req-default-Text",
+            "title": "dcterms:description",
+            "dataType": "DT-FormattedText",
+            "changedAt": "2018-05-10T11:54:00+01:00"
+        }, {
+            "id": "PC-Req-default-Status",
+            "title": "SpecIF:Status",
+            "dataType": "DT-Req-Status",
+            "changedAt": "2018-05-10T11:54:00+01:00"
+        }, {
+            "id": "PC-Req-default-Priority",
+            "title": "SpecIF:Priority",
+            "dataType": "DT-Req-Priority",
+            "changedAt": "2018-05-10T11:54:00+01:00"
+        }, {
+            "id": "PC-Req-default-custom.internal-comments",
+            "title": "Interner Kommentar",
+            "dataType": "DT-FormattedText",
+            "changedAt": "2018-05-10T11:54:00+01:00"
+        }, {
+            "id": "PC-Req-default-custom.IREB-type",
+            "title": "Art",
+            "dataType": "DT-Req-custom.IREB-type",
+            "changedAt": "2018-05-10T11:54:00+01:00"
+        }, {
+            "id": "PC-Req-default-custom.Category",
+            "title": "Kategorie",
+            "dataType": "DT-Req-custom.Category",
+            "changedAt": "2018-05-10T11:54:00+01:00"
+        }, {
+            "id": "PC-Req-default-custom.initiator",
+            "title": "Urheber/Quelle",
+            "dataType": "DT-String",
+            "changedAt": "2018-05-10T11:54:00+01:00"
+        }, {
+            "id": "PC-Req-default-custom.fitCriterion",
+            "title": "Abnahme-Kriterium",
+            "dataType": "DT-FormattedText",
+            "changedAt": "2018-05-10T11:54:00+01:00"
+        }, {
+            "id": "PC-Req-default-custom.Release",
+            "title": "Release",
+            "dataType": "DT-Req-custom.Release",
+            "changedAt": "2018-05-10T11:54:00+01:00"
+        }, {
+            "id": "PC-Req-default-custom.his-supplier-status",
+            "title": "HIS:SupplierStatus",
+            "dataType": "DT-Req-custom.his-supplier-status",
+            "changedAt": "2018-05-10T11:54:00+01:00"
+        }, {
+            "id": "PC-Req-default-custom.his-supplier-comment",
+            "title": "HIS:SupplierComment",
+            "dataType": "DT-FormattedText",
+            "changedAt": "2018-05-10T11:54:00+01:00"
+        }, {
+            "id": "PC-Req-default-custom.his-oem-status",
+            "title": "HIS:OemStatus",
+            "dataType": "DT-Req-custom.his-oem-status",
+            "changedAt": "2018-05-10T11:54:00+01:00"
+        }, {
+            "id": "PC-Req-default-custom.his-oem-comment",
+            "title": "HIS:OemComment",
+            "dataType": "DT-FormattedText",
+            "changedAt": "2018-05-10T11:54:00+01:00"
+        }, {
+            "id": "PC-Req-default-custom.IR-stakeholder-pro",
+            "title": "Stakeholder (pro)",
+            "dataType": "DT-String",
+            "changedAt": "2018-05-10T11:54:00+01:00"
+        }, {
+            "id": "PC-Req-default-custom.IR-stakeholder-contra",
+            "title": "Stakeholder (contra)",
+            "dataType": "DT-String",
+            "changedAt": "2018-05-10T11:54:00+01:00"
+        }, {
+            "id": "PC-Req-default-custom.IR-annotation-class",
+            "title": "Klasse",
+            "dataType": "DT-Req-custom.IR-annotation-class",
+            "changedAt": "2018-05-10T11:54:00+01:00"
+        }, {
+            "id": "PC-Req-default-custom.IR-annotation-subclass",
+            "title": "Unterklasse",
+            "dataType": "DT-Req-custom.IR-annotation-subclass",
+            "changedAt": "2018-05-10T11:54:00+01:00"
+        }, {
+            "id": "PC-Req-default-custom.IR-annotation-benefit",
+            "title": "Potentieller Nutzen",
+            "dataType": "DT-Req-custom.IR-annotation-benefit",
+            "changedAt": "2018-05-10T11:54:00+01:00"
+        }, {
+            "id": "PC-Req-default-custom.IR-annotation-risk",
+            "title": "Potentielles Risiko",
+            "dataType": "DT-Req-custom.IR-annotation-risk",
+            "changedAt": "2018-05-10T11:54:00+01:00"
+        }, {
+            "id": "PC-Req-default-custom.IR-annotation-frequency",
+            "title": "Änderungshäufigkeit",
+            "dataType": "DT-Req-custom.IR-annotation-frequency",
+            "changedAt": "2018-05-10T11:54:00+01:00"
+        }, {
+            "id": "PC-Req-default-custom.IR-annotation-difficulty",
+            "title": "Schwierigkeit",
+            "dataType": "DT-Req-custom.IR-annotation-difficulty",
+            "changedAt": "2018-05-10T11:54:00+01:00"
+        }],
+        "changedAt": "2018-05-10T11:54:00+01:00"
+    }, {
+        "id": "RC-Req",
+        "title": "IREB:Requirement",
+        "description": "Eine 'Anforderung' ist ein einzelnes dokumentiertes physisches oder funktionales Bedürfnis, das der betreffende Entwurf, das Produkt oder der Prozess erfüllen muss.",
+        "icon": "&#8623;",
+        "instantiation": ["user"],
+        "propertyClasses": [{
+            "id": "PC-Req-ID",
+            "title": "dcterms:identifier",
+            "dataType": "DT-ShortString",
+            "changedAt": "2018-05-10T11:54:00+01:00"
+        }, {
+            "id": "PC-Req-Name",
+            "title": "dcterms:title",
+            "dataType": "DT-ShortString",
+            "changedAt": "2018-05-10T11:54:00+01:00"
+        }, {
+            "id": "PC-Req-Text",
+            "title": "dcterms:description",
+            "dataType": "DT-FormattedText",
+            "changedAt": "2018-05-10T11:54:00+01:00"
+        }, {
+            "id": "PC-Req-Status",
+            "title": "SpecIF:Status",
+            "dataType": "DT-Req-Status",
+            "changedAt": "2018-05-10T11:54:00+01:00"
+        }, {
+            "id": "PC-Req-Priority",
+            "title": "SpecIF:Priority",
+            "dataType": "DT-Req-Priority",
+            "changedAt": "2018-05-10T11:54:00+01:00"
+        }, {
+            "id": "PC-Req-custom.internal-comments",
+            "title": "Interner Kommentar",
+            "dataType": "DT-FormattedText",
+            "changedAt": "2018-05-10T11:54:00+01:00"
+        }, {
+            "id": "PC-Req-custom.IREB-type",
+            "title": "Art",
+            "dataType": "DT-Req-custom.IREB-type",
+            "changedAt": "2018-05-10T11:54:00+01:00"
+        }, {
+            "id": "PC-Req-custom.Category",
+            "title": "Kategorie",
+            "dataType": "DT-Req-custom.Category",
+            "changedAt": "2018-05-10T11:54:00+01:00"
+        }, {
+            "id": "PC-Req-custom.initiator",
+            "title": "Urheber/Quelle",
+            "dataType": "DT-String",
+            "changedAt": "2018-05-10T11:54:00+01:00"
+        }, {
+            "id": "PC-Req-custom.fitCriterion",
+            "title": "Abnahme-Kriterium",
+            "dataType": "DT-FormattedText",
+            "changedAt": "2018-05-10T11:54:00+01:00"
+        }, {
+            "id": "PC-Req-custom.Release",
+            "title": "Release",
+            "dataType": "DT-Req-custom.Release",
+            "changedAt": "2018-05-10T11:54:00+01:00"
+        }, {
+            "id": "PC-Req-custom.his-supplier-status",
+            "title": "HIS:SupplierStatus",
+            "dataType": "DT-Req-custom.his-supplier-status",
+            "changedAt": "2018-05-10T11:54:00+01:00"
+        }, {
+            "id": "PC-Req-custom.his-supplier-comment",
+            "title": "HIS:SupplierComment",
+            "dataType": "DT-FormattedText",
+            "changedAt": "2018-05-10T11:54:00+01:00"
+        }, {
+            "id": "PC-Req-custom.his-oem-status",
+            "title": "HIS:OemStatus",
+            "dataType": "DT-Req-custom.his-oem-status",
+            "changedAt": "2018-05-10T11:54:00+01:00"
+        }, {
+            "id": "PC-Req-custom.his-oem-comment",
+            "title": "HIS:OemComment",
+            "dataType": "DT-FormattedText",
+            "changedAt": "2018-05-10T11:54:00+01:00"
+        }],
+        "changedAt": "2018-05-10T11:54:00+01:00"
+    }, {
+        "id": "RC-Fea",
+        "title": "SpecIF:Feature",
+        "description": "Ein 'Produktmerkmal' ist eine beabsichtigte differenzierende Eigenschaft eines Systems, oft ein Alleinstellungsmerkmal.",
+        "icon": "&#10038;",
+        "instantiation": ["user"],
+        "propertyClasses": [{
+            "id": "PC-Fea-ID",
+            "title": "dcterms:identifier",
+            "dataType": "DT-ShortString",
+            "changedAt": "2018-05-10T11:54:00+01:00"
+        }, {
+            "id": "PC-Fea-Name",
+            "title": "dcterms:title",
+            "dataType": "DT-ShortString",
+            "changedAt": "2018-05-10T11:54:00+01:00"
+        }, {
+            "id": "PC-Fea-Text",
+            "title": "dcterms:description",
+            "dataType": "DT-FormattedText",
+            "changedAt": "2018-05-10T11:54:00+01:00"
+        }, {
+            "id": "PC-Fea-Status",
+            "title": "SpecIF:Status",
+            "dataType": "DT-Req-Status",
+            "changedAt": "2018-05-10T11:54:00+01:00"
+        }, {
+            "id": "PC-Fea-Priority",
+            "title": "SpecIF:Priority",
+            "dataType": "DT-Req-Priority",
+            "changedAt": "2018-05-10T11:54:00+01:00"
+        }, {
+            "id": "PC-Fea-custom.internal-comments",
+            "title": "Interner Kommentar",
+            "dataType": "DT-FormattedText",
+            "changedAt": "2018-05-10T11:54:00+01:00"
+        }, {
+            "id": "PC-Fea-custom.initiator",
+            "title": "Urheber/Quelle",
+            "dataType": "DT-String",
+            "changedAt": "2018-05-10T11:54:00+01:00"
+        }, {
+            "id": "PC-Fea-custom.Release",
+            "title": "Release",
+            "dataType": "DT-Req-custom.Release",
+            "changedAt": "2018-05-10T11:54:00+01:00"
+        }, {
+            "id": "PC-Fea-custom.his-supplier-status",
+            "title": "HIS:SupplierStatus",
+            "dataType": "DT-Req-custom.his-supplier-status",
+            "changedAt": "2018-05-10T11:54:00+01:00"
+        }, {
+            "id": "PC-Fea-custom.his-supplier-comment",
+            "title": "HIS:SupplierComment",
+            "dataType": "DT-FormattedText",
+            "changedAt": "2018-05-10T11:54:00+01:00"
+        }, {
+            "id": "PC-Fea-custom.his-oem-status",
+            "title": "HIS:OemStatus",
+            "dataType": "DT-Req-custom.his-oem-status",
+            "changedAt": "2018-05-10T11:54:00+01:00"
+        }, {
+            "id": "PC-Fea-custom.his-oem-comment",
+            "title": "HIS:OemComment",
+            "dataType": "DT-FormattedText",
+            "changedAt": "2018-05-10T11:54:00+01:00"
+        }],
+        "changedAt": "2018-05-10T11:54:00+01:00"
+    }, {
+        "id": "RC-Ann",
+        "title": "IR:Annotation",
+        "description": "Eine Interaction-Room 'Annotation' weist auf einen Punkt besonderen Interesses hin. Hierzu gehören Werte, die Kundenbedürfnisse widerspiegeln oder positiven Effekt auf die Ziele der Organisation haben, Produkteigenschaften, deren Umsetzung Nutzen/Aufwand verursacht, und Herausforderungen, die während der Entwicklung zu berücksichtigen sind.",
+        "icon": "&#9755;",
+        "instantiation": ["user"],
+        "propertyClasses": [{
+            "id": "PC-Ann-ID",
+            "title": "dcterms:identifier",
+            "dataType": "DT-ShortString",
+            "changedAt": "2018-05-10T11:54:00+01:00"
+        }, {
+            "id": "PC-Ann-Name",
+            "title": "dcterms:title",
+            "dataType": "DT-ShortString",
+            "changedAt": "2018-05-10T11:54:00+01:00"
+        }, {
+            "id": "PC-Ann-Text",
+            "title": "dcterms:description",
+            "dataType": "DT-FormattedText",
+            "changedAt": "2018-05-10T11:54:00+01:00"
+        }, {
+            "id": "PC-Ann-Status",
+            "title": "SpecIF:Status",
+            "dataType": "DT-Req-Status",
+            "changedAt": "2018-05-10T11:54:00+01:00"
+        }, {
+            "id": "PC-Ann-Priority",
+            "title": "SpecIF:Priority",
+            "dataType": "DT-Req-Priority",
+            "changedAt": "2018-05-10T11:54:00+01:00"
+        }, {
+            "id": "PC-Ann-custom.IR-stakeholder-pro",
+            "title": "Stakeholder (pro)",
+            "dataType": "DT-String",
+            "changedAt": "2018-05-10T11:54:00+01:00"
+        }, {
+            "id": "PC-Ann-custom.IR-stakeholder-contra",
+            "title": "Stakeholder (contra)",
+            "dataType": "DT-String",
+            "changedAt": "2018-05-10T11:54:00+01:00"
+        }, {
+            "id": "PC-Ann-custom.IR-annotation-class",
+            "title": "Klasse",
+            "dataType": "DT-Req-custom.IR-annotation-class",
+            "changedAt": "2018-05-10T11:54:00+01:00"
+        }, {
+            "id": "PC-Ann-custom.IR-annotation-subclass",
+            "title": "Unterklasse",
+            "dataType": "DT-Req-custom.IR-annotation-subclass",
+            "changedAt": "2018-05-10T11:54:00+01:00"
+        }, {
+            "id": "PC-Ann-custom.IR-annotation-benefit",
+            "title": "Potentieller Nutzen",
+            "dataType": "DT-Req-custom.IR-annotation-benefit",
+            "changedAt": "2018-05-10T11:54:00+01:00"
+        }, {
+            "id": "PC-Ann-custom.IR-annotation-risk",
+            "title": "Potentielles Risiko",
+            "dataType": "DT-Req-custom.IR-annotation-risk",
+            "changedAt": "2018-05-10T11:54:00+01:00"
+        }, {
+            "id": "PC-Ann-custom.IR-annotation-frequency",
+            "title": "Änderungshäufigkeit",
+            "dataType": "DT-Req-custom.IR-annotation-frequency",
+            "changedAt": "2018-05-10T11:54:00+01:00"
+        }, {
+            "id": "PC-Ann-custom.IR-annotation-difficulty",
+            "title": "Schwierigkeit",
+            "dataType": "DT-Req-custom.IR-annotation-difficulty",
+            "changedAt": "2018-05-10T11:54:00+01:00"
+        }],
+        "changedAt": "2018-05-10T11:54:00+01:00"
+    }],
+    "statementClasses": [{
+        "id": "SC-Visibility",
+        "title": "SpecIF:shows",
+        "description": "Plan zeigt Modellelement",
+        "instantiation": ["auto"],
+        "subjectClasses": ["RC-Diagram"],
+        "objectClasses": ["RC-Actor", "RC-State", "RC-Event"],
+        "changedAt": "2018-05-10T11:54:00+01:00"
+    }, {
+        "id": "SC-Containment",
+        "title": "SpecIF:contains",
+        "description": "Modellelement enthält Modellelement",
+        "instantiation": ["auto"],
+        "subjectClasses": ["RC-Actor", "RC-State", "RC-Event"],
+        "objectClasses": ["RC-Actor", "RC-State", "RC-Event"],
+        "changedAt": "2018-05-10T11:54:00+01:00"
+    }, {
+        "id": "SC-Writing",
+        "title": "SpecIF:writes",
+        "description": "Akteur (Rolle, Funktion) schreibt Zustand (Information)",
+        "instantiation": ["auto"],
+        "subjectClasses": ["RC-Actor"],
+        "objectClasses": ["RC-State"],
+        "changedAt": "2018-05-10T11:54:00+01:00"
+    }, {
+        "id": "SC-Reading",
+        "title": "SpecIF:reads",
+        "description": "Akteur (Rolle, Funktion) liest Zustand (Information)",
+        "instantiation": ["auto"],
+        "subjectClasses": ["RC-Actor"],
+        "objectClasses": ["RC-State"],
+        "changedAt": "2018-05-10T11:54:00+01:00"
+    }, {
+        "id": "SC-Sending",
+        "title": "SpecIF:sendsTo",
+        "description": "Akteur (Rolle, Funktion) sendet an Akteur (Rolle, Funktion)",
+        "instantiation": ["auto"],
+        "subjectClasses": ["RC-Actor"],
+        "objectClasses": ["RC-Actor"],
+        "changedAt": "2018-05-10T11:54:00+01:00"
+    }, {
+        "id": "SC-Influence",
+        "title": "SpecIF:influences",
+        "description": "Zustand (Information) beeinflusst Zustand (Information)",
+        "instantiation": ["auto"],
+        "subjectClasses": ["RC-State"],
+        "objectClasses": ["RC-State"],
+        "changedAt": "2018-05-10T11:54:00+01:00"
+    }, {
+        "id": "SC-Precedence",
+        "title": "SpecIF:precedes",
+        "description": "Modellelement kommt vor Modellelement",
+        "instantiation": ["auto"],
+        "subjectClasses": ["RC-Actor", "RC-Event"],
+        "objectClasses": ["RC-Actor", "RC-Event"],
+        "changedAt": "2018-05-10T11:54:00+01:00"
+    }, {
+        "id": "SC-Dependency",
+        "title": "SpecIF:dependsOn",
+        "description": "Anforderung ist abhängig von Anforderung",
+        "instantiation": ["user"],
+        "subjectClasses": ["RC-Req-default", "RC-Req", "RC-Fea", "RC-Ann"],
+        "objectClasses": ["RC-Req-default", "RC-Req", "RC-Fea", "RC-Ann"],
+        "changedAt": "2018-05-10T11:54:00+01:00"
+    }, {
+        "id": "SC-Annotation",
+        "title": "IR:refersTo",
+        "description": "Annotation bezieht sich auf Modellelement",
+        "instantiation": ["user", "auto"],
+        "subjectClasses": ["RC-Ann"],
+        "objectClasses": ["RC-Actor", "RC-State", "RC-Event"],
+        "changedAt": "2018-05-10T11:54:00+01:00"
+    }, {
+        "id": "SC-Satisfaction",
+        "title": "oslc_rm:satisfies",
+        "description": "Modellelement erfüllt Anforderung",
+        "instantiation": ["user", "auto"],
+        "subjectClasses": ["RC-Actor", "RC-State", "RC-Event"],
+        "objectClasses": ["RC-Req-default", "RC-Req", "RC-Fea"],
+        "changedAt": "2018-05-10T11:54:00+01:00"
+    }],
+    "hierarchyClasses": [{
+        "id": "HC-ACProject",
+        "title": "SpecIF:Hierarchy",
+        "description": "Wurzel einer Spezifikation (Gliederung).",
+        "propertyClasses": [{
+            "id": "PC-ACProject-Name",
+            "title": "dcterms:title",
+            "dataType": "DT-ShortString",
+            "changedAt": "2018-05-10T11:54:00+01:00"
+        }, {
+            "id": "PC-ACProject-Text",
+            "title": "dcterms:description",
+            "dataType": "DT-FormattedText",
+            "changedAt": "2018-05-10T11:54:00+01:00"
+        }],
+        "changedAt": "2018-05-10T11:54:00+01:00"
+    }],
+    "resources": [{
+        "id": "Folder-50f2bc440029b1a8016ef884388572ce-info",
+        "title": "Projektinformation",
+        "class": "RC-Folder",
+        "properties": [{
+            "title": "dcterms:title",
+            "class": "PC-Folder-Name",
+            "value": "Projektinformation"
+        }, {
+            "title": "dcterms:description",
+            "class": "PC-Folder-Text",
+            "value": "<div><p><object type=\"image/png\" data=\"files_and_images\\Logo-adesso.png\">Projektinformation</object></p><p>Diese Applikations-Landkarte gehört zu einem Prozess gleichen Namens. In diesem Beispiel wird die Modellintegration mittels SpecIF demonstriert. Hierzu wird zuerst der SpecIF-Export aus ARCWAY geladen und dann der Prozess mit der Methode &apos;Adopt&apos; hinzugefügt. Bereits existierende Modellelemente gleichen Namens (dcterms:title) und Typs werden vom Prozess übernommen und so entsteht das semantisch integrierte Modell.</p><p class=\"inline-label\">Projektbeteiligte:</p><table class=\"stdInlineWithBorder\"><tr><th>Name</th><th>Organisation</th><th>Telefon</th><th>Email</th></tr><tr><td>Dr. Oskar von Dungern</td><td>adesso AG</td><td>+49 162 2808 376</td><td><a href=\"mailto:oskar.dungern@adesso.de\">oskar.dungern@adesso.de</a></td></tr></table><p class=\"inline-label\">Legende:</p><p>Zur Unterscheidung ihres Typs ist den Elementnamen eines der folgenden Symbole vorangestellt:</p><table class=\"stdInlineWithBorder\"><tr><td>&#9635;</td><td>Plan</td><td>Ein 'Plan' ist eine graphische Modellsicht zur Vermittlung eines bestimmten Sachverhalts, z.B. ein Geschäftsprozess oder Systemaufbau.</td></tr><tr><td>&#9632;</td><td>Akteur (Rolle, Funktion)</td><td>Ein 'Akteur' ist ein fundamentaler Modellelement-Typ für ein aktives Objekt, z.B. eine Aktivität, ein Prozess-Schritt, eine Funktion, eine Systemkomponente oder eine Rolle.</td></tr><tr><td>&#9679;</td><td>Zustand (Information)</td><td>Ein 'Zustand' ist ein fundamentaler Modellelement-Typ für ein passives Objekt, z.B. ein Wert, ein Dokument, ein Informationsspeicher oder eine physische Beschaffenheit.</td></tr><tr><td>&#9830;</td><td>Ereignis</td><td>Ein 'Ereignis' ist ein fundamentaler Modellelement-Typ für eine zeitliche Referenz, eine Änderung einer Bedingung bzw. eines Zustandes oder generell ein Synchronisations-Mittel.</td></tr><tr><td>&#10038;</td><td>Produktmerkmal</td><td>Ein 'Produktmerkmal' ist eine beabsichtigte differenzierende Eigenschaft eines Systems, oft ein Alleinstellungsmerkmal.</td></tr><tr><td>&#8623;</td><td>Anforderung</td><td>Eine 'Anforderung' ist ein einzelnes dokumentiertes physisches oder funktionales Bedürfnis, das der betreffende Entwurf, das Produkt oder der Prozess erfüllen muss.</td></tr><tr><td>&#9755;</td><td>Annotation</td><td>Eine Interaction-Room 'Annotation' weist auf einen Punkt besonderen Interesses hin. Hierzu gehören Werte, die Kundenbedürfnisse widerspiegeln oder positiven Effekt auf die Ziele der Organisation haben, Produkteigenschaften, deren Umsetzung Nutzen/Aufwand verursacht, und Herausforderungen, die während der Entwicklung zu berücksichtigen sind.</td></tr></table></div>"
+        }],
+        "changedAt": "2020-02-23T09:52:00+01:00"
+    }, {
+        "id": "Folder-50f2e5460029b1a8016ee0bc5d933622",
+        "title": "Projektziele",
+        "class": "RC-Folder",
+        "properties": [{
+            "title": "dcterms:title",
+            "class": "PC-Folder-Name",
+            "value": "Projektziele"
+        }, {
+            "title": "dcterms:description",
+            "class": "PC-Folder-Text",
+            "value": "<div></div>"
+        }],
+        "changedAt": "2020-02-23T09:52:00+01:00"
+    }, {
+        "id": "Folder-50f2e3420029b1a8016edc36d9783c58",
+        "title": "Landkarten",
+        "class": "RC-Folder",
+        "properties": [{
+            "title": "dcterms:title",
+            "class": "PC-Folder-Name",
+            "value": "Landkarten"
+        }, {
+            "title": "dcterms:description",
+            "class": "PC-Folder-Text",
+            "value": "<div><p>Aus den originalen Wandtafel-Skizzen des IR-Workshops entwickelte Landkarten in fachlicher Notation und nach Interesse detailliert.</p></div>"
+        }],
+        "changedAt": "2019-11-09T17:15:00+01:00"
+    }, {
+        "id": "Folder-50f2e5460029b1a8016ee0bb8ff3c225",
+        "title": "Annotationen",
+        "class": "RC-Folder",
+        "properties": [{
+            "title": "dcterms:title",
+            "class": "PC-Folder-Name",
+            "value": "Annotationen"
+        }, {
+            "title": "dcterms:description",
+            "class": "PC-Folder-Text",
+            "value": "<div></div>"
+        }],
+        "changedAt": "2020-02-23T09:52:00+01:00"
+    }, {
+        "id": "Folder-50f2e5460029b1a8016ee0bd09711d13",
+        "title": "Anforderungen",
+        "class": "RC-Folder",
+        "properties": [{
+            "title": "dcterms:title",
+            "class": "PC-Folder-Name",
+            "value": "Anforderungen"
+        }, {
+            "title": "dcterms:description",
+            "class": "PC-Folder-Text",
+            "value": "<div></div>"
+        }],
+        "changedAt": "2020-02-23T09:52:00+01:00"
+    }, {
+        "id": "Folder-50f2e3330029b1a8016eb06124d3eaa4",
+        "title": "Anhang: Methoden",
+        "class": "RC-Folder",
+        "properties": [{
+            "title": "dcterms:title",
+            "class": "PC-Folder-Name",
+            "value": "Anhang: Methoden"
+        }, {
+            "title": "dcterms:description",
+            "class": "PC-Folder-Text",
+            "value": "<div></div>"
+        }],
+        "changedAt": "2019-11-09T17:15:00+01:00"
+    }, {
+        "id": "Folder-50f2e3420029b1a8016edc2c9b111b20",
+        "title": "Interaction Room",
+        "class": "RC-Folder",
+        "properties": [{
+            "title": "dcterms:title",
+            "class": "PC-Folder-Name",
+            "value": "Interaction Room"
+        }, {
+            "title": "dcterms:description",
+            "class": "PC-Folder-Text",
+            "value": "<div><p>Die Interaction Room (IR) Methode bringt Vertreter von Fachabteilung, IT und Management zusammen und nimmt abwechselnd verschiedene Perspektiven ein, nämlich:</p><ul><li>Prozesse und Nutzungsfälle</li><li>Bebauung mit Applikationen/Systemen und ihren Schnittstellen</li><li>Fachobjekte</li><li>Annotationen heben besonders zu beachtende Gesichtspunkte/Anforderungen hervor. </li></ul><p>Die Perspektiven wachsen zusammen und werden jeweils dort detailliert, wo aktuell Handlungsbedarf oder der Wunsch nach besserer Einsicht besteht. Interessierende fachliche Nutzungsfälle werden heran gezogen und analysiert; so werden Stück um Stück alle Fachobjekte identifiziert, die benötigten Funktionen definiert und den geeigneten Systemen zugeordnet. Die Nutzungsfälle werden schließlich als &quot;User-Stories&quot; ausgearbeitet und für die agile Implementierung priorisiert.</p><p>Vorgehen und Nutzen des Interaction Room zusammen gefasst:</p><ul><li>Mit informellen Skizzen beginnen, Formalismen bewusst zurückstellen,</li><li>Mit Annotationen die besonders wichtigen Aspekte hervor heben,</li><li>Durch Perspektivwechsel Lücken und Inkonsistenzen entdecken</li><li>Die Zusammenhänge erkennen und dokumentieren.</li></ul></div>"
+        }],
+        "changedAt": "2019-11-09T17:15:00+01:00"
+    }, {
+        "id": "Folder-50f2e3420029b1a8016edc2d23278a62",
+        "title": "Vernetzte Prozess- und IT-Dokumentation",
+        "class": "RC-Folder",
+        "properties": [{
+            "title": "dcterms:title",
+            "class": "PC-Folder-Name",
+            "value": "Vernetzte Prozess- und IT-Dokumentation"
+        }, {
+            "title": "dcterms:description",
+            "class": "PC-Folder-Text",
+            "value": "<div><p>Das Vorgehen basiert auf dem &quot;Fundamental Modelling Concept&quot; (FMC), welches von Prof. Siegfried Wendt an der Universität Kaiserslautern und am Hasso-Plattner-Institut in Potsdam konzipiert wurde. Es bringt dynamische und statische Sichten (&quot;Ablauf und Aufbau&quot;) sowie die Anforderungen in Zusammenhang und vermittelt ein gemeinsames Verständnis zwischen allen Beteiligten.</p><p></p><p>Ebenso wie ein Generalbebauungsplan die Basis für die Stadtplanung ist, helfen geeignete Diagramme bei der Beschreibung von Software-Systemen. Die Vernetzung der verschiedenen Sichten Ablauf, Aufbau und Anforderungen hat einen konkreten Nutzen:</p><ul><li>Die sich ergänzenden Sichten unterstützen besonders effektiv eine Prüfung auf Widerspruchsfreiheit, Vollständigkeit und Realisierbarkeit.</li><li>Die Anforderungen werden den Funktionen und Systemkomponenten zugeordnet, so dass gezielt recherchiert werden kann, wo welche Anforderungen zu berücksichtigen sind. Damit einher geht eine einfachere Auswirkungsanalyse im Falle einer Anforderungsänderung (&apos;Traceability&apos;).</li><li>Die Aufwandsschätzung ist genauer und Kostentreiber sind identifizierbar und lokalisierbar.</li><li>Die Kommunikation zwischen Auftraggeber und Auftragnehmer wird klarer.</li><li>Das Projektrisiko wird beträchtlich eingeschränkt.</li></ul><p></p><p>Auch wenn im Interaction Room Workshop die Modelle zunächst informell erfasst werden(&quot;Soft Modeling&quot;), werden daraus im Zuge der weiteren Konzeption entsprechende Diagramme mit einem Modellierungswerkzeug erzeugt. Alle dargestellten Modellelemente werden identifiziert und in einer zentralen Ablage (&quot;Repository&quot;) verwaltet. Alle so erfassten Modellelemente sind im Kapitel &quot;Glossar&quot; alphabetisch aufgeführt. Jedes Modellelement kennt seine Vorkommen auf verschiedenen Modelldiagrammen ... und wenn Titel, Beschreibung oder ein anders Attribut verändert werden, werden automatisch alle Diagramme aktualisiert.</p><p>Weiterhin werden Projektziele, Annotationen und andere Anforderungen tabellarisch erfasst und einzeln den betroffenen Modellelementen zugeordnet. Dadurch weiß jede Anforderung, welche Modellelemente betroffen sind und jedes Modellelement kennt alle sie betreffenden Anforderungen.</p><p>In einer generierten WORD-Datei werden diese Beziehungen als klickbare Hyperlinks aufgenommen; bei der Publikation des Inhalts im Web können darüber hinaus weitere automatisch ermittelte Beziehungen verfolgt werden. In der Praxis und speziell bei größeren Projekten zeigt sich, dass die Einsicht in die Zusammenhänge signifikant verbessert wird; Lücken und Inkonsistenzen werden früher sichtbar.</p><p></p><p>Siehe auch:</p><ul><li>http://www.f-m-c.org</li><li>Andreas Knöpfel, Bernhard Gröne, Peter Tabeling: Fundamental Modelling Concepts - Effective Communication of IT-Systems, Wiley &amp; Sons, 2006</li><li>http://specif.de/files/resources/enso-m/documents-de/TdSE-2015_Dungern_Modellintegration-mit-fuenf-fundamentalen-Elementtypen_(Text).pdf</li><li>http://specif.de/files/resources/adesso/docs-de/ReCONF-2017_Dungern-Uphoff_Interaction-Room-SpecIF.pdf</li></ul></div>"
+        }],
+        "changedAt": "2019-11-09T17:15:00+01:00"
+    }, {
+        "id": "Folder-50f2bc440029b1a8016ef884388572ce-glossary",
+        "title": "Modellelemente (Glossar)",
+        "class": "RC-Folder",
+        "properties": [{
+            "title": "dcterms:title",
+            "class": "PC-Folder-Name",
+            "value": "Modellelemente (Glossar)"
+        }, {
+            "title": "dcterms:type",
+            "class": "PC-Folder-Type",
+            "value": "SpecIF:Glossary"
+        }],
+        "changedAt": "2018-05-10T11:54:00+01:00"
+    }, {
+        "id": "Folder-50f2bc440029b1a8016ef884388572ce-Actor",
+        "title": "Typ 'Akteur'",
+        "class": "RC-Folder",
+        "properties": [{
+            "title": "dcterms:title",
+            "class": "PC-Folder-Name",
+            "value": "Typ 'Akteur'"
+        }, {
+            "title": "dcterms:description",
+            "class": "PC-Folder-Text",
+            "value": "<div><p>Ein 'Akteur' ist ein fundamentaler Modellelement-Typ für ein aktives Objekt, z.B. eine Aktivität, ein Prozess-Schritt, eine Funktion, eine Systemkomponente oder eine Rolle.</p></div>"
+        }],
+        "changedAt": "2018-05-10T11:54:00+01:00"
+    }, {
+        "id": "Folder-50f2bc440029b1a8016ef884388572ce-State",
+        "title": "Typ 'Zustand'",
+        "class": "RC-Folder",
+        "properties": [{
+            "title": "dcterms:title",
+            "class": "PC-Folder-Name",
+            "value": "Typ 'Zustand'"
+        }, {
+            "title": "dcterms:description",
+            "class": "PC-Folder-Text",
+            "value": "<div><p>Ein 'Zustand' ist ein fundamentaler Modellelement-Typ für ein passives Objekt, z.B. ein Wert, ein Dokument, ein Informationsspeicher oder eine physische Beschaffenheit.</p></div>"
+        }],
+        "changedAt": "2018-05-10T11:54:00+01:00"
+    }, {
+        "id": "Folder-50f2bc440029b1a8016ef884388572ce-Event",
+        "title": "Typ 'Ereignis'",
+        "class": "RC-Folder",
+        "properties": [{
+            "title": "dcterms:title",
+            "class": "PC-Folder-Name",
+            "value": "Typ 'Ereignis'"
+        }, {
+            "title": "dcterms:description",
+            "class": "PC-Folder-Text",
+            "value": "<div><p>Ein 'Ereignis' ist ein fundamentaler Modellelement-Typ für eine zeitliche Referenz, eine Änderung einer Bedingung bzw. eines Zustandes oder generell ein Synchronisations-Mittel.</p></div>"
+        }],
+        "changedAt": "2018-05-10T11:54:00+01:00"
+    }, {
+        "id": "Diagram-50fba8890029b1a8016eb868b1ed62ec",
+        "title": "Bebauungsplan",
+        "class": "RC-Diagram",
+        "properties": [{
+            "title": "dcterms:title",
+            "class": "PC-Diagram-Name",
+            "value": "Bebauungsplan"
+        }, {
+            "title": "dcterms:description",
+            "class": "PC-Diagram-Text",
+            "value": "<div><p>Die Landkarte der beteiligten IT-Applikationen mit ihren Schnittstellen und den ausgetauschten Fachobjekten.</p></div>"
+        }, {
+            "title": "SpecIF:Diagram",
+            "class": "PC-Diagram-Diagram",
+            "value": "<div><p class=\"inline-label\">Plan:</p><p><object type=\"image/svg+xml\" data=\"files_and_images\\50fba8890029b1a8016eb868b1ed62ec.svg\">Bebauungsplan</object></p></div>"
+        }, {
+            "title": "SpecIF:Notation",
+            "class": "PC-Diagram-Notation",
+            "value": "FMC Block Diagram"
+        }, {
+            "class": "PC-Diagram-custom.IR-canvas-type",
+            "value": "V-Diagram-custom.IR-canvas-type-1"
+        }],
+        "changedAt": "2019-11-09T17:52:00+01:00"
+    }, {
+        "id": "Diagram-73f62b930029b1a8016e395d44e71e43",
+        "title": "Fachobjekte",
+        "class": "RC-Diagram",
+        "properties": [{
+            "title": "dcterms:title",
+            "class": "PC-Diagram-Name",
+            "value": "Fachobjekte"
+        }, {
+            "title": "dcterms:description",
+            "class": "PC-Diagram-Text",
+            "value": "<div><p>Hier werden die Fachobjekte und ihre Beziehungen in Form eines UML-Klassendiagramms dargestellt.</p></div>"
+        }, {
+            "title": "SpecIF:Diagram",
+            "class": "PC-Diagram-Diagram",
+            "value": "<div><p class=\"inline-label\">Plan:</p><p><object type=\"image/svg+xml\" data=\"files_and_images\\73f62b930029b1a8016e395d44e71e43.svg\">Fachobjekte</object></p></div>"
+        }, {
+            "title": "SpecIF:Notation",
+            "class": "PC-Diagram-Notation",
+            "value": "UML Class Diagram"
+        }, {
+            "class": "PC-Diagram-custom.IR-canvas-type",
+            "value": "V-Diagram-custom.IR-canvas-type-2"
+        }],
+        "changedAt": "2019-11-16T12:50:00+01:00"
+    }, {
+        "id": "Diagram-50f2e49a0029b1a8016ea6a5f78ff594",
+        "title": "Arbeitsumgebung",
+        "class": "RC-Diagram",
+        "properties": [{
+            "title": "dcterms:title",
+            "class": "PC-Diagram-Name",
+            "value": "Arbeitsumgebung"
+        }, {
+            "title": "dcterms:description",
+            "class": "PC-Diagram-Text",
+            "value": "<div><p>Der IR lebt von der informellen und bewegten Interaktion in einer kreativen Atmosphäre.</p></div>"
+        }, {
+            "title": "SpecIF:Diagram",
+            "class": "PC-Diagram-Diagram",
+            "value": "<div><p class=\"inline-label\">Plan:</p><p><object type=\"image/svg+xml\" data=\"files_and_images\\50f2e49a0029b1a8016ea6a5f78ff594.svg\">Arbeitsumgebung</object></p></div>"
+        }, {
+            "title": "SpecIF:Notation",
+            "class": "PC-Diagram-Notation",
+            "value": "FMC Block Diagram"
+        }],
+        "changedAt": "2019-11-09T17:15:00+01:00"
+    }, {
+        "id": "Diagram-50f2e5170029b1a8016e564ce1f0a823",
+        "title": "Interaction Room im Entwicklungsprozess",
+        "class": "RC-Diagram",
+        "properties": [{
+            "title": "dcterms:title",
+            "class": "PC-Diagram-Name",
+            "value": "Interaction Room im Entwicklungsprozess"
+        }, {
+            "title": "dcterms:description",
+            "class": "PC-Diagram-Text",
+            "value": "<div><p>Der Interaction Room ist mit Vorteil im Vorfeld der Entwicklung einzusetzen. Nach einer Kreativ-Phase, beispielsweise unter Einsatz von &quot;Design-Thinking&quot;, kommen Anwender und Umsetzer in Interaction-Room Workshops zusammen, um Prozesse, Systemstrukturen und Anforderungen zu erfassen und in Einklang zu bringen. Auf dieser Basis werden bestimmte herausfordernde Szenarien einem User-Experience Design unter enger Einbindung der Anwender unterzogen. Ziel ist es Dialog-Layouts und Abläufe zu optimieren und eine hohe Benutzerfreundlichkeit zu erzielen. Auf Basis der Ergebnisse aus Interaction-Room und User-Experience-Design werden die zu realisierenden User-Stories detailiert und für die agile Entwicklung priorisiert.</p><p>Der ganze Entwicklungs-Prozess wird regelmäßig und iterativ durchgeführt, um neue Anforderungen aufzugreifen, im Konzept zu verankern und auf Machbarkeit zu prüfen, ehe sie in die Entwicklung kommen.</p><p>Die Dokumentation des Interaction-Rooms stellt die übergreifenden Zusammenhänge dar, in denen die User-Stories der Entwicklungs-Backlogs verortet werden können. Hierzu ist die vernetzte Prozess- und IT-Dokumentation, die im nächsten Kapitel behandelt wird, besonders gut geeignet.</p></div>"
+        }, {
+            "title": "SpecIF:Diagram",
+            "class": "PC-Diagram-Diagram",
+            "value": "<div><p class=\"inline-label\">Plan:</p><p><object type=\"image/svg+xml\" data=\"files_and_images\\50f2e5170029b1a8016e564ce1f0a823.svg\">Interaction Room im Entwicklungsprozess</object></p></div>"
+        }, {
+            "title": "SpecIF:Notation",
+            "class": "PC-Diagram-Notation",
+            "value": "ACM Process Diagram"
+        }],
+        "changedAt": "2019-11-09T17:15:00+01:00"
+    }, {
+        "id": "Diagram-50f2e3520029b1a8016e9f42d1515743",
+        "title": "Perspektiven",
+        "class": "RC-Diagram",
+        "properties": [{
+            "title": "dcterms:title",
+            "class": "PC-Diagram-Name",
+            "value": "Perspektiven"
+        }, {
+            "title": "dcterms:description",
+            "class": "PC-Diagram-Text",
+            "value": "<div><p>In unterschiedlichen Perspektiven werden</p><ul><li>die Geschäftsprozesse</li><li>die (Teil-) Systeme und ihre Schnittstellen, und</li><li>die Fachobjekte </li></ul><p>betrachtet. Indem alle zugleich auf verschiedenen Wänden sichtbar sind, lassen sich Zusammenhänge und Abhängigkeiten leichter erkennen.</p></div>"
+        }, {
+            "title": "SpecIF:Diagram",
+            "class": "PC-Diagram-Diagram",
+            "value": "<div><p class=\"inline-label\">Plan:</p><p><object type=\"image/svg+xml\" data=\"files_and_images\\50f2e3520029b1a8016e9f42d1515743.svg\">Perspektiven</object></p></div>"
+        }, {
+            "title": "SpecIF:Notation",
+            "class": "PC-Diagram-Notation",
+            "value": "FMC Block Diagram"
+        }],
+        "changedAt": "2019-11-09T17:15:00+01:00"
+    }, {
+        "id": "Diagram-50f2e5070029b1a8016ecad578440ddd",
+        "title": "Logische Vernetzung der Modellelemente",
+        "class": "RC-Diagram",
+        "properties": [{
+            "title": "dcterms:title",
+            "class": "PC-Diagram-Name",
+            "value": "Logische Vernetzung der Modellelemente"
+        }, {
+            "title": "dcterms:description",
+            "class": "PC-Diagram-Text",
+            "value": "<div><p>Diagramme und Modellelemente aller Notationen lassen sich anhand ihres fundamentalen Typs einteilen:</p><ul><li>Ein &apos;Plan&apos; (oder &apos;Diagramm&apos;) ist eine graphische Modellsicht zur Vermittlung eines bestimmten Sachverhalts, z.B. ein Geschäftsprozess oder Systemaufbau.</li><li>Ein &apos;Akteur&apos; ist ein fundamentaler Modellelement-Typ für ein aktives Objekt, z.B. eine Aktivität, ein Prozess-Schritt, eine Funktion, eine Systemkomponente oder eine Rolle.</li><li>Ein &apos;Zustand&apos; ist ein fundamentaler Modellelement-Typ für ein passives Objekt, z.B. ein Wert, ein Dokument, ein Informationsspeicher oder eine physische Beschaffenheit.</li><li>Ein &apos;Ereignis&apos; ist ein fundamentaler Modellelement-Typ für eine zeitliche Referenz, eine Änderung einer Bedingung bzw. eines Zustandes oder generell ein Synchronisations-Mittel.</li><li>Eine &apos;Anforderung&apos; ist ein einzelnes dokumentiertes physisches oder funktionales Bedürfnis, das der betreffende Entwurf, das Produkt oder der Prozess erfüllen muss.</li><li>Ein &apos;Merkmal&apos; ist eine beabsichtigte differenzierende Eigenschaft eines Systems, oft ein Alleinstellungsmerkmal.</li></ul><p>Zwischen Diagrammen und Modellelementen werden explizit semantische Beziehungen hergestellt; in den meisten Fällen automatisch durch graphische Analyse der Modelldiagramme, beispielsweise:</p><ul><li>Ein Plan &apos;zeigt&apos; einen Akteur, einen Zustand oder ein Ereignis. Dadurch weiß jedes Element auf welchen Plänen es vorkommt.</li><li>Eine Benutzerrolle (Akteur) nutzt (&apos;enthält&apos;) einen Dialog (Akteur).</li><li>Eine Komponente (Akteur) realisiert (&apos;enthält&apos;) einen Dialog (Akteur).</li><li>und viele andere mehr.  </li></ul><p>Weitere Beziehungen siond manuell zu erzeugen, z.B.:</p><ul><li>Eine Komponente &apos;erfüllt&apos; eine Anforderungen. Schließlich kennt jede Komponente ihre Anforderungen und bei Änderung einer Anforderung sind sofort die betroffenen Komponenten zu ersehen.</li></ul></div>"
+        }, {
+            "title": "SpecIF:Diagram",
+            "class": "PC-Diagram-Diagram",
+            "value": "<div><p class=\"inline-label\">Plan:</p><p><object type=\"image/svg+xml\" data=\"files_and_images\\50f2e5070029b1a8016ecad578440ddd.svg\">Logische Vernetzung der Modellelemente</object></p></div>"
+        }, {
+            "title": "SpecIF:Notation",
+            "class": "PC-Diagram-Notation",
+            "value": "FMC Block Diagram"
+        }],
+        "changedAt": "2019-11-09T17:15:00+01:00"
+    }, {
+        "id": "Diagram-50f2e48a0029b1a8016e4f66bc68b11b",
+        "title": "Notation: Fachdatenmodell",
+        "class": "RC-Diagram",
+        "properties": [{
+            "title": "dcterms:title",
+            "class": "PC-Diagram-Name",
+            "value": "Notation: Fachdatenmodell"
+        }, {
+            "title": "dcterms:description",
+            "class": "PC-Diagram-Text",
+            "value": "<div><p>.. gemäß Unified Modeling Language (UML)</p></div>"
+        }, {
+            "title": "SpecIF:Diagram",
+            "class": "PC-Diagram-Diagram",
+            "value": "<div><p class=\"inline-label\">Plan:</p><p><object type=\"image/svg+xml\" data=\"files_and_images\\50f2e48a0029b1a8016e4f66bc68b11b.svg\">Notation: Fachdatenmodell</object></p></div>"
+        }, {
+            "title": "SpecIF:Notation",
+            "class": "PC-Diagram-Notation",
+            "value": "UML Class Diagram"
+        }],
+        "changedAt": "2019-11-09T17:15:00+01:00"
+    }, {
+        "id": "Diagram-50f2e4d80029b1a8016e7a09311e9a08",
+        "title": "Notation: Geschäftsprozess",
+        "class": "RC-Diagram",
+        "properties": [{
+            "title": "dcterms:title",
+            "class": "PC-Diagram-Name",
+            "value": "Notation: Geschäftsprozess"
+        }, {
+            "title": "dcterms:description",
+            "class": "PC-Diagram-Text",
+            "value": "<div><p>Business Process Models gemäß Business Process Model and Notation (BPMN).</p></div>"
+        }, {
+            "title": "SpecIF:Diagram",
+            "class": "PC-Diagram-Diagram",
+            "value": "<div><p class=\"inline-label\">Plan:</p><p><object type=\"image/svg+xml\" data=\"files_and_images\\50f2e4d80029b1a8016e7a09311e9a08.svg\">Notation: Geschäftsprozess</object></p></div>"
+        }, {
+            "title": "SpecIF:Notation",
+            "class": "PC-Diagram-Notation",
+            "value": "BPMN Process Model"
+        }],
+        "changedAt": "2019-11-09T17:15:00+01:00"
+    }, {
+        "id": "Diagram-50f2e3fe0029b1a8016e2702d9e09204",
+        "title": "Notation: IT Landkarte",
+        "class": "RC-Diagram",
+        "properties": [{
+            "title": "dcterms:title",
+            "class": "PC-Diagram-Name",
+            "value": "Notation: IT Landkarte"
+        }, {
+            "title": "dcterms:description",
+            "class": "PC-Diagram-Text",
+            "value": "<div><p>System composition gemäß Fundamental Modelling Concepts (FMC).</p></div>"
+        }, {
+            "title": "SpecIF:Diagram",
+            "class": "PC-Diagram-Diagram",
+            "value": "<div><p class=\"inline-label\">Plan:</p><p><object type=\"image/svg+xml\" data=\"files_and_images\\50f2e3fe0029b1a8016e2702d9e09204.svg\">Notation: IT Landkarte</object></p></div>"
+        }, {
+            "title": "SpecIF:Notation",
+            "class": "PC-Diagram-Notation",
+            "value": "FMC Block Diagram"
+        }],
+        "changedAt": "2019-11-09T17:15:00+01:00"
+    }, {
+        "id": "Diagram-f054ecc2001ab2a8016fbe34f60fd887",
+        "title": "Werkzeug-Kette",
+        "class": "RC-Diagram",
+        "properties": [{
+            "title": "dcterms:title",
+            "class": "PC-Diagram-Name",
+            "value": "Werkzeug-Kette"
+        }, {
+            "title": "dcterms:description",
+            "class": "PC-Diagram-Text",
+            "value": "<div></div>"
+        }, {
+            "title": "SpecIF:Diagram",
+            "class": "PC-Diagram-Diagram",
+            "value": "<div><p class=\"inline-label\">Plan:</p><p><object type=\"image/svg+xml\" data=\"files_and_images\\f054ecc2001ab2a8016fbe34f60fd887.svg\">Werkzeug-Kette</object></p></div>"
+        }, {
+            "title": "SpecIF:Notation",
+            "class": "PC-Diagram-Notation",
+            "value": "FMC Block Diagram"
+        }],
+        "changedAt": "2020-01-29T10:23:00+01:00"
+    }, {
+        "id": "MEl-f067ce0f001ab2a8016f86dd747c70f8",
+        "title": "Anforderung",
+        "class": "RC-State",
+        "properties": [{
+            "title": "dcterms:title",
+            "class": "PC-State-Name",
+            "value": "Anforderung"
+        }, {
+            "title": "dcterms:description",
+            "class": "PC-State-Text",
+            "value": "<div></div>"
+        }],
+        "changedAt": "2020-01-29T09:25:00+01:00"
+    }, {
+        "id": "MEl-510d91440029b1a8016ed959610566b7",
+        "title": "Anfrage",
+        "class": "RC-State",
+        "properties": [{
+            "title": "dcterms:title",
+            "class": "PC-State-Name",
+            "value": "Anfrage"
+        }, {
+            "title": "dcterms:description",
+            "class": "PC-State-Text",
+            "value": "<div><p>Anfrage des Kunden</p></div>"
+        }],
+        "changedAt": "2019-11-09T17:49:00+01:00"
+    }, {
+        "id": "MEl-510033200029b1a8016e7c8e4f0bf2c9",
+        "title": "Angebot",
+        "class": "RC-State",
+        "properties": [{
+            "title": "dcterms:title",
+            "class": "PC-State-Name",
+            "value": "Angebot"
+        }, {
+            "title": "dcterms:description",
+            "class": "PC-State-Text",
+            "value": "<div><p>Angebot als Reaktion auf die Anfrage des Kunden.</p></div>"
+        }],
+        "changedAt": "2019-11-09T17:50:00+01:00"
+    }, {
+        "id": "MEl-740784760029b1a8016e8c208816ecb6",
+        "title": "Angebots-Nr",
+        "class": "RC-State",
+        "properties": [{
+            "title": "dcterms:title",
+            "class": "PC-State-Name",
+            "value": "Angebots-Nr"
+        }, {
+            "title": "dcterms:description",
+            "class": "PC-State-Text",
+            "value": "<div></div>"
+        }],
+        "changedAt": "2019-11-16T12:45:00+01:00"
+    }, {
+        "id": "MEl-f0562786001ab2a8016f20cc7006e205",
+        "title": "Applikations-Landkarte",
+        "class": "RC-State",
+        "properties": [{
+            "title": "dcterms:title",
+            "class": "PC-State-Name",
+            "value": "Applikations-Landkarte"
+        }, {
+            "title": "dcterms:description",
+            "class": "PC-State-Text",
+            "value": "<div></div>"
+        }],
+        "changedAt": "2020-01-29T09:06:00+01:00"
+    }, {
+        "id": "MEl-f056f4d7001ab2a8016f7d5741054d45",
+        "title": "ARCWAY Cockpit",
+        "class": "RC-Actor",
+        "properties": [{
+            "title": "dcterms:title",
+            "class": "PC-Actor-Name",
+            "value": "ARCWAY Cockpit"
+        }, {
+            "title": "dcterms:description",
+            "class": "PC-Actor-Text",
+            "value": "<div></div>"
+        }],
+        "changedAt": "2020-01-29T09:07:00+01:00"
+    }, {
+        "id": "MEl-511078be0029b1a8016e8b3c4fe3e3c1",
+        "title": "Auftrag",
+        "class": "RC-State",
+        "properties": [{
+            "title": "dcterms:title",
+            "class": "PC-State-Name",
+            "value": "Auftrag"
+        }, {
+            "title": "dcterms:description",
+            "class": "PC-State-Text",
+            "value": "<div><p>Auftrag des Kunden - Hurra, wir haben gewonnen.</p></div>"
+        }],
+        "changedAt": "2019-11-09T17:50:00+01:00"
+    }, {
+        "id": "MEl-740addf40029b1a8016ec6d2dc90a2b1",
+        "title": "Auftrags-Nr",
+        "class": "RC-State",
+        "properties": [{
+            "title": "dcterms:title",
+            "class": "PC-State-Name",
+            "value": "Auftrags-Nr"
+        }, {
+            "title": "dcterms:description",
+            "class": "PC-State-Text",
+            "value": "<div></div>"
+        }],
+        "changedAt": "2019-11-16T12:48:00+01:00"
+    }, {
+        "id": "MEl-f06e3545001ab2a8016f64cdb7216639",
+        "title": "BPMN Workflow-Engine",
+        "class": "RC-Actor",
+        "properties": [{
+            "title": "dcterms:title",
+            "class": "PC-Actor-Name",
+            "value": "BPMN Workflow-Engine"
+        }, {
+            "title": "dcterms:description",
+            "class": "PC-Actor-Text",
+            "value": "<div></div>"
+        }],
+        "changedAt": "2020-01-29T09:32:00+01:00"
+    }, {
+        "id": "MEl-f05eada4001ab2a8016fb4b49555271e",
+        "title": "BPMN-XML",
+        "class": "RC-State",
+        "properties": [{
+            "title": "dcterms:title",
+            "class": "PC-State-Name",
+            "value": "BPMN-XML"
+        }, {
+            "title": "dcterms:description",
+            "class": "PC-State-Text",
+            "value": "<div></div>"
+        }],
+        "changedAt": "2020-01-29T09:15:00+01:00"
+    }, {
+        "id": "MEl-f059be89001ab2a8016feacc9b4d5d7e",
+        "title": "BPMN-XML Export",
+        "class": "RC-Actor",
+        "properties": [{
+            "title": "dcterms:title",
+            "class": "PC-Actor-Name",
+            "value": "BPMN-XML Export"
+        }, {
+            "title": "dcterms:description",
+            "class": "PC-Actor-Text",
+            "value": "<div></div>"
+        }],
+        "changedAt": "2020-01-29T09:10:00+01:00"
+    }, {
+        "id": "MEl-f05cb54e001ab2a8016f319bc563ffc8",
+        "title": "BPMN-XML Import",
+        "class": "RC-Actor",
+        "properties": [{
+            "title": "dcterms:title",
+            "class": "PC-Actor-Name",
+            "value": "BPMN-XML Import"
+        }, {
+            "title": "dcterms:description",
+            "class": "PC-Actor-Text",
+            "value": "<div></div>"
+        }],
+        "changedAt": "2020-01-29T09:13:00+01:00"
+    }, {
+        "id": "MEl-f0580af2001ab2a8016ffbbbd49779c0",
+        "title": "Camunda-Modeller",
+        "class": "RC-Actor",
+        "properties": [{
+            "title": "dcterms:title",
+            "class": "PC-Actor-Name",
+            "value": "Camunda-Modeller"
+        }, {
+            "title": "dcterms:description",
+            "class": "PC-Actor-Text",
+            "value": "<div></div>"
+        }],
+        "changedAt": "2020-01-29T09:08:00+01:00"
+    }, {
+        "id": "MEl-5106faa50029b1a8016e78752e037322",
+        "title": "Controlling",
+        "class": "RC-Actor",
+        "properties": [{
+            "title": "dcterms:title",
+            "class": "PC-Actor-Name",
+            "value": "Controlling"
+        }, {
+            "title": "dcterms:description",
+            "class": "PC-Actor-Text",
+            "value": "<div></div>"
+        }],
+        "changedAt": "2019-11-09T17:37:00+01:00"
+    }, {
+        "id": "MEl-5106a1780029b1a8016e5ebb9f84084a",
+        "title": "Delivery",
+        "class": "RC-Actor",
+        "properties": [{
+            "title": "dcterms:title",
+            "class": "PC-Actor-Name",
+            "value": "Delivery"
+        }, {
+            "title": "dcterms:description",
+            "class": "PC-Actor-Text",
+            "value": "<div></div>"
+        }],
+        "changedAt": "2019-11-09T17:36:00+01:00"
+    }, {
+        "id": "MEl-50fc635d0029b1a8016eb6d838b8bc5d",
+        "title": "DMS",
+        "class": "RC-Actor",
+        "properties": [{
+            "title": "dcterms:title",
+            "class": "PC-Actor-Name",
+            "value": "DMS"
+        }, {
+            "title": "dcterms:description",
+            "class": "PC-Actor-Text",
+            "value": "<div><p>Zentrales Dokumenten-Archiv</p></div>"
+        }],
+        "changedAt": "2019-11-09T17:26:00+01:00"
+    }, {
+        "id": "MEl-f0611561001ab2a8016fe9458058599e",
+        "title": "ePub Export",
+        "class": "RC-Actor",
+        "properties": [{
+            "title": "dcterms:title",
+            "class": "PC-Actor-Name",
+            "value": "ePub Export"
+        }, {
+            "title": "dcterms:description",
+            "class": "PC-Actor-Text",
+            "value": "<div></div>"
+        }],
+        "changedAt": "2020-01-29T09:18:00+01:00"
+    }, {
+        "id": "MEl-50fbfe8f0029b1a8016ea86245a9d83a",
+        "title": "FiCo",
+        "class": "RC-Actor",
+        "properties": [{
+            "title": "dcterms:title",
+            "class": "PC-Actor-Name",
+            "value": "FiCo"
+        }, {
+            "title": "dcterms:description",
+            "class": "PC-Actor-Text",
+            "value": "<div><p>Finanzen und Controlling</p></div>"
+        }],
+        "changedAt": "2019-11-09T17:27:00+01:00"
+    }, {
+        "id": "MEl-50feddc00029b1a8016e2872e78ecadc",
+        "title": "FiCo-Daten",
+        "class": "RC-State",
+        "properties": [{
+            "title": "dcterms:title",
+            "class": "PC-State-Name",
+            "value": "FiCo-Daten"
+        }, {
+            "title": "dcterms:description",
+            "class": "PC-State-Text",
+            "value": "<div><p>Finanz- und Controllingdaten eines Projekts wie Kostenträger, Budget, Budgetausschöpfung, etc. In der anderen Richtung werden aufgelaufene Aufwände und Kosten gemeldet.</p></div>"
+        }],
+        "changedAt": "2019-11-09T17:41:00+01:00"
+    }, {
+        "id": "MEl-510149870029b1a8016e146b0fa3acea",
+        "title": "Interner Projektauftrag",
+        "class": "RC-State",
+        "properties": [{
+            "title": "dcterms:title",
+            "class": "PC-State-Name",
+            "value": "Interner Projektauftrag"
+        }, {
+            "title": "dcterms:description",
+            "class": "PC-State-Text",
+            "value": "<div><p>Projektauftrag an das ausführende Team (&quot;Delivery&quot;).</p></div>"
+        }],
+        "changedAt": "2019-11-09T17:51:00+01:00"
+    }, {
+        "id": "MEl-f0673f29001ab2a8016f817e0ae62ff9",
+        "title": "MS Excel",
+        "class": "RC-Actor",
+        "properties": [{
+            "title": "dcterms:title",
+            "class": "PC-Actor-Name",
+            "value": "MS Excel"
+        }, {
+            "title": "dcterms:description",
+            "class": "PC-Actor-Text",
+            "value": "<div></div>"
+        }],
+        "changedAt": "2020-01-29T09:24:00+01:00"
+    }, {
+        "id": "MEl-f0569c16001ab2a8016f02390f18d51a",
+        "title": "Objekt-Landkarte",
+        "class": "RC-State",
+        "properties": [{
+            "title": "dcterms:title",
+            "class": "PC-State-Name",
+            "value": "Objekt-Landkarte"
+        }, {
+            "title": "dcterms:description",
+            "class": "PC-State-Text",
+            "value": "<div><p>.. dargestellt als UML Klassendiagramm</p></div>"
+        }],
+        "changedAt": "2020-01-29T10:46:00+01:00"
+    }, {
+        "id": "MEl-f05fa2b5001ab2a8016f2113b88ccf14",
+        "title": "Original-Diagramm",
+        "class": "RC-State",
+        "properties": [{
+            "title": "dcterms:title",
+            "class": "PC-State-Name",
+            "value": "Original-Diagramm"
+        }, {
+            "title": "dcterms:description",
+            "class": "PC-State-Text",
+            "value": "<div></div>"
+        }],
+        "changedAt": "2020-01-29T09:16:00+01:00"
+    }, {
+        "id": "MEl-740355130029b1a8016e599615554793",
+        "title": "Projekt-Nr",
+        "class": "RC-State",
+        "properties": [{
+            "title": "dcterms:title",
+            "class": "PC-State-Name",
+            "value": "Projekt-Nr"
+        }, {
+            "title": "dcterms:description",
+            "class": "PC-State-Text",
+            "value": "<div></div>"
+        }],
+        "changedAt": "2019-11-16T12:40:00+01:00"
+    }, {
+        "id": "MEl-73f694720029b1a8016e43c983c2d941",
+        "title": "Projektakte",
+        "class": "RC-State",
+        "properties": [{
+            "title": "dcterms:title",
+            "class": "PC-State-Name",
+            "value": "Projektakte"
+        }, {
+            "title": "dcterms:description",
+            "class": "PC-State-Text",
+            "value": "<div></div>"
+        }],
+        "changedAt": "2019-11-16T12:26:00+01:00"
+    }, {
+        "id": "MEl-51021f5c0029b1a8016e72c10917e9b2",
+        "title": "Projektplan",
+        "class": "RC-State",
+        "properties": [{
+            "title": "dcterms:title",
+            "class": "PC-State-Name",
+            "value": "Projektplan"
+        }, {
+            "title": "dcterms:description",
+            "class": "PC-State-Text",
+            "value": "<div><p>Der initiale und fortgeschriebene aktuelle Projektplan.</p></div>"
+        }],
+        "changedAt": "2019-11-09T17:52:00+01:00"
+    }, {
+        "id": "MEl-f0587660001ab2a8016f785980ca6384",
+        "title": "Prozess-Modell",
+        "class": "RC-State",
+        "properties": [{
+            "title": "dcterms:title",
+            "class": "PC-State-Name",
+            "value": "Prozess-Modell"
+        }, {
+            "title": "dcterms:description",
+            "class": "PC-State-Text",
+            "value": "<div></div>"
+        }],
+        "changedAt": "2020-01-29T09:08:00+01:00"
+    }, {
+        "id": "MEl-f060be6d001ab2a8016f1cc56708c437",
+        "title": "ReqIF Export",
+        "class": "RC-Actor",
+        "properties": [{
+            "title": "dcterms:title",
+            "class": "PC-Actor-Name",
+            "value": "ReqIF Export"
+        }, {
+            "title": "dcterms:description",
+            "class": "PC-Actor-Text",
+            "value": "<div></div>"
+        }],
+        "changedAt": "2020-01-29T09:17:00+01:00"
+    }, {
+        "id": "MEl-f05c0f9e001ab2a8016fce0a2a4a534e",
+        "title": "SpecIF",
+        "class": "RC-State",
+        "properties": [{
+            "title": "dcterms:title",
+            "class": "PC-State-Name",
+            "value": "SpecIF"
+        }, {
+            "title": "dcterms:description",
+            "class": "PC-State-Text",
+            "value": "<div></div>"
+        }],
+        "changedAt": "2020-01-29T09:12:00+01:00"
+    }, {
+        "id": "MEl-f05962a8001ab2a8016f60f5c6ea1138",
+        "title": "SpecIF Export",
+        "class": "RC-Actor",
+        "properties": [{
+            "title": "dcterms:title",
+            "class": "PC-Actor-Name",
+            "value": "SpecIF Export"
+        }, {
+            "title": "dcterms:description",
+            "class": "PC-Actor-Text",
+            "value": "<div></div>"
+        }],
+        "changedAt": "2020-01-29T09:09:00+01:00"
+    }, {
+        "id": "MEl-f05c6f39001ab2a8016f6db5b0806772",
+        "title": "SpecIF Import",
+        "class": "RC-Actor",
+        "properties": [{
+            "title": "dcterms:title",
+            "class": "PC-Actor-Name",
+            "value": "SpecIF Import"
+        }, {
+            "title": "dcterms:description",
+            "class": "PC-Actor-Text",
+            "value": "<div></div>"
+        }],
+        "changedAt": "2020-01-29T09:13:00+01:00"
+    }, {
+        "id": "MEl-f058dc6e001ab2a8016f336d34f053bc",
+        "title": "SpecIF Integrator and Viewer",
+        "class": "RC-Actor",
+        "properties": [{
+            "title": "dcterms:title",
+            "class": "PC-Actor-Name",
+            "value": "SpecIF Integrator and Viewer"
+        }, {
+            "title": "dcterms:description",
+            "class": "PC-Actor-Text",
+            "value": "<div></div>"
+        }],
+        "changedAt": "2020-01-29T09:09:00+01:00"
+    }, {
+        "id": "MEl-f0601062001ab2a8016fa9fc4865ab3a",
+        "title": "Vernetzte Modellelemente",
+        "class": "RC-State",
+        "properties": [{
+            "title": "dcterms:title",
+            "class": "PC-State-Name",
+            "value": "Vernetzte Modellelemente"
+        }, {
+            "title": "dcterms:description",
+            "class": "PC-State-Text",
+            "value": "<div></div>"
+        }],
+        "changedAt": "2020-01-29T09:17:00+01:00"
+    }, {
+        "id": "MEl-51060c650029b1a8016e4180dadca744",
+        "title": "Vertrieb",
+        "class": "RC-Actor",
+        "properties": [{
+            "title": "dcterms:title",
+            "class": "PC-Actor-Name",
+            "value": "Vertrieb"
+        }, {
+            "title": "dcterms:description",
+            "class": "PC-Actor-Text",
+            "value": "<div></div>"
+        }],
+        "changedAt": "2019-11-09T17:36:00+01:00"
+    }, {
+        "id": "MEl-f061846e001ab2a8016f09f1fa86db9e",
+        "title": "WORD Export",
+        "class": "RC-Actor",
+        "properties": [{
+            "title": "dcterms:title",
+            "class": "PC-Actor-Name",
+            "value": "WORD Export"
+        }, {
+            "title": "dcterms:description",
+            "class": "PC-Actor-Text",
+            "value": "<div></div>"
+        }],
+        "changedAt": "2020-01-29T09:18:00+01:00"
+    }, {
+        "id": "MEl-50fe7a660029b1a8016e6de43e4c695b",
+        "title": "Workflow: Projektvorgehen",
+        "class": "RC-Actor",
+        "properties": [{
+            "title": "dcterms:title",
+            "class": "PC-Actor-Name",
+            "value": "Workflow: Projektvorgehen"
+        }, {
+            "title": "dcterms:description",
+            "class": "PC-Actor-Text",
+            "value": "<div></div>"
+        }],
+        "changedAt": "2019-11-09T17:28:00+01:00"
+    }, {
+        "id": "MEl-f0685b5f001ab2a8016fa1d7a78f85f6",
+        "title": "XLSX",
+        "class": "RC-State",
+        "properties": [{
+            "title": "dcterms:title",
+            "class": "PC-State-Name",
+            "value": "XLSX"
+        }, {
+            "title": "dcterms:description",
+            "class": "PC-State-Text",
+            "value": "<div></div>"
+        }],
+        "changedAt": "2020-01-29T09:26:00+01:00"
+    }, {
+        "id": "MEl-f05d04bd001ab2a8016f5a77c63e63f2",
+        "title": "XLSX Import",
+        "class": "RC-Actor",
+        "properties": [{
+            "title": "dcterms:title",
+            "class": "PC-Actor-Name",
+            "value": "XLSX Import"
+        }, {
+            "title": "dcterms:description",
+            "class": "PC-Actor-Text",
+            "value": "<div></div>"
+        }],
+        "changedAt": "2020-01-29T09:13:00+01:00"
+    }, {
+        "id": "Ann-5115cd090029b1a8016e13911983d8a9",
+        "title": "Auftragsdaten ins FiCo-System",
+        "class": "RC-Ann",
+        "properties": [{
+            "title": "dcterms:identifier",
+            "class": "PC-Ann-ID",
+            "value": "ANN_001"
+        }, {
+            "title": "dcterms:title",
+            "class": "PC-Ann-Name",
+            "value": "Auftragsdaten ins FiCo-System"
+        }, {
+            "title": "dcterms:description",
+            "class": "PC-Ann-Text",
+            "value": "<div><p>Aktuell werden die Auftragsdaten vom Einkauf manuell in das FiCo-System übernommen. Kann ein elektronischer Datenaustausch (wie GAEB beim Bau) mit den Kunden vereinbart werden?</p></div>"
+        }, {
+            "title": "SpecIF:Status",
+            "class": "PC-Ann-Status",
+            "value": ""
+        }, {
+            "title": "SpecIF:Priority",
+            "class": "PC-Ann-Priority",
+            "value": "V-Req-Prio-1"
+        }, {
+            "class": "PC-Ann-custom.IR-annotation-class",
+            "value": "V-Req-custom.IR-annotation-class-0"
+        }, {
+            "class": "PC-Ann-custom.IR-annotation-subclass",
+            "value": "V-Req-custom.IR-annotation-subclass-1"
+        }, {
+            "class": "PC-Ann-custom.IR-annotation-benefit",
+            "value": "V-Req-custom.IR-annotation-benefit-1"
+        }, {
+            "class": "PC-Ann-custom.IR-annotation-risk",
+            "value": "V-Req-custom.IR-annotation-risk-0"
+        }, {
+            "class": "PC-Ann-custom.IR-annotation-frequency",
+            "value": "V-Req-custom.IR-annotation-frequency-0"
+        }, {
+            "class": "PC-Ann-custom.IR-annotation-difficulty",
+            "value": "V-Req-custom.IR-annotation-difficulty-1"
+        }],
+        "changedAt": "2019-11-09T17:58:00+01:00"
+    }],
+    "statements": [{
+        "id": "SVis-50fba8890029b1a8016eb868b1ed62ec-510d91440029b1a8016ed959610566b7",
+        "title": "SpecIF:shows",
+        "description": "'Bebauungsplan' zeigt 'Anfrage'",
+        "class": "SC-Visibility",
+        "subject": "Diagram-50fba8890029b1a8016eb868b1ed62ec",
+        "object": "MEl-510d91440029b1a8016ed959610566b7",
+        "changedAt": "2019-11-09T17:52:00+01:00"
+    }, {
+        "id": "SVis-50fba8890029b1a8016eb868b1ed62ec-510033200029b1a8016e7c8e4f0bf2c9",
+        "title": "SpecIF:shows",
+        "description": "'Bebauungsplan' zeigt 'Angebot'",
+        "class": "SC-Visibility",
+        "subject": "Diagram-50fba8890029b1a8016eb868b1ed62ec",
+        "object": "MEl-510033200029b1a8016e7c8e4f0bf2c9",
+        "changedAt": "2019-11-09T17:52:00+01:00"
+    }, {
+        "id": "SVis-50fba8890029b1a8016eb868b1ed62ec-511078be0029b1a8016e8b3c4fe3e3c1",
+        "title": "SpecIF:shows",
+        "description": "'Bebauungsplan' zeigt 'Auftrag'",
+        "class": "SC-Visibility",
+        "subject": "Diagram-50fba8890029b1a8016eb868b1ed62ec",
+        "object": "MEl-511078be0029b1a8016e8b3c4fe3e3c1",
+        "changedAt": "2019-11-09T17:52:00+01:00"
+    }, {
+        "id": "SVis-50fba8890029b1a8016eb868b1ed62ec-5106faa50029b1a8016e78752e037322",
+        "title": "SpecIF:shows",
+        "description": "'Bebauungsplan' zeigt 'Controlling'",
+        "class": "SC-Visibility",
+        "subject": "Diagram-50fba8890029b1a8016eb868b1ed62ec",
+        "object": "MEl-5106faa50029b1a8016e78752e037322",
+        "changedAt": "2019-11-09T17:52:00+01:00"
+    }, {
+        "id": "SVis-50fba8890029b1a8016eb868b1ed62ec-5106a1780029b1a8016e5ebb9f84084a",
+        "title": "SpecIF:shows",
+        "description": "'Bebauungsplan' zeigt 'Delivery'",
+        "class": "SC-Visibility",
+        "subject": "Diagram-50fba8890029b1a8016eb868b1ed62ec",
+        "object": "MEl-5106a1780029b1a8016e5ebb9f84084a",
+        "changedAt": "2019-11-09T17:52:00+01:00"
+    }, {
+        "id": "SVis-50fba8890029b1a8016eb868b1ed62ec-50fc635d0029b1a8016eb6d838b8bc5d",
+        "title": "SpecIF:shows",
+        "description": "'Bebauungsplan' zeigt 'DMS'",
+        "class": "SC-Visibility",
+        "subject": "Diagram-50fba8890029b1a8016eb868b1ed62ec",
+        "object": "MEl-50fc635d0029b1a8016eb6d838b8bc5d",
+        "changedAt": "2019-11-09T17:52:00+01:00"
+    }, {
+        "id": "SVis-50fba8890029b1a8016eb868b1ed62ec-50fbfe8f0029b1a8016ea86245a9d83a",
+        "title": "SpecIF:shows",
+        "description": "'Bebauungsplan' zeigt 'FiCo'",
+        "class": "SC-Visibility",
+        "subject": "Diagram-50fba8890029b1a8016eb868b1ed62ec",
+        "object": "MEl-50fbfe8f0029b1a8016ea86245a9d83a",
+        "changedAt": "2019-11-09T17:52:00+01:00"
+    }, {
+        "id": "SVis-50fba8890029b1a8016eb868b1ed62ec-50feddc00029b1a8016e2872e78ecadc",
+        "title": "SpecIF:shows",
+        "description": "'Bebauungsplan' zeigt 'FiCo-Daten'",
+        "class": "SC-Visibility",
+        "subject": "Diagram-50fba8890029b1a8016eb868b1ed62ec",
+        "object": "MEl-50feddc00029b1a8016e2872e78ecadc",
+        "changedAt": "2019-11-09T17:52:00+01:00"
+    }, {
+        "id": "SVis-50fba8890029b1a8016eb868b1ed62ec-510149870029b1a8016e146b0fa3acea",
+        "title": "SpecIF:shows",
+        "description": "'Bebauungsplan' zeigt 'Interner Projektauftrag'",
+        "class": "SC-Visibility",
+        "subject": "Diagram-50fba8890029b1a8016eb868b1ed62ec",
+        "object": "MEl-510149870029b1a8016e146b0fa3acea",
+        "changedAt": "2019-11-09T17:52:00+01:00"
+    }, {
+        "id": "SVis-50fba8890029b1a8016eb868b1ed62ec-51021f5c0029b1a8016e72c10917e9b2",
+        "title": "SpecIF:shows",
+        "description": "'Bebauungsplan' zeigt 'Projektplan'",
+        "class": "SC-Visibility",
+        "subject": "Diagram-50fba8890029b1a8016eb868b1ed62ec",
+        "object": "MEl-51021f5c0029b1a8016e72c10917e9b2",
+        "changedAt": "2019-11-09T17:52:00+01:00"
+    }, {
+        "id": "SVis-50fba8890029b1a8016eb868b1ed62ec-51060c650029b1a8016e4180dadca744",
+        "title": "SpecIF:shows",
+        "description": "'Bebauungsplan' zeigt 'Vertrieb'",
+        "class": "SC-Visibility",
+        "subject": "Diagram-50fba8890029b1a8016eb868b1ed62ec",
+        "object": "MEl-51060c650029b1a8016e4180dadca744",
+        "changedAt": "2019-11-09T17:52:00+01:00"
+    }, {
+        "id": "SVis-50fba8890029b1a8016eb868b1ed62ec-50fe7a660029b1a8016e6de43e4c695b",
+        "title": "SpecIF:shows",
+        "description": "'Bebauungsplan' zeigt 'Workflow: Projektvorgehen'",
+        "class": "SC-Visibility",
+        "subject": "Diagram-50fba8890029b1a8016eb868b1ed62ec",
+        "object": "MEl-50fe7a660029b1a8016e6de43e4c695b",
+        "changedAt": "2019-11-09T17:52:00+01:00"
+    }, {
+        "id": "SVis-73f62b930029b1a8016e395d44e71e43-510d91440029b1a8016ed959610566b7",
+        "title": "SpecIF:shows",
+        "description": "'Fachobjekte' zeigt 'Anfrage'",
+        "class": "SC-Visibility",
+        "subject": "Diagram-73f62b930029b1a8016e395d44e71e43",
+        "object": "MEl-510d91440029b1a8016ed959610566b7",
+        "changedAt": "2019-11-16T12:50:00+01:00"
+    }, {
+        "id": "SVis-73f62b930029b1a8016e395d44e71e43-510033200029b1a8016e7c8e4f0bf2c9",
+        "title": "SpecIF:shows",
+        "description": "'Fachobjekte' zeigt 'Angebot'",
+        "class": "SC-Visibility",
+        "subject": "Diagram-73f62b930029b1a8016e395d44e71e43",
+        "object": "MEl-510033200029b1a8016e7c8e4f0bf2c9",
+        "changedAt": "2019-11-16T12:50:00+01:00"
+    }, {
+        "id": "SVis-73f62b930029b1a8016e395d44e71e43-740784760029b1a8016e8c208816ecb6",
+        "title": "SpecIF:shows",
+        "description": "'Fachobjekte' zeigt 'Angebots-Nr'",
+        "class": "SC-Visibility",
+        "subject": "Diagram-73f62b930029b1a8016e395d44e71e43",
+        "object": "MEl-740784760029b1a8016e8c208816ecb6",
+        "changedAt": "2019-11-16T12:50:00+01:00"
+    }, {
+        "id": "SVis-73f62b930029b1a8016e395d44e71e43-511078be0029b1a8016e8b3c4fe3e3c1",
+        "title": "SpecIF:shows",
+        "description": "'Fachobjekte' zeigt 'Auftrag'",
+        "class": "SC-Visibility",
+        "subject": "Diagram-73f62b930029b1a8016e395d44e71e43",
+        "object": "MEl-511078be0029b1a8016e8b3c4fe3e3c1",
+        "changedAt": "2019-11-16T12:50:00+01:00"
+    }, {
+        "id": "SVis-73f62b930029b1a8016e395d44e71e43-740addf40029b1a8016ec6d2dc90a2b1",
+        "title": "SpecIF:shows",
+        "description": "'Fachobjekte' zeigt 'Auftrags-Nr'",
+        "class": "SC-Visibility",
+        "subject": "Diagram-73f62b930029b1a8016e395d44e71e43",
+        "object": "MEl-740addf40029b1a8016ec6d2dc90a2b1",
+        "changedAt": "2019-11-16T12:50:00+01:00"
+    }, {
+        "id": "SVis-73f62b930029b1a8016e395d44e71e43-510149870029b1a8016e146b0fa3acea",
+        "title": "SpecIF:shows",
+        "description": "'Fachobjekte' zeigt 'Interner Projektauftrag'",
+        "class": "SC-Visibility",
+        "subject": "Diagram-73f62b930029b1a8016e395d44e71e43",
+        "object": "MEl-510149870029b1a8016e146b0fa3acea",
+        "changedAt": "2019-11-16T12:50:00+01:00"
+    }, {
+        "id": "SVis-73f62b930029b1a8016e395d44e71e43-740355130029b1a8016e599615554793",
+        "title": "SpecIF:shows",
+        "description": "'Fachobjekte' zeigt 'Projekt-Nr'",
+        "class": "SC-Visibility",
+        "subject": "Diagram-73f62b930029b1a8016e395d44e71e43",
+        "object": "MEl-740355130029b1a8016e599615554793",
+        "changedAt": "2019-11-16T12:50:00+01:00"
+    }, {
+        "id": "SVis-73f62b930029b1a8016e395d44e71e43-73f694720029b1a8016e43c983c2d941",
+        "title": "SpecIF:shows",
+        "description": "'Fachobjekte' zeigt 'Projektakte'",
+        "class": "SC-Visibility",
+        "subject": "Diagram-73f62b930029b1a8016e395d44e71e43",
+        "object": "MEl-73f694720029b1a8016e43c983c2d941",
+        "changedAt": "2019-11-16T12:50:00+01:00"
+    }, {
+        "id": "SVis-73f62b930029b1a8016e395d44e71e43-51021f5c0029b1a8016e72c10917e9b2",
+        "title": "SpecIF:shows",
+        "description": "'Fachobjekte' zeigt 'Projektplan'",
+        "class": "SC-Visibility",
+        "subject": "Diagram-73f62b930029b1a8016e395d44e71e43",
+        "object": "MEl-51021f5c0029b1a8016e72c10917e9b2",
+        "changedAt": "2019-11-16T12:50:00+01:00"
+    }, {
+        "id": "SVis-f054ecc2001ab2a8016fbe34f60fd887-f067ce0f001ab2a8016f86dd747c70f8",
+        "title": "SpecIF:shows",
+        "description": "'Werkzeug-Kette' zeigt 'Anforderung'",
+        "class": "SC-Visibility",
+        "subject": "Diagram-f054ecc2001ab2a8016fbe34f60fd887",
+        "object": "MEl-f067ce0f001ab2a8016f86dd747c70f8",
+        "changedAt": "2020-01-29T10:23:00+01:00"
+    }, {
+        "id": "SVis-f054ecc2001ab2a8016fbe34f60fd887-f0562786001ab2a8016f20cc7006e205",
+        "title": "SpecIF:shows",
+        "description": "'Werkzeug-Kette' zeigt 'Applikations-Landkarte'",
+        "class": "SC-Visibility",
+        "subject": "Diagram-f054ecc2001ab2a8016fbe34f60fd887",
+        "object": "MEl-f0562786001ab2a8016f20cc7006e205",
+        "changedAt": "2020-01-29T10:23:00+01:00"
+    }, {
+        "id": "SVis-f054ecc2001ab2a8016fbe34f60fd887-f056f4d7001ab2a8016f7d5741054d45",
+        "title": "SpecIF:shows",
+        "description": "'Werkzeug-Kette' zeigt 'ARCWAY Cockpit'",
+        "class": "SC-Visibility",
+        "subject": "Diagram-f054ecc2001ab2a8016fbe34f60fd887",
+        "object": "MEl-f056f4d7001ab2a8016f7d5741054d45",
+        "changedAt": "2020-01-29T10:23:00+01:00"
+    }, {
+        "id": "SVis-f054ecc2001ab2a8016fbe34f60fd887-f06e3545001ab2a8016f64cdb7216639",
+        "title": "SpecIF:shows",
+        "description": "'Werkzeug-Kette' zeigt 'BPMN Workflow-Engine'",
+        "class": "SC-Visibility",
+        "subject": "Diagram-f054ecc2001ab2a8016fbe34f60fd887",
+        "object": "MEl-f06e3545001ab2a8016f64cdb7216639",
+        "changedAt": "2020-01-29T10:23:00+01:00"
+    }, {
+        "id": "SVis-f054ecc2001ab2a8016fbe34f60fd887-f05eada4001ab2a8016fb4b49555271e",
+        "title": "SpecIF:shows",
+        "description": "'Werkzeug-Kette' zeigt 'BPMN-XML'",
+        "class": "SC-Visibility",
+        "subject": "Diagram-f054ecc2001ab2a8016fbe34f60fd887",
+        "object": "MEl-f05eada4001ab2a8016fb4b49555271e",
+        "changedAt": "2020-01-29T10:23:00+01:00"
+    }, {
+        "id": "SVis-f054ecc2001ab2a8016fbe34f60fd887-f059be89001ab2a8016feacc9b4d5d7e",
+        "title": "SpecIF:shows",
+        "description": "'Werkzeug-Kette' zeigt 'BPMN-XML Export'",
+        "class": "SC-Visibility",
+        "subject": "Diagram-f054ecc2001ab2a8016fbe34f60fd887",
+        "object": "MEl-f059be89001ab2a8016feacc9b4d5d7e",
+        "changedAt": "2020-01-29T10:23:00+01:00"
+    }, {
+        "id": "SVis-f054ecc2001ab2a8016fbe34f60fd887-f05cb54e001ab2a8016f319bc563ffc8",
+        "title": "SpecIF:shows",
+        "description": "'Werkzeug-Kette' zeigt 'BPMN-XML Import'",
+        "class": "SC-Visibility",
+        "subject": "Diagram-f054ecc2001ab2a8016fbe34f60fd887",
+        "object": "MEl-f05cb54e001ab2a8016f319bc563ffc8",
+        "changedAt": "2020-01-29T10:23:00+01:00"
+    }, {
+        "id": "SVis-f054ecc2001ab2a8016fbe34f60fd887-f0580af2001ab2a8016ffbbbd49779c0",
+        "title": "SpecIF:shows",
+        "description": "'Werkzeug-Kette' zeigt 'Camunda-Modeller'",
+        "class": "SC-Visibility",
+        "subject": "Diagram-f054ecc2001ab2a8016fbe34f60fd887",
+        "object": "MEl-f0580af2001ab2a8016ffbbbd49779c0",
+        "changedAt": "2020-01-29T10:23:00+01:00"
+    }, {
+        "id": "SVis-f054ecc2001ab2a8016fbe34f60fd887-f0611561001ab2a8016fe9458058599e",
+        "title": "SpecIF:shows",
+        "description": "'Werkzeug-Kette' zeigt 'ePub Export'",
+        "class": "SC-Visibility",
+        "subject": "Diagram-f054ecc2001ab2a8016fbe34f60fd887",
+        "object": "MEl-f0611561001ab2a8016fe9458058599e",
+        "changedAt": "2020-01-29T10:23:00+01:00"
+    }, {
+        "id": "SVis-f054ecc2001ab2a8016fbe34f60fd887-f0673f29001ab2a8016f817e0ae62ff9",
+        "title": "SpecIF:shows",
+        "description": "'Werkzeug-Kette' zeigt 'MS Excel'",
+        "class": "SC-Visibility",
+        "subject": "Diagram-f054ecc2001ab2a8016fbe34f60fd887",
+        "object": "MEl-f0673f29001ab2a8016f817e0ae62ff9",
+        "changedAt": "2020-01-29T10:23:00+01:00"
+    }, {
+        "id": "SVis-f054ecc2001ab2a8016fbe34f60fd887-f0569c16001ab2a8016f02390f18d51a",
+        "title": "SpecIF:shows",
+        "description": "'Werkzeug-Kette' zeigt 'Objekt-Landkarte'",
+        "class": "SC-Visibility",
+        "subject": "Diagram-f054ecc2001ab2a8016fbe34f60fd887",
+        "object": "MEl-f0569c16001ab2a8016f02390f18d51a",
+        "changedAt": "2020-01-29T10:23:00+01:00"
+    }, {
+        "id": "SVis-f054ecc2001ab2a8016fbe34f60fd887-f05fa2b5001ab2a8016f2113b88ccf14",
+        "title": "SpecIF:shows",
+        "description": "'Werkzeug-Kette' zeigt 'Original-Diagramm'",
+        "class": "SC-Visibility",
+        "subject": "Diagram-f054ecc2001ab2a8016fbe34f60fd887",
+        "object": "MEl-f05fa2b5001ab2a8016f2113b88ccf14",
+        "changedAt": "2020-01-29T10:23:00+01:00"
+    }, {
+        "id": "SVis-f054ecc2001ab2a8016fbe34f60fd887-f0587660001ab2a8016f785980ca6384",
+        "title": "SpecIF:shows",
+        "description": "'Werkzeug-Kette' zeigt 'Prozess-Modell'",
+        "class": "SC-Visibility",
+        "subject": "Diagram-f054ecc2001ab2a8016fbe34f60fd887",
+        "object": "MEl-f0587660001ab2a8016f785980ca6384",
+        "changedAt": "2020-01-29T10:23:00+01:00"
+    }, {
+        "id": "SVis-f054ecc2001ab2a8016fbe34f60fd887-f060be6d001ab2a8016f1cc56708c437",
+        "title": "SpecIF:shows",
+        "description": "'Werkzeug-Kette' zeigt 'ReqIF Export'",
+        "class": "SC-Visibility",
+        "subject": "Diagram-f054ecc2001ab2a8016fbe34f60fd887",
+        "object": "MEl-f060be6d001ab2a8016f1cc56708c437",
+        "changedAt": "2020-01-29T10:23:00+01:00"
+    }, {
+        "id": "SVis-f054ecc2001ab2a8016fbe34f60fd887-f05c0f9e001ab2a8016fce0a2a4a534e",
+        "title": "SpecIF:shows",
+        "description": "'Werkzeug-Kette' zeigt 'SpecIF'",
+        "class": "SC-Visibility",
+        "subject": "Diagram-f054ecc2001ab2a8016fbe34f60fd887",
+        "object": "MEl-f05c0f9e001ab2a8016fce0a2a4a534e",
+        "changedAt": "2020-01-29T10:23:00+01:00"
+    }, {
+        "id": "SVis-f054ecc2001ab2a8016fbe34f60fd887-f05962a8001ab2a8016f60f5c6ea1138",
+        "title": "SpecIF:shows",
+        "description": "'Werkzeug-Kette' zeigt 'SpecIF Export'",
+        "class": "SC-Visibility",
+        "subject": "Diagram-f054ecc2001ab2a8016fbe34f60fd887",
+        "object": "MEl-f05962a8001ab2a8016f60f5c6ea1138",
+        "changedAt": "2020-01-29T10:23:00+01:00"
+    }, {
+        "id": "SVis-f054ecc2001ab2a8016fbe34f60fd887-f05c6f39001ab2a8016f6db5b0806772",
+        "title": "SpecIF:shows",
+        "description": "'Werkzeug-Kette' zeigt 'SpecIF Import'",
+        "class": "SC-Visibility",
+        "subject": "Diagram-f054ecc2001ab2a8016fbe34f60fd887",
+        "object": "MEl-f05c6f39001ab2a8016f6db5b0806772",
+        "changedAt": "2020-01-29T10:23:00+01:00"
+    }, {
+        "id": "SVis-f054ecc2001ab2a8016fbe34f60fd887-f058dc6e001ab2a8016f336d34f053bc",
+        "title": "SpecIF:shows",
+        "description": "'Werkzeug-Kette' zeigt 'SpecIF Integrator and Viewer'",
+        "class": "SC-Visibility",
+        "subject": "Diagram-f054ecc2001ab2a8016fbe34f60fd887",
+        "object": "MEl-f058dc6e001ab2a8016f336d34f053bc",
+        "changedAt": "2020-01-29T10:23:00+01:00"
+    }, {
+        "id": "SVis-f054ecc2001ab2a8016fbe34f60fd887-f0601062001ab2a8016fa9fc4865ab3a",
+        "title": "SpecIF:shows",
+        "description": "'Werkzeug-Kette' zeigt 'Vernetzte Modellelemente'",
+        "class": "SC-Visibility",
+        "subject": "Diagram-f054ecc2001ab2a8016fbe34f60fd887",
+        "object": "MEl-f0601062001ab2a8016fa9fc4865ab3a",
+        "changedAt": "2020-01-29T10:23:00+01:00"
+    }, {
+        "id": "SVis-f054ecc2001ab2a8016fbe34f60fd887-f061846e001ab2a8016f09f1fa86db9e",
+        "title": "SpecIF:shows",
+        "description": "'Werkzeug-Kette' zeigt 'WORD Export'",
+        "class": "SC-Visibility",
+        "subject": "Diagram-f054ecc2001ab2a8016fbe34f60fd887",
+        "object": "MEl-f061846e001ab2a8016f09f1fa86db9e",
+        "changedAt": "2020-01-29T10:23:00+01:00"
+    }, {
+        "id": "SVis-f054ecc2001ab2a8016fbe34f60fd887-f0685b5f001ab2a8016fa1d7a78f85f6",
+        "title": "SpecIF:shows",
+        "description": "'Werkzeug-Kette' zeigt 'XLSX'",
+        "class": "SC-Visibility",
+        "subject": "Diagram-f054ecc2001ab2a8016fbe34f60fd887",
+        "object": "MEl-f0685b5f001ab2a8016fa1d7a78f85f6",
+        "changedAt": "2020-01-29T10:23:00+01:00"
+    }, {
+        "id": "SVis-f054ecc2001ab2a8016fbe34f60fd887-f05d04bd001ab2a8016f5a77c63e63f2",
+        "title": "SpecIF:shows",
+        "description": "'Werkzeug-Kette' zeigt 'XLSX Import'",
+        "class": "SC-Visibility",
+        "subject": "Diagram-f054ecc2001ab2a8016fbe34f60fd887",
+        "object": "MEl-f05d04bd001ab2a8016f5a77c63e63f2",
+        "changedAt": "2020-01-29T10:23:00+01:00"
+    }, {
+        "id": "SCtn-510d91440029b1a8016ed959610566b7-740355130029b1a8016e599615554793",
+        "title": "SpecIF:contains",
+        "description": "'Anfrage' enthält 'Projekt-Nr'",
+        "class": "SC-Containment",
+        "subject": "MEl-510d91440029b1a8016ed959610566b7",
+        "object": "MEl-740355130029b1a8016e599615554793",
+        "changedAt": "2020-02-23T09:52:00+01:00"
+    }, {
+        "id": "SCtn-510033200029b1a8016e7c8e4f0bf2c9-740784760029b1a8016e8c208816ecb6",
+        "title": "SpecIF:contains",
+        "description": "'Angebot' enthält 'Angebots-Nr'",
+        "class": "SC-Containment",
+        "subject": "MEl-510033200029b1a8016e7c8e4f0bf2c9",
+        "object": "MEl-740784760029b1a8016e8c208816ecb6",
+        "changedAt": "2020-02-23T09:52:00+01:00"
+    }, {
+        "id": "SCtn-510033200029b1a8016e7c8e4f0bf2c9-740355130029b1a8016e599615554793",
+        "title": "SpecIF:contains",
+        "description": "'Angebot' enthält 'Projekt-Nr'",
+        "class": "SC-Containment",
+        "subject": "MEl-510033200029b1a8016e7c8e4f0bf2c9",
+        "object": "MEl-740355130029b1a8016e599615554793",
+        "changedAt": "2020-02-23T09:52:00+01:00"
+    }, {
+        "id": "SCtn-f056f4d7001ab2a8016f7d5741054d45-f0562786001ab2a8016f20cc7006e205",
+        "title": "SpecIF:contains",
+        "description": "'ARCWAY Cockpit' enthält 'Applikations-Landkarte'",
+        "class": "SC-Containment",
+        "subject": "MEl-f056f4d7001ab2a8016f7d5741054d45",
+        "object": "MEl-f0562786001ab2a8016f20cc7006e205",
+        "changedAt": "2020-02-23T09:52:00+01:00"
+    }, {
+        "id": "SCtn-f056f4d7001ab2a8016f7d5741054d45-f0569c16001ab2a8016f02390f18d51a",
+        "title": "SpecIF:contains",
+        "description": "'ARCWAY Cockpit' enthält 'Objekt-Landkarte'",
+        "class": "SC-Containment",
+        "subject": "MEl-f056f4d7001ab2a8016f7d5741054d45",
+        "object": "MEl-f0569c16001ab2a8016f02390f18d51a",
+        "changedAt": "2020-02-23T09:52:00+01:00"
+    }, {
+        "id": "SCtn-f056f4d7001ab2a8016f7d5741054d45-f05962a8001ab2a8016f60f5c6ea1138",
+        "title": "SpecIF:contains",
+        "description": "'ARCWAY Cockpit' enthält 'SpecIF Export'",
+        "class": "SC-Containment",
+        "subject": "MEl-f056f4d7001ab2a8016f7d5741054d45",
+        "object": "MEl-f05962a8001ab2a8016f60f5c6ea1138",
+        "changedAt": "2020-02-23T09:52:00+01:00"
+    }, {
+        "id": "SCtn-511078be0029b1a8016e8b3c4fe3e3c1-740addf40029b1a8016ec6d2dc90a2b1",
+        "title": "SpecIF:contains",
+        "description": "'Auftrag' enthält 'Auftrags-Nr'",
+        "class": "SC-Containment",
+        "subject": "MEl-511078be0029b1a8016e8b3c4fe3e3c1",
+        "object": "MEl-740addf40029b1a8016ec6d2dc90a2b1",
+        "changedAt": "2020-02-23T09:52:00+01:00"
+    }, {
+        "id": "SCtn-511078be0029b1a8016e8b3c4fe3e3c1-740355130029b1a8016e599615554793",
+        "title": "SpecIF:contains",
+        "description": "'Auftrag' enthält 'Projekt-Nr'",
+        "class": "SC-Containment",
+        "subject": "MEl-511078be0029b1a8016e8b3c4fe3e3c1",
+        "object": "MEl-740355130029b1a8016e599615554793",
+        "changedAt": "2020-02-23T09:52:00+01:00"
+    }, {
+        "id": "SRea-f06e3545001ab2a8016f64cdb7216639-f05eada4001ab2a8016fb4b49555271e",
+        "title": "SpecIF:reads",
+        "description": "'BPMN Workflow-Engine' liest 'BPMN-XML'",
+        "class": "SC-Reading",
+        "subject": "MEl-f06e3545001ab2a8016f64cdb7216639",
+        "object": "MEl-f05eada4001ab2a8016fb4b49555271e",
+        "changedAt": "2020-02-23T09:52:00+01:00"
+    }, {
+        "id": "SWri-f059be89001ab2a8016feacc9b4d5d7e-f05eada4001ab2a8016fb4b49555271e",
+        "title": "SpecIF:writes",
+        "description": "'BPMN-XML Export' schreibt 'BPMN-XML'",
+        "class": "SC-Writing",
+        "subject": "MEl-f059be89001ab2a8016feacc9b4d5d7e",
+        "object": "MEl-f05eada4001ab2a8016fb4b49555271e",
+        "changedAt": "2020-02-23T09:52:00+01:00"
+    }, {
+        "id": "SRea-f059be89001ab2a8016feacc9b4d5d7e-f0587660001ab2a8016f785980ca6384",
+        "title": "SpecIF:reads",
+        "description": "'BPMN-XML Export' liest 'Prozess-Modell'",
+        "class": "SC-Reading",
+        "subject": "MEl-f059be89001ab2a8016feacc9b4d5d7e",
+        "object": "MEl-f0587660001ab2a8016f785980ca6384",
+        "changedAt": "2020-02-23T09:52:00+01:00"
+    }, {
+        "id": "SRea-f05cb54e001ab2a8016f319bc563ffc8-f05eada4001ab2a8016fb4b49555271e",
+        "title": "SpecIF:reads",
+        "description": "'BPMN-XML Import' liest 'BPMN-XML'",
+        "class": "SC-Reading",
+        "subject": "MEl-f05cb54e001ab2a8016f319bc563ffc8",
+        "object": "MEl-f05eada4001ab2a8016fb4b49555271e",
+        "changedAt": "2020-02-23T09:52:00+01:00"
+    }, {
+        "id": "SCtn-f0580af2001ab2a8016ffbbbd49779c0-f059be89001ab2a8016feacc9b4d5d7e",
+        "title": "SpecIF:contains",
+        "description": "'Camunda-Modeller' enthält 'BPMN-XML Export'",
+        "class": "SC-Containment",
+        "subject": "MEl-f0580af2001ab2a8016ffbbbd49779c0",
+        "object": "MEl-f059be89001ab2a8016feacc9b4d5d7e",
+        "changedAt": "2020-02-23T09:52:00+01:00"
+    }, {
+        "id": "SCtn-f0580af2001ab2a8016ffbbbd49779c0-f0587660001ab2a8016f785980ca6384",
+        "title": "SpecIF:contains",
+        "description": "'Camunda-Modeller' enthält 'Prozess-Modell'",
+        "class": "SC-Containment",
+        "subject": "MEl-f0580af2001ab2a8016ffbbbd49779c0",
+        "object": "MEl-f0587660001ab2a8016f785980ca6384",
+        "changedAt": "2020-02-23T09:52:00+01:00"
+    }, {
+        "id": "SSnd-50fe7a660029b1a8016e6de43e4c695b-5106faa50029b1a8016e78752e037322",
+        "title": "SpecIF:sendsTo",
+        "description": "'Workflow: Projektvorgehen' sendet an 'Controlling'",
+        "class": "SC-Sending",
+        "subject": "MEl-50fe7a660029b1a8016e6de43e4c695b",
+        "object": "MEl-5106faa50029b1a8016e78752e037322",
+        "changedAt": "2020-02-23T09:52:00+01:00"
+    }, {
+        "id": "SSnd-50fe7a660029b1a8016e6de43e4c695b-5106a1780029b1a8016e5ebb9f84084a",
+        "title": "SpecIF:sendsTo",
+        "description": "'Workflow: Projektvorgehen' sendet an 'Delivery'",
+        "class": "SC-Sending",
+        "subject": "MEl-50fe7a660029b1a8016e6de43e4c695b",
+        "object": "MEl-5106a1780029b1a8016e5ebb9f84084a",
+        "changedAt": "2020-02-23T09:52:00+01:00"
+    }, {
+        "id": "SWri-50fc635d0029b1a8016eb6d838b8bc5d-510d91440029b1a8016ed959610566b7",
+        "title": "SpecIF:writes",
+        "description": "'DMS' schreibt 'Anfrage'",
+        "class": "SC-Writing",
+        "subject": "MEl-50fc635d0029b1a8016eb6d838b8bc5d",
+        "object": "MEl-510d91440029b1a8016ed959610566b7",
+        "changedAt": "2020-02-23T09:52:00+01:00"
+    }, {
+        "id": "SRea-50fc635d0029b1a8016eb6d838b8bc5d-510d91440029b1a8016ed959610566b7",
+        "title": "SpecIF:reads",
+        "description": "'DMS' liest 'Anfrage'",
+        "class": "SC-Reading",
+        "subject": "MEl-50fc635d0029b1a8016eb6d838b8bc5d",
+        "object": "MEl-510d91440029b1a8016ed959610566b7",
+        "changedAt": "2020-02-23T09:52:00+01:00"
+    }, {
+        "id": "SWri-50fc635d0029b1a8016eb6d838b8bc5d-510033200029b1a8016e7c8e4f0bf2c9",
+        "title": "SpecIF:writes",
+        "description": "'DMS' schreibt 'Angebot'",
+        "class": "SC-Writing",
+        "subject": "MEl-50fc635d0029b1a8016eb6d838b8bc5d",
+        "object": "MEl-510033200029b1a8016e7c8e4f0bf2c9",
+        "changedAt": "2020-02-23T09:52:00+01:00"
+    }, {
+        "id": "SRea-50fc635d0029b1a8016eb6d838b8bc5d-510033200029b1a8016e7c8e4f0bf2c9",
+        "title": "SpecIF:reads",
+        "description": "'DMS' liest 'Angebot'",
+        "class": "SC-Reading",
+        "subject": "MEl-50fc635d0029b1a8016eb6d838b8bc5d",
+        "object": "MEl-510033200029b1a8016e7c8e4f0bf2c9",
+        "changedAt": "2020-02-23T09:52:00+01:00"
+    }, {
+        "id": "SWri-50fc635d0029b1a8016eb6d838b8bc5d-511078be0029b1a8016e8b3c4fe3e3c1",
+        "title": "SpecIF:writes",
+        "description": "'DMS' schreibt 'Auftrag'",
+        "class": "SC-Writing",
+        "subject": "MEl-50fc635d0029b1a8016eb6d838b8bc5d",
+        "object": "MEl-511078be0029b1a8016e8b3c4fe3e3c1",
+        "changedAt": "2020-02-23T09:52:00+01:00"
+    }, {
+        "id": "SRea-50fc635d0029b1a8016eb6d838b8bc5d-511078be0029b1a8016e8b3c4fe3e3c1",
+        "title": "SpecIF:reads",
+        "description": "'DMS' liest 'Auftrag'",
+        "class": "SC-Reading",
+        "subject": "MEl-50fc635d0029b1a8016eb6d838b8bc5d",
+        "object": "MEl-511078be0029b1a8016e8b3c4fe3e3c1",
+        "changedAt": "2020-02-23T09:52:00+01:00"
+    }, {
+        "id": "SWri-50fc635d0029b1a8016eb6d838b8bc5d-510149870029b1a8016e146b0fa3acea",
+        "title": "SpecIF:writes",
+        "description": "'DMS' schreibt 'Interner Projektauftrag'",
+        "class": "SC-Writing",
+        "subject": "MEl-50fc635d0029b1a8016eb6d838b8bc5d",
+        "object": "MEl-510149870029b1a8016e146b0fa3acea",
+        "changedAt": "2020-02-23T09:52:00+01:00"
+    }, {
+        "id": "SRea-50fc635d0029b1a8016eb6d838b8bc5d-510149870029b1a8016e146b0fa3acea",
+        "title": "SpecIF:reads",
+        "description": "'DMS' liest 'Interner Projektauftrag'",
+        "class": "SC-Reading",
+        "subject": "MEl-50fc635d0029b1a8016eb6d838b8bc5d",
+        "object": "MEl-510149870029b1a8016e146b0fa3acea",
+        "changedAt": "2020-02-23T09:52:00+01:00"
+    }, {
+        "id": "SWri-50fc635d0029b1a8016eb6d838b8bc5d-51021f5c0029b1a8016e72c10917e9b2",
+        "title": "SpecIF:writes",
+        "description": "'DMS' schreibt 'Projektplan'",
+        "class": "SC-Writing",
+        "subject": "MEl-50fc635d0029b1a8016eb6d838b8bc5d",
+        "object": "MEl-51021f5c0029b1a8016e72c10917e9b2",
+        "changedAt": "2020-02-23T09:52:00+01:00"
+    }, {
+        "id": "SRea-50fc635d0029b1a8016eb6d838b8bc5d-51021f5c0029b1a8016e72c10917e9b2",
+        "title": "SpecIF:reads",
+        "description": "'DMS' liest 'Projektplan'",
+        "class": "SC-Reading",
+        "subject": "MEl-50fc635d0029b1a8016eb6d838b8bc5d",
+        "object": "MEl-51021f5c0029b1a8016e72c10917e9b2",
+        "changedAt": "2020-02-23T09:52:00+01:00"
+    }, {
+        "id": "SWri-50fbfe8f0029b1a8016ea86245a9d83a-50feddc00029b1a8016e2872e78ecadc",
+        "title": "SpecIF:writes",
+        "description": "'FiCo' schreibt 'FiCo-Daten'",
+        "class": "SC-Writing",
+        "subject": "MEl-50fbfe8f0029b1a8016ea86245a9d83a",
+        "object": "MEl-50feddc00029b1a8016e2872e78ecadc",
+        "changedAt": "2020-02-23T09:52:00+01:00"
+    }, {
+        "id": "SRea-50fbfe8f0029b1a8016ea86245a9d83a-50feddc00029b1a8016e2872e78ecadc",
+        "title": "SpecIF:reads",
+        "description": "'FiCo' liest 'FiCo-Daten'",
+        "class": "SC-Reading",
+        "subject": "MEl-50fbfe8f0029b1a8016ea86245a9d83a",
+        "object": "MEl-50feddc00029b1a8016e2872e78ecadc",
+        "changedAt": "2020-02-23T09:52:00+01:00"
+    }, {
+        "id": "SCtn-510149870029b1a8016e146b0fa3acea-740355130029b1a8016e599615554793",
+        "title": "SpecIF:contains",
+        "description": "'Interner Projektauftrag' enthält 'Projekt-Nr'",
+        "class": "SC-Containment",
+        "subject": "MEl-510149870029b1a8016e146b0fa3acea",
+        "object": "MEl-740355130029b1a8016e599615554793",
+        "changedAt": "2020-02-23T09:52:00+01:00"
+    }, {
+        "id": "SCtn-f0673f29001ab2a8016f817e0ae62ff9-f067ce0f001ab2a8016f86dd747c70f8",
+        "title": "SpecIF:contains",
+        "description": "'MS Excel' enthält 'Anforderung'",
+        "class": "SC-Containment",
+        "subject": "MEl-f0673f29001ab2a8016f817e0ae62ff9",
+        "object": "MEl-f067ce0f001ab2a8016f86dd747c70f8",
+        "changedAt": "2020-02-23T09:52:00+01:00"
+    }, {
+        "id": "SWri-f0673f29001ab2a8016f817e0ae62ff9-f0685b5f001ab2a8016fa1d7a78f85f6",
+        "title": "SpecIF:writes",
+        "description": "'MS Excel' schreibt 'XLSX'",
+        "class": "SC-Writing",
+        "subject": "MEl-f0673f29001ab2a8016f817e0ae62ff9",
+        "object": "MEl-f0685b5f001ab2a8016fa1d7a78f85f6",
+        "changedAt": "2020-02-23T09:52:00+01:00"
+    }, {
+        "id": "SCtn-73f694720029b1a8016e43c983c2d941-510d91440029b1a8016ed959610566b7",
+        "title": "SpecIF:contains",
+        "description": "'Projektakte' enthält 'Anfrage'",
+        "class": "SC-Containment",
+        "subject": "MEl-73f694720029b1a8016e43c983c2d941",
+        "object": "MEl-510d91440029b1a8016ed959610566b7",
+        "changedAt": "2020-02-23T09:52:00+01:00"
+    }, {
+        "id": "SCtn-73f694720029b1a8016e43c983c2d941-510033200029b1a8016e7c8e4f0bf2c9",
+        "title": "SpecIF:contains",
+        "description": "'Projektakte' enthält 'Angebot'",
+        "class": "SC-Containment",
+        "subject": "MEl-73f694720029b1a8016e43c983c2d941",
+        "object": "MEl-510033200029b1a8016e7c8e4f0bf2c9",
+        "changedAt": "2020-02-23T09:52:00+01:00"
+    }, {
+        "id": "SCtn-73f694720029b1a8016e43c983c2d941-511078be0029b1a8016e8b3c4fe3e3c1",
+        "title": "SpecIF:contains",
+        "description": "'Projektakte' enthält 'Auftrag'",
+        "class": "SC-Containment",
+        "subject": "MEl-73f694720029b1a8016e43c983c2d941",
+        "object": "MEl-511078be0029b1a8016e8b3c4fe3e3c1",
+        "changedAt": "2020-02-23T09:52:00+01:00"
+    }, {
+        "id": "SCtn-73f694720029b1a8016e43c983c2d941-510149870029b1a8016e146b0fa3acea",
+        "title": "SpecIF:contains",
+        "description": "'Projektakte' enthält 'Interner Projektauftrag'",
+        "class": "SC-Containment",
+        "subject": "MEl-73f694720029b1a8016e43c983c2d941",
+        "object": "MEl-510149870029b1a8016e146b0fa3acea",
+        "changedAt": "2020-02-23T09:52:00+01:00"
+    }, {
+        "id": "SCtn-73f694720029b1a8016e43c983c2d941-740355130029b1a8016e599615554793",
+        "title": "SpecIF:contains",
+        "description": "'Projektakte' enthält 'Projekt-Nr'",
+        "class": "SC-Containment",
+        "subject": "MEl-73f694720029b1a8016e43c983c2d941",
+        "object": "MEl-740355130029b1a8016e599615554793",
+        "changedAt": "2020-02-23T09:52:00+01:00"
+    }, {
+        "id": "SCtn-73f694720029b1a8016e43c983c2d941-51021f5c0029b1a8016e72c10917e9b2",
+        "title": "SpecIF:contains",
+        "description": "'Projektakte' enthält 'Projektplan'",
+        "class": "SC-Containment",
+        "subject": "MEl-73f694720029b1a8016e43c983c2d941",
+        "object": "MEl-51021f5c0029b1a8016e72c10917e9b2",
+        "changedAt": "2020-02-23T09:52:00+01:00"
+    }, {
+        "id": "SCtn-51021f5c0029b1a8016e72c10917e9b2-740355130029b1a8016e599615554793",
+        "title": "SpecIF:contains",
+        "description": "'Projektplan' enthält 'Projekt-Nr'",
+        "class": "SC-Containment",
+        "subject": "MEl-51021f5c0029b1a8016e72c10917e9b2",
+        "object": "MEl-740355130029b1a8016e599615554793",
+        "changedAt": "2020-02-23T09:52:00+01:00"
+    }, {
+        "id": "SWri-f05962a8001ab2a8016f60f5c6ea1138-f05c0f9e001ab2a8016fce0a2a4a534e",
+        "title": "SpecIF:writes",
+        "description": "'SpecIF Export' schreibt 'SpecIF'",
+        "class": "SC-Writing",
+        "subject": "MEl-f05962a8001ab2a8016f60f5c6ea1138",
+        "object": "MEl-f05c0f9e001ab2a8016fce0a2a4a534e",
+        "changedAt": "2020-02-23T09:52:00+01:00"
+    }, {
+        "id": "SRea-f05962a8001ab2a8016f60f5c6ea1138-f0562786001ab2a8016f20cc7006e205",
+        "title": "SpecIF:reads",
+        "description": "'SpecIF Export' liest 'Applikations-Landkarte'",
+        "class": "SC-Reading",
+        "subject": "MEl-f05962a8001ab2a8016f60f5c6ea1138",
+        "object": "MEl-f0562786001ab2a8016f20cc7006e205",
+        "changedAt": "2020-02-23T09:52:00+01:00"
+    }, {
+        "id": "SRea-f05962a8001ab2a8016f60f5c6ea1138-f0569c16001ab2a8016f02390f18d51a",
+        "title": "SpecIF:reads",
+        "description": "'SpecIF Export' liest 'Objekt-Landkarte'",
+        "class": "SC-Reading",
+        "subject": "MEl-f05962a8001ab2a8016f60f5c6ea1138",
+        "object": "MEl-f0569c16001ab2a8016f02390f18d51a",
+        "changedAt": "2020-02-23T09:52:00+01:00"
+    }, {
+        "id": "SRea-f05c6f39001ab2a8016f6db5b0806772-f05c0f9e001ab2a8016fce0a2a4a534e",
+        "title": "SpecIF:reads",
+        "description": "'SpecIF Import' liest 'SpecIF'",
+        "class": "SC-Reading",
+        "subject": "MEl-f05c6f39001ab2a8016f6db5b0806772",
+        "object": "MEl-f05c0f9e001ab2a8016fce0a2a4a534e",
+        "changedAt": "2020-02-23T09:52:00+01:00"
+    }, {
+        "id": "SCtn-f058dc6e001ab2a8016f336d34f053bc-f05cb54e001ab2a8016f319bc563ffc8",
+        "title": "SpecIF:contains",
+        "description": "'SpecIF Integrator and Viewer' enthält 'BPMN-XML Import'",
+        "class": "SC-Containment",
+        "subject": "MEl-f058dc6e001ab2a8016f336d34f053bc",
+        "object": "MEl-f05cb54e001ab2a8016f319bc563ffc8",
+        "changedAt": "2020-02-23T09:52:00+01:00"
+    }, {
+        "id": "SCtn-f058dc6e001ab2a8016f336d34f053bc-f0611561001ab2a8016fe9458058599e",
+        "title": "SpecIF:contains",
+        "description": "'SpecIF Integrator and Viewer' enthält 'ePub Export'",
+        "class": "SC-Containment",
+        "subject": "MEl-f058dc6e001ab2a8016f336d34f053bc",
+        "object": "MEl-f0611561001ab2a8016fe9458058599e",
+        "changedAt": "2020-02-23T09:52:00+01:00"
+    }, {
+        "id": "SCtn-f058dc6e001ab2a8016f336d34f053bc-f05fa2b5001ab2a8016f2113b88ccf14",
+        "title": "SpecIF:contains",
+        "description": "'SpecIF Integrator and Viewer' enthält 'Original-Diagramm'",
+        "class": "SC-Containment",
+        "subject": "MEl-f058dc6e001ab2a8016f336d34f053bc",
+        "object": "MEl-f05fa2b5001ab2a8016f2113b88ccf14",
+        "changedAt": "2020-02-23T09:52:00+01:00"
+    }, {
+        "id": "SCtn-f058dc6e001ab2a8016f336d34f053bc-f060be6d001ab2a8016f1cc56708c437",
+        "title": "SpecIF:contains",
+        "description": "'SpecIF Integrator and Viewer' enthält 'ReqIF Export'",
+        "class": "SC-Containment",
+        "subject": "MEl-f058dc6e001ab2a8016f336d34f053bc",
+        "object": "MEl-f060be6d001ab2a8016f1cc56708c437",
+        "changedAt": "2020-02-23T09:52:00+01:00"
+    }, {
+        "id": "SCtn-f058dc6e001ab2a8016f336d34f053bc-f05962a8001ab2a8016f60f5c6ea1138",
+        "title": "SpecIF:contains",
+        "description": "'SpecIF Integrator and Viewer' enthält 'SpecIF Export'",
+        "class": "SC-Containment",
+        "subject": "MEl-f058dc6e001ab2a8016f336d34f053bc",
+        "object": "MEl-f05962a8001ab2a8016f60f5c6ea1138",
+        "changedAt": "2020-02-23T09:52:00+01:00"
+    }, {
+        "id": "SCtn-f058dc6e001ab2a8016f336d34f053bc-f05c6f39001ab2a8016f6db5b0806772",
+        "title": "SpecIF:contains",
+        "description": "'SpecIF Integrator and Viewer' enthält 'SpecIF Import'",
+        "class": "SC-Containment",
+        "subject": "MEl-f058dc6e001ab2a8016f336d34f053bc",
+        "object": "MEl-f05c6f39001ab2a8016f6db5b0806772",
+        "changedAt": "2020-02-23T09:52:00+01:00"
+    }, {
+        "id": "SCtn-f058dc6e001ab2a8016f336d34f053bc-f0601062001ab2a8016fa9fc4865ab3a",
+        "title": "SpecIF:contains",
+        "description": "'SpecIF Integrator and Viewer' enthält 'Vernetzte Modellelemente'",
+        "class": "SC-Containment",
+        "subject": "MEl-f058dc6e001ab2a8016f336d34f053bc",
+        "object": "MEl-f0601062001ab2a8016fa9fc4865ab3a",
+        "changedAt": "2020-02-23T09:52:00+01:00"
+    }, {
+        "id": "SCtn-f058dc6e001ab2a8016f336d34f053bc-f061846e001ab2a8016f09f1fa86db9e",
+        "title": "SpecIF:contains",
+        "description": "'SpecIF Integrator and Viewer' enthält 'WORD Export'",
+        "class": "SC-Containment",
+        "subject": "MEl-f058dc6e001ab2a8016f336d34f053bc",
+        "object": "MEl-f061846e001ab2a8016f09f1fa86db9e",
+        "changedAt": "2020-02-23T09:52:00+01:00"
+    }, {
+        "id": "SCtn-f058dc6e001ab2a8016f336d34f053bc-f05d04bd001ab2a8016f5a77c63e63f2",
+        "title": "SpecIF:contains",
+        "description": "'SpecIF Integrator and Viewer' enthält 'XLSX Import'",
+        "class": "SC-Containment",
+        "subject": "MEl-f058dc6e001ab2a8016f336d34f053bc",
+        "object": "MEl-f05d04bd001ab2a8016f5a77c63e63f2",
+        "changedAt": "2020-02-23T09:52:00+01:00"
+    }, {
+        "id": "SSnd-50fe7a660029b1a8016e6de43e4c695b-51060c650029b1a8016e4180dadca744",
+        "title": "SpecIF:sendsTo",
+        "description": "'Workflow: Projektvorgehen' sendet an 'Vertrieb'",
+        "class": "SC-Sending",
+        "subject": "MEl-50fe7a660029b1a8016e6de43e4c695b",
+        "object": "MEl-51060c650029b1a8016e4180dadca744",
+        "changedAt": "2020-02-23T09:52:00+01:00"
+    }, {
+        "id": "SWri-50fe7a660029b1a8016e6de43e4c695b-510d91440029b1a8016ed959610566b7",
+        "title": "SpecIF:writes",
+        "description": "'Workflow: Projektvorgehen' schreibt 'Anfrage'",
+        "class": "SC-Writing",
+        "subject": "MEl-50fe7a660029b1a8016e6de43e4c695b",
+        "object": "MEl-510d91440029b1a8016ed959610566b7",
+        "changedAt": "2020-02-23T09:52:00+01:00"
+    }, {
+        "id": "SRea-50fe7a660029b1a8016e6de43e4c695b-510d91440029b1a8016ed959610566b7",
+        "title": "SpecIF:reads",
+        "description": "'Workflow: Projektvorgehen' liest 'Anfrage'",
+        "class": "SC-Reading",
+        "subject": "MEl-50fe7a660029b1a8016e6de43e4c695b",
+        "object": "MEl-510d91440029b1a8016ed959610566b7",
+        "changedAt": "2020-02-23T09:52:00+01:00"
+    }, {
+        "id": "SWri-50fe7a660029b1a8016e6de43e4c695b-510033200029b1a8016e7c8e4f0bf2c9",
+        "title": "SpecIF:writes",
+        "description": "'Workflow: Projektvorgehen' schreibt 'Angebot'",
+        "class": "SC-Writing",
+        "subject": "MEl-50fe7a660029b1a8016e6de43e4c695b",
+        "object": "MEl-510033200029b1a8016e7c8e4f0bf2c9",
+        "changedAt": "2020-02-23T09:52:00+01:00"
+    }, {
+        "id": "SRea-50fe7a660029b1a8016e6de43e4c695b-510033200029b1a8016e7c8e4f0bf2c9",
+        "title": "SpecIF:reads",
+        "description": "'Workflow: Projektvorgehen' liest 'Angebot'",
+        "class": "SC-Reading",
+        "subject": "MEl-50fe7a660029b1a8016e6de43e4c695b",
+        "object": "MEl-510033200029b1a8016e7c8e4f0bf2c9",
+        "changedAt": "2020-02-23T09:52:00+01:00"
+    }, {
+        "id": "SWri-50fe7a660029b1a8016e6de43e4c695b-511078be0029b1a8016e8b3c4fe3e3c1",
+        "title": "SpecIF:writes",
+        "description": "'Workflow: Projektvorgehen' schreibt 'Auftrag'",
+        "class": "SC-Writing",
+        "subject": "MEl-50fe7a660029b1a8016e6de43e4c695b",
+        "object": "MEl-511078be0029b1a8016e8b3c4fe3e3c1",
+        "changedAt": "2020-02-23T09:52:00+01:00"
+    }, {
+        "id": "SRea-50fe7a660029b1a8016e6de43e4c695b-511078be0029b1a8016e8b3c4fe3e3c1",
+        "title": "SpecIF:reads",
+        "description": "'Workflow: Projektvorgehen' liest 'Auftrag'",
+        "class": "SC-Reading",
+        "subject": "MEl-50fe7a660029b1a8016e6de43e4c695b",
+        "object": "MEl-511078be0029b1a8016e8b3c4fe3e3c1",
+        "changedAt": "2020-02-23T09:52:00+01:00"
+    }, {
+        "id": "SWri-50fe7a660029b1a8016e6de43e4c695b-50feddc00029b1a8016e2872e78ecadc",
+        "title": "SpecIF:writes",
+        "description": "'Workflow: Projektvorgehen' schreibt 'FiCo-Daten'",
+        "class": "SC-Writing",
+        "subject": "MEl-50fe7a660029b1a8016e6de43e4c695b",
+        "object": "MEl-50feddc00029b1a8016e2872e78ecadc",
+        "changedAt": "2020-02-23T09:52:00+01:00"
+    }, {
+        "id": "SRea-50fe7a660029b1a8016e6de43e4c695b-50feddc00029b1a8016e2872e78ecadc",
+        "title": "SpecIF:reads",
+        "description": "'Workflow: Projektvorgehen' liest 'FiCo-Daten'",
+        "class": "SC-Reading",
+        "subject": "MEl-50fe7a660029b1a8016e6de43e4c695b",
+        "object": "MEl-50feddc00029b1a8016e2872e78ecadc",
+        "changedAt": "2020-02-23T09:52:00+01:00"
+    }, {
+        "id": "SWri-50fe7a660029b1a8016e6de43e4c695b-510149870029b1a8016e146b0fa3acea",
+        "title": "SpecIF:writes",
+        "description": "'Workflow: Projektvorgehen' schreibt 'Interner Projektauftrag'",
+        "class": "SC-Writing",
+        "subject": "MEl-50fe7a660029b1a8016e6de43e4c695b",
+        "object": "MEl-510149870029b1a8016e146b0fa3acea",
+        "changedAt": "2020-02-23T09:52:00+01:00"
+    }, {
+        "id": "SRea-50fe7a660029b1a8016e6de43e4c695b-510149870029b1a8016e146b0fa3acea",
+        "title": "SpecIF:reads",
+        "description": "'Workflow: Projektvorgehen' liest 'Interner Projektauftrag'",
+        "class": "SC-Reading",
+        "subject": "MEl-50fe7a660029b1a8016e6de43e4c695b",
+        "object": "MEl-510149870029b1a8016e146b0fa3acea",
+        "changedAt": "2020-02-23T09:52:00+01:00"
+    }, {
+        "id": "SWri-50fe7a660029b1a8016e6de43e4c695b-51021f5c0029b1a8016e72c10917e9b2",
+        "title": "SpecIF:writes",
+        "description": "'Workflow: Projektvorgehen' schreibt 'Projektplan'",
+        "class": "SC-Writing",
+        "subject": "MEl-50fe7a660029b1a8016e6de43e4c695b",
+        "object": "MEl-51021f5c0029b1a8016e72c10917e9b2",
+        "changedAt": "2020-02-23T09:52:00+01:00"
+    }, {
+        "id": "SRea-50fe7a660029b1a8016e6de43e4c695b-51021f5c0029b1a8016e72c10917e9b2",
+        "title": "SpecIF:reads",
+        "description": "'Workflow: Projektvorgehen' liest 'Projektplan'",
+        "class": "SC-Reading",
+        "subject": "MEl-50fe7a660029b1a8016e6de43e4c695b",
+        "object": "MEl-51021f5c0029b1a8016e72c10917e9b2",
+        "changedAt": "2020-02-23T09:52:00+01:00"
+    }, {
+        "id": "SSnd-5106faa50029b1a8016e78752e037322-50fe7a660029b1a8016e6de43e4c695b",
+        "title": "SpecIF:sendsTo",
+        "description": "'Controlling' sendet an 'Workflow: Projektvorgehen'",
+        "class": "SC-Sending",
+        "subject": "MEl-5106faa50029b1a8016e78752e037322",
+        "object": "MEl-50fe7a660029b1a8016e6de43e4c695b",
+        "changedAt": "2020-02-23T09:52:00+01:00"
+    }, {
+        "id": "SSnd-5106a1780029b1a8016e5ebb9f84084a-50fe7a660029b1a8016e6de43e4c695b",
+        "title": "SpecIF:sendsTo",
+        "description": "'Delivery' sendet an 'Workflow: Projektvorgehen'",
+        "class": "SC-Sending",
+        "subject": "MEl-5106a1780029b1a8016e5ebb9f84084a",
+        "object": "MEl-50fe7a660029b1a8016e6de43e4c695b",
+        "changedAt": "2020-02-23T09:52:00+01:00"
+    }, {
+        "id": "SSnd-51060c650029b1a8016e4180dadca744-50fe7a660029b1a8016e6de43e4c695b",
+        "title": "SpecIF:sendsTo",
+        "description": "'Vertrieb' sendet an 'Workflow: Projektvorgehen'",
+        "class": "SC-Sending",
+        "subject": "MEl-51060c650029b1a8016e4180dadca744",
+        "object": "MEl-50fe7a660029b1a8016e6de43e4c695b",
+        "changedAt": "2020-02-23T09:52:00+01:00"
+    }, {
+        "id": "SRea-f05d04bd001ab2a8016f5a77c63e63f2-f0685b5f001ab2a8016fa1d7a78f85f6",
+        "title": "SpecIF:reads",
+        "description": "'XLSX Import' liest 'XLSX'",
+        "class": "SC-Reading",
+        "subject": "MEl-f05d04bd001ab2a8016f5a77c63e63f2",
+        "object": "MEl-f0685b5f001ab2a8016fa1d7a78f85f6",
+        "changedAt": "2020-02-23T09:52:00+01:00"
+    }, {
+        "id": "SAnn-5115cd090029b1a8016e13911983d8a9-511078be0029b1a8016e8b3c4fe3e3c1",
+        "title": "IR:refersTo",
+        "description": "'Auftragsdaten ins FiCo-System' bezieht sich auf 'Auftrag'",
+        "class": "SC-Annotation",
+        "subject": "Ann-5115cd090029b1a8016e13911983d8a9",
+        "object": "MEl-511078be0029b1a8016e8b3c4fe3e3c1",
+        "changedAt": "2020-02-23T09:52:00+01:00"
+    }, {
+        "id": "SAnn-5115cd090029b1a8016e13911983d8a9-50fbfe8f0029b1a8016ea86245a9d83a",
+        "title": "IR:refersTo",
+        "description": "'Auftragsdaten ins FiCo-System' bezieht sich auf 'FiCo'",
+        "class": "SC-Annotation",
+        "subject": "Ann-5115cd090029b1a8016e13911983d8a9",
+        "object": "MEl-50fbfe8f0029b1a8016ea86245a9d83a",
+        "changedAt": "2020-02-23T09:52:00+01:00"
+    }],
+    "hierarchies": [{
+        "id": "H-50f2bc440029b1a8016ef884388572ce",
+        "title": "Projektvorgehen-Beispiel (2020-02-23)",
+        "class": "HC-ACProject",
+        "properties": [{
+            "title": "dcterms:title",
+            "class": "PC-ACProject-Name",
+            "value": "Projektvorgehen-Beispiel (2020-02-23)"
+        }],
+        "nodes": [{
+            "id": "N-Folder-50f2bc440029b1a8016ef884388572ce-info",
+            "resource": "Folder-50f2bc440029b1a8016ef884388572ce-info",
+            "changedAt": "2020-02-23T09:52:00+01:00"
+        }, {
+            "id": "N-Folder-50f2e5460029b1a8016ee0bc5d933622",
+            "resource": "Folder-50f2e5460029b1a8016ee0bc5d933622",
+            "changedAt": "2020-02-23T09:52:00+01:00"
+        }, {
+            "id": "N-Folder-50f2e3420029b1a8016edc36d9783c58",
+            "resource": "Folder-50f2e3420029b1a8016edc36d9783c58",
+            "nodes": [{
+                "id": "N-Diagram-50fba8890029b1a8016eb868b1ed62ec",
+                "resource": "Diagram-50fba8890029b1a8016eb868b1ed62ec",
+                "changedAt": "2020-02-23T09:52:00+01:00"
+            }, {
+                "id": "N-Diagram-73f62b930029b1a8016e395d44e71e43",
+                "resource": "Diagram-73f62b930029b1a8016e395d44e71e43",
+                "changedAt": "2020-02-23T09:52:00+01:00"
+            }],
+            "changedAt": "2020-02-23T09:52:00+01:00"
+        }, {
+            "id": "N-Folder-50f2e5460029b1a8016ee0bb8ff3c225",
+            "resource": "Folder-50f2e5460029b1a8016ee0bb8ff3c225",
+            "nodes": [{
+                "id": "N-Ann-5115cd090029b1a8016e13911983d8a9",
+                "resource": "Ann-5115cd090029b1a8016e13911983d8a9",
+                "changedAt": "2020-02-23T09:52:00+01:00"
+            }],
+            "changedAt": "2020-02-23T09:52:00+01:00"
+        }, {
+            "id": "N-Folder-50f2e5460029b1a8016ee0bd09711d13",
+            "resource": "Folder-50f2e5460029b1a8016ee0bd09711d13",
+            "changedAt": "2020-02-23T09:52:00+01:00"
+        }, {
+            "id": "N-Folder-50f2bc440029b1a8016ef884388572ce-glossary",
+            "resource": "Folder-50f2bc440029b1a8016ef884388572ce-glossary",
+            "nodes": [{
+                "id": "N-Folder-50f2bc440029b1a8016ef884388572ce-Actor",
+                "resource": "Folder-50f2bc440029b1a8016ef884388572ce-Actor",
+                "nodes": [{
+                    "id": "N-MEl-f056f4d7001ab2a8016f7d5741054d45",
+                    "resource": "MEl-f056f4d7001ab2a8016f7d5741054d45",
+                    "changedAt": "2020-02-23T09:52:00+01:00"
+                }, {
+                    "id": "N-MEl-f06e3545001ab2a8016f64cdb7216639",
+                    "resource": "MEl-f06e3545001ab2a8016f64cdb7216639",
+                    "changedAt": "2020-02-23T09:52:00+01:00"
+                }, {
+                    "id": "N-MEl-f059be89001ab2a8016feacc9b4d5d7e",
+                    "resource": "MEl-f059be89001ab2a8016feacc9b4d5d7e",
+                    "changedAt": "2020-02-23T09:52:00+01:00"
+                }, {
+                    "id": "N-MEl-f05cb54e001ab2a8016f319bc563ffc8",
+                    "resource": "MEl-f05cb54e001ab2a8016f319bc563ffc8",
+                    "changedAt": "2020-02-23T09:52:00+01:00"
+                }, {
+                    "id": "N-MEl-f0580af2001ab2a8016ffbbbd49779c0",
+                    "resource": "MEl-f0580af2001ab2a8016ffbbbd49779c0",
+                    "changedAt": "2020-02-23T09:52:00+01:00"
+                }, {
+                    "id": "N-MEl-5106faa50029b1a8016e78752e037322",
+                    "resource": "MEl-5106faa50029b1a8016e78752e037322",
+                    "changedAt": "2020-02-23T09:52:00+01:00"
+                }, {
+                    "id": "N-MEl-5106a1780029b1a8016e5ebb9f84084a",
+                    "resource": "MEl-5106a1780029b1a8016e5ebb9f84084a",
+                    "changedAt": "2020-02-23T09:52:00+01:00"
+                }, {
+                    "id": "N-MEl-50fc635d0029b1a8016eb6d838b8bc5d",
+                    "resource": "MEl-50fc635d0029b1a8016eb6d838b8bc5d",
+                    "changedAt": "2020-02-23T09:52:00+01:00"
+                }, {
+                    "id": "N-MEl-f0611561001ab2a8016fe9458058599e",
+                    "resource": "MEl-f0611561001ab2a8016fe9458058599e",
+                    "changedAt": "2020-02-23T09:52:00+01:00"
+                }, {
+                    "id": "N-MEl-50fbfe8f0029b1a8016ea86245a9d83a",
+                    "resource": "MEl-50fbfe8f0029b1a8016ea86245a9d83a",
+                    "changedAt": "2020-02-23T09:52:00+01:00"
+                }, {
+                    "id": "N-MEl-f0673f29001ab2a8016f817e0ae62ff9",
+                    "resource": "MEl-f0673f29001ab2a8016f817e0ae62ff9",
+                    "changedAt": "2020-02-23T09:52:00+01:00"
+                }, {
+                    "id": "N-MEl-f060be6d001ab2a8016f1cc56708c437",
+                    "resource": "MEl-f060be6d001ab2a8016f1cc56708c437",
+                    "changedAt": "2020-02-23T09:52:00+01:00"
+                }, {
+                    "id": "N-MEl-f05962a8001ab2a8016f60f5c6ea1138",
+                    "resource": "MEl-f05962a8001ab2a8016f60f5c6ea1138",
+                    "changedAt": "2020-02-23T09:52:00+01:00"
+                }, {
+                    "id": "N-MEl-f05c6f39001ab2a8016f6db5b0806772",
+                    "resource": "MEl-f05c6f39001ab2a8016f6db5b0806772",
+                    "changedAt": "2020-02-23T09:52:00+01:00"
+                }, {
+                    "id": "N-MEl-f058dc6e001ab2a8016f336d34f053bc",
+                    "resource": "MEl-f058dc6e001ab2a8016f336d34f053bc",
+                    "changedAt": "2020-02-23T09:52:00+01:00"
+                }, {
+                    "id": "N-MEl-51060c650029b1a8016e4180dadca744",
+                    "resource": "MEl-51060c650029b1a8016e4180dadca744",
+                    "changedAt": "2020-02-23T09:52:00+01:00"
+                }, {
+                    "id": "N-MEl-f061846e001ab2a8016f09f1fa86db9e",
+                    "resource": "MEl-f061846e001ab2a8016f09f1fa86db9e",
+                    "changedAt": "2020-02-23T09:52:00+01:00"
+                }, {
+                    "id": "N-MEl-50fe7a660029b1a8016e6de43e4c695b",
+                    "resource": "MEl-50fe7a660029b1a8016e6de43e4c695b",
+                    "changedAt": "2020-02-23T09:52:00+01:00"
+                }, {
+                    "id": "N-MEl-f05d04bd001ab2a8016f5a77c63e63f2",
+                    "resource": "MEl-f05d04bd001ab2a8016f5a77c63e63f2",
+                    "changedAt": "2020-02-23T09:52:00+01:00"
+                }],
+                "changedAt": "2018-05-10T11:54:00+01:00"
+            }, {
+                "id": "N-Folder-50f2bc440029b1a8016ef884388572ce-State",
+                "resource": "Folder-50f2bc440029b1a8016ef884388572ce-State",
+                "nodes": [{
+                    "id": "N-MEl-f067ce0f001ab2a8016f86dd747c70f8",
+                    "resource": "MEl-f067ce0f001ab2a8016f86dd747c70f8",
+                    "changedAt": "2020-02-23T09:52:00+01:00"
+                }, {
+                    "id": "N-MEl-510d91440029b1a8016ed959610566b7",
+                    "resource": "MEl-510d91440029b1a8016ed959610566b7",
+                    "changedAt": "2020-02-23T09:52:00+01:00"
+                }, {
+                    "id": "N-MEl-510033200029b1a8016e7c8e4f0bf2c9",
+                    "resource": "MEl-510033200029b1a8016e7c8e4f0bf2c9",
+                    "changedAt": "2020-02-23T09:52:00+01:00"
+                }, {
+                    "id": "N-MEl-740784760029b1a8016e8c208816ecb6",
+                    "resource": "MEl-740784760029b1a8016e8c208816ecb6",
+                    "changedAt": "2020-02-23T09:52:00+01:00"
+                }, {
+                    "id": "N-MEl-f0562786001ab2a8016f20cc7006e205",
+                    "resource": "MEl-f0562786001ab2a8016f20cc7006e205",
+                    "changedAt": "2020-02-23T09:52:00+01:00"
+                }, {
+                    "id": "N-MEl-511078be0029b1a8016e8b3c4fe3e3c1",
+                    "resource": "MEl-511078be0029b1a8016e8b3c4fe3e3c1",
+                    "changedAt": "2020-02-23T09:52:00+01:00"
+                }, {
+                    "id": "N-MEl-740addf40029b1a8016ec6d2dc90a2b1",
+                    "resource": "MEl-740addf40029b1a8016ec6d2dc90a2b1",
+                    "changedAt": "2020-02-23T09:52:00+01:00"
+                }, {
+                    "id": "N-MEl-f05eada4001ab2a8016fb4b49555271e",
+                    "resource": "MEl-f05eada4001ab2a8016fb4b49555271e",
+                    "changedAt": "2020-02-23T09:52:00+01:00"
+                }, {
+                    "id": "N-MEl-50feddc00029b1a8016e2872e78ecadc",
+                    "resource": "MEl-50feddc00029b1a8016e2872e78ecadc",
+                    "changedAt": "2020-02-23T09:52:00+01:00"
+                }, {
+                    "id": "N-MEl-510149870029b1a8016e146b0fa3acea",
+                    "resource": "MEl-510149870029b1a8016e146b0fa3acea",
+                    "changedAt": "2020-02-23T09:52:00+01:00"
+                }, {
+                    "id": "N-MEl-f0569c16001ab2a8016f02390f18d51a",
+                    "resource": "MEl-f0569c16001ab2a8016f02390f18d51a",
+                    "changedAt": "2020-02-23T09:52:00+01:00"
+                }, {
+                    "id": "N-MEl-f05fa2b5001ab2a8016f2113b88ccf14",
+                    "resource": "MEl-f05fa2b5001ab2a8016f2113b88ccf14",
+                    "changedAt": "2020-02-23T09:52:00+01:00"
+                }, {
+                    "id": "N-MEl-740355130029b1a8016e599615554793",
+                    "resource": "MEl-740355130029b1a8016e599615554793",
+                    "changedAt": "2020-02-23T09:52:00+01:00"
+                }, {
+                    "id": "N-MEl-73f694720029b1a8016e43c983c2d941",
+                    "resource": "MEl-73f694720029b1a8016e43c983c2d941",
+                    "changedAt": "2020-02-23T09:52:00+01:00"
+                }, {
+                    "id": "N-MEl-51021f5c0029b1a8016e72c10917e9b2",
+                    "resource": "MEl-51021f5c0029b1a8016e72c10917e9b2",
+                    "changedAt": "2020-02-23T09:52:00+01:00"
+                }, {
+                    "id": "N-MEl-f0587660001ab2a8016f785980ca6384",
+                    "resource": "MEl-f0587660001ab2a8016f785980ca6384",
+                    "changedAt": "2020-02-23T09:52:00+01:00"
+                }, {
+                    "id": "N-MEl-f05c0f9e001ab2a8016fce0a2a4a534e",
+                    "resource": "MEl-f05c0f9e001ab2a8016fce0a2a4a534e",
+                    "changedAt": "2020-02-23T09:52:00+01:00"
+                }, {
+                    "id": "N-MEl-f0601062001ab2a8016fa9fc4865ab3a",
+                    "resource": "MEl-f0601062001ab2a8016fa9fc4865ab3a",
+                    "changedAt": "2020-02-23T09:52:00+01:00"
+                }, {
+                    "id": "N-MEl-f0685b5f001ab2a8016fa1d7a78f85f6",
+                    "resource": "MEl-f0685b5f001ab2a8016fa1d7a78f85f6",
+                    "changedAt": "2020-02-23T09:52:00+01:00"
+                }],
+                "changedAt": "2018-05-10T11:54:00+01:00"
+            }, {
+                "id": "N-Folder-50f2bc440029b1a8016ef884388572ce-Event",
+                "resource": "Folder-50f2bc440029b1a8016ef884388572ce-Event",
+                "changedAt": "2018-05-10T11:54:00+01:00"
+            }],
+            "changedAt": "2018-05-10T11:54:00+01:00"
+        }, {
+            "id": "N-Folder-50f2e3330029b1a8016eb06124d3eaa4",
+            "resource": "Folder-50f2e3330029b1a8016eb06124d3eaa4",
+            "nodes": [{
+                "id": "N-Folder-50f2e3420029b1a8016edc2c9b111b20",
+                "resource": "Folder-50f2e3420029b1a8016edc2c9b111b20",
+                "nodes": [{
+                    "id": "N-Diagram-50f2e49a0029b1a8016ea6a5f78ff594",
+                    "resource": "Diagram-50f2e49a0029b1a8016ea6a5f78ff594",
+                    "changedAt": "2020-02-23T09:52:00+01:00"
+                }, {
+                    "id": "N-Diagram-50f2e5170029b1a8016e564ce1f0a823",
+                    "resource": "Diagram-50f2e5170029b1a8016e564ce1f0a823",
+                    "changedAt": "2020-02-23T09:52:00+01:00"
+                }, {
+                    "id": "N-Diagram-50f2e3520029b1a8016e9f42d1515743",
+                    "resource": "Diagram-50f2e3520029b1a8016e9f42d1515743",
+                    "changedAt": "2020-02-23T09:52:00+01:00"
+                }],
+                "changedAt": "2020-02-23T09:52:00+01:00"
+            }, {
+                "id": "N-Folder-50f2e3420029b1a8016edc2d23278a62",
+                "resource": "Folder-50f2e3420029b1a8016edc2d23278a62",
+                "nodes": [{
+                    "id": "N-Diagram-50f2e5070029b1a8016ecad578440ddd",
+                    "resource": "Diagram-50f2e5070029b1a8016ecad578440ddd",
+                    "changedAt": "2020-02-23T09:52:00+01:00"
+                }, {
+                    "id": "N-Diagram-50f2e48a0029b1a8016e4f66bc68b11b",
+                    "resource": "Diagram-50f2e48a0029b1a8016e4f66bc68b11b",
+                    "changedAt": "2020-02-23T09:52:00+01:00"
+                }, {
+                    "id": "N-Diagram-50f2e4d80029b1a8016e7a09311e9a08",
+                    "resource": "Diagram-50f2e4d80029b1a8016e7a09311e9a08",
+                    "changedAt": "2020-02-23T09:52:00+01:00"
+                }, {
+                    "id": "N-Diagram-50f2e3fe0029b1a8016e2702d9e09204",
+                    "resource": "Diagram-50f2e3fe0029b1a8016e2702d9e09204",
+                    "changedAt": "2020-02-23T09:52:00+01:00"
+                }, {
+                    "id": "N-Diagram-f054ecc2001ab2a8016fbe34f60fd887",
+                    "resource": "Diagram-f054ecc2001ab2a8016fbe34f60fd887",
+                    "changedAt": "2020-02-23T09:52:00+01:00"
+                }],
+                "changedAt": "2020-02-23T09:52:00+01:00"
+            }],
+            "changedAt": "2020-02-23T09:52:00+01:00"
+        }],
+        "changedAt": "2020-02-23T09:52:00+01:00"
+    }],
+    "files": []
+}

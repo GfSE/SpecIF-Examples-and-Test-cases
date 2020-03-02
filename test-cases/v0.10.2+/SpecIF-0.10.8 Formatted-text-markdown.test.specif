@@ -1,0 +1,127 @@
+{
+    "specifVersion": "0.10.8",
+    "generator": "SpecIF View",
+    "generatorVersion": "v0.96.0",
+    "id": "P-Test-formatted-text-2",
+    "title": "A test with formatted text using markdown (project title",
+    "rights": {
+        "title": "Creative Commons 4.0 CC BY-SA",
+        "type": "dcterms:rights",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    "createdAt": "2020-02-01T17:26:54.802Z",
+    "dataTypes": [{
+        "id": "DT-ShortString",
+        "title": "String[96]",
+        "description": "String with length 96",
+        "type": "xs:string",
+        "maxLength": 96,
+        "changedAt": "2017-05-28T18:59:00+01:00"
+    }, {
+        "id": "DT-FormattedText",
+        "title": "Formatted Text",
+        "type": "xhtml",
+        "maxLength": 1024,
+        "changedAt": "2017-05-28T18:59:00+01:00"
+    }],
+    "propertyClasses": [{
+        "id": "PT-Inf-Name",
+        "title": "dcterms:title",
+        "dataType": "DT-ShortString",
+        "changedAt": "2017-05-28T18:59:00+01:00"
+    }, {
+        "id": "PT-Inf-Text",
+        "title": "dcterms:description",
+        "dataType": "DT-FormattedText",
+        "changedAt": "2017-05-28T18:59:00+01:00"
+    }],
+    "resourceClasses": [{
+        "id": "RT-Inf",
+        "title": "SpecIF:Paragraph",
+        "description": "Information with title and text.",
+        "instantiation": ["auto", "user"],
+        "propertyClasses": ["PT-Inf-Name", "PT-Inf-Text"],
+        "changedAt": "2017-05-28T18:59:00+01:00"
+    }, {
+        "id": "HT-ACProject",
+        "title": "SpecIF:Hierarchy",
+        "description": "Root of a hierarchy (outline).",
+        "propertyClasses": ["PT-Inf-Name"],
+        "changedAt": "2017-05-28T18:59:00+01:00",
+        "isHeading": true
+    }],
+    "statementClasses": [],
+    "resources": [{
+        "id": "R-d5b994e50023b1a8015d578cf736b265-ul-1",
+        "title": "unordered-list",
+        "class": "RT-Inf",
+        "properties": [{
+            "title": "dcterms:title",
+            "class": "PT-Inf-Name",
+            "value": "Text with unordered-list"
+        }, {
+            "title": "dcterms:description",
+            "class": "PT-Inf-Text",
+            "value": "Text before list; there are line-breaks before the list items:\n- first item\n- zweiter **[Punkt (bold)]**\n- troisième élément\nText after list.\n We do expect that a list is recognized."
+        }],
+        "changedAt": "2018-09-30T16:24:00+02:00"
+    }, {
+        "id": "R-d5b994e50023b1a8015d578cf736b265-ul-2",
+        "title": "unordered-list",
+        "class": "RT-Inf",
+        "properties": [{
+            "title": "dcterms:title",
+            "class": "PT-Inf-Name",
+            "value": "Text with unordered-list"
+        }, {
+            "title": "dcterms:description",
+            "class": "PT-Inf-Text",
+            "value": "Text before list; there are no line-breaks before the list items:- first item - zweiter **[Punkt (bold)]** - troisième élément\nText after list.\n We do not expect that a list is recognized."
+        }],
+        "changedAt": "2018-09-30T16:24:00+02:00"
+    }, {
+        "id": "R-d5b994e50023b1a8015d578cf736b265-ol-1",
+        "title": "ordered-list",
+        "class": "RT-Inf",
+        "properties": [{
+            "title": "dcterms:title",
+            "class": "PT-Inf-Name",
+            "value": "Text with ordered-list"
+        }, {
+            "title": "dcterms:description",
+            "class": "PT-Inf-Text",
+            "value": "Text before list:\n1. first _{item (italic)}_\n1. zweiter Punkt\n1. troisième élément\nText after list."
+        }],
+        "changedAt": "2018-09-30T16:24:00+02:00"
+    }, {
+        "id": "SP-d5b994e50023b1a8015d578cf736b265",
+		"title": "A test with formatted text using markdown (hierarchy title)",
+        "class": "HT-ACProject",
+        "properties": [{
+            "title": "dcterms:title",
+            "class": "PT-Inf-Name",
+            "value": "A test with formatted text (hierarchy property with title 'dcterms:title')"
+        }],
+        "changedAt": "2018-09-30T16:24:00+02:00"
+    }],
+    "statements": [],
+    "hierarchies": [{
+        "id": "N-SP-d5b994e50023b1a8015d578cf736b265",
+        "resource": "SP-d5b994e50023b1a8015d578cf736b265",
+        "changedAt": "2018-09-30T16:24:00+02:00",
+        "nodes": [{
+            "id": "SH-d5b994e50023b1a8015d578cf736b265-ul-1",
+            "resource": "R-d5b994e50023b1a8015d578cf736b265-ul-1",
+            "changedAt": "2017-08-17T21:20:00+02:00"
+        }, {
+            "id": "SH-d5b994e50023b1a8015d578cf736b265-ul-2",
+            "resource": "R-d5b994e50023b1a8015d578cf736b265-ul-2",
+            "changedAt": "2017-08-17T21:20:00+02:00"
+        }, {
+            "id": "SH-d5b994e50023b1a8015d578cf736b265-ol-1",
+            "resource": "R-d5b994e50023b1a8015d578cf736b265-ol-1",
+            "changedAt": "2017-08-17T21:20:00+02:00"
+        }]
+    }],
+    "files": []
+}

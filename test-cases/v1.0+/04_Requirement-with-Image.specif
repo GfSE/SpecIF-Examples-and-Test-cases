@@ -1,6 +1,6 @@
 {
-    "id": "P-Requirement-with-Properties",
-    "title": "Requirement with Properties",
+    "id": "P-Requirement-with-Image",
+    "title": "Requirement with Image",
     "specifVersion": "1.0",
     "rights": {
         "title": "Creative Commons 4.0 CC BY-SA",
@@ -54,7 +54,7 @@
             "value": "Minimum button size"
         },{
             "class": "PC-Description",
-            "value": "<p>The <i>button size</i> MUST not be less than 20mm in diameter.</p>"
+            "value": "<p>The <i>button size</i> MUST not be less than 20mm in diameter.</p><p><object data=\"images/button-diameter.png\" type=\"image/png\">Diameter in different Forms</object></p>"
         }],
         "changedAt": "2017-06-19T20:13:08+02:00"
     }],

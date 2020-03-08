@@ -1,6 +1,6 @@
 {
-    "id": "P-Requirement-with-Image",
-    "title": "Requirement with Image",
+    "id": "P-Requirement-with-Multilanguage-Content-A",
+    "title": "Requirement with Multilanguage-Content A",
     "specifVersion": "1.0",
     "rights": {
         "title": "Creative Commons 4.0 CC BY-SA",
@@ -47,20 +47,23 @@
     "statementClasses": [],
     "resources": [{
         "id": "Req-5ba3512b0000bca",
-        "title": "Minimum button size",
+        "title": [{
+            "text": "Minimum button size",
+            "language": "en"
+        },{
+            "text": "Minimale Größe des Tasters",
+            "language": "de"
+        }],
         "class": "RC-Requirement",
         "properties": [{
-            "class": "PC-Name",
-            "value": "Minimum button size"
-        },{
             "class": "PC-Description",
-            "value": "<p>The <i>button size</i> MUST not be less than 20mm in diameter.</p><p><object data=\"images/button-diameter.png\" type=\"image/png\">Diameter in different Forms</object></p>"
+            "value": "<p>The <i>button size</i> MUST not be less than 20mm in diameter.</p>"
         }],
         "changedAt": "2017-06-19T20:13:08+02:00"
     }],
     "statements": [],
     "hierarchies": [{
-        "id": "N-bca801377e3d1525",
+        "id": "N-bca801377e3d1558",
         "resource": "Req-5ba3512b0000bca",
         "changedAt": "2019-05-29T13:19:28.546Z"
     }]

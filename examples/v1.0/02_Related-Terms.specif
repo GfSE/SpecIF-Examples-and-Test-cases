@@ -14,7 +14,7 @@
     }],
     "statementClasses": [{
         "id": "SC-isSpecialisationOf",
-        "title": "SpecIF:isSpecialisationOf",
+        "title": "SysML:isSpecialisationOf",
         "description": "Signifies that a term is a specialization of another, such as 'Passenger Car' and 'Vehicle'.",
         "subjectClasses": ["RC-ResourceTerm"],
         "objectClasses": ["RC-ResourceTerm"],

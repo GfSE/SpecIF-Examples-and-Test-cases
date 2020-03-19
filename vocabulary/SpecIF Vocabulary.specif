@@ -1336,7 +1336,7 @@
         }, {
             "title": "dcterms:description",
             "class": "PC-description",
-            "value": "<p>An [[FMC:Actor]] is is generalisation of another [[FMC:Actor]]; similarly for [[FMC:State]] and [[FMC:Event]].</p>"
+            "value": "<p>An [[FMC:Actor]] is a generalisation of another [[FMC:Actor]]; similarly for [[FMC:State]] and [[FMC:Event]].</p>"
         }, {
             "title": "SpecIF:Origin",
             "class": "PC-origin",
@@ -1360,7 +1360,7 @@
         }, {
             "title": "dcterms:description",
             "class": "PC-description",
-            "value": "<p>An [[FMC:Actor]] is is specialisation of another [[FMC:Actor]]; similarly for [[FMC:State]] and [[FMC:Event]].</p>"
+            "value": "<p>An [[FMC:Actor]] is a specialisation of another [[FMC:Actor]]; similarly for [[FMC:State]] and [[FMC:Event]].</p>"
         }, {
             "title": "SpecIF:Origin",
             "class": "PC-origin",

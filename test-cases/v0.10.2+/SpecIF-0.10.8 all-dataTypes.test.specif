@@ -114,38 +114,6 @@
 		"revision": "1",
 		"changedAt": "2016-05-26T08:59:00+02:00"
 	}, {
-		"id": "DT-Status",
-		"title": "SpecIF:Status",
-		"description": "Enumerated values for status",
-		"type": "xs:enumeration",
-		"values": [{
-			"id": "V-Status-0",
-			"value": "00_deprecated"
-		}, {
-			"id": "V-Status-1",
-			"value": "00_rejected"
-		}, {
-			"id": "V-Status-2",
-			"value": "10_initial"
-		}, {
-			"id": "V-Status-3",
-			"value": "20_drafted"
-		}, {
-			"id": "V-Status-4",
-			"value": "30_submitted"
-		}, {
-			"id": "V-Status-5",
-			"value": "40_approved"
-		}, {
-			"id": "V-Status-6",
-			"value": "60_completed"
-		}, {
-			"id": "V-Status-7",
-			"value": "80_released"
-		}],
-		"revision": "1",
-		"changedAt": "2016-05-26T08:59:00+02:00"
-	}, {
 		"id": "DT-Priority",
 		"title": "SpecIF:Priority",
 		"description": "Enumerated values for priority",
@@ -159,23 +127,6 @@
 		}, {
 			"id": "V-Prio-2",
 			"value": "3_low"
-		}],
-		"revision": "1",
-		"changedAt": "2016-05-26T08:59:00+02:00"
-	}, {
-		"id": "DT-Perspective",
-		"title": "Perspective",
-		"description": "Enumerated values for perspective",
-		"type": "xs:enumeration",
-		"values": [{
-			"id": "V-perspective-0",
-			"value": "Business"
-		}, {
-			"id": "V-perspective-1",
-			"value": "User"
-		}, {
-			"id": "V-perspective-2",
-			"value": "System"
 		}],
 		"revision": "1",
 		"changedAt": "2016-05-26T08:59:00+02:00"
@@ -199,80 +150,14 @@
 		}],
 		"revision": "1",
 		"changedAt": "2016-05-26T08:59:00+02:00"
-	}, {
-		"id": "DT-supplier-status",
-		"title": "HIS:SupplierStatus",
-		"description": "Enumerated values for HIS supplier-status",
-		"type": "xs:enumeration",
-		"values": [{
-			"id": "V-supplier-status-0",
-			"value": "not-applicable"
-		}, {
-			"id": "V-supplier-status-1",
-			"value": "to-clarify"
-		}, {
-			"id": "V-supplier-status-2",
-			"value": "agreed"
-		}, {
-			"id": "V-supplier-status-3",
-			"value": "partly-agreed"
-		}, {
-			"id": "V-supplier-status-4",
-			"value": "not-agreed"
-		}],
-		"revision": "1",
-		"changedAt": "2016-05-26T08:59:00+02:00"
-	}, {
-		"id": "DT-oem-status",
-		"title": "HIS:OemStatus",
-		"description": "Enumerated values for HIS oem-status",
-		"type": "xs:enumeration",
-		"values": [{
-			"id": "V-oem-status-0",
-			"value": "not-to-evaluate"
-		}, {
-			"id": "V-oem-status-1",
-			"value": "to-evaluate"
-		}, {
-			"id": "V-oem-status-2",
-			"value": "accepted"
-		}, {
-			"id": "V-oem-status-3",
-			"value": "not-accepted"
-		}],
-		"revision": "1",
-		"changedAt": "2016-05-26T08:59:00+02:00"
-	}, {
-		"id": "DT-Iss-Status",
-		"title": "SpecIF:Status",
-		"description": "Enumerated values for issue status",
-		"type": "xs:enumeration",
-		"values": [{
-			"id": "V-Iss-Status-0",
-			"value": ""
-		}, {
-			"id": "V-Iss-Status-1",
-			"value": "open"
-		}, {
-			"id": "V-Iss-Status-2",
-			"value": "assigned"
-		}, {
-			"id": "V-Iss-Status-3",
-			"value": "in progress"
-		}, {
-			"id": "V-Iss-Status-4",
-			"value": "closed"
-		}, {
-			"id": "V-Iss-Status-5",
-			"value": "reopened"
-		}, {
-			"id": "V-Iss-Status-6",
-			"value": "rejected"
-		}],
-		"revision": "1",
-		"changedAt": "2016-05-26T08:59:00+02:00"
 	}],
 	"propertyClasses": [{
+		"id": "PC-ID",
+		"title": "dcterms:identifier",
+		"dataType": "DT-ShortString",
+		"revision": "1",
+		"changedAt": "2016-05-26T08:59:00+02:00"
+	}, {
 		"id": "PC-Name",
 		"title": "dcterms:title",
 		"dataType": "DT-ShortString",
@@ -285,45 +170,15 @@
 		"revision": "1",
 		"changedAt": "2016-05-26T08:59:00+02:00"
 	}, {
+		"id": "PC-Diagram",
+		"title": "SpecIF:Diagram",
+		"dataType": "DT-FormattedText",
+		"revision": "1",
+		"changedAt": "2020-04-12T15:18:00+02:00"
+	}, {
 		"id": "PC-Notation",
 		"title": "SpecIF:Notation",
 		"dataType": "DT-ShortString",
-		"revision": "1",
-		"changedAt": "2016-05-26T08:59:00+02:00"
-	}, {
-		"id": "PC-Supplier-status",
-		"title": "HIS:SupplierStatus",
-		"dataType": "DT-supplier-status",
-		"revision": "1",
-		"changedAt": "2016-05-26T08:59:00+02:00"
-	}, {
-		"id": "PC-Supplier-comment",
-		"title": "HIS:SupplierComment",
-		"dataType": "DT-Text",
-		"revision": "1",
-		"changedAt": "2016-05-26T08:59:00+02:00"
-	}, {
-		"id": "PC-oem-status",
-		"title": "HIS:OemStatus",
-		"dataType": "DT-oem-status",
-		"revision": "1",
-		"changedAt": "2016-05-26T08:59:00+02:00"
-	}, {
-		"id": "PC-oem-comment",
-		"title": "HIS:OemComment",
-		"dataType": "DT-Text",
-		"revision": "1",
-		"changedAt": "2016-05-26T08:59:00+02:00"
-	}, {
-		"id": "PC-ID",
-		"title": "dcterms:identifier",
-		"dataType": "DT-ShortString",
-		"revision": "1",
-		"changedAt": "2016-05-26T08:59:00+02:00"
-	}, {
-		"id": "PC-Status",
-		"title": "SpecIF:Status",
-		"dataType": "DT-Status",
 		"revision": "1",
 		"changedAt": "2016-05-26T08:59:00+02:00"
 	}, {
@@ -333,22 +188,10 @@
 		"revision": "1",
 		"changedAt": "2016-05-26T08:59:00+02:00"
 	}, {
-		"id": "PC-perspective",
-		"title": "Perspective",
-		"dataType": "DT-Perspective",
-		"revision": "1",
-		"changedAt": "2016-05-26T08:59:00+02:00"
-	}, {
-		"id": "PC-discipline",
+		"id": "PC-Discipline",
 		"title": "Discipline",
 		"dataType": "DT-Discipline",
 		"multiple": true,
-		"revision": "1",
-		"changedAt": "2016-05-26T08:59:00+02:00"
-	}, {
-		"id": "PC-Responsible",
-		"title": "SpecIF:Responsible",
-		"dataType": "DT-ShortString",
 		"revision": "1",
 		"changedAt": "2016-05-26T08:59:00+02:00"
 	}, {
@@ -373,7 +216,7 @@
 		"description": "A 'Requirement' is a singular documented physical and functional need that a particular design, product or process must be able to perform.",
 		"icon": "&#8623;",
 		"instantiation": ["user"],
-		"propertyClasses": ["PC-ID", "PC-Name", "PC-Text", "PC-Status", "PC-Priority", "PC-discipline"],
+		"propertyClasses": ["PC-ID", "PC-Name", "PC-Text", "PC-Diagram", "PC-Priority", "PC-Discipline", "PC-DueDate"],
 		"revision": "1",
 		"changedAt": "2016-05-26T08:59:00+02:00"
 	}],
@@ -411,16 +254,12 @@
 			"class": "PC-Text",
 			"value": "<div><p> The user can set the intensity level of an electric load such as a light [[bulb]]. Pressing a button 'up' or 'down', the intensity is increased or decreased following a quasi-stepless ramp. <br /></p></div>"
 		}, {
-			"title": "SpecIF:Status",
-			"class": "PC-Status",
-			"value": "V-Status-5"
-		}, {
 			"title": "SpecIF:Priority",
 			"class": "PC-Priority",
 			"value": "V-Prio-1"
 		}, {
 			"title": "Discipline",
-			"class": "PC-discipline",
+			"class": "PC-Discipline",
 			"value": "V-discipline-0,V-discipline-2"
 		}],
 		"revision": "23",

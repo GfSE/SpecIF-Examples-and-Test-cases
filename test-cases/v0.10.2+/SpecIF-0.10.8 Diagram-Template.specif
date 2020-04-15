@@ -91,7 +91,7 @@
     "statementClasses": [],
     "resources": [{
         "id": "Pln-5ba3512b0000bdb",
-        "title": "Minimum button size",
+        "title": "Add diagram title here",
         "class": "RC-Requirement",
         "properties": [{
             "class": "PC-Name",

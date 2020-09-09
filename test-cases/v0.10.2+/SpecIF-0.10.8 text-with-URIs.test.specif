@@ -1,0 +1,81 @@
+{
+    "id": "P-Test-URI",
+    "title": "A test with formatted text",
+    "specifVersion": "0.10.8",
+    "rights": {
+        "title": "Creative Commons 4.0 CC BY-SA",
+        "type": "dcterms:rights",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    "createdAt": "2020-02-01T17:26:54.802Z",
+    "dataTypes": [{
+        "id": "DT-ShortString",
+        "title": "String[96]",
+        "description": "String with length 96",
+        "type": "xs:string",
+        "maxLength": 96,
+        "changedAt": "2017-05-28T18:59:00+01:00"
+    }, {
+        "id": "DT-FormattedText",
+        "title": "Formatted Text",
+        "type": "xhtml",
+        "maxLength": 8096,
+        "changedAt": "2017-05-28T18:59:00+01:00"
+    }],
+    "propertyClasses": [{
+        "id": "PT-Inf-Name",
+        "title": "dcterms:title",
+        "dataType": "DT-ShortString",
+        "changedAt": "2017-05-28T18:59:00+01:00"
+    }, {
+        "id": "PT-Inf-Text",
+        "title": "dcterms:description",
+        "dataType": "DT-FormattedText",
+        "changedAt": "2017-05-28T18:59:00+01:00"
+    }],
+    "resourceClasses": [{
+        "id": "RT-Inf",
+        "title": "SpecIF:Paragraph",
+        "description": "Information with title and text.",
+        "instantiation": ["auto", "user"],
+        "propertyClasses": ["PT-Inf-Name", "PT-Inf-Text"],
+        "changedAt": "2017-05-28T18:59:00+01:00"
+    }, {
+        "id": "HT-ACProject",
+        "title": "SpecIF:Hierarchy",
+        "description": "Root of a hierarchy (outline).",
+        "propertyClasses": ["PT-Inf-Name"],
+        "changedAt": "2017-05-28T18:59:00+01:00",
+        "isHeading": true
+    }],
+    "statementClasses": [],
+    "resources": [{
+        "id": "R-e6c994e50023b1a8015d578cf736b265-text",
+        "title": "A text with some URIs to be linkified (resource title)",
+        "class": "RT-Inf",
+        "properties": [{
+            "title": "dcterms:description",
+            "class": "PT-Inf-Text",
+            "value": "References:&#xD;- SE: https://ad.sharepoint.com/:w:/r/sites/BFS/_layouts/15/Doc.aspx?sourcedoc=%7B2AF84075-68D8-48A7-A619-FA0C75BFC8D2%7D&amp;file=DE00326686_EB.001.01_DE_Systemarchitektur_PH2.docx&amp;action=default&amp;mobileredirect=true&amp;cid=1ef0db74-0c62-4915-9659-12962ae190cc&#xD;- Integrations-Overview: https://ad.sharepoint.com/sites/BFS/Austausch/Forms/AllItems.aspx?id=%2Fsites%2FBFS%2FAustausch%2F007%5FPH%5F20191115%2F05%5FIntegrationen%2FDE00326686%5FEE%2E004%2E01%5FDE%5FAD%5FIntegrations%5FOverview%2D20191115%2Epdf&amp;parent=%2Fsites%2FBFS%2FAustausch%2F007%5FPH%5F20191115%2F05%5FIntegrationen&amp;p=true&amp;originalPath=aHR0cHM6Ly92YXR0ZW5mYWxsLnNoYXJlcG9pbnQuY29tLzpiOi9zL0JGS0FETVMvRVZ2SEFKZkgyMTVEdHRUZ1o5LWM3NG9CVEtnQllnb3NLLW5MTWNHZDExZzNlZz9ydGltZT1xS0xiYU9DVTEwZw&#xD;- Infrastructure Solution Design - v1.0 https://ad.sharepoint.com/:w:/r/sites/BFS/Austausch/SB-intern/Dokumente_Arbeitsverzeichnis_alt/004_Architektur/FieldClient_WebDMD%20(incl%202FA)/AD%20-%20Infrastructure%20Solution%20Design%20-%20v1.0.docx?d=w7c76f1f3c3e649efa472bd8e5106c6be&amp;csf=1&amp;web=1&amp;e=4uAyn2"
+        }],
+        "changedAt": "2017-10-04T09:20:00+02:00"
+    }, {
+        "id": "SP-e6c994e50023b1a8015d578cf736b265",
+        "title": "A test with URIs",
+        "class": "HT-ACProject",
+        "properties": [],
+        "changedAt": "2020-05-21T16:24:00+02:00"
+    }],
+    "statements": [],
+    "hierarchies": [{
+        "id": "N-SP-e6c994e50023b1a8015d578cf736b265",
+        "resource": "SP-e6c994e50023b1a8015d578cf736b265",
+        "changedAt": "2018-09-30T16:24:00+02:00",
+        "nodes": [{
+            "id": "N-R-e6c994e50023b1a8015d578cf736b265-text",
+            "resource": "R-e6c994e50023b1a8015d578cf736b265-text",
+            "changedAt": "2017-10-04T09:20:00+02:00"
+        }]
+    }],
+    "files": []
+}

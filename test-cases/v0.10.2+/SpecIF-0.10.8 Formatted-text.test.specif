@@ -76,7 +76,21 @@
         }, {
             "title": "dcterms:description",
             "class": "PT-Inf-Text",
-            "value": "<div><p>Text before list:</p><ol><li>first <i>{item (italic)}</i></li><li>zweiter Punkt</li><li>troisième élément</li></ol><p>Text after list.</p></div>"
+            "value": "<div><p>Text before list:</p><ol><li>first <i>{item (italic)}</i></li><li>zweiter Punkt</li><li>troisième élément</li></ol><p>Text between two lists. The next list should start with '1' again.</p><ol><li>first <i>{item (italic)}</i></li><li>zweiter Punkt</li><li>troisième élément</li><li>next</li><li>next</li><li>next</li><li>next</li><li>next</li><li>next</li><li>next</li><li>next</li></ol><p>Text after list.</p></div>"
+        }],
+        "changedAt": "2018-09-30T16:24:00+02:00"
+    }, {
+        "id": "R-d5b994e50023b1a8015d578cf736b265-ol-2",
+        "title": "ordered-list",
+        "class": "RT-Inf",
+        "properties": [{
+            "title": "dcterms:title",
+            "class": "PT-Inf-Name",
+            "value": "Text with ordered-list"
+        }, {
+            "title": "dcterms:description",
+            "class": "PT-Inf-Text",
+            "value": "<div><p>Text before list:</p><ol><li>first <i>{item (italic)}</i></li><li>zweiter Punkt</li><li>troisième élément</li></ol><p>Text after numbered list.</p><ul><li>first item</li><li>zweiter <b>[Punkt (bold)]</b></li><li>troisième élément</li></ul><p>The end.</p></div>"
         }],
         "changedAt": "2018-09-30T16:24:00+02:00"
     }, {
@@ -90,7 +104,7 @@
         }, {
             "title": "dcterms:description",
             "class": "PT-Inf-Text",
-            "value": "<div><p>First paragraph, an empty paragraph follows:</p><p /><p>Nächster Absatz.</p><p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,<br/> no sea takimata sanctus est Lorem ipsum dolor sit amet.</p><p>Dernier paragraphe.</p></div>"
+            "value": "<div><p>First paragraph, an empty paragraph follows:</p><p></p><p>Nächster Absatz.</p><p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,<br/> no sea takimata sanctus est Lorem ipsum dolor sit amet.</p><p>A <em>hyperlink</em> without &lt;a&gt; tag: https://specif.de/apps/edit\"../examples/Dimmer.specifz\"</p><p>Dernier paragraphe.</p></div>"
         }],
         "changedAt": "2018-10-01T06:04:00+02:00"
     }, {
@@ -198,6 +212,10 @@
         }, {
             "id": "SH-d5b994e50023b1a8015d578cf736b265-ol-1",
             "resource": "R-d5b994e50023b1a8015d578cf736b265-ol-1",
+            "changedAt": "2017-08-17T21:20:00+02:00"
+        }, {
+            "id": "SH-d5b994e50023b1a8015d578cf736b265-ol-2",
+            "resource": "R-d5b994e50023b1a8015d578cf736b265-ol-2",
             "changedAt": "2017-08-17T21:20:00+02:00"
         }, {
             "id": "SH-d5b994e50023b1a8015d578cf736b265-p-1",

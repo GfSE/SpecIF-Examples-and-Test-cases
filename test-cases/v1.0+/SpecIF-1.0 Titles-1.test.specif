@@ -23,12 +23,12 @@
         "maxLength": 1024
     }],
     "propertyClasses": [{
-        "id": "PC-Info-Name",
+        "id": "PC-Name",
         "changedAt": "2020-10-10T18:59:00+01:00",
         "title": "dcterms:title",
         "dataType": "DT-ShortString"
     }, {
-        "id": "PC-Info-Text",
+        "id": "PC-Description",
         "changedAt": "2020-10-10T18:59:00+01:00",
         "title": "dcterms:description",
         "dataType": "DT-FormattedText"
@@ -39,13 +39,13 @@
         "description": "Information with title and text.",
         "title": "SpecIF:Paragraph",
         "instantiation": ["auto", "user"],
-        "propertyClasses": ["PC-Info-Name", "PC-Info-Text"]
+        "propertyClasses": ["PC-Name", "PC-Description"]
     }, {
         "id": "RC-Heading",
         "changedAt": "2020-10-10T18:59:00+01:00",
         "description": "Root of a hierarchy (outline).",
         "title": "SpecIF:Hierarchy",
-        "propertyClasses": ["PC-Info-Name"],
+        "propertyClasses": ["PC-Name"],
         "isHeading": true
     }],
     "statementClasses": [],
@@ -59,7 +59,7 @@
         "changedAt": "2020-10-10T18:59:00+01:00",
         "class": "RC-Heading",
         "properties": [{
-            "class": "PC-Info-Name",
+            "class": "PC-Name",
             "title": "dcterms:title",
             "value": "R-2: A property with title 'dcterms:title' and dataType 'xs:string' as plain text."
         }],
@@ -69,7 +69,7 @@
         "changedAt": "2020-10-10T18:59:00+01:00",
         "class": "RC-Heading",
         "properties": [{
-            "class": "PC-Info-Name",
+            "class": "PC-Name",
             "title": "dcterms:title",
             "value": "R-3: kleiner < größer."
         }],
@@ -79,7 +79,7 @@
         "changedAt": "2020-10-10T18:59:00+01:00",
         "class": "RC-Heading",
         "properties": [{
-            "class": "PC-Info-Name",
+            "class": "PC-Name",
             "title": "dcterms:title",
             "value": "<p>R-4: kleiner < größer.</p>"
         }],
@@ -89,7 +89,7 @@
         "changedAt": "2020-10-10T18:59:00+01:00",
         "class": "RC-Heading",
         "properties": [{
-            "class": "PC-Info-Name",
+            "class": "PC-Name",
             "title": "dcterms:title",
             "value": [{
 				"text": "R-5: Minimum button size is < than the maximum size.",

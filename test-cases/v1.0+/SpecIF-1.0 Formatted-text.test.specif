@@ -25,12 +25,12 @@
         "maxLength": 1024
     }],
     "propertyClasses": [{
-        "id": "PC-Inf-Name",
+        "id": "PC-Name",
         "changedAt": "2017-05-28T18:59:00+01:00",
         "title": "dcterms:title",
         "dataType": "DT-ShortString"
     }, {
-        "id": "PC-Inf-Text",
+        "id": "PC-Description",
         "changedAt": "2017-05-28T18:59:00+01:00",
         "title": "dcterms:description",
         "dataType": "DT-FormattedText"
@@ -41,13 +41,13 @@
         "description": "Information with title and text.",
         "title": "SpecIF:Paragraph",
         "instantiation": ["auto", "user"],
-        "propertyClasses": ["PC-Inf-Name", "PC-Inf-Text"]
+        "propertyClasses": ["PC-Name", "PC-Description"]
     }, {
         "id": "RC-ACProject",
         "changedAt": "2017-05-28T18:59:00+01:00",
         "description": "Root of a hierarchy (outline).",
         "title": "SpecIF:Hierarchy",
-        "propertyClasses": ["PC-Inf-Name"],
+        "propertyClasses": ["PC-Name"],
         "isHeading": true
     }],
     "statementClasses": [],
@@ -56,7 +56,7 @@
         "changedAt": "2018-09-30T16:24:00+02:00",
         "class": "RC-ACProject",
         "properties": [{
-            "class": "PC-Inf-Name",
+            "class": "PC-Name",
             "title": "dcterms:title",
             "value": "A test with formatted text (hierarchy property with title 'dcterms:title')"
         }],
@@ -66,11 +66,11 @@
         "changedAt": "2018-10-01T08:04:00+02:00",
         "class": "RC-Inf",
         "properties": [{
-            "class": "PC-Inf-Name",
+            "class": "PC-Name",
             "title": "dcterms:title",
             "value": "Text with a simple table having a thead section"
         }, {
-            "class": "PC-Inf-Text",
+            "class": "PC-Description",
             "title": "dcterms:description",
             "value": "<div><table class=\"stdInlineWithBorder\"> <thead> <tr> <th> Name </th> <th> Organisation </th> <th> Telephone </th> <th> Email </th> </tr></thead><tbody> <tr> <td>Oskar Surname </td> <td> adesso AG </td> <td> </td> <td> <a href=\"mailto:oskar.surname@adesso.de\" >oskar.surname@adesso.de</a> </td> </tr> </tbody> </table></div>"
         }],
@@ -80,11 +80,11 @@
         "changedAt": "2018-10-01T08:04:00+02:00",
         "class": "RC-Inf",
         "properties": [{
-            "class": "PC-Inf-Name",
+            "class": "PC-Name",
             "title": "dcterms:title",
             "value": "Text with a simple table"
         }, {
-            "class": "PC-Inf-Text",
+            "class": "PC-Description",
             "title": "dcterms:description",
             "value": "<div><table class=\"stdInlineWithBorder\"> <tbody> <tr> <th> Name </th> <th> Organisation </th> <th> Telephone </th> <th> Email </th> </tr> <tr> <td> Oskar Surname </td> <td> adesso AG </td> <td> </td> <td> <a href=\"mailto:oskar.surname@adesso.de\" >oskar.surname@adesso.de</a> </td> </tr> </tbody> </table></div>"
         }],
@@ -94,11 +94,11 @@
         "changedAt": "2018-10-01T06:04:00+02:00",
         "class": "RC-Inf",
         "properties": [{
-            "class": "PC-Inf-Name",
+            "class": "PC-Name",
             "title": "dcterms:title",
             "value": "Text with multiple paragraphs"
         }, {
-            "class": "PC-Inf-Text",
+            "class": "PC-Description",
             "title": "dcterms:description",
             "value": "<div><p>First paragraph, an <strong>empty paragraph</strong> follows:</p><p></p><p>Nächster Absatz.</p><p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,<br/> no sea takimata sanctus est Lorem ipsum dolor sit amet.</p><p>A <em>hyperlink</em> without &lt;a&gt; tag: https://specif.de/apps/edit\"../examples/Dimmer.specifz\"</p><p>Dernier paragraphe.</p></div>"
         }],
@@ -108,7 +108,7 @@
         "changedAt": "2020-08-26T21:07:12.670Z",
         "class": "RC-Inf",
         "properties": [{
-            "class": "PC-Inf-Text",
+            "class": "PC-Description",
             "title": "dcterms:description",
             "value": "<div><p>Text before list:</p><ol><li>first <i>{item (italic)}</i></li><li>zweiter Punkt</li><li>troisième élément</li><li>Subordinated unordered list:<ul><li>first unordered sub-item</li><li>zweiter <b>[Unterpunkt (bold)]</b></li><li>troisième élément subordonné</li></ul></li></ol><p>The end.</p></div>"
         }],
@@ -118,7 +118,7 @@
         "changedAt": "2020-08-26T21:08:27.611Z",
         "class": "RC-Inf",
         "properties": [{
-            "class": "PC-Inf-Text",
+            "class": "PC-Description",
             "title": "dcterms:description",
             "value": "<div><p>Text before list:</p><ol><li>first <i>{item (italic)}</i></li><li>zweiter Punkt</li><li>troisième élément</li></ol><p>Text after numbered list.</p><ul><li>first item</li><li>zweiter <b>[Punkt (bold)]</b></li><li>troisième élément</li></ul><p>The end.</p></div>"
         }],
@@ -128,7 +128,7 @@
         "changedAt": "2020-08-26T21:08:16.164Z",
         "class": "RC-Inf",
         "properties": [{
-            "class": "PC-Inf-Text",
+            "class": "PC-Description",
             "title": "dcterms:description",
             "value": "<div><p>Text before list:</p><ol><li>first <i>{item (italic)}</i></li><li>zweiter Punkt</li><li>troisième élément</li></ol><p>Text between two lists. The next list should start with '1' again.</p><ol><li>first <i>{item (italic)}</i></li><li>zweiter Punkt</li><li>troisième élément</li><li>next</li><li>next</li><li>next</li><li>next</li><li>next</li><li>next</li><li>next</li><li>next</li></ol><p>Text after list.</p></div>"
         }],
@@ -138,7 +138,7 @@
         "changedAt": "2020-08-26T21:08:04.253Z",
         "class": "RC-Inf",
         "properties": [{
-            "class": "PC-Inf-Text",
+            "class": "PC-Description",
             "title": "dcterms:description",
             "value": "<div><p>Text before list:</p><ul><li>first item</li><li>zweiter <b>[Punkt (bold)]</b></li><li>troisième élément</li></ul><p>Text after list.</p></div>"
         }],
@@ -148,11 +148,11 @@
         "changedAt": "2018-10-01T08:04:00+02:00",
         "class": "RC-Inf",
         "properties": [{
-            "class": "PC-Inf-Name",
+            "class": "PC-Name",
             "title": "dcterms:title",
             "value": "Text with some character formatting, colors as RGB Hex like '#008000'"
         }, {
-            "class": "PC-Inf-Text",
+            "class": "PC-Description",
             "title": "dcterms:description",
             "value": "<p>Lorem <b>{ipsum (bold)}</b> dolor <i>[sit (italic)]</i> amet, <em>{consetetur sadipscing (emphasized)}</em><span style=\"color:#FF0000\">[elitr (span #FF0000)]</span>, sed diam <span style=\"color:#0000FF\"><b>{nonumy (span #0000FF, bold)}</b></span>  <em>[eirmod<span style=\"color:#008000\">{tempor (span #008000)}</span>(emphasized)]</em>, no <em><b>{[sea (bold)]</b>takimata (emphasized)}</em> Mojito!.</p>"
         }],
@@ -162,11 +162,11 @@
         "changedAt": "2017-10-04T09:20:00+02:00",
         "class": "RC-Inf",
         "properties": [{
-            "class": "PC-Inf-Name",
+            "class": "PC-Name",
             "title": "dcterms:title",
             "value": "Text with some special characters (title property)"
         }, {
-            "class": "PC-Inf-Text",
+            "class": "PC-Description",
             "title": "dcterms:description",
             "value": "<p>I am < 2m tall and my weight is >20kg.</p>"
         }],
@@ -176,11 +176,11 @@
         "changedAt": "2018-10-01T08:04:00+02:00",
         "class": "RC-Inf",
         "properties": [{
-            "class": "PC-Inf-Name",
+            "class": "PC-Name",
             "title": "dcterms:title",
             "value": "Text with some character formatting, colors as HTML literal like 'green'"
         }, {
-            "class": "PC-Inf-Text",
+            "class": "PC-Description",
             "title": "dcterms:description",
             "value": "<p>Lorem <b>{ipsum (bold)}</b> dolor <i>[sit (italic)]</i> amet, <em>{consetetur sadipscing (emphasized)}</em><span style=\"color:red\">[elitr (span red)]</span>, sed diam <span style=\"color:blue\"><b>{nonumy (span blue, bold)}</b></span>  <em>[eirmod<span style=\"color:green\">{tempor (span green)}</span>(emphasized)]</em>, no <em><b>{[sea (bold)]</b>takimata (emphasized)}</em> Mojito!</p>"
         }],

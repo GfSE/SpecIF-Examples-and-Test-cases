@@ -113,7 +113,7 @@
             "value": "<div></div>"
         }, {
             "class": "PC-Diagram",
-            "value": "<div><p class=\"inline-label\">Model Diagram:</p><p><object type=\"image/svg+xml\" data=\"files_and_images/Very-Simple-Model-FMC.svg\">Notation: FMC Block Diagram</object></p></div>"
+            "value": "<div><p class=\"inline-label\">Model Diagram:</p><p><object type=\"image/png\" data=\"files_and_images/Very-Simple-Model-FMC.png\">Notation: FMC Block Diagram</object></p></div>"
         }, {
             "class": "PC-Type",
             "value": "FMC Block Diagram"

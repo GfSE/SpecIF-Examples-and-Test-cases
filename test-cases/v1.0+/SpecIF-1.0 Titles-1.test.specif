@@ -1,0 +1,126 @@
+{
+    "id": "P-Test-Titles-1",
+    "title": "A test with various formatted and unformatted titles",
+    "$schema": "https://specif.de/v1.0/schema.json",
+    "rights": {
+        "title": "Creative Commons 4.0 CC BY-SA",
+        "type": "dcterms:rights",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    "changedAt": "2020-08-26T21:08:34.280Z",
+    "dataTypes": [{
+        "id": "DT-ShortString",
+        "changedAt": "2017-05-28T18:59:00+01:00",
+        "description": "String with length 96",
+        "title": "String[96]",
+        "type": "xs:string",
+        "maxLength": 96
+    }, {
+        "id": "DT-FormattedText",
+        "changedAt": "2017-05-28T18:59:00+01:00",
+        "title": "Formatted Text",
+        "type": "xhtml",
+        "maxLength": 1024
+    }],
+    "propertyClasses": [{
+        "id": "PC-Info-Name",
+        "changedAt": "2020-10-10T18:59:00+01:00",
+        "title": "dcterms:title",
+        "dataType": "DT-ShortString"
+    }, {
+        "id": "PC-Info-Text",
+        "changedAt": "2020-10-10T18:59:00+01:00",
+        "title": "dcterms:description",
+        "dataType": "DT-FormattedText"
+    }],
+    "resourceClasses": [{
+        "id": "RC-Info",
+        "changedAt": "2020-10-10T18:59:00+01:00",
+        "description": "Information with title and text.",
+        "title": "SpecIF:Paragraph",
+        "instantiation": ["auto", "user"],
+        "propertyClasses": ["PC-Info-Name", "PC-Info-Text"]
+    }, {
+        "id": "RC-Heading",
+        "changedAt": "2020-10-10T18:59:00+01:00",
+        "description": "Root of a hierarchy (outline).",
+        "title": "SpecIF:Hierarchy",
+        "propertyClasses": ["PC-Info-Name"],
+        "isHeading": true
+    }],
+    "statementClasses": [],
+    "resources": [{
+        "id": "R-1",
+        "changedAt": "2020-10-10T18:59:00+01:00",
+        "class": "RC-Heading",
+        "title": "R-1: A resource title as plain text, wobei kleiner < größer."
+    }, {
+        "id": "R-2",
+        "changedAt": "2020-10-10T18:59:00+01:00",
+        "class": "RC-Heading",
+        "properties": [{
+            "class": "PC-Info-Name",
+            "title": "dcterms:title",
+            "value": "R-2: A property with title 'dcterms:title' and dataType 'xs:string' as plain text."
+        }],
+        "title": "R-2: A resource title as plain text."
+    }, {
+        "id": "R-3",
+        "changedAt": "2020-10-10T18:59:00+01:00",
+        "class": "RC-Heading",
+        "properties": [{
+            "class": "PC-Info-Name",
+            "title": "dcterms:title",
+            "value": "R-3: kleiner < größer."
+        }],
+        "title": "R-3: A resource title as plain text."
+    }, {
+        "id": "R-4",
+        "changedAt": "2020-10-10T18:59:00+01:00",
+        "class": "RC-Heading",
+        "properties": [{
+            "class": "PC-Info-Name",
+            "title": "dcterms:title",
+            "value": "<p>R-4: kleiner < größer.</p>"
+        }],
+        "title": "R-4: A resource title as plain text."
+    }, {
+        "id": "R-5",
+        "changedAt": "2020-10-10T18:59:00+01:00",
+        "class": "RC-Heading",
+        "properties": [{
+            "class": "PC-Info-Name",
+            "title": "dcterms:title",
+            "value": [{
+				"text": "R-5: Minimum button size is < than the maximum size.",
+				"language": "en"
+			},{
+				"text": "R-5: Minimale Größe des Tasters ist < als die maximale.",
+				"language": "de"
+			}]
+        }],
+        "title": "R-5: A resource title as plain text."
+    }],
+    "statements": [],
+    "hierarchies": [{
+        "id": "N-R-1",
+        "changedAt": "2020-10-10T18:59:00+01:00",
+        "resource": "R-1"
+    }, {
+        "id": "N-R-2",
+        "changedAt": "2020-10-10T18:59:00+01:00",
+        "resource": "R-2"
+    }, {
+        "id": "N-R-3",
+        "changedAt": "2020-10-10T18:59:00+01:00",
+        "resource": "R-3"
+    }, {
+        "id": "N-R-4",
+        "changedAt": "2020-10-10T18:59:00+01:00",
+        "resource": "R-4"
+    }, {
+        "id": "N-R-5",
+        "changedAt": "2020-10-10T18:59:00+01:00",
+        "resource": "R-5"
+    }]
+}

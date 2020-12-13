@@ -1,6 +1,6 @@
 {
     "id": "P-Requirement-with-Multiple-Languages",
-    "title": "Requirement with Multiple Languages",
+    "title": "Project 'Requirement with Multiple Languages'",
     "$schema": "https://specif.de/v1.0/schema.json",
     "changedAt": "2020-03-26T22:59:00+02:00",
     "dataTypes": [{

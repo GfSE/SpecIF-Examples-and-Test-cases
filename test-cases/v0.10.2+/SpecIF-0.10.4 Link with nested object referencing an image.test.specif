@@ -84,7 +84,7 @@
         }, {
             "title": "dcterms:description",
             "class": "PT-Inf-Text",
-            "value": "<div><p>A link with a nested object referencing an image like &lt;a href=\"https://adesso.de\"&gt; &lt;object data=\"files_and_images/Logo-adesso.png\" type=\"image/png\" &gt;adesso AG&lt;/object&gt;&lt;/a&gt;: <a href=\"https://adesso.de\"> <object data=\"files_and_images/Logo-adesso.png\" type=\"image/png\" >adesso AG</object></a> </p><p>This pattern is valid in XHTML and SpecIF, but not in ReqIF. To conform with the latter, it can be transformed to: &lt;object data=\"https://adesso.de\" &gt;&lt;object data=\"files_and_images/Logo-adesso.png\" type=\"image/png\" &gt;adesso AG&lt;/object&gt;&lt;/object&gt;</p></div>"
+            "value": "<div><p>A link with a nested object referencing an image like &lt;a href=\"https://adesso.de\" target=\"_blank\"&gt; &lt;object data=\"files_and_images/Logo-adesso.png\" type=\"image/png\" &gt;adesso AG&lt;/object&gt;&lt;/a&gt;:<br/> <a href=\"https://adesso.de\" target=\"_blank\"> <object data=\"files_and_images/Logo-adesso.png\" type=\"image/png\" >adesso AG</object></a> </p><p>This pattern is valid in XHTML and SpecIF, but not in ReqIF. To conform with the latter, it can be transformed to: &lt;object data=\"https://adesso.de\" &gt;&lt;object data=\"files_and_images/Logo-adesso.png\" type=\"image/png\" &gt;adesso AG&lt;/object&gt;&lt;/object&gt;</p></div>"
         }],
         "revision": 304,
         "changedAt": "2018-05-04T17:16:16+02:00",
@@ -100,7 +100,7 @@
         }, {
             "title": "dcterms:description",
             "class": "PT-Inf-Text",
-            "value": "<div><p>A link with a nested object referencing an image like &lt;a href=\"https://adesso.de\"&gt; &lt;object data=\"files_and_images/Logo-adesso.png\" type=\"image/png\" name=\"adesso AG\" /&gt;&lt;/a&gt;: <a href=\"https://adesso.de\"> <object data=\"files_and_images/Logo-adesso.png\" type=\"image/png\" name=\"adesso AG\" /></a> </p><p>This pattern is valid in XHTML and SpecIF, but not in ReqIF. To conform with the latter, it can be transformed to: &lt;object data=\"https://adesso.de\" &gt;&lt;object data=\"files_and_images/Logo-adesso.png\" type=\"image/png\" name=\"adesso AG\" /&gt;&lt;/object&gt;</p></div>"
+            "value": "<div><p>A link with a nested object referencing an image like &lt;a href=\"https://adesso.de\"&gt; &lt;object data=\"files_and_images/Logo-adesso.png\" type=\"image/png\" name=\"adesso AG\" /&gt;&lt;/a&gt;:<br/> <a href=\"https://adesso.de\"> <object data=\"files_and_images/Logo-adesso.png\" type=\"image/png\" name=\"adesso AG\" /></a> </p><p>This pattern is valid in XHTML and SpecIF, but not in ReqIF. To conform with the latter, it can be transformed to: &lt;object data=\"https://adesso.de\" &gt;&lt;object data=\"files_and_images/Logo-adesso.png\" type=\"image/png\" name=\"adesso AG\" /&gt;&lt;/object&gt;</p></div>"
         }],
         "revision": 304,
         "changedAt": "2018-05-04T17:16:16+02:00",

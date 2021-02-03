@@ -107,8 +107,5 @@
             "changedAt": "2018-04-30T22:26:46+02:00"
 		}]
     }],
-    "files": [{
-        "id": "files_and_images/Logo-adesso.png",
-        "type": "image/png"
-    }]
+    "files": []
 }

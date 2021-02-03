@@ -89,7 +89,7 @@
         "properties": [{
             "title": "dcterms:title",
             "propertyType": "PT-ACProject-Name",
-            "value": "A test with text containing an ordered list (hierarchy property with title 'dcterms:title')"
+            "value": "A test with text containing an ordered list (hierarchy property titled 'dcterms:title')"
         }],
         "nodes": [{
             "id": "SH-Inf-d5b994e50023b1a8015d578cf736b265-ol-1",

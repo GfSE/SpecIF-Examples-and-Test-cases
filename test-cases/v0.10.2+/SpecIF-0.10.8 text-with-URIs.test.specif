@@ -56,7 +56,17 @@
         "properties": [{
             "title": "dcterms:description",
             "class": "PT-Inf-Text",
-            "value": "References:&#xD;- SE: https://ad.sharepoint.com/:w:/r/sites/BFS/_layouts/15/Doc.aspx?sourcedoc=%7B2AF84075-68D8-48A7-A619-FA0C75BFC8D2%7D&amp;file=DE00326686_EB.001.01_DE_Systemarchitektur_PH2.docx&amp;action=default&amp;mobileredirect=true&amp;cid=1ef0db74-0c62-4915-9659-12962ae190cc&#xD;- Integrations-Overview: https://ad.sharepoint.com/sites/BFS/Austausch/Forms/AllItems.aspx?id=%2Fsites%2FBFS%2FAustausch%2F007%5FPH%5F20191115%2F05%5FIntegrationen%2FDE00326686%5FEE%2E004%2E01%5FDE%5FAD%5FIntegrations%5FOverview%2D20191115%2Epdf&amp;parent=%2Fsites%2FBFS%2FAustausch%2F007%5FPH%5F20191115%2F05%5FIntegrationen&amp;p=true&amp;originalPath=aHR0cHM6Ly92YXR0ZW5mYWxsLnNoYXJlcG9pbnQuY29tLzpiOi9zL0JGS0FETVMvRVZ2SEFKZkgyMTVEdHRUZ1o5LWM3NG9CVEtnQllnb3NLLW5MTWNHZDExZzNlZz9ydGltZT1xS0xiYU9DVTEwZw&#xD;- Infrastructure Solution Design - v1.0 https://ad.sharepoint.com/:w:/r/sites/BFS/Austausch/SB-intern/Dokumente_Arbeitsverzeichnis_alt/004_Architektur/FieldClient_WebDMD%20(incl%202FA)/AD%20-%20Infrastructure%20Solution%20Design%20-%20v1.0.docx?d=w7c76f1f3c3e649efa472bd8e5106c6be&amp;csf=1&amp;web=1&amp;e=4uAyn2"
+            "value": "Line-Break using &amp;#xD;.&#xD;References:&#xD;- SE: https://ad.sharepoint.com/:w:/r/sites/BFS/_layouts/15/Doc.aspx?sourcedoc=%7B2AF84075-68D8-48A7-A619-FA0C75BFC8D2%7D&amp;file=DE00326686_EB.001.01_DE_Systemarchitektur_PH2.docx&amp;action=default&amp;mobileredirect=true&amp;cid=1ef0db74-0c62-4915-9659-12962ae190cc&#xD;- Integrations-Overview: https://ad.sharepoint.com/sites/BFS/Austausch/Forms/AllItems.aspx?id=%2Fsites%2FBFS%2FAustausch%2F007%5FPH%5F20191115%2F05%5FIntegrationen%2FDE00326686%5FEE%2E004%2E01%5FDE%5FAD%5FIntegrations%5FOverview%2D20191115%2Epdf&amp;parent=%2Fsites%2FBFS%2FAustausch%2F007%5FPH%5F20191115%2F05%5FIntegrationen&amp;p=true&amp;originalPath=aHR0cHM6Ly92YXR0ZW5mYWxsLnNoYXJlcG9pbnQuY29tLzpiOi9zL0JGS0FETVMvRVZ2SEFKZkgyMTVEdHRUZ1o5LWM3NG9CVEtnQllnb3NLLW5MTWNHZDExZzNlZz9ydGltZT1xS0xiYU9DVTEwZw&#xD;- Infrastructure Solution Design - v1.0 https://ad.sharepoint.com/:w:/r/sites/BFS/Austausch/SB-intern/Dokumente_Arbeitsverzeichnis_alt/004_Architektur/FieldClient_WebDMD%20(incl%202FA)/AD%20-%20Infrastructure%20Solution%20Design%20-%20v1.0.docx?d=w7c76f1f3c3e649efa472bd8e5106c6be&amp;csf=1&amp;web=1&amp;e=4uAyn2"
+        }],
+        "changedAt": "2017-10-04T09:20:00+02:00"
+    }, {
+        "id": "R-e6c994e50023b1a8015d578cf736b376-text",
+        "title": "A text with some URIs to be linkified (resource title)",
+        "class": "RT-Inf",
+        "properties": [{
+            "title": "dcterms:description",
+            "class": "PT-Inf-Text",
+            "value": "Line-Break using \\n.\nReferences:\n- SE: https://ad.sharepoint.com/:w:/r/sites/BFS/_layouts/15/Doc.aspx?sourcedoc=%7B2AF84075-68D8-48A7-A619-FA0C75BFC8D2%7D&amp;file=DE00326686_EB.001.01_DE_Systemarchitektur_PH2.docx&amp;action=default&amp;mobileredirect=true&amp;cid=1ef0db74-0c62-4915-9659-12962ae190cc\n- Integrations-Overview: https://ad.sharepoint.com/sites/BFS/Austausch/Forms/AllItems.aspx?id=%2Fsites%2FBFS%2FAustausch%2F007%5FPH%5F20191115%2F05%5FIntegrationen%2FDE00326686%5FEE%2E004%2E01%5FDE%5FAD%5FIntegrations%5FOverview%2D20191115%2Epdf&amp;parent=%2Fsites%2FBFS%2FAustausch%2F007%5FPH%5F20191115%2F05%5FIntegrationen&amp;p=true&amp;originalPath=aHR0cHM6Ly92YXR0ZW5mYWxsLnNoYXJlcG9pbnQuY29tLzpiOi9zL0JGS0FETVMvRVZ2SEFKZkgyMTVEdHRUZ1o5LWM3NG9CVEtnQllnb3NLLW5MTWNHZDExZzNlZz9ydGltZT1xS0xiYU9DVTEwZw\n- Infrastructure Solution Design - v1.0 https://ad.sharepoint.com/:w:/r/sites/BFS/Austausch/SB-intern/Dokumente_Arbeitsverzeichnis_alt/004_Architektur/FieldClient_WebDMD%20(incl%202FA)/AD%20-%20Infrastructure%20Solution%20Design%20-%20v1.0.docx?d=w7c76f1f3c3e649efa472bd8e5106c6be&amp;csf=1&amp;web=1&amp;e=4uAyn2"
         }],
         "changedAt": "2017-10-04T09:20:00+02:00"
     }, {
@@ -75,6 +85,10 @@
             "id": "N-R-e6c994e50023b1a8015d578cf736b265-text",
             "resource": "R-e6c994e50023b1a8015d578cf736b265-text",
             "changedAt": "2017-10-04T09:20:00+02:00"
+		}, {
+            "id": "N-R-e6c994e50023b1a8015d578cf736b376-text",
+            "resource": "R-e6c994e50023b1a8015d578cf736b376-text",
+            "changedAt": "2021-01-17T09:20:00+02:00"
         }]
     }],
     "files": []

@@ -82,7 +82,7 @@
         }, {
             "title": "dcterms:description",
             "propertyType": "AT-Inf-Text",
-            "value": "<div>Ae Äber<br/>Oe Öber<br/>Ue Über<br/>ae äber<br/>oe öber<br/>ue über<br/>sz keßlich</div>"
+            "value": "<div>Ae Äber<br/>Oe Öber<br/>Ue Über<br/>ae äber<br/>oe öber<br/>ue über<br/>sz großer Baum</div>"
         }],
         "changedAt": "2017-08-17T21:20:00+02:00"
     }],

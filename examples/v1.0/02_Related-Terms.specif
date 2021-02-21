@@ -13,8 +13,8 @@
         "changedAt": "2020-03-01T07:59:00+01:00"
     }],
     "statementClasses": [{
-        "id": "SC-isSpecialisationOf",
-        "title": "SysML:isSpecialisationOf",
+        "id": "SC-isSpecializationOf",
+        "title": "SysML:isSpecializationOf",
         "description": "Signifies that a term is a specialization of another, such as 'Passenger Car' and 'Vehicle'.",
         "subjectClasses": ["RC-ResourceTerm"],
         "objectClasses": ["RC-ResourceTerm"],
@@ -35,7 +35,7 @@
     }],
     "statements": [{
         "id": "S-X0lXi7lJP9DQsg4Jj4qbLuQYaGz",
-        "class": "SC-isSpecialisationOf",
+        "class": "SC-isSpecializationOf",
         "subject": "R-1234",
         "object": "R-9876",
         "changedAt": "2020-03-01T07:59:00+01:00"

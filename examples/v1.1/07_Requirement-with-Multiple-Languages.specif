@@ -94,15 +94,15 @@
               "text": "Minimale Größe des Tasters",
               "language": "de"
         }]]
-	  },{
+      },{
         "class": "PC-Description",
         "values": [[{
               "text": "<p>The <i>button size</i> MUST not be less than 20mm in diameter.</p>",
-			  "format": "xhtml",
+              "format": "xhtml",
               "language": "en"
             },{
               "text": "<p>Der <i>Durchmesser</i> des Tasters MUSS mindestens 20mm betragen.</p>",
-			  "format": "xhtml",
+              "format": "xhtml",
               "language": "de"
         }]]
       },{

@@ -1,0 +1,311 @@
+{
+  "id": "P-Test-all-dataTypes",
+  "title": "A resource with properties covering all dataTypes",
+  "description": "Excerpt from example 'Dimmer'.",
+    "$schema": "https://specif.de/v1.1/schema.json",
+  "generator": "manual",
+  "rights": {
+    "title": "Creative Commons 4.0 CC BY-SA",
+    "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+  },
+  "createdAt": "2019-05-04T19:08:31.960Z",
+  "createdBy": {
+    "familyName": "Surname",
+    "givenName": "Oskar",
+    "email": {
+      "type": "text/html",
+      "value": "oskar.surname@adesso.de"
+    },
+    "org": {
+      "organizationName": "adesso"
+    }
+  },
+  "dataTypes": [{
+    "id": "DT-Boolean",
+    "title": "Boolean",
+    "type": "xs:boolean",
+    "revision": "1.1",
+    "changedAt": "2016-05-26T08:59:00+02:00"
+  }, {
+    "id": "DT-Byte",
+    "title": "Byte",
+    "type": "xs:integer",
+    "min": 0,
+    "max": 255,
+    "revision": "1.1",
+    "changedAt": "2016-05-26T08:59:00+02:00"
+  }, {
+    "id": "DT-Integer",
+    "title": "Integer",
+    "type": "xs:integer",
+    "min": -32768,
+    "max": 32767,
+    "revision": "1.1",
+    "changedAt": "2016-05-26T08:59:00+02:00"
+  }, {
+    "id": "DT-Real",
+    "title": "Real",
+    "type": "xs:double",
+    "revision": "1.1",
+    "changedAt": "2016-05-26T08:59:00+02:00"
+  }, {
+    "id": "DT-Decimal2",
+    "title": "Real with 2 Decimals",
+    "type": "xs:double",
+    "fractionDigits": 2,
+    "revision": "1.1",
+    "changedAt": "2016-05-26T08:59:00+02:00"
+  }, {
+    "id": "DT-Date",
+    "title": "Date or Timestamp",
+    "type": "xs:dateTime",
+    "revision": "1.1",
+    "changedAt": "2016-05-26T08:59:00+02:00"
+  }, {
+    "id": "DT-ShortString",
+    "title": "String[96]",
+    "description": "String with length 256",
+    "type": "xs:string",
+    "maxLength": 256,
+    "revision": "1.1",
+    "changedAt": "2016-05-26T08:59:00+02:00"
+  }, {
+    "id": "DT-Text",
+    "title": "Plain or formatted Text",
+    "description": "A text string, plain (including markdown) or formatted with XHTML.",
+    "type": "xs:string",
+    "revision": "1.1",
+    "changedAt": "2021-02-14T08:59:00+02:00"
+  }, {
+    "id": "DT-URL",
+    "title": "URL",
+    "type": "xs:string",
+    "maxLength": 1024,
+    "revision": "1.1",
+    "changedAt": "2016-05-26T08:59:00+02:00"
+  }, {
+    "id": "DT-EmailAddress",
+    "title": "E-mail",
+    "type": "xs:string",
+    "maxLength": 256,
+    "revision": "1.1",
+    "changedAt": "2016-05-26T08:59:00+02:00"
+  },{
+    "id": "DT-Priority",
+    "title": "SpecIF:Priority",
+    "description": "Enumerated values for priority",
+    "type": "xs:enumeration",
+    "values": [{
+      "id": "V-Prio-0",
+      "title": [{
+        "text": "High"
+      }]
+    },{
+      "id": "V-Prio-1",
+      "title": [{
+        "text": "Rather High",
+        "language": "en"
+      },{
+        "text": "Eher hoch",
+        "language": "de"
+      }]
+    },{
+      "id": "V-Prio-2",
+      "title": [{
+        "text": "Medium"
+      }]
+    },{
+      "id": "V-Prio-3",
+      "title": [{
+        "text": "Rather Low"
+      }]
+    },{
+      "id": "V-Prio-4",
+      "title": [{
+        "text": "Low"
+      }]
+    }],
+    "multiple": false,
+    "changedAt": "2020-03-26T22:59:00+02:00"
+  },{
+    "id": "DT-Discipline",
+    "title": "Discipline",
+    "description": "Enumerated values for engineering discipline",
+    "type": "xs:enumeration",
+    "values": [{
+      "id": "V-Discipline-0",
+      "title": [{
+        "text": "Mechanics"
+      }]
+    }, {
+      "id": "V-Discipline-1",
+      "title": [{
+        "text": "Electronics"
+      }]
+    }, {
+      "id": "V-Discipline-2",
+      "title": [{
+        "text": "Software"
+      }]
+    }, {
+      "id": "V-Discipline-3",
+      "title": [{
+        "text": "Safety"
+      }]
+    }],
+    "multiple": true,
+    "revision": "1.1",
+    "changedAt": "2016-05-26T08:59:00+02:00"
+  }],
+  "propertyClasses": [{
+    "id": "PC-ID",
+    "title": "dcterms:identifier",
+    "dataType": "DT-ShortString",
+    "revision": "1.1",
+    "changedAt": "2016-05-26T08:59:00+02:00"
+  }, {
+    "id": "PC-Name",
+    "title": "dcterms:title",
+    "dataType": "DT-ShortString",
+    "revision": "1.1",
+    "changedAt": "2016-05-26T08:59:00+02:00"
+  }, {
+    "id": "PC-Text",
+    "title": "dcterms:description",
+    "dataType": "DT-Text",
+    "revision": "1.1",
+    "changedAt": "2016-05-26T08:59:00+02:00"
+  }, {
+    "id": "PC-Diagram",
+    "title": "SpecIF:Diagram",
+    "dataType": "DT-Text",
+    "revision": "1.1",
+    "changedAt": "2020-04-12T15:18:00+02:00"
+  }, {
+    "id": "PC-Notation",
+    "title": "SpecIF:Notation",
+    "dataType": "DT-ShortString",
+    "revision": "1.1",
+    "changedAt": "2016-05-26T08:59:00+02:00"
+  }, {
+    "id": "PC-Priority",
+    "title": "SpecIF:Priority",
+    "dataType": "DT-Priority",
+    "revision": "1.1",
+    "changedAt": "2016-05-26T08:59:00+02:00"
+  }, {
+    "id": "PC-Discipline",
+    "title": "Discipline",
+    "dataType": "DT-Discipline",
+    "multiple": true,
+    "revision": "1.1",
+    "changedAt": "2016-05-26T08:59:00+02:00"
+  }, {
+    "id": "PC-CostEstimation",
+    "title": "Cost Estimation [€]",
+    "dataType": "DT-Decimal2",
+    "unit": "€",
+    "revision": "1.1",
+    "changedAt": "2016-05-26T08:59:00+02:00"
+  }, {
+    "id": "PC-DueDate",
+    "title": "SpecIF:DueDate",
+    "dataType": "DT-Date",
+    "revision": "1.1",
+    "changedAt": "2016-05-26T08:59:00+02:00"
+  }, {
+    "id": "PC-Importance",
+    "title": "Importance",
+    "dataType": "DT-Byte",
+    "revision": "1.1",
+    "changedAt": "2016-05-26T08:59:00+02:00"
+  }],
+  "resourceClasses": [{
+    "id": "RC-Fld",
+    "title": "SpecIF:Heading",
+    "description": "Folders with title and text for chapters or descriptive paragraphs.",
+    "instantiation": ["user"],
+    "propertyClasses": ["PC-Name", "PC-Text"],
+    "revision": "1.1",
+    "changedAt": "2016-05-26T08:59:00+02:00",
+    "isHeading": true
+  }, {
+    "id": "RC-Req",
+    "title": "IREB:Requirement",
+    "description": "A 'Requirement' is a singular documented physical and functional need that a particular design, product or process must be able to perform.",
+    "icon": "&#8623;",
+    "instantiation": ["user"],
+    "propertyClasses": ["PC-ID", "PC-Name", "PC-Text", "PC-Diagram", "PC-Priority", "PC-Importance", "PC-Discipline", "PC-CostEstimation", "PC-DueDate"],
+    "revision": "1.1",
+    "changedAt": "2016-05-26T08:59:00+02:00"
+  }],
+  "statementClasses": [],
+  "resources": [{
+    "id": "Fld-5b8e98550000bca801371afb0c7b671b",
+    "class": "RC-Fld",
+    "properties": [{
+      "class": "PC-Name",
+      "values": [[{"text":"Requirements"}]]
+    }],
+    "revision": "14",
+    "changedAt": "2017-06-19T20:13:02+02:00",
+    "changedBy": "od"
+  }, {
+    "id": "Req-d1c895230000c3a80150f8afd049f738",
+    "class": "RC-Req",
+    "properties": [{
+      "class": "PC-ID",
+      "values": [[{"text":"REQ_014"}]]
+    }, {
+      "class": "PC-Name",
+      "values": [[{"text":"Dim an electric load","language":"en"},{"text":"Eine elektrische Last proportional ansteuern","format":"plain","language":"de"}]]
+    }, {
+      "class": "PC-Text",
+      "values": [[{"text":"<div><p> The user can set the intensity level of an electric load such as a light bulb. Pressing a button 'up' or 'down', the intensity is increased or decreased following a quasi-stepless ramp. <br /></p></div>"}]]
+    }, {
+      "class": "PC-Status",
+      "values": ["V-Status-3"]
+    }, {
+      "class": "PC-Discipline",
+      "values": ["V-Discipline-0","V-Discipline-2"]
+    }],
+    "revision": "23",
+    "changedAt": "2017-06-19T20:13:06+02:00",
+    "changedBy": "od"
+  }, {
+    "id": "Fld-5b8e98550000bca801371afb0c7b671b",
+    "class": "RC-Fld",
+    "properties": [{
+      "class": "PC-Name",
+      "values": [[{"text":"Example for multiple text-values, one of them in two languages."}]]
+    }, {
+      "class": "PC-Text",
+      "values": [
+	    [{
+            "text":"Unformatted text A in a single language."
+        }],[{
+            "text":"<div><p>XHTML-formatted Text B in English.</p></div>",format":"xhtml","language":"en"
+		  },{
+            "text":"<div><p>XHTML-formatierter Text B auf Deutsch.</p></div>",format":"xhtml","language":"de"
+        }]
+	  ]
+    }],
+    "revision": "14",
+    "changedAt": "2017-06-19T20:13:02+02:00",
+    "changedBy": "od"
+  }],
+  "statements": [],
+  "hierarchies": [{
+    "id": "SH-Fld-5b8e98550000bca801371afb0c7b671b",
+    "resource": "Fld-5b8e98550000bca801371afb0c7b671b",
+    "revision": "231",
+    "changedAt": "2017-06-19T20:14:43+02:00",
+    "nodes": [{
+      "id": "SH-Req-d1c895230000c3a80150f8afd049f738",
+      "resource": "Req-d1c895230000c3a80150f8afd049f738",
+      "revision": "231",
+      "changedAt": "2017-06-19T20:14:43+02:00"
+    }]
+  }],
+  "files": []
+}

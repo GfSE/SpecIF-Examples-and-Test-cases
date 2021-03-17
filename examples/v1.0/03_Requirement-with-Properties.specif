@@ -10,18 +10,17 @@
     "createdAt": "2019-05-29T14:12:59.960Z",
     "dataTypes": [{
       "id": "DT-ShortString",
-      "title": "String[96]",
-      "description": "String with max. length 96.",
+      "title": "String[256]",
+      "description": "String with max. length 256",
       "type": "xs:string",
-      "maxLength": 96,
+      "maxLength": 256,
       "changedAt": "2016-05-26T08:59:00+02:00"
     },{
-      "id": "DT-FormattedText",
-      "title": "Formatted Text",
-      "description": "XHTML formatted text with max. length 8156.",
-      "type": "xhtml",
-      "maxLength": 8156,
-      "changedAt": "2016-05-26T08:59:00+02:00"
+      "id": "DT-Text",
+      "title": "Plain or formatted Text",
+      "description": "A text string, plain, or formatted with XHTML or markdown",
+      "type": "xs:string",
+      "changedAt": "2021-02-14T08:59:00+02:00"
     }],
     "propertyClasses": [{
       "id": "PC-Name",
@@ -33,8 +32,8 @@
       "id": "PC-Description",
       "title": "dcterms:description",
       "description": "An account of the resource. Descriptive text about the resource represented as rich text in XHTML.",
-      "dataType": "DT-FormattedText",
-      "changedAt": "2016-05-26T08:59:00+02:00"
+      "dataType": "DT-Text",
+      "changedAt": "2021-02-14T08:59:00+02:00"
     }],
     "resourceClasses": [{
       "id": "RC-Requirement",

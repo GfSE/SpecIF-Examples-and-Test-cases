@@ -1,0 +1,168 @@
+{
+    "id": "ACP-f5746754ffcd22a8011ff0a02b50b0d2",
+    "title": "Example 'Integrated Process and IT Documentation' (2021-01-27)",
+    "$schema": "https://specif.de/v1.0/schema.json",
+    "generator": "SpecIF Editor",
+    "generatorVersion": "v0.99.7.9",
+    "description": "This sample project illustrates the basic concepts of the modelling of business processes and IT, but is neither complete nor representative regarding the content.  The specification integrates and represents:• organisational view: organigram• business view:  business landscape and business data modell• application view: application landscape",
+    "rights": {
+        "title": "Creative Commons 4.0 CC BY-SA",
+        "type": "dcterms:rights",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    "changedAt": "2021-02-08T08:07:14.882Z",
+    "createdBy": {
+        "familyName": "von Dungern",
+        "givenName": "Oskar",
+        "email": {
+            "type": "text/html",
+            "value": "od@enso-managers.de"
+        },
+        "org": {
+            "organizationName": "enso managers gmbh"
+        }
+    },
+    "dataTypes": [{
+        "id": "DT-ShortString",
+        "changedAt": "2017-05-28T19:59:00+02:00",
+        "title": "String [96]",
+        "description": "String with length 96",
+        "revision": "1",
+        "type": "xs:string",
+        "maxLength": 96
+    }, {
+        "id": "DT-Text",
+        "changedAt": "2017-05-28T19:59:00+02:00",
+        "title": "dcterms:description",
+        "description": "String with length 8192",
+        "revision": "1",
+        "type": "xs:string"
+    }],
+    "propertyClasses": [{
+        "id": "PC-Name",
+        "changedAt": "2017-05-28T19:59:00+02:00",
+        "title": "dcterms:title",
+        "revision": "1",
+        "dataType": "DT-ShortString"
+    }, {
+        "id": "PC-Text",
+        "changedAt": "2017-05-28T19:59:00+02:00",
+        "title": "dcterms:description",
+        "revision": "1",
+        "dataType": "DT-Text"
+    }],
+    "resourceClasses": [{
+        "id": "RC-Actor",
+        "changedAt": "2017-05-28T19:59:00+02:00",
+        "title": "FMC:Actor",
+        "description": "An 'Actor' is a fundamental model element type representing an active entity, be it an activity, a process step, a function, a system component or a role.",
+        "revision": "1",
+        "icon": "&#9632;",
+        "instantiation": ["auto"],
+        "propertyClasses": ["PC-Name", "PC-Text"]
+    }, {
+        "id": "RC-Status",
+        "changedAt": "2017-05-28T19:59:00+02:00",
+        "title": "FMC:State",
+        "description": "A 'State' is a fundamental model element type representing a passive entity, be it a value, a document, an information storage or even a physical shape.",
+        "revision": "1",
+        "icon": "&#9679;",
+        "instantiation": ["auto"],
+        "propertyClasses": ["PC-Name", "PC-Text"]
+    }, {
+        "id": "RC-Event",
+        "changedAt": "2017-05-28T19:59:00+02:00",
+        "title": "FMC:Event",
+        "description": "An 'Event' is a fundamental model element type representing a time reference, a change in condition/value or more generally a synchronisation primitive.",
+        "revision": "1",
+        "icon": "&#11047;",
+        "instantiation": ["auto"],
+        "propertyClasses": ["PC-Name", "PC-Text"]
+    }],
+    "statementClasses": [],
+    "resources": [{
+        "id": "MEl-f5746928ffcd22a8011f4f96657e5363-SAP-FI",
+        "changedAt": "2018-04-30T22:25:08+02:00",
+        "title": "SAP FI",
+        "revision": "83",
+        "changedBy": "od",
+        "class": "RC-Actor",
+        "properties": [{
+            "class": "PC-Name",
+            "value": "SAP FI"
+        }, {
+            "class": "PC-Text",
+            "value": "<div><p> SAP Financial Accounting System, which is used for the administration of [[invoice]]s and cash flow among others.</p></div>"
+        }]
+    }, {
+        "id": "MEl-f5746928ffcd22a8011f4f902d04a5fd-SAP-SCM",
+        "changedAt": "2018-04-30T22:25:08+02:00",
+        "title": "SAP SCM",
+        "revision": "84",
+        "changedBy": "od",
+        "class": "RC-Actor",
+        "properties": [{
+            "class": "PC-Name",
+            "value": "SAP SCM"
+        }, {
+            "class": "PC-Text",
+            "value": "<div><p> SAP Supply Chain Management System, which is used for the administration of [[supplier]] data and [[order]]s.</p></div>"
+        }]
+    }, {
+        "id": "MEl-f5746928ffcd22a8011f4fd564587e40-Invoice",
+        "changedAt": "2018-04-30T22:25:12+02:00",
+        "title": "Invoice",
+        "revision": "98",
+        "changedBy": "od",
+        "class": "RC-Status",
+        "properties": [{
+            "class": "PC-Name",
+            "value": "Invoice"
+        }, {
+            "class": "PC-Text",
+            "value": "<div><p>An invoice is a document which contains a detailed list of the monetary claim of a supplier for delivered goods or services. It contains all required data for the administration of invoices. Managed by [[SAP FI]].</p> </div>"
+        }]
+    }, {
+        "id": "MEl-f5746928ffcd22a8011f4f5d7d1d342f-order",
+        "changedAt": "2018-04-30T22:25:13+02:00",
+        "title": "Order",
+        "revision": "104",
+        "changedBy": "od",
+        "class": "RC-Status",
+        "properties": [{
+            "class": "PC-Name",
+            "value": "Order"
+        }, {
+            "class": "PC-Text",
+            "value": "<div><p>Is an instruction to the supplier to deliver a specified list of articles on a specified date to a specified address. All data necessary for the administration of the order are collected.</p> </div>"
+        }]
+    }],
+    "statements": [],
+    "hierarchies": [{
+        "id": "SH-MEl-f5746928ffcd22a8011f4f96657e5363-SAP-FI",
+        "changedAt": "2018-04-30T22:26:27+02:00",
+        "resource": "MEl-f5746928ffcd22a8011f4f96657e5363-SAP-FI",
+        "revision": "303"
+    }, {
+        "id": "SH-MEl-f5746928ffcd22a8011f4f902d04a5fd-SAP-SCM",
+        "changedAt": "2018-04-30T22:26:27+02:00",
+        "resource": "MEl-f5746928ffcd22a8011f4f902d04a5fd-SAP-SCM",
+        "revision": "303"
+    }, {
+        "id": "SH-MEl-f5746928ffcd22a8011f4fd564587e40-Invoice",
+        "changedAt": "2018-04-30T22:26:28+02:00",
+        "resource": "MEl-f5746928ffcd22a8011f4fd564587e40-Invoice",
+        "revision": "303"
+    }, {
+        "id": "SH-MEl-f5746928ffcd22a8011f4f5d7d1d342f-order",
+        "changedAt": "2018-04-30T22:26:28+02:00",
+        "resource": "MEl-f5746928ffcd22a8011f4f5d7d1d342f-order",
+        "revision": "303"
+    }, {
+        "id": "SH-MEl-f5746928ffcd22a8011f4fd564587e40-Invoice-31",
+        "changedAt": "2018-04-30T22:26:15+02:00",
+        "resource": "MEl-f5746928ffcd22a8011f4fd564587e40-Invoice",
+        "revision": "303"
+    }],
+    "files": []
+}

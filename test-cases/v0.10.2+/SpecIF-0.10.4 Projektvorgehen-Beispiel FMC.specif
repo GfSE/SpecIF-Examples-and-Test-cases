@@ -49,30 +49,16 @@
         "changedAt": "2018-05-10T11:54:00+01:00"
     }, {
         "id": "DT-ShortString",
-        "title": "String [96]",
-        "description": "String with length 96",
+        "title": "String [256]",
+        "description": "String with length 256",
         "type": "xs:string",
-        "maxLength": 96,
-        "changedAt": "2018-05-10T11:54:00+01:00"
-    }, {
-        "id": "DT-String",
-        "title": "String [512]",
-        "description": "String with length 512",
-        "type": "xs:string",
-        "maxLength": 512,
+        "maxLength": 256,
         "changedAt": "2018-05-10T11:54:00+01:00"
     }, {
         "id": "DT-Text",
         "title": "dcterms:description",
-        "description": "String with length 8192",
+        "description": "A plain or formatted text",
         "type": "xs:string",
-        "maxLength": 8192,
-        "changedAt": "2018-05-10T11:54:00+01:00"
-    }, {
-        "id": "DT-FormattedText",
-        "title": "Formatted Text with length 8192",
-        "type": "xhtml",
-        "maxLength": 8192,
         "changedAt": "2018-05-10T11:54:00+01:00"
     }, {
         "id": "DT-Req-Status",
@@ -514,7 +500,7 @@
         }, {
             "id": "PC-Folder-Text",
             "title": "dcterms:description",
-            "dataType": "DT-FormattedText",
+            "dataType": "DT-Text",
             "changedAt": "2018-05-10T11:54:00+01:00"
         }, {
             "id": "PC-Folder-Type",
@@ -537,12 +523,12 @@
         }, {
             "id": "PC-Diagram-Text",
             "title": "dcterms:description",
-            "dataType": "DT-FormattedText",
+            "dataType": "DT-Text",
             "changedAt": "2018-05-10T11:54:00+01:00"
         }, {
             "id": "PC-Diagram-Diagram",
             "title": "SpecIF:Diagram",
-            "dataType": "DT-FormattedText",
+            "dataType": "DT-Text",
             "changedAt": "2018-05-10T11:54:00+01:00"
         }, {
             "id": "PC-Diagram-Notation",
@@ -567,7 +553,7 @@
         }, {
             "id": "PC-Diagram-custom.his-supplier-comment",
             "title": "HIS:SupplierComment",
-            "dataType": "DT-FormattedText",
+            "dataType": "DT-Text",
             "changedAt": "2018-05-10T11:54:00+01:00"
         }, {
             "id": "PC-Diagram-custom.his-oem-status",
@@ -577,7 +563,7 @@
         }, {
             "id": "PC-Diagram-custom.his-oem-comment",
             "title": "HIS:OemComment",
-            "dataType": "DT-FormattedText",
+            "dataType": "DT-Text",
             "changedAt": "2018-05-10T11:54:00+01:00"
         }],
         "changedAt": "2018-05-10T11:54:00+01:00"
@@ -595,7 +581,7 @@
         }, {
             "id": "PC-Actor-Text",
             "title": "dcterms:description",
-            "dataType": "DT-FormattedText",
+            "dataType": "DT-Text",
             "changedAt": "2018-05-10T11:54:00+01:00"
         }, {
             "id": "PC-Actor-Type",
@@ -618,7 +604,7 @@
         }, {
             "id": "PC-State-Text",
             "title": "dcterms:description",
-            "dataType": "DT-FormattedText",
+            "dataType": "DT-Text",
             "changedAt": "2018-05-10T11:54:00+01:00"
         }, {
             "id": "PC-State-Type",
@@ -641,7 +627,7 @@
         }, {
             "id": "PC-Event-Text",
             "title": "dcterms:description",
-            "dataType": "DT-FormattedText",
+            "dataType": "DT-Text",
             "changedAt": "2018-05-10T11:54:00+01:00"
         }, {
             "id": "PC-Event-Type",
@@ -667,7 +653,7 @@
         }, {
             "id": "PC-Req-default-Text",
             "title": "dcterms:description",
-            "dataType": "DT-FormattedText",
+            "dataType": "DT-Text",
             "changedAt": "2018-05-10T11:54:00+01:00"
         }, {
             "id": "PC-Req-default-Status",
@@ -682,7 +668,7 @@
         }, {
             "id": "PC-Req-default-custom.internal-comments",
             "title": "Interner Kommentar",
-            "dataType": "DT-FormattedText",
+            "dataType": "DT-Text",
             "changedAt": "2018-05-10T11:54:00+01:00"
         }, {
             "id": "PC-Req-default-custom.IREB-type",
@@ -697,12 +683,12 @@
         }, {
             "id": "PC-Req-default-custom.initiator",
             "title": "Urheber/Quelle",
-            "dataType": "DT-String",
+            "dataType": "DT-ShortString",
             "changedAt": "2018-05-10T11:54:00+01:00"
         }, {
             "id": "PC-Req-default-custom.fitCriterion",
             "title": "Abnahme-Kriterium",
-            "dataType": "DT-FormattedText",
+            "dataType": "DT-Text",
             "changedAt": "2018-05-10T11:54:00+01:00"
         }, {
             "id": "PC-Req-default-custom.Release",
@@ -717,7 +703,7 @@
         }, {
             "id": "PC-Req-default-custom.his-supplier-comment",
             "title": "HIS:SupplierComment",
-            "dataType": "DT-FormattedText",
+            "dataType": "DT-Text",
             "changedAt": "2018-05-10T11:54:00+01:00"
         }, {
             "id": "PC-Req-default-custom.his-oem-status",
@@ -727,17 +713,17 @@
         }, {
             "id": "PC-Req-default-custom.his-oem-comment",
             "title": "HIS:OemComment",
-            "dataType": "DT-FormattedText",
+            "dataType": "DT-Text",
             "changedAt": "2018-05-10T11:54:00+01:00"
         }, {
             "id": "PC-Req-default-custom.IR-stakeholder-pro",
             "title": "Stakeholder (pro)",
-            "dataType": "DT-String",
+            "dataType": "DT-ShortString",
             "changedAt": "2018-05-10T11:54:00+01:00"
         }, {
             "id": "PC-Req-default-custom.IR-stakeholder-contra",
             "title": "Stakeholder (contra)",
-            "dataType": "DT-String",
+            "dataType": "DT-ShortString",
             "changedAt": "2018-05-10T11:54:00+01:00"
         }, {
             "id": "PC-Req-default-custom.IR-annotation-class",
@@ -790,7 +776,7 @@
         }, {
             "id": "PC-Req-Text",
             "title": "dcterms:description",
-            "dataType": "DT-FormattedText",
+            "dataType": "DT-Text",
             "changedAt": "2018-05-10T11:54:00+01:00"
         }, {
             "id": "PC-Req-Status",
@@ -805,7 +791,7 @@
         }, {
             "id": "PC-Req-custom.internal-comments",
             "title": "Interner Kommentar",
-            "dataType": "DT-FormattedText",
+            "dataType": "DT-Text",
             "changedAt": "2018-05-10T11:54:00+01:00"
         }, {
             "id": "PC-Req-custom.IREB-type",
@@ -820,12 +806,12 @@
         }, {
             "id": "PC-Req-custom.initiator",
             "title": "Urheber/Quelle",
-            "dataType": "DT-String",
+            "dataType": "DT-ShortString",
             "changedAt": "2018-05-10T11:54:00+01:00"
         }, {
             "id": "PC-Req-custom.fitCriterion",
             "title": "Abnahme-Kriterium",
-            "dataType": "DT-FormattedText",
+            "dataType": "DT-Text",
             "changedAt": "2018-05-10T11:54:00+01:00"
         }, {
             "id": "PC-Req-custom.Release",
@@ -840,7 +826,7 @@
         }, {
             "id": "PC-Req-custom.his-supplier-comment",
             "title": "HIS:SupplierComment",
-            "dataType": "DT-FormattedText",
+            "dataType": "DT-Text",
             "changedAt": "2018-05-10T11:54:00+01:00"
         }, {
             "id": "PC-Req-custom.his-oem-status",
@@ -850,7 +836,7 @@
         }, {
             "id": "PC-Req-custom.his-oem-comment",
             "title": "HIS:OemComment",
-            "dataType": "DT-FormattedText",
+            "dataType": "DT-Text",
             "changedAt": "2018-05-10T11:54:00+01:00"
         }],
         "changedAt": "2018-05-10T11:54:00+01:00"
@@ -873,7 +859,7 @@
         }, {
             "id": "PC-Fea-Text",
             "title": "dcterms:description",
-            "dataType": "DT-FormattedText",
+            "dataType": "DT-Text",
             "changedAt": "2018-05-10T11:54:00+01:00"
         }, {
             "id": "PC-Fea-Status",
@@ -888,12 +874,12 @@
         }, {
             "id": "PC-Fea-custom.internal-comments",
             "title": "Interner Kommentar",
-            "dataType": "DT-FormattedText",
+            "dataType": "DT-Text",
             "changedAt": "2018-05-10T11:54:00+01:00"
         }, {
             "id": "PC-Fea-custom.initiator",
             "title": "Urheber/Quelle",
-            "dataType": "DT-String",
+            "dataType": "DT-ShortString",
             "changedAt": "2018-05-10T11:54:00+01:00"
         }, {
             "id": "PC-Fea-custom.Release",
@@ -908,7 +894,7 @@
         }, {
             "id": "PC-Fea-custom.his-supplier-comment",
             "title": "HIS:SupplierComment",
-            "dataType": "DT-FormattedText",
+            "dataType": "DT-Text",
             "changedAt": "2018-05-10T11:54:00+01:00"
         }, {
             "id": "PC-Fea-custom.his-oem-status",
@@ -918,7 +904,7 @@
         }, {
             "id": "PC-Fea-custom.his-oem-comment",
             "title": "HIS:OemComment",
-            "dataType": "DT-FormattedText",
+            "dataType": "DT-Text",
             "changedAt": "2018-05-10T11:54:00+01:00"
         }],
         "changedAt": "2018-05-10T11:54:00+01:00"
@@ -941,7 +927,7 @@
         }, {
             "id": "PC-Ann-Text",
             "title": "dcterms:description",
-            "dataType": "DT-FormattedText",
+            "dataType": "DT-Text",
             "changedAt": "2018-05-10T11:54:00+01:00"
         }, {
             "id": "PC-Ann-Status",
@@ -956,12 +942,12 @@
         }, {
             "id": "PC-Ann-custom.IR-stakeholder-pro",
             "title": "Stakeholder (pro)",
-            "dataType": "DT-String",
+            "dataType": "DT-ShortString",
             "changedAt": "2018-05-10T11:54:00+01:00"
         }, {
             "id": "PC-Ann-custom.IR-stakeholder-contra",
             "title": "Stakeholder (contra)",
-            "dataType": "DT-String",
+            "dataType": "DT-ShortString",
             "changedAt": "2018-05-10T11:54:00+01:00"
         }, {
             "id": "PC-Ann-custom.IR-annotation-class",
@@ -1089,7 +1075,7 @@
         }, {
             "id": "PC-ACProject-Text",
             "title": "dcterms:description",
-            "dataType": "DT-FormattedText",
+            "dataType": "DT-Text",
             "changedAt": "2018-05-10T11:54:00+01:00"
         }],
         "changedAt": "2018-05-10T11:54:00+01:00"

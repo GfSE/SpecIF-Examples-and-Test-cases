@@ -6,7 +6,7 @@
     "title": "Creative Commons 4.0 CC BY-SA",
     "url": "https://creativecommons.org/licenses/by-sa/4.0/"
   },
-  "changedAt": "2021-03-16T22:59:00+02:00",
+  "createdAt": "2021-03-16T22:59:00+02:00",
   "dataTypes": [{
     "id": "DT-ShortString",
     "title": "String[256]",
@@ -34,8 +34,8 @@
     "properties": [{
       "class": {"id":"PC-Name"},
       "values": [[{
-            "text": "Hello World!",
-			"language": "en"
+        "text": "Hello World!",
+        "language": "en"
       }]]
     }],
     "class": {"id":"RC-94e50023b1a8015d57"},

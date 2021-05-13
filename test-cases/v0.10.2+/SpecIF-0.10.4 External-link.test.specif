@@ -75,19 +75,35 @@
     }],
     "resources": [{
         "id": "Fld-f5746754ffcd22a8011ff0a02b50b0d2-info-21",
-        "title": "Project Information",
+        "title": "Project Information 21",
         "class": "RT-Inf",
         "properties": [{
             "title": "dcterms:title",
             "class": "PT-Inf-Name",
-            "value": "Link with an embedded full object tag pair"
+            "value": "Link with an &lt;a&gt;..&lt;/a&gt; tag pair"
         }, {
             "title": "dcterms:description",
             "class": "PT-Inf-Text",
-            "value": "<div><p>A link referencing an external resorce like &lt;a href=\"https://specif.de\"&gt;SpecIF Initiative&lt;/a&gt;: <a href=\"https://specif.de\">SpecIF Initiative</a>. Some more text. </p></div>"
+            "value": "<div><p>A link referencing an external resource like &lt;a href=\"https://specif.de\"&gt;SpecIF Initiative&lt;/a&gt;: <a href=\"https://specif.de\">SpecIF Initiative</a>. Some more text. </p></div>"
         }],
         "revision": 304,
         "changedAt": "2018-05-04T17:16:16+02:00",
+        "changedBy": "od"
+	},{
+        "id": "Fld-f5746754ffcd22a8011ff0a02b50b0d2-info-22",
+        "title": "Project Information 22",
+        "class": "RT-Inf",
+        "properties": [{
+            "title": "dcterms:title",
+            "class": "PT-Inf-Name",
+            "value": "Simple link which must be linkified by the program to work"
+        }, {
+            "title": "dcterms:description",
+            "class": "PT-Inf-Text",
+            "value": "A simple link referencing an external resource: --> https://specif.de. Some more text."
+        }],
+        "revision": 304,
+        "changedAt": "2021-05-12T17:16:16+02:00",
         "changedBy": "od"
     }],
     "statements": [],
@@ -105,6 +121,10 @@
             "id": "SH-f5746754ffcd22a8011ff0a02b50b0d2-info-21",
             "resource": "Fld-f5746754ffcd22a8011ff0a02b50b0d2-info-21",
             "changedAt": "2018-04-30T22:26:46+02:00"
+		},{
+            "id": "SH-f5746754ffcd22a8011ff0a02b50b0d2-info-22",
+            "resource": "Fld-f5746754ffcd22a8011ff0a02b50b0d2-info-22",
+            "changedAt": "2021-05-12T17:16:16+02:00"
 		}]
     }],
     "files": []

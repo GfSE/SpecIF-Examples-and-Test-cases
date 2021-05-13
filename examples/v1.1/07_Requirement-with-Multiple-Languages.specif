@@ -24,8 +24,8 @@
     "id": "DT-Priority",
     "title": "SpecIF:Priority",
     "description": [{"text":"Enumerated values for priority"}],
-    "type": "xs:enumeration",
-    "values": [{
+    "type": "xs:string",
+    "enumeration": [{
       "id": "V-Prio-0",
       "value": [{
         "text": "High",
@@ -37,7 +37,7 @@
         "text": "Rather High",
         "language": "en"
       },{
-        "text": "Ehr hoch",
+        "text": "Eher hoch",
         "language": "de"
       }]
     },{

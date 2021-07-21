@@ -1,0 +1,236 @@
+{
+    "id": "P-Test-formattedText-markdown",
+	"title": "A test with formatted text using markdown",
+    "generator": "SpecIF Edit",
+    "generatorVersion": "v0.98.10",
+    "$schema": "https://specif.de/v1.0/schema.json",
+    "rights": {
+        "title": "Creative Commons 4.0 CC BY-SA",
+        "type": "dcterms:rights",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    "changedAt": "2021-07-21T21:08:34.280Z",
+    "dataTypes": [{
+        "id": "DT-ShortString",
+        "changedAt": "2017-05-28T18:59:00+01:00",
+        "description": "String with length 96",
+        "title": "String[96]",
+        "type": "xs:string",
+        "maxLength": 96
+    }, {
+        "id": "DT-Text",
+        "changedAt": "2017-05-28T18:59:00+01:00",
+        "title": "String[1024]",
+        "type": "xs:string",
+        "maxLength": 1024
+    }],
+    "propertyClasses": [{
+        "id": "PC-Name",
+        "changedAt": "2017-05-28T18:59:00+01:00",
+        "title": "dcterms:title",
+        "dataType": "DT-ShortString"
+    }, {
+        "id": "PC-Description",
+        "changedAt": "2017-05-28T18:59:00+01:00",
+        "title": "dcterms:description",
+        "dataType": "DT-Text"
+    }],
+    "resourceClasses": [{
+        "id": "RC-Inf",
+        "changedAt": "2017-05-28T18:59:00+01:00",
+        "description": "Information with title and text.",
+        "title": "SpecIF:Paragraph",
+        "instantiation": ["auto", "user"],
+        "propertyClasses": ["PC-Name", "PC-Description"]
+    }, {
+        "id": "RC-Project",
+        "changedAt": "2017-05-28T18:59:00+01:00",
+        "description": "Root of a hierarchy (outline).",
+        "title": "SpecIF:Hierarchy",
+        "propertyClasses": ["PC-Name"],
+        "isHeading": true
+    }],
+    "statementClasses": [],
+    "resources": [{
+        "id": "SP-d5b994e50023b1a8015d578cf736b265",
+        "changedAt": "2018-09-30T16:24:00+02:00",
+        "class": "RC-Project",
+        "properties": [{
+            "class": "PC-Name",
+            "title": "dcterms:title",
+            "value": "A test with formatted text (hierarchy property with title 'dcterms:title')"
+        }],
+		"title": "A test with formatted text in a property with dataType 'xs:string'"
+    }, {
+        "id": "R-d5b994e50023b1a8015d578cf736b265-table-1",
+        "changedAt": "2018-10-01T08:04:00+02:00",
+        "class": "RC-Inf",
+        "properties": [{
+            "class": "PC-Name",
+            "title": "dcterms:title",
+            "value": "Text with a simple table"
+        }, {
+            "class": "PC-Description",
+            "title": "dcterms:description",
+            "value": "| Name | Organisation | Telephone | Email |\n|---|---|---|---|\n| Oskar Surname | enso managers GmbH | | <a href=\"mailto:od@enso-managers.de\" >od@enso-managers.de</a> |"
+        }],
+        "title": "Text with a simple table"
+    }, {
+        "id": "R-d5b994e50023b1a8015d578cf736b265-p-2",
+        "changedAt": "2018-10-01T06:04:00+02:00",
+        "class": "RC-Inf",
+        "properties": [{
+            "class": "PC-Name",
+            "title": "dcterms:title",
+            "value": "Text with multiple paragraphs"
+        }, {
+            "class": "PC-Description",
+            "title": "dcterms:description",
+            "value": "First paragraph.\n\n#### Ein Untertitel vierte Ebene\n\nLorem ipsum dolor sit amet,\n\n__consetetur sadipscing__\nelitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,<br/> no sea takimata sanctus est Lorem ipsum dolor sit amet.\n\nA _hyperlink_ without &lt;a&gt; tag: https://specif.de/apps/edit#import=../examples/Dimmer.specifz\n\nDernier paragraphe."
+        }],
+        "title": "Text with multiple paragraphs and sub-titles"
+    }, {
+        "id": "R-d5b994e50023b1a8015d578cf736b265-p-1",
+        "changedAt": "2018-10-01T06:04:00+02:00",
+        "class": "RC-Inf",
+        "properties": [{
+            "class": "PC-Name",
+            "title": "dcterms:title",
+            "value": "Text with multiple paragraphs"
+        }, {
+            "class": "PC-Description",
+            "title": "dcterms:description",
+            "value": "First paragraph.\n\nNächster Absatz.\n\nLorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,<br/> no sea takimata sanctus est Lorem ipsum dolor sit amet.\n\nA _hyperlink_ without &lt;a&gt; tag: https://specif.de/apps/edit#import=../examples/Dimmer.specifz\n\nDernier paragraphe."
+        }],
+        "title": "Text with multiple paragraphs and a plain URL"
+    }, {
+        "id": "R-d5b994e50023b1a8015d578cf736b265-ol-2",
+        "changedAt": "2020-08-26T21:08:27.611Z",
+        "class": "RC-Inf",
+        "properties": [{
+            "class": "PC-Description",
+            "title": "dcterms:description",
+            "value": "Text before ordered list:\n1. First _{item (italic)}_\n1. Zweiter Punkt\n1. Troisième élément\n\nText after numbered list. The next is an unordered list:\n- First item\n- Zweiter __[Punkt (bold)]__\n- Troisième élément\n\nThe end."
+        }],
+        "title": "Text with ordered and unordered list"
+    }, {
+        "id": "R-d5b994e50023b1a8015d578cf736b265-ol-1",
+        "changedAt": "2020-08-26T21:08:16.164Z",
+        "class": "RC-Inf",
+        "properties": [{
+            "class": "PC-Description",
+            "title": "dcterms:description",
+            "value": "Text before list:\n1. First _{item (italic)}_\n1. Zweiter Punkt\n1. Troisième élément\n\n Text between two lists. The next list should start with '1' again.\n1. First item\n1. Zweiter Punkt\n1. Troisième élément\n1. Next\n1. Next\n1. Letzter Aufzählungspunkt\n\nText after list."
+        }],
+        "title": "Text with two ordered lists"
+    }, {
+        "id": "R-d5b994e50023b1a8015d578cf736b265-ul-2",
+        "changedAt": "2020-08-26T21:08:04.253Z",
+        "class": "RC-Inf",
+        "properties": [{
+            "class": "PC-Description",
+            "title": "dcterms:description",
+            "value": "Text before list:\n- First item\n- Zweiter __[Punkt (bold)]__\n    - 2.1\n    - 2.2\n- Troisième élément\n\nText after list."
+        }],
+        "title": "Text with nested unordered lists"
+    }, {
+        "id": "R-d5b994e50023b1a8015d578cf736b265-ul-1",
+        "changedAt": "2020-08-26T21:08:04.253Z",
+        "class": "RC-Inf",
+        "properties": [{
+            "class": "PC-Description",
+            "title": "dcterms:description",
+            "value": "Text before list:\n- First item\n- Zweiter __[Punkt (bold)]__\n- Troisième élément\nDeuxième ligne.\n\nText after list."
+        }],
+        "title": "Text with unordered list"
+    }, {
+        "id": "R-d5b994e50023b1a8015d578cf736b265-text-3",
+        "changedAt": "2018-10-01T08:04:00+02:00",
+        "class": "RC-Inf",
+        "properties": [{
+            "class": "PC-Name",
+            "title": "dcterms:title",
+            "value": "Text with some character formatting, colors as RGB Hex like '#008000'"
+        }, {
+            "class": "PC-Description",
+            "title": "dcterms:description",
+            "value": "Lorem **{ipsum (bold)}** dolor *[sit (italic)]* amet, *{consetetur sadipscing (emphasized)}*<span style=\"color:#FF0000\">[elitr (span #FF0000)]</span>, sed diam <span style=\"color:#0000FF\">**{nonumy (span #0000FF, bold)}**</span>  *[eirmod<span style=\"color:#008000\">{tempor (span #008000)}</span>(emphasized)]*, no ***{[sea (bold)]*** *takimata (emphasized)}* Mojito!."
+        }],
+        "title": "Text with some character formatting, colors as RGB Hex like '#008000'"
+    }, {
+        "id": "R-d5b994e50023b1a8015d578cf736b265-text-2",
+        "changedAt": "2017-10-04T09:20:00+02:00",
+        "class": "RC-Inf",
+        "properties": [{
+            "class": "PC-Name",
+            "title": "dcterms:title",
+            "value": "Text with some special characters (title property)"
+        }, {
+            "class": "PC-Description",
+            "title": "dcterms:description",
+            "value": "I am < 2m tall and my weight is >20kg."
+        }],
+        "title": "Text with some special characters (title property)"
+    }, {
+        "id": "R-d5b994e50023b1a8015d578cf736b265-text-1",
+        "changedAt": "2018-10-01T08:04:00+02:00",
+        "class": "RC-Inf",
+        "properties": [{
+            "class": "PC-Name",
+            "title": "dcterms:title",
+            "value": "Text with some character formatting, colors as HTML literal like 'green'"
+        }, {
+            "class": "PC-Description",
+            "title": "dcterms:description",
+            "value": "Lorem __{ipsum (bold)}__ dolor _[sit (italic)]_ amet, _{consetetur sadipscing (emphasized)}_<span style=\"color:red\">[elitr (span red)]</span>, sed diam <span style=\"color:blue\">__{nonumy (span blue, bold)}__</span>  _[eirmod<span style=\"color:green\">{tempor (span green)}</span>(emphasized)]_, no ***{[sea (bold)]*** *takimata (emphasized)}* Mojito!"
+        }],
+        "title": "Text with some character formatting, colors as HTML literal like 'green'"
+    }],
+    "statements": [],
+    "hierarchies": [{
+        "id": "N-SP-d5b994e50023b1a8015d578cf736b265",
+        "changedAt": "2018-09-30T16:24:00+02:00",
+        "resource": "SP-d5b994e50023b1a8015d578cf736b265",
+        "nodes": [{
+            "id": "SH-d5b994e50023b1a8015d578cf736b265-text-1",
+            "changedAt": "2017-08-17T21:20:00+02:00",
+            "resource": "R-d5b994e50023b1a8015d578cf736b265-text-1"
+        }, {
+            "id": "SH-d5b994e50023b1a8015d578cf736b265-text-2",
+            "changedAt": "2017-10-04T09:20:00+02:00",
+            "resource": "R-d5b994e50023b1a8015d578cf736b265-text-2"
+        }, {
+            "id": "SH-d5b994e50023b1a8015d578cf736b265-text-3",
+            "changedAt": "2017-08-17T21:20:00+02:00",
+            "resource": "R-d5b994e50023b1a8015d578cf736b265-text-3"
+        }, {
+            "id": "SH-d5b994e50023b1a8015d578cf736b265-ul-1",
+            "changedAt": "2017-08-17T21:20:00+02:00",
+            "resource": "R-d5b994e50023b1a8015d578cf736b265-ul-1"
+        }, {
+            "id": "SH-d5b994e50023b1a8015d578cf736b265-ul-2",
+            "changedAt": "2017-08-17T21:20:00+02:00",
+            "resource": "R-d5b994e50023b1a8015d578cf736b265-ul-2"
+        }, {
+            "id": "SH-d5b994e50023b1a8015d578cf736b265-ol-1",
+            "changedAt": "2017-08-17T21:20:00+02:00",
+            "resource": "R-d5b994e50023b1a8015d578cf736b265-ol-1"
+        }, {
+            "id": "SH-d5b994e50023b1a8015d578cf736b265-ol-2",
+            "changedAt": "2017-08-17T21:20:00+02:00",
+            "resource": "R-d5b994e50023b1a8015d578cf736b265-ol-2"
+        }, {
+            "id": "SH-d5b994e50023b1a8015d578cf736b265-p-1",
+            "changedAt": "2017-08-17T21:20:00+02:00",
+            "resource": "R-d5b994e50023b1a8015d578cf736b265-p-1"
+        }, {
+            "id": "SH-d5b994e50023b1a8015d578cf736b265-p-2",
+            "changedAt": "2017-08-17T21:20:00+02:00",
+            "resource": "R-d5b994e50023b1a8015d578cf736b265-p-2"
+        }, {
+            "id": "SH-d5b994e50023b1a8015d578cf736b265-table-1",
+            "changedAt": "2017-08-17T21:20:00+02:00",
+            "resource": "R-d5b994e50023b1a8015d578cf736b265-table-1"
+        }]
+    }]
+}

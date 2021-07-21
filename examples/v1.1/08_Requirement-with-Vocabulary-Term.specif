@@ -1,13 +1,9 @@
 {
-  "id": "P-Requirement-with-Multiple-Languages",
-  "title": [{"text":"Project 'Requirement with Multiple Languages'"}],
+  "id": "P-Requirement-with-Vocabulary-Term",
+  "title": "Project 'Requirement with Vocabulary Term'",
   "$schema": "https://specif.de/v1.1/schema.json",
-  "rights": {
-    "title": "Creative Commons 4.0 CC BY-SA",
-    "url": "https://creativecommons.org/licenses/by-sa/4.0/"
-  },
   "language": "en",
-  "createdAt": "2021-03-16T22:59:00+02:00",
+  "createdAt": "2020-03-26T22:59:00+02:00",
   "dataTypes": [{
     "id": "DT-ShortString",
     "title": "String[256]",
@@ -56,7 +52,7 @@
     },{
       "id": "V-Prio-4",
       "value": [{
-        "text": "Low",
+        "text": "SpecIF:priorityLow",
         "language": "en"
       }]
     }],
@@ -116,14 +112,14 @@
       }]]
     },{
       "class": {"id":"PC-Priority"},
-      "values": ["V-Prio-1"]
+      "values": ["V-Prio-4"]
     }],
     "changedAt": "2020-03-26T22:59:00+02:00"
   }],
   "statements": [],
   "hierarchies": [{
     "id": "N-bca801377e3d1781",
-    "resource": {"id":"Req-5ba3512b0000bca"},
+    "resource": "Req-5ba3512b0000bca",
     "changedAt": "2020-03-26T22:59:00+02:00"
   }]
 }

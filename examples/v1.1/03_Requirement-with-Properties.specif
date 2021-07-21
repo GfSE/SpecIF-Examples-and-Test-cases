@@ -6,6 +6,7 @@
     "title": "Creative Commons 4.0 CC BY-SA",
     "url": "https://creativecommons.org/licenses/by-sa/4.0/"
   },
+  "language": "en",
   "createdAt": "2019-05-29T14:12:59.960Z",
   "dataTypes": [{
     "id": "DT-ShortString",

@@ -60,7 +60,7 @@
             "title": "dcterms:title",
             "value": "A test with formatted text (hierarchy property with title 'dcterms:title')"
         }],
-		"title": "A test with formatted text in a property with dataType 'xs:string'"
+		"title": "A test with formatted text (hierarchy property with title 'dcterms:title')"
     }, {
         "id": "R-d5b994e50023b1a8015d578cf736b265-table-1",
         "changedAt": "2018-10-01T08:04:00+02:00",
@@ -82,7 +82,7 @@
         "properties": [{
             "class": "PC-Name",
             "title": "dcterms:title",
-            "value": "Text with multiple paragraphs"
+            "value": "Text with multiple paragraphs and sub-titles"
         }, {
             "class": "PC-Description",
             "title": "dcterms:description",
@@ -96,7 +96,7 @@
         "properties": [{
             "class": "PC-Name",
             "title": "dcterms:title",
-            "value": "Text with multiple paragraphs"
+            "value": "Text with multiple paragraphs and a plain URL"
         }, {
             "class": "PC-Description",
             "title": "dcterms:description",

@@ -1,6 +1,6 @@
 {
   "id": "P-Requirement-with-Multiple-Languages",
-  "title": [{"text":"Project 'Requirement with Multiple Languages'"}],
+  "title": "Project 'Requirement with Multiple Languages'",
   "$schema": "https://specif.de/v1.1/schema.json",
   "rights": {
     "title": "Creative Commons 4.0 CC BY-SA",

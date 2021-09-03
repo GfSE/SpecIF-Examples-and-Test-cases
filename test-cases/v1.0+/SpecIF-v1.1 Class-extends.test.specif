@@ -1,0 +1,157 @@
+{
+  "id": "P-Test-goodExtends",
+  "title": "A test with good 'extends', i.e. type specialisations",
+  "$schema": "https://specif.de/v1.1/schema.json",
+  "generator": "manual",
+  "rights": {
+    "title": "Creative Commons 4.0 CC BY-SA",
+    "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+  },
+  "createdBy": {
+    "familyName": "Surname",
+    "givenName": "Oskar",
+    "email": "oskar.surname@enso-managers.de",
+    "org": {
+      "organizationName": "enso managers gmbh"
+    }
+  },
+  "createdAt": "2021-08-27T22:59:00+02:00",
+  "dataTypes": [{
+    "id": "DT-ShortString",
+    "title": "String[256]",
+    "description": [{"text":"String with length 256","language":"en"}],
+    "type": "xs:string",
+    "maxLength": 256,
+    "revision": "1.1",
+    "changedAt": "2016-05-26T08:59:00+02:00"
+  }, {
+    "id": "DT-Text",
+    "title": "Plain or formatted Text",
+    "description": [{"text":"A text string, plain (including markdown) or formatted with XHTML.","language":"en"}],
+    "type": "xs:string",
+    "revision": "1.1",
+    "changedAt": "2021-02-14T08:59:00+02:00"
+  }, {
+    "id": "DT-Priority",
+    "title": "SpecIF:Priority",
+    "description": [{"text":"Enumerated values for priority","language":"en"}],
+    "type": "xs:string",
+    "enumeration": [{
+      "id": "V-Priority-0",
+      "value": [{
+        "text": "High",
+        "language": "en"
+      }]
+    },{
+      "id": "V-Priority-1",
+      "value": [{
+        "text": "Rather High",
+        "language": "en"
+      },{
+        "text": "Eher hoch",
+        "language": "de"
+      }]
+    },{
+      "id": "V-Priority-2",
+      "value": [{
+        "text": "Medium",
+        "language": "en"
+      }]
+    },{
+      "id": "V-Priority-3",
+      "value": [{
+        "text": "Rather Low",
+        "language": "en"
+      }]
+    },{
+      "id": "V-Priority-4",
+      "value": [{
+        "text": "Low",
+        "language": "en"
+      }]
+    }],
+    "multiple": false,
+    "changedAt": "2020-03-26T22:59:00+02:00"
+  }],
+  "propertyClasses": [{
+    "id": "PC-Name",
+    "title": "dcterms:title",
+    "dataType": {"id":"DT-ShortString"},
+    "changedAt": "2017-05-28T18:59:00+01:00"
+  }, {
+    "id": "PC-Description",
+    "title": "dcterms:description",
+    "dataType": {"id":"DT-Text"},
+    "changedAt": "2017-05-28T18:59:00+01:00"
+  }, {
+    "id": "PC-Priority",
+    "title": "SpecIF:Priority",
+    "dataType": {"id":"DT-Priority"},
+    "changedAt": "2017-05-28T19:59:00+02:00"
+  }],
+  "resourceClasses": [{
+    "id": "RT-Inf",
+    "title": "SpecIF:Paragraph",
+    "propertyClasses": [{"id":"PC-Name"},{"id":"PC-Description"}],
+    "changedAt": "2019-04-05T01:20:00+02:00"
+  },{
+    "id": "RT-Requirement",
+    "title": "SpecIF:Paragraph",
+    "extends": {"id":"RT-Inf"},
+    "propertyClasses": [{"id":"PC-Priority"}],
+    "changedAt": "2019-04-05T01:20:00+02:00"
+  }],
+  "statementClasses": [],
+  "resources": [{
+    "id": "Inf-274",
+    "class": {"id":"RT-Inf"},
+    "properties": [{
+      "class": {"id":"PC-Name"},
+      "values": [[{"text":"Title 1"}]]
+    }, {
+      "class": {"id":"PC-Description"},
+      "values": [[{"text":"<p>A test with good 'extends', i.e. type specialisations</p>"}]]
+    }],
+    "changedAt": "2019-04-05T01:20:00+02:00"
+  },{
+    "id": "Inf-275",
+    "class": {"id":"RT-Inf"},
+    "properties": [{
+      "class": {"id":"PC-Name"},
+      "values": [[{"text":"Title 2"}]]
+    }, {
+      "class": {"id":"PC-Description"},
+      "values": [[{"text":"<p>Formatted <b>Text</b></p>"}]]
+    }],
+    "changedAt": "2019-04-05T01:20:00+02:00"
+  },{
+    "id": "Req-276",
+    "class": {"id":"RT-Requirement"},
+    "properties": [{
+      "class": {"id":"PC-Name"},
+      "values": [[{"text":"Title 3"}]]
+    }, {
+      "class": {"id":"PC-Description"},
+      "values": [[{"text":"<p>This element has an extended property</p>"}]]
+    }, {
+      "class": {"id":"PC-Priority"},
+      "values": ["V-Priority-2"]
+    }],
+    "changedAt": "2019-04-05T01:20:00+02:00"
+  }],
+  "statements": [],
+  "hierarchies": [{
+    "id": "H-Test-Revisions",
+    "resource": {"id":"Inf-274"},
+    "nodes": [{
+      "id": "N-Inf-275",
+      "resource": {"id":"Inf-275"},
+      "changedAt": "2021-08-27T01:20:00+02:00"
+    },{
+      "id": "N-Req-276",
+      "resource": {"id":"Req-276"},
+      "changedAt": "2021-08-27T01:20:00+02:00"
+    }],
+    "changedAt": "2021-08-27T01:20:00+02:00"
+  }]
+}

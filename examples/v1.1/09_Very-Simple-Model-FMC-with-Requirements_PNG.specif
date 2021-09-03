@@ -193,11 +193,11 @@
         "class": {"id":"PC-Name"},
         "values": [[{"text":"IT-Integration: FiCo-Application and FiCo-Data"}]]
       },{
-        "class": {"id":"PC-Description"},
-        "values": [[{"text":""}]]
-      },{
         "class": {"id":"PC-Diagram"},
-        "values": [[{"text":"<div><p class=\"inline-label\">Model Diagram:</p><p><object type=\"image/svg+xml\" data=\"files_and_images/Very-Simple-Model-FMC.svg\">Notation: FMC Block Diagram</object></p></div>"}]]
+        "values": [[{
+          "text": "<div><p class=\"inline-label\">Model Diagram:</p><p><object type=\"image/png\" data=\"files_and_images/Very-Simple-Model-FMC.png\">Notation: FMC Block Diagram</object></p></div>",
+          "format": "xhtml"
+      }]]
       },{
         "class": {"id":"PC-Type"},
         "values": [[{"text":"FMC Block Diagram"}]]

@@ -1,6 +1,6 @@
 {
   "id": "P-Requirement-with-Vocabulary-Term",
-  "title": "Project 'Requirement with Vocabulary Term'",
+  "title": [{"text":"Project 'Requirement with Vocabulary Term'"}],
   "$schema": "https://specif.de/v1.1/schema.json",
   "language": "en",
   "createdAt": "2020-03-26T22:59:00+02:00",

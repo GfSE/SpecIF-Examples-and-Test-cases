@@ -1,6 +1,6 @@
 {
   "id": "P-Requirement-with-Image",
-  "title": "Project 'Requirement with Image'",
+  "title": [{"text":"Project 'Requirement with Image'"}],
   "$schema": "https://specif.de/v1.1/schema.json",
   "rights": {
     "title": "Creative Commons 4.0 CC BY-SA",

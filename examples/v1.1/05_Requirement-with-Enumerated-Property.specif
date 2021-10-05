@@ -1,6 +1,6 @@
 {
   "id": "P-Requirement-with-Enumerated-Property",
-  "title": "Project 'Requirement with Enumerated Property'",
+  "title": [{"text":"Project 'Requirement with Enumerated Property'"}],
   "$schema": "https://specif.de/v1.1/schema.json",
   "rights": {
     "title": "Creative Commons 4.0 CC BY-SA",

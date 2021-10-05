@@ -199,13 +199,13 @@
   }, {
     "id": "PC-Discipline",
     "title": "Discipline",
-    "dataType": {"id":"DT-Discipline"},
+    "dataType": {"id":"DT-Discipline","revision":"1.1"},
     "revision": "1.1",
     "changedAt": "2016-05-26T08:59:00+02:00"
   }, {
     "id": "PC-CostEstimation",
     "title": "Cost Estimation [€]",
-    "dataType": {"id":"DT-Decimal2"},
+    "dataType": {"id":"DT-Decimal2","revision":"1.1"},
     "unit": "€",
     "revision": "1.1",
     "changedAt": "2016-05-26T08:59:00+02:00"
@@ -234,7 +234,7 @@
     "title": "SpecIF:Heading",
     "description": [{"text":"Folders with title and text for chapters or descriptive paragraphs.","language":"en"}],
     "instantiation": ["user"],
-    "propertyClasses": [{"id":"PC-Name"}, {"id":"PC-Text"}, {"id":"PC-Reference"}],
+    "propertyClasses": [{"id":"PC-Name"}, {"id":"PC-Text"}, {"id":"PC-Reference","revision":"1.1"}],
     "revision": "1.1",
     "changedAt": "2016-05-26T08:59:00+02:00",
     "isHeading": true
@@ -251,7 +251,7 @@
   "statementClasses": [],
   "resources": [{
     "id": "Fld-5b8e98550000bca801371afb0c7b671b",
-    "class": {"id":"RC-Fld"},
+    "class": {"id":"RC-Fld","revision":"1.1"},
     "properties": [{
       "class": {"id":"PC-Name"},
       "values": [[{"text":"Requirements"}]]

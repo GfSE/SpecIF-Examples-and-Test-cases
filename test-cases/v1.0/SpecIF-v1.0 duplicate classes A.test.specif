@@ -1,0 +1,465 @@
+{
+  "id": "P-Test-all-dataTypes-adopt-1",
+  "title": "A resource with properties covering all dataTypes - adopt-1",
+  "$schema": "https://specif.de/v1.0/schema.json",
+  "generator": "SpecIF Editor",
+  "generatorVersion": "1.0.t",
+  "createdAt": "2021-09-24T12:38:58.296Z",
+  "description": "Excerpt from example 'Dimmer'.",
+  "rights": {
+    "title": "Creative Commons 4.0 CC BY-SA",
+    "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+  },
+  "createdBy": {
+    "familyName": "Surname",
+    "givenName": "Oskar",
+    "email": {
+      "type": "text/html",
+      "value": "oskar.surname@adesso.de"
+    },
+    "org": {
+      "organizationName": "adesso"
+    }
+  },
+  "dataTypes": [
+    {
+      "id": "DT-Boolean",
+      "changedAt": "2016-05-26T08:59:00+02:00",
+      "title": "Boolean",
+      "revision": "1",
+      "type": "xs:boolean"
+    },
+    {
+      "id": "DT-Byte",
+      "changedAt": "2016-05-26T08:59:00+02:00",
+      "title": "Byte",
+      "revision": "1",
+      "type": "xs:integer",
+      "minInclusive": 0,
+      "maxInclusive": 255
+    },
+    {
+      "id": "DT-Integer",
+      "changedAt": "2016-05-26T08:59:00+02:00",
+      "title": "Integer",
+      "revision": "1",
+      "type": "xs:integer",
+      "minInclusive": -32768,
+      "maxInclusive": 32767
+    },
+    {
+      "id": "DT-Real",
+      "changedAt": "2016-05-26T08:59:00+02:00",
+      "title": "Real",
+      "revision": "1",
+      "type": "xs:double",
+      "fractionDigits": 5
+    },
+    {
+      "id": "DT-Decimal2",
+      "changedAt": "2016-05-26T08:59:00+02:00",
+      "title": "Real with 2 Decimals",
+      "revision": "1",
+      "type": "xs:double",
+      "fractionDigits": 2
+    },
+    {
+      "id": "DT-Date",
+      "changedAt": "2016-05-26T08:59:00+02:00",
+      "title": "Date or Timestamp",
+      "revision": "1",
+      "type": "xs:dateTime"
+    },
+    {
+      "id": "DT-ShortString",
+      "changedAt": "2016-05-26T08:59:00+02:00",
+      "title": "String[256]",
+      "description": "String with length 256",
+      "revision": "1",
+      "type": "xs:string",
+      "maxLength": 256
+    },
+    {
+      "id": "DT-Text",
+      "changedAt": "2016-05-26T08:59:00+02:00",
+      "title": "dcterms:description",
+      "description": "String with length 8192",
+      "revision": "1",
+      "type": "xs:string"
+    },
+    {
+      "id": "DT-URL",
+      "changedAt": "2016-05-26T08:59:00+02:00",
+      "title": "URL",
+      "revision": "1",
+      "type": "xs:string",
+      "maxLength": 1024
+    },
+    {
+      "id": "DT-EmailAddress",
+      "changedAt": "2016-05-26T08:59:00+02:00",
+      "title": "E-mail",
+      "revision": "1",
+      "type": "xs:string",
+      "maxLength": 256
+    },
+    {
+      "id": "DT-Status",
+      "changedAt": "2016-05-26T08:59:00+02:00",
+      "title": "SpecIF:Status",
+      "description": "Enumerated values for status",
+      "type": "xs:enumeration",
+      "values": [
+        {
+          "id": "V-Status-0",
+          "value": "00_deprecated"
+        },
+        {
+          "id": "V-Status-1",
+          "value": "01_rejected"
+        },
+        {
+          "id": "V-Status-2",
+          "value": "10_initial"
+        },
+        {
+          "id": "V-Status-3",
+          "value": "20_drafted"
+        },
+        {
+          "id": "V-Status-4",
+          "value": "30_submitted"
+        },
+        {
+          "id": "V-Status-5",
+          "value": "40_approved"
+        },
+        {
+          "id": "V-Status-6",
+          "value": "60_completed"
+        },
+        {
+          "id": "V-Status-7",
+          "value": "80_released"
+        }
+      ]
+    },
+    {
+      "id": "DT-Priority",
+      "changedAt": "2016-05-26T08:59:00+02:00",
+      "title": "SpecIF:Priority",
+      "description": "Enumerated values for priority",
+      "revision": "1",
+      "type": "xs:enumeration",
+      "values": [
+        {
+			"id": "V-Priority-0",
+			"value": "SpecIF:priorityHigh"
+		}, {
+			"id": "V-Priority-2",
+			"value": "SpecIF:priorityMedium"
+		}, {
+			"id": "V-Priority-4",
+			"value": "SpecIF:priorityLow"
+        }
+      ]
+    },
+    {
+      "id": "DT-Discipline",
+      "changedAt": "2016-05-26T08:59:00+02:00",
+      "title": "Discipline",
+      "description": "Enumerated values for engineering discipline",
+      "revision": "1",
+      "type": "xs:enumeration",
+      "values": [
+        {
+          "id": "V-Discipline-0",
+          "value": "Mechanics"
+        },
+        {
+          "id": "V-Discipline-1",
+          "value": "Electronics"
+        },
+        {
+          "id": "V-Discipline-2",
+          "value": "Software"
+        },
+        {
+          "id": "V-Discipline-3",
+          "value": "Safety"
+        }
+      ]
+	}, 
+	{
+		"id": "DT-Perspective",
+		"title": "SpecIF:Perspective",
+		"description": "Enumerated values for perspective",
+		"type": "xs:enumeration",
+		"values": [{
+			"id": "V-Perspective-0",
+			"value": "Business"
+		}, {
+			"id": "V-Perspective-1",
+			"value": "User"
+		}, {
+			"id": "V-Perspective-2",
+			"value": "System"
+		}],
+		"revision": "1",
+		"changedAt": "2016-05-26T08:59:00+02:00"
+    }
+  ],
+  "propertyClasses": [
+    {
+      "id": "PC-VisibleId",
+      "changedAt": "2016-05-26T08:59:00+02:00",
+      "title": "dcterms:identifier",
+      "revision": "1",
+      "dataType": "DT-ShortString"
+    },
+    {
+      "id": "PC-Name",
+      "changedAt": "2016-05-26T08:59:00+02:00",
+      "title": "dcterms:title",
+      "revision": "1",
+      "dataType": "DT-ShortString"
+    },
+    {
+      "id": "PC-Description",
+      "changedAt": "2016-05-26T08:59:00+02:00",
+      "title": "dcterms:description",
+      "revision": "1",
+      "dataType": "DT-Text"
+    },
+    {
+      "id": "PC-Diagram",
+      "changedAt": "2020-04-12T15:18:00+02:00",
+      "title": "SpecIF:Diagram",
+      "revision": "1",
+      "dataType": "DT-Text"
+    },
+    {
+      "id": "PC-Notation",
+      "changedAt": "2016-05-26T08:59:00+02:00",
+      "title": "SpecIF:Notation",
+      "revision": "1",
+      "dataType": "DT-ShortString"
+    },
+    {
+      "id": "PC-Priority",
+      "changedAt": "2016-05-26T08:59:00+02:00",
+      "title": "SpecIF:Priority",
+      "revision": "1",
+      "dataType": "DT-Priority"
+    },
+    {
+      "id": "PC-Status",
+      "changedAt": "2016-05-26T08:59:00+02:00",
+      "title": "SpecIF:Status",
+      "revision": "1",
+      "dataType": "DT-Status"
+    },
+    {
+      "id": "PC-Discipline",
+      "changedAt": "2016-05-26T08:59:00+02:00",
+      "title": "Discipline",
+      "revision": "1",
+      "dataType": "DT-Discipline",
+      "multiple": true
+	}, 
+	{
+      "id": "PC-Perspective",
+      "title": "SpecIF:Perspective",
+      "dataType": "DT-Perspective",
+      "revision": "1",
+      "changedAt": "2016-05-26T08:59:00+02:00"
+    },
+    {
+      "id": "PC-CostEstimation",
+      "changedAt": "2016-05-26T08:59:00+02:00",
+      "title": "Cost Estimation [€]",
+      "revision": "1",
+      "dataType": "DT-Decimal2"
+    },
+    {
+      "id": "PC-DueDate",
+      "changedAt": "2016-05-26T08:59:00+02:00",
+      "title": "SpecIF:DueDate",
+      "revision": "1",
+      "dataType": "DT-Date"
+    },
+    {
+      "id": "PC-Importance",
+      "changedAt": "2016-05-26T08:59:00+02:00",
+      "title": "Importance",
+      "revision": "1",
+      "dataType": "DT-Byte"
+    }
+  ],
+  "resourceClasses": [
+    {
+      "id": "RC-Fld",
+      "changedAt": "2016-05-26T08:59:00+02:00",
+      "title": "SpecIF:Heading",
+      "description": "Folders with title and text for chapters or descriptive paragraphs.",
+      "revision": "1",
+      "instantiation": [
+        "user"
+      ],
+      "propertyClasses": [
+        "PC-Name",
+        "PC-Description"
+      ],
+      "isHeading": true
+    },
+    {
+      "id": "RC-Req",
+      "changedAt": "2021-10-08T08:59:00+02:00",
+      "title": "IREB:Requirement",
+      "description": "A 'Requirement' is a singular documented physical and functional need that a particular design, product or process must be able to perform.",
+      "revision": "1",
+      "icon": "&#8623;",
+      "instantiation": [
+        "user"
+      ],
+      "propertyClasses": [
+        "PC-VisibleId",
+        "PC-Name",
+        "PC-Description",
+        "PC-Diagram",
+        "PC-Status",
+        "PC-Priority",
+        "PC-Importance",
+        "PC-Perspective",
+        "PC-Discipline",
+        "PC-CostEstimation",
+        "PC-DueDate"
+      ]
+    },
+    {
+      "id": "RC-Req-2",
+      "changedAt": "2021-10-08T08:59:00+02:00",
+      "title": "IREB:Requirement",
+      "description": "A 'Requirement' is a singular documented physical and functional need that a particular design, product or process must be able to perform.",
+      "revision": "1",
+      "icon": "&#8623;",
+      "instantiation": [
+        "user"
+      ],
+      "propertyClasses": [
+        "PC-VisibleId",
+        "PC-Name",
+        "PC-Description",
+        "PC-Diagram",
+        "PC-Status",
+        "PC-Priority",
+        "PC-Importance",
+        "PC-Perspective",
+        "PC-Discipline",
+        "PC-CostEstimation",
+        "PC-DueDate"
+      ]
+    }
+  ],
+  "statementClasses": [],
+  "resources": [
+    {
+      "id": "Fld-5b8e98550000bca801371afb0c7b671b",
+      "changedAt": "2017-06-19T20:13:02+02:00",
+      "title": "Requirements",
+      "revision": "14",
+      "changedBy": "od",
+      "class": "RC-Fld",
+      "properties": [
+        {
+          "class": "PC-Name",
+          "value": "Requirements"
+        },
+        {
+          "class": "PC-Description",
+          "value": "<div/>"
+        }
+      ]
+    },
+    {
+      "id": "Req-d1c895230000c3a80150f8afd049f738",
+      "changedAt": "2017-06-19T20:13:06+02:00",
+      "title": "Dim an electric load",
+      "revision": "23",
+      "changedBy": "od",
+      "class": "RC-Req",
+      "properties": [
+        {
+          "class": "PC-VisibleId",
+          "value": "REQ_014"
+        },
+        {
+          "class": "PC-Name",
+          "value": "Dim an electric load"
+        },
+        {
+          "class": "PC-Description",
+          "value": "<div><p> The user can set the intensity level of an electric load such as a light [[bulb]]. Pressing a button 'up' or 'down', the intensity is increased or decreased following a quasi-stepless ramp. <br /></p></div>"
+        },
+        {
+          "class": "PC-Status",
+          "value": "V-Status-3"
+        },
+        {
+          "class": "PC-Discipline",
+          "value": "V-Discipline-0,V-Discipline-2"
+        }
+      ]
+	}, {
+		"id": "Req-d1d42a6a0000c3a8015091ec8d149b93",
+		"title": "Switch an electric load",
+		"class": "RC-Req-2",
+		"properties": [{
+          "class": "PC-VisibleId",
+			"value": "REQ_016"
+		}, {
+			"class": "PC-Name",
+			"value": "Switch an electric load"
+		}, {
+			"class": "PC-Description",
+			"value": "<div><p> The user can immediately switch 'on' or 'off' the electric load. The intensity set to the maximum resp. minimum level, as defined by installation parameters.</p></div>"
+		}, {
+			"class": "PC-Status",
+			"value": "V-Status-5"
+		}, {
+			"class": "PC-Priority",
+			"value": "V-Priority-2"
+		}, {
+			"class": "PC-Perspective",
+			"value": "V-Perspective-1"
+		}, {
+			"class": "PC-Discipline",
+			"value": "V-Discipline-1,V-Discipline-2"
+		}],
+		"revision": "243",
+        "changedAt": "2021-10-08T08:59:00+02:00",
+		"changedBy": "od"
+    }
+  ],
+  "statements": [],
+  "hierarchies": [
+    {
+      "id": "SH-Fld-5b8e98550000bca801371afb0c7b671b",
+      "resource": "Fld-5b8e98550000bca801371afb0c7b671b",
+      "changedAt": "2021-06-19T20:14:43+02:00",
+      "nodes": [
+        {
+          "id": "SH-Req-d1c895230000c3a80150f8afd049f738",
+          "resource": "Req-d1c895230000c3a80150f8afd049f738",
+          "changedAt": "2017-06-19T20:14:43+02:00"
+        },
+        {
+          "id": "SH-Req-d1d42a6a0000c3a8015091ec8d149b93",
+          "resource": "Req-d1d42a6a0000c3a8015091ec8d149b93",
+          "changedAt": "2021-09-24T15:40:43+02:00"
+        }
+      ]
+    }
+  ],
+  "files": []
+}

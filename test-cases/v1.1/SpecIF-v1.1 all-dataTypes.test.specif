@@ -1,6 +1,6 @@
 {
   "id": "P-Test-all-dataTypes",
-  "title": "A resource with properties covering all dataTypes",
+  "title": [{"text":"A resource with properties covering all dataTypes"}],
   "description": [{"text":"Excerpt from example 'Dimmer'.","language":"en"}],
   "$schema": "https://specif.de/v1.1/schema.json",
   "generator": "manual",
@@ -327,24 +327,55 @@
     "revision": "14",
     "changedAt": "2017-06-19T20:13:02+02:00",
     "changedBy": "od"
+  }, {
+    "id": "Fld-5b8e98550000cdb801371afb0c7b682c",
+    "class": {"id":"RC-Fld"},
+    "properties": [{
+      "class": {"id":"PC-Name"},
+      "values": [
+        [
+          {
+            "text":"Example for local URI.",
+            "language": "en"
+          }
+        ]
+      ]
+    }, {
+      "class": {"id":"PC-Text"},
+      "values": [
+        [
+          { 
+            "text":"Next property is a local ID with dataType 'xs:anyURI'.",
+            "language": "en"
+          }
+        ]
+      ]
+    }, {
+      "class": {"id":"PC-Reference"},
+      "values": ["Fld-5b8e98550000bca801371afb0c7b682c"]
+    }],
+    "revision": "14",
+    "changedAt": "2021-11-20T20:13:02+02:00",
+    "changedBy": "od"
   }],
   "statements": [],
   "hierarchies": [{
     "id": "SH-Fld-5b8e98550000bca801371afb0c7b671b",
     "resource": {"id":"Fld-5b8e98550000bca801371afb0c7b671b"},
-    "revision": "231",
     "changedAt": "2017-06-19T20:14:43+02:00",
     "nodes": [{
       "id": "SH-Req-d1c895230000c3a80150f8afd049f738",
       "resource": {"id":"Req-d1c895230000c3a80150f8afd049f738"},
-      "revision": "231",
       "changedAt": "2017-06-19T20:14:43+02:00"
     }]
   }, {
     "id": "SH-Fld-5b8e98550000bca801371afb0c7b682c",
     "resource": {"id":"Fld-5b8e98550000bca801371afb0c7b682c"},
-    "revision": "231",
     "changedAt": "2021-08-25T20:14:43+02:00"
+  }, {
+    "id": "SH-Fld-5b8e98550000cdb801371afb0c7b682c",
+    "resource": {"id":"Fld-5b8e98550000cdb801371afb0c7b682c"},
+    "changedAt": "2021-11-20T20:14:43+02:00"
   }],
   "files": []
 }

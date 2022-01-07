@@ -91,7 +91,7 @@
     "description": [{"text":"Folder with title and text for chapters or descriptive paragraphs."}],
     "isHeading": true,
     "instantiation": ["auto","user"],
-    "propertyClasses": [{"id":"PC-Name"},{"id":"PC-Description"}],
+    "propertyClasses": [{"id":"PC-Name"},{"id":"PC-Description"},{"id":"PC-Type"}],
     "changedAt": "2016-05-26T08:59:00+02:00"
   },{
     "id": "RC-Diagram",

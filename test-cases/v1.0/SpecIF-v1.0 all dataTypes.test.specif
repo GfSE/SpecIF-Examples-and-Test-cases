@@ -111,36 +111,48 @@
       "type": "xs:enumeration",
       "values": [
         {
-          "id": "V-Status-0",
-          "value": "00_deprecated"
-        },
-        {
           "id": "V-Status-1",
-          "value": "01_rejected"
+          "value": "SpecIF:LifecycleStatusRejected"
         },
         {
           "id": "V-Status-2",
-          "value": "10_initial"
+          "value": "SpecIF:LifecycleStatusInitial"
         },
         {
           "id": "V-Status-3",
-          "value": "20_drafted"
+          "value": "SpecIF:LifecycleStatusDrafted"
         },
         {
           "id": "V-Status-4",
-          "value": "30_submitted"
+          "value": "SpecIF:LifecycleStatusSubmitted"
         },
         {
           "id": "V-Status-5",
-          "value": "40_approved"
+          "value": "SpecIF:LifecycleStatusApproved"
         },
         {
           "id": "V-Status-6",
-          "value": "60_completed"
+          "value": "SpecIF:LifecycleStatusReady"
         },
         {
           "id": "V-Status-7",
-          "value": "80_released"
+          "value": "SpecIF:LifecycleStatusDone"
+        },
+        {
+          "id": "V-Status-8",
+          "value": "SpecIF:LifecycleStatusValidated"
+        },
+        {
+          "id": "V-Status-9",
+          "value": "SpecIF:LifecycleStatusReleased"
+        },
+        {
+          "id": "V-Status-A",
+          "value": "SpecIF:LifecycleStatusDeprecated"
+        },
+        {
+          "id": "V-Status-0",
+          "value": "SpecIF:LifecycleStatusDeprecated"
         }
       ]
     },
@@ -196,6 +208,7 @@
       "id": "PC-VisibleId",
       "changedAt": "2016-05-26T08:59:00+02:00",
       "title": "dcterms:identifier",
+	  "description": "An identifier given by the user in addition to the system's globally unique identifier.",
       "revision": "1",
       "dataType": "DT-ShortString"
     },
@@ -203,6 +216,7 @@
       "id": "PC-Name",
       "changedAt": "2016-05-26T08:59:00+02:00",
       "title": "dcterms:title",
+	  "description": "The element's name or title.",
       "revision": "1",
       "dataType": "DT-ShortString"
     },
@@ -210,8 +224,17 @@
       "id": "PC-Description",
       "changedAt": "2016-05-26T08:59:00+02:00",
       "title": "dcterms:description",
+	  "description": "The element's description.",
       "revision": "1",
       "dataType": "DT-Text"
+    },
+    {
+      "id": "PC-Review",
+      "changedAt": "2020-04-12T15:18:00+02:00",
+      "title": "Subject to Review?",
+	  "description": "Must be reviewed, if checked.",
+      "revision": "1",
+      "dataType": "DT-Boolean"
     },
     {
       "id": "PC-Diagram",
@@ -231,6 +254,7 @@
       "id": "PC-Priority",
       "changedAt": "2016-05-26T08:59:00+02:00",
       "title": "SpecIF:Priority",
+	  "description": "The element's priority.",
       "revision": "1",
       "dataType": "DT-Priority"
     },
@@ -238,6 +262,7 @@
       "id": "PC-Status",
       "changedAt": "2016-05-26T08:59:00+02:00",
       "title": "SpecIF:Status",
+	  "description": "The element's status.",
       "revision": "1",
       "dataType": "DT-Status"
     },
@@ -245,6 +270,7 @@
       "id": "PC-Discipline",
       "changedAt": "2016-05-26T08:59:00+02:00",
       "title": "Discipline",
+	  "description": "The engineering disciplines needed to evaluate or design the element.",
       "revision": "1",
       "dataType": "DT-Discipline",
       "multiple": true
@@ -302,6 +328,7 @@
         "PC-Name",
         "PC-Description",
         "PC-Diagram",
+        "PC-Review",
         "PC-Status",
         "PC-Importance",
         "PC-Discipline",

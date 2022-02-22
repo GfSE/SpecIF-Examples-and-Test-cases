@@ -132,6 +132,13 @@
     "dataType": {"id":"DT-Text"},
     "changedAt": "2021-02-23T08:59:00+02:00"
   },{
+    "id": "PC-Keywords",
+    "title": "Keywords",
+    "description": [{"text":"Any number of keywords for efficient search and classification."}],
+    "dataType": {"id":"DT-ShortString"},
+    "multiple": true,
+    "changedAt": "2021-02-23T08:59:00+02:00"
+  },{
     "id": "PC-Priority",
     "title": "SpecIF:Priority",
     "description": [{"text":"The 'Priority' of the resource."}],
@@ -157,7 +164,7 @@
     "title": "IREB:Requirement",
     "description": [{"text":"A 'Requirement' is a singular documented physical and functional need that a particular design, product or process must be able to perform."}],
     "icon": "&#8623;",
-    "propertyClasses": [ {"id":"PC-Name"}, {"id":"PC-Description"}, {"id":"PC-Priority"}, {"id":"PC-Discipline"}, {"id":"PC-Effort"} ],
+    "propertyClasses": [ {"id":"PC-Name"}, {"id":"PC-Description"}, {"id":"PC-Keywords"}, {"id":"PC-Priority"}, {"id":"PC-Discipline"}, {"id":"PC-Effort"} ],
     "changedAt": "2020-03-26T22:59:00+02:00"
   }],
   "statementClasses": [],
@@ -181,6 +188,21 @@
         "format": "xhtml",
         "language": "de-de"
       }]]
+    },{
+      "class": {"id":"PC-Keywords"},
+      "values": [[
+        {
+          "text": "button",
+          "language": "en-us"
+        }, {
+          "text": "knopf",
+          "language": "de-de"
+        }
+      ],[
+        {
+          "text": "size"
+        }
+	  ]]
     },{
       "class": {"id":"PC-Priority"},
       "values": ["V-Prio-0"]

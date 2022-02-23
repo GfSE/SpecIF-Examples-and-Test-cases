@@ -30,28 +30,28 @@
       "id": "V-Prio-0",
       "value": [{
         "text": "high",
-		"language": "en-us"
+	"language": "en-us"
       },{
         "text": "hoch",
-		"language": "de-de"
+	"language": "de-de"
       }]
     },{
       "id": "V-Prio-2",
       "value": [{
         "text": "medium",
-		"language": "en-us"
+	"language": "en-us"
       },{
         "text": "mittel",
-		"language": "de-de"
+	"language": "de-de"
       }]
     },{
       "id": "V-Prio-4",
       "value": [{
         "text": "low",
-		"language": "en-us"
+	"language": "en-us"
       },{
         "text": "niedrig",
-		"language": "de-de"
+	"language": "de-de"
       }]
     }],
     "multiple": false,
@@ -149,14 +149,14 @@
     "title": "Discipline",
     "dataType": {"id":"DT-Discipline","revision":"1.1"},
     "revision": "1.1",
-	"values": ["V-Discipline-1","V-Discipline-3"],
+    "values": ["V-Discipline-1","V-Discipline-3"],
     "changedAt": "2016-05-26T08:59:00+02:00"
   }, {
     "id": "PC-Effort",
     "title": "Relative Implementation Effort [Fibonacci Number]",
     "dataType": {"id":"DT-Fibonacci","revision":"1.1"},
     "revision": "1.1",
-	"values": ["V-Fibonacci-5"],
+    "values": ["V-Fibonacci-5"],
     "changedAt": "2016-05-26T08:59:00+02:00"
   }],
   "resourceClasses": [{

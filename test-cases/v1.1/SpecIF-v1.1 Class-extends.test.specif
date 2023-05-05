@@ -90,21 +90,21 @@
     "changedAt": "2017-05-28T19:59:00+02:00"
   }],
   "resourceClasses": [{
-    "id": "RT-Inf",
+    "id": "RC-Inf",
     "title": "SpecIF:Paragraph",
     "propertyClasses": [{"id":"PC-Name"},{"id":"PC-Description"}],
     "changedAt": "2019-04-05T01:20:00+02:00"
   },{
-    "id": "RT-Requirement",
+    "id": "RC-Requirement",
     "title": "SpecIF:Paragraph",
-    "extends": {"id":"RT-Inf"},
+    "extends": {"id":"RC-Inf"},
     "propertyClasses": [{"id":"PC-Priority"}],
     "changedAt": "2019-04-05T01:20:00+02:00"
   }],
   "statementClasses": [],
   "resources": [{
     "id": "Inf-274",
-    "class": {"id":"RT-Inf"},
+    "class": {"id":"RC-Inf"},
     "properties": [{
       "class": {"id":"PC-Name"},
       "values": [[{"text":"Title 1"}]]
@@ -115,7 +115,7 @@
     "changedAt": "2019-04-05T01:20:00+02:00"
   },{
     "id": "Inf-275",
-    "class": {"id":"RT-Inf"},
+    "class": {"id":"RC-Inf"},
     "properties": [{
       "class": {"id":"PC-Name"},
       "values": [[{"text":"Title 2"}]]
@@ -126,7 +126,7 @@
     "changedAt": "2019-04-05T01:20:00+02:00"
   },{
     "id": "Req-276",
-    "class": {"id":"RT-Requirement"},
+    "class": {"id":"RC-Requirement"},
     "properties": [{
       "class": {"id":"PC-Name"},
       "values": [[{"text":"Title 3"}]]

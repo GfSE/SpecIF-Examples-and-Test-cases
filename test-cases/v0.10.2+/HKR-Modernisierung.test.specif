@@ -115,11 +115,11 @@
             "id": "V-Req-Prio-0",
             "title": "gering (S)"
         }, {
-            "id": "V-Req-Prio-1",
-            "title": "hoch (L)"
-        }, {
             "id": "V-Req-Prio-2",
             "title": "mittel (M)"
+        }, {
+            "id": "V-Req-Prio-1",
+            "title": "hoch (L)"
         }],
         "changedAt": "2018-05-10T11:54:00+01:00"
     }, {
@@ -335,14 +335,6 @@
             "class": "PC-Req-Text",
             "value": "<div><p>Die IT-Verfahren der Haushaltsabteilung unterstützen auch in Zukunft die politischen Entscheidungsträger anforderungsgerecht und in hoher Qualität. Die politische Handlungsfähigkeit wird auf allen Ebenen des Haushaltskreislaufs, d. h. für die Haushaltsaufstellung, den Haushaltsvollzug sowie die Haushalts- und Vermögensrechnung sichergestellt.</p></div>"
         }, {
-            "title": "SpecIF:Status",
-            "class": "PC-Req-Status",
-            "value": ""
-        }, {
-            "title": "SpecIF:Priority",
-            "class": "PC-Req-Priority",
-            "value": ""
-		}, {
             "class": "PC-Req-custom.initiator",
 			"value": "Strategische Weiterentwicklung der IT-Verfahren der Haushaltsabteilung (Zielbild)"
 		}],
@@ -364,14 +356,6 @@
             "class": "PC-Req-Text",
             "value": "<div><p>Moderne IT ist ein wichtiger Baustein zur Weiterentwicklung und Optimierung haushaltsbezogener Verwaltungsprozesse. Damit wird das Transformationsvorhaben einen wesentlichen Beitrag zu einer kontinuierlichen Verwaltungsmodernisierung im Bereich des Bundeshaushalts leisten. Der Wirkungskreis umfasst hierbei neben der Bundesebene insbesondere auch die mittelbare Bundesverwaltung sowie Landes- und Kommunalverwaltungen.</p></div>"
         }, {
-            "title": "SpecIF:Status",
-            "class": "PC-Req-Status",
-            "value": ""
-        }, {
-            "title": "SpecIF:Priority",
-            "class": "PC-Req-Priority",
-            "value": ""
-		}, {
             "class": "PC-Req-custom.initiator",
 			"value": "Strategische Weiterentwicklung der IT-Verfahren der Haushaltsabteilung (Zielbild)"
 		}],
@@ -390,12 +374,6 @@
             "class": "PC-Req-Text",
             "value": "<div><p>Künftige fachliche Anforderungen des Nutzerkreises stehen im Zentrum der Weiterentwicklung der IT-Verfahren. Der heutige Serviceumfang der Verfahrenslandschaft wird gegenüber den Nutzern bedarfsgerecht ausgebaut. Benutzerkomfort und Benutzerfreundlichkeit inklusive Barrierefreiheit stehen dabei im Fokus.</p></div>"
         }, {
-            "class": "PC-Req-Status",
-            "value": ""
-        }, {
-            "class": "PC-Req-Priority",
-            "value": ""
-		}, {
             "class": "PC-Req-custom.initiator",
 			"value": "Strategische Weiterentwicklung der IT-Verfahren der Haushaltsabteilung (Zielbild)"
         }, {

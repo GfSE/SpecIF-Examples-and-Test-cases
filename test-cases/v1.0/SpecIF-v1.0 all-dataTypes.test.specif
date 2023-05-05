@@ -147,10 +147,6 @@
           "value": "SpecIF:LifecycleStatusReleased"
         },
         {
-          "id": "V-Status-A",
-          "value": "SpecIF:LifecycleStatusDeprecated"
-        },
-        {
           "id": "V-Status-0",
           "value": "SpecIF:LifecycleStatusDeprecated"
         }

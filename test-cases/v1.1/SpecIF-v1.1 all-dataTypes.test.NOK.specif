@@ -197,13 +197,6 @@
     "revision": "1.1",
     "changedAt": "2016-05-26T08:59:00+02:00"
   }, {
-    "id": "PC-Reviewed",
-    "title": "Reviewed",
-	"description": "Has the requirement been reviewed?",
-    "dataType": {"id":"DT-Boolean"},
-    "revision": "1.1",
-    "changedAt": "2023-04-30T16:59:00+02:00"
-  }, {
     "id": "PC-Discipline",
     "title": "Discipline",
     "dataType": {"id":"DT-Discipline","revision":"1.1"},
@@ -251,7 +244,7 @@
     "description": [{"text":"A 'Requirement' is a singular documented physical and functional need that a particular design, product or process must be able to perform.","language":"en"}],
     "icon": "&#8623;",
     "instantiation": ["user"],
-    "propertyClasses": [{"id":"PC-ID"}, {"id":"PC-Name"}, {"id":"PC-Text"}, {"id":"PC-Priority"}, {"id":"PC-Importance"}, {"id":"PC-Discipline"}, {"id":"PC-CostEstimation"}, {"id":"PC-DueDate"}, {"id":"PC-Reviewed"}],
+    "propertyClasses": [{"id":"PC-ID"}, {"id":"PC-Name"}, {"id":"PC-Text"}, {"id":"PC-Priority"}, {"id":"PC-Importance"}, {"id":"PC-Discipline"}, {"id":"PC-CostEstimation"}, {"id":"PC-DueDate"}],
     "revision": "1.1",
     "changedAt": "2016-05-26T08:59:00+02:00"
   }],
@@ -317,11 +310,11 @@
           }
         ],[
           { 
-            "text":"<div><p>Second value: XHTML-formatted Text B in <i>English</i>.</p></div>",
+            "text":"<div><p>Second value: XHTML-formatted Text B in English.</p></div>",
             "format":"xhtml",
             "language":"en"
           },{ 
-            "text":"<div><p>Zweiter Wert: XHTML-formatierter Text B auf <i>Deutsch</i>.</p></div>",
+            "text":"<div><p>Zweiter Wert: XHTML-formatierter Text B auf Deutsch.</p></div>",
             "format":"xhtml",
             "language":"de" 
           }
@@ -359,7 +352,7 @@
       ]
     }, {
       "class": {"id":"PC-Reference"},
-      "values": ["https://specif.de"]
+      "values": ["Fld-5b8e98550000bca801371afb0c7b682c"]
     }],
     "revision": "14",
     "changedAt": "2021-11-20T20:13:02+02:00",

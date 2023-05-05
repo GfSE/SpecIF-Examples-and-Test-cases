@@ -63,11 +63,13 @@
     "resourceClasses": [{
         "id": "RT-Inf",
         "title": "SpecIF:Paragraph",
+        "description": "Paragraph - Base Class",
         "propertyClasses": ["PC-Name","PC-Text"],
         "changedAt": "2019-04-05T01:20:00+02:00"
 	},{
         "id": "RT-Inf-Extended",
         "title": "SpecIF:Paragraph",
+        "description": "Paragraph - Extended Class",
 		"extends": "RT-Inf",
         "propertyClasses": ["PC-Status"],
         "changedAt": "2019-04-05T01:20:00+02:00"
@@ -87,11 +89,11 @@
         "properties": [{
             "title": "dcterms:title",
             "class": "PC-Name",
-            "value": "Title text"
+            "value": "Title of Basis Information"
         }, {
             "title": "dcterms:description",
             "class": "PC-Text",
-            "value": "<p>Formatted <b>description</b></p>"
+            "value": "<p>Formatted Description of <b>Basic Information</b></p>"
         }],
         "changedAt": "2019-04-05T01:20:00+02:00"
     },{
@@ -102,11 +104,11 @@
         "properties": [{
             "title": "dcterms:title",
             "class": "PC-Name",
-            "value": "Title text"
+            "value": "Title of Extended Information"
         }, {
             "title": "dcterms:description",
             "class": "PC-Text",
-            "value": "<p>Formatted <b>description</b></p>"
+            "value": "<p>Formatted Description of <b>Extended Information</b></p>"
         }, {
             "title": "SpecIF:Status",
             "class": "PC-Status",
@@ -119,8 +121,10 @@
         "id": "H-Test-Revisions",
         "resource": "Inf-274",
         "nodes": [{
+			"id": "N-Inf-275",
             "resource": "Inf-275"
         },{
+			"id": "N-Inf-276",
             "resource": "Inf-276"
         }],
         "changedAt": "2019-04-05T01:20:00+02:00"

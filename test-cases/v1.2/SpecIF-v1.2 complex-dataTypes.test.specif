@@ -1,0 +1,432 @@
+{
+  "id": "P-Test-complex-dataTypes",
+  "title": [{"text":"A resource with properties covering all dataTypes"}],
+  "$schema": "https://specif.de/v1.2/schema.json",
+  "generator": "manual",
+  "rights": {
+    "title": "Creative Commons 4.0 CC BY-SA",
+    "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+  },
+  "createdAt": "2019-05-04T19:08:31.960Z",
+  "createdBy": {
+    "familyName": "Surname",
+    "givenName": "Oskar",
+    "email": "oskar.surname@enso-managers.de",
+    "org": {
+      "organizationName": "enso managers gmbh"
+    }
+  },
+  "changedAt": "2023-11-04T19:08:31.960Z",
+  "dataTypes": [{
+    "id": "DT-Boolean",
+    "title": "Boolean",
+    "type": "xs:boolean",
+    "revision": "1.1",
+    "changedAt": "2016-05-26T08:59:00+02:00"
+  }, {
+    "id": "DT-Byte",
+    "title": "Byte",
+    "type": "xs:integer",
+    "minInclusive": 0,
+    "maxInclusive": 255,
+    "revision": "1.1",
+    "changedAt": "2016-05-26T08:59:00+02:00"
+  }, {
+    "id": "DT-Integer",
+    "title": "Integer",
+    "type": "xs:integer",
+    "minInclusive": -32768,
+    "maxInclusive": 32767,
+    "revision": "1.1",
+    "changedAt": "2016-05-26T08:59:00+02:00"
+  }, {
+    "id": "DT-Real",
+    "title": "Real",
+    "type": "xs:double",
+    "revision": "1.1",
+    "changedAt": "2016-05-26T08:59:00+02:00"
+  }, {
+    "id": "DT-Decimal2",
+    "title": "Real with 2 Decimals",
+    "type": "xs:double",
+    "fractionDigits": 2,
+    "revision": "1.1",
+    "changedAt": "2016-05-26T08:59:00+02:00"
+  }, {
+    "id": "DT-Timestamp",
+    "title": "Date or Timestamp",
+    "type": "xs:dateTime",
+    "revision": "1.1",
+    "changedAt": "2016-05-26T08:59:00+02:00"
+  }, {
+    "id": "DT-Text",
+    "title": "Plain or formatted Text",
+    "description": [{"text":"A text string, plain (including markdown) or formatted with XHTML.","language":"en"}],
+    "type": "xs:string",
+    "revision": "1.1",
+    "changedAt": "2021-02-14T08:59:00+02:00"
+  }, {
+    "id": "DT-ShortString",
+    "title": "String[256]",
+    "description": [{"text":"String with length 256","language":"en"}],
+    "type": "xs:string",
+    "maxLength": 256,
+    "revision": "1.1",
+    "changedAt": "2016-05-26T08:59:00+02:00"
+  }, {
+    "id": "DT-URL",
+    "title": "URL",
+    "type": "xs:anyURI",
+    "revision": "1.1",
+    "changedAt": "2016-05-26T08:59:00+02:00"
+  }, {
+    "id": "DT-EmailAddress",
+    "title": "E-mail",
+    "type": "xs:string",
+    "maxLength": 256,
+    "revision": "1.1",
+    "changedAt": "2016-05-26T08:59:00+02:00"
+  },{
+    "id": "DT-Priority",
+    "title": "SpecIF:Priority",
+    "description": [{"text":"Enumerated values for priority","language":"en"}],
+    "type": "xs:string",
+    "enumeration": [{
+      "id": "V-Priority-0",
+      "value": [{
+        "text": "High",
+        "language": "en"
+      }]
+    },{
+      "id": "V-Priority-1",
+      "value": [{
+        "text": "Rather High",
+        "language": "en"
+      },{
+        "text": "Eher hoch",
+        "language": "de"
+      }]
+    },{
+      "id": "V-Priority-2",
+      "value": [{
+        "text": "Medium",
+        "language": "en"
+      }]
+    },{
+      "id": "V-Priority-3",
+      "value": [{
+        "text": "Rather Low",
+        "language": "en"
+      }]
+    },{
+      "id": "V-Priority-4",
+      "value": [{
+        "text": "Low",
+        "language": "en"
+      }]
+    }],
+    "multiple": false,
+    "changedAt": "2020-03-26T22:59:00+02:00"
+  }, {
+    "id": "DT-CoordinateX",
+    "title": "A X-coordinate as a real number.",
+    "type": "xs:double",
+    "revision": "1.2",
+    "changedAt": "2023-11-14T19:08:31.960Z"
+  }, {
+    "id": "DT-CoordinateY",
+    "title": "A Y-coordinate as a real number.",
+    "type": "xs:double",
+    "revision": "1.2",
+    "changedAt": "2023-11-14T19:08:31.960Z"
+  }, {
+    "id": "DT-CoordinateZ",
+    "title": "A Z-coordinate as a real number.",
+    "type": "xs:double",
+    "revision": "1.2",
+    "changedAt": "2023-11-14T19:08:31.960Z"
+  },{
+    "id": "DT-GeoPoint",
+    "title": "geo:Point",
+    "type": "xs:complexType",
+    "description": [{
+		"text":"A point in space, specified by three coordinates.",
+		"language":"en"
+    },{
+		"text":"Ein Punkt im Raum, spezifiziert durch drei Koordinaten.",
+		"language":"de"
+	}],
+	"dataTypes": [{
+		"id": "DT-CoordinateX",
+    },{
+		"id": "DT-CoordinateX",
+    },{
+		"id": "DT-CoordinateX",
+	}],
+    "multiple": false,
+    "revision": "1.2",
+    "changedAt": "2023-11-14T19:08:31.960Z"
+  }],
+  "propertyClasses": [{
+    "id": "PC-ID",
+    "title": "dcterms:identifier",
+    "dataType": {"id":"DT-ShortString"},
+    "revision": "1.1",
+    "changedAt": "2016-05-26T08:59:00+02:00"
+  }, {
+    "id": "PC-Name",
+    "title": "dcterms:title",
+    "dataType": {"id":"DT-ShortString"},
+    "revision": "1.1",
+    "changedAt": "2016-05-26T08:59:00+02:00"
+  }, {
+    "id": "PC-Description",
+    "title": "dcterms:description",
+    "dataType": {"id":"DT-Text"},
+	"multiple": true,
+    "revision": "1.1",
+    "changedAt": "2016-05-26T08:59:00+02:00"
+  }, {
+    "id": "PC-Diagram",
+    "title": "SpecIF:Diagram",
+    "dataType": {"id":"DT-Text"},
+    "revision": "1.1",
+    "changedAt": "2020-04-12T15:18:00+02:00"
+  }, {
+    "id": "PC-Notation",
+    "title": "SpecIF:Notation",
+    "dataType": {"id":"DT-ShortString"},
+    "revision": "1.1",
+    "changedAt": "2016-05-26T08:59:00+02:00"
+  }, {
+    "id": "PC-Priority",
+    "title": "SpecIF:Priority",
+    "dataType": {"id":"DT-Priority"},
+    "values": ["V-Priority-0"],
+    "revision": "1.1",
+    "changedAt": "2016-05-26T08:59:00+02:00"
+  }, {
+    "id": "PC-Reviewed",
+    "title": "Reviewed",
+	"description": "Has the requirement been reviewed?",
+    "dataType": {"id":"DT-Boolean"},
+    "revision": "1.1",
+    "changedAt": "2023-04-30T16:59:00+02:00"
+  }, {
+    "id": "PC-Discipline",
+    "title": "Discipline",
+    "dataType": {"id":"DT-Discipline","revision":"1.1"},
+    "revision": "1.1",
+    "changedAt": "2016-05-26T08:59:00+02:00"
+  }, {
+    "id": "PC-CostEstimation",
+    "title": "Cost Estimation [€]",
+    "dataType": {"id":"DT-Decimal2","revision":"1.1"},
+    "unit": "€",
+    "revision": "1.1",
+    "changedAt": "2016-05-26T08:59:00+02:00"
+  }, {
+    "id": "PC-DueDate",
+    "title": "SpecIF:DueDate",
+    "dataType": {"id":"DT-Timestamp"},
+    "revision": "1.1",
+    "changedAt": "2016-05-26T08:59:00+02:00"
+  }, {
+    "id": "PC-Reference",
+    "title": "SpecIF:Reference",
+    "dataType": {"id":"DT-URL"},
+	"multiple": true,
+    "revision": "1.1",
+    "changedAt": "2016-05-26T08:59:00+02:00"
+  }, {
+    "id": "PC-Importance",
+    "title": "Importance",
+    "dataType": {"id":"DT-Byte"},
+    "revision": "1.1",
+    "changedAt": "2016-05-26T08:59:00+02:00"
+  },{
+    "id": "PC-GeoPoint",
+    "title": "geo:Point",
+    "description": [{
+		"text":"A point in space, specified by three coordinates.",
+		"language":"en"
+    },{
+		"text":"Ein Punkt im Raum, spezifiziert durch drei Koordinaten.",
+		"language":"de"
+	}],
+	"dataType: { "id": "DT-GeoPoint" },
+    "multiple": false,
+    "revision": "1.2",
+    "changedAt": "2023-11-14T19:08:31.960Z"
+  }],
+  "resourceClasses": [{
+    "id": "RC-Fld",
+    "title": "SpecIF:Heading",
+    "description": [{"text":"Folders with title and text for chapters or descriptive paragraphs.","language":"en"}],
+    "instantiation": ["user"],
+    "propertyClasses": [{"id":"PC-Name"}, {"id":"PC-Description"}, {"id":"PC-Reference","revision":"1.1"}],
+    "revision": "1.1",
+    "changedAt": "2016-05-26T08:59:00+02:00",
+    "isHeading": true
+  }, {
+    "id": "RC-Req",
+    "title": "IREB:Requirement",
+    "description": [{"text":"A 'Requirement' is a singular documented physical and functional need that a particular design, product or process must be able to perform.","language":"en"}],
+    "icon": "&#8623;",
+    "instantiation": ["user"],
+    "propertyClasses": [{"id":"PC-ID"}, {"id":"PC-Name"}, {"id":"PC-Description"}, {"id":"PC-Priority"}, {"id":"PC-Importance"}, {"id":"PC-Discipline"}, {"id":"PC-CostEstimation"}, {"id":"PC-DueDate"}, {"id":"PC-Reviewed"}],
+    "revision": "1.1",
+    "changedAt": "2016-05-26T08:59:00+02:00"
+  }, {
+    "id": "RC-Offset",
+    "title": "SpecIF:3DOffset",
+    "description": [{"text":"An offset in space with 3 coordinates.","language":"en"}],
+    "instantiation": ["user"],
+    "propertyClasses": [{"id":"PC-Name"}, {"id":"PC-Description"}, {"id":"PC-GeoPoint","revision":"1.2"}],
+    "revision": "1.1",
+    "changedAt": "2016-05-26T08:59:00+02:00",
+    "isHeading": true
+  }],
+  "statementClasses": [],
+  "resources": [{
+    "id": "Fld-5b8e98550000bca801371afb0c7b671b",
+    "class": {"id":"RC-Fld","revision":"1.1"},
+    "properties": [{
+      "class": {"id":"PC-Name"},
+      "values": [[{"text":"Requirements"}]]
+    }],
+    "revision": "14",
+    "changedAt": "2017-06-19T20:13:02+02:00",
+    "changedBy": "od"
+  }, {
+    "id": "R-985507b671b00ca801305b8eb71afb0c",
+    "class": {"id":"RC-Fld","revision":"1.1"},
+    "properties": [{
+      "class": {"id":"PC-Name"},
+      "values": [[{"text":"An offset in space of component 'Battery Compartment'."}]]
+    },{
+      "class": {"id":"PC-GeoPoint"},
+      "values": [["7.20","10.7","0.0"]]
+    }],
+    "changedAt": "2023-11-19T19:08:31.960Z",
+    "changedBy": "od"
+  }, {
+    "id": "Req-d1c895230000c3a80150f8afd049f738",
+    "class": {"id":"RC-Req"},
+    "properties": [{
+      "class": {"id":"PC-ID"},
+      "values": [[{"text":"REQ_014"}]]
+    }, {
+      "class": {"id":"PC-Name"},
+      "values": [[{"text":"Dim an electric load","language":"en"},{"text":"Eine elektrische Last proportional ansteuern","format":"plain","language":"de"}]]
+    }, {
+      "class": {"id":"PC-Description"},
+      "values": [[{"text":"<div><p> The user can set the intensity level of an electric load such as a light bulb. Pressing a button 'up' or 'down', the intensity is increased or decreased following a quasi-stepless ramp. <br /></p></div>"}]]
+    }, {
+      "class": {"id":"PC-Priority"},
+      "values": ["V-Priority-3"]
+    }, {
+      "class": {"id":"PC-Importance"},
+      "values": ["101"]
+    }, {
+      "class": {"id":"PC-Discipline"},
+      "values": ["V-Discipline-0","V-Discipline-2"]
+    }, {
+      "class": {"id":"PC-DueDate"},
+      "values": ["2021-08-30T18:00:00Z"]
+    }],
+    "revision": "23",
+    "changedAt": "2017-06-19T20:13:06+02:00",
+    "changedBy": "od"
+  }, {
+    "id": "Fld-5b8e98550000bca801371afb0c7b682c",
+    "class": {"id":"RC-Fld"},
+    "properties": [{
+      "class": {"id":"PC-Name"},
+      "values": [
+        [
+          {
+            "text":"Example for multiple text-values, one of them in two languages.",
+            "language": "en"
+          }
+        ]
+      ]
+    }, {
+      "class": {"id":"PC-Description"},
+      "values": [
+        [
+          { 
+            "text":"First value: Unformatted text A in a single language.",
+            "language": "en"
+          }
+        ],[
+          { 
+            "text":"<div><p>Second value: XHTML-formatted Text B in <i>English</i>.</p></div>",
+            "format":"xhtml",
+            "language":"en"
+          },{ 
+            "text":"<div><p>Zweiter Wert: XHTML-formatierter Text B auf <i>Deutsch</i>.</p></div>",
+            "format":"xhtml",
+            "language":"de" 
+          }
+        ]
+      ]
+    }, {
+      "class": {"id":"PC-Reference"},
+      "values": ["https://specif.de","http://github.com/GfSE/"]
+    }],
+    "revision": "14",
+    "changedAt": "2017-06-19T20:13:02+02:00",
+    "changedBy": "od"
+  }, {
+    "id": "Fld-5b8e98550000cdb801371afb0c7b682c",
+    "class": {"id":"RC-Fld"},
+    "properties": [{
+      "class": {"id":"PC-Name"},
+      "values": [
+        [
+          {
+            "text":"Example for local URI.",
+            "language": "en"
+          }
+        ]
+      ]
+    }, {
+      "class": {"id":"PC-Description"},
+      "values": [
+        [
+          { 
+            "text":"Next property is a local ID with dataType 'xs:anyURI'.",
+            "language": "en"
+          }
+        ]
+      ]
+    }, {
+      "class": {"id":"PC-Reference"},
+      "values": ["https://specif.de"]
+    }],
+    "revision": "14",
+    "changedAt": "2021-11-20T20:13:02+02:00",
+    "changedBy": "od"
+  }],
+  "statements": [],
+  "hierarchies": [{
+    "id": "SH-Fld-5b8e98550000bca801371afb0c7b671b",
+    "resource": {"id":"Fld-5b8e98550000bca801371afb0c7b671b"},
+    "changedAt": "2017-06-19T20:14:43+02:00",
+    "nodes": [{
+      "id": "SH-Req-d1c895230000c3a80150f8afd049f738",
+      "resource": {"id":"Req-d1c895230000c3a80150f8afd049f738"},
+      "changedAt": "2017-06-19T20:14:43+02:00"
+    }]
+  }, {
+    "id": "SH-Fld-5b8e98550000bca801371afb0c7b682c",
+    "resource": {"id":"Fld-5b8e98550000bca801371afb0c7b682c"},
+    "changedAt": "2021-08-25T20:14:43+02:00"
+  }, {
+    "id": "SH-Fld-5b8e98550000cdb801371afb0c7b682c",
+    "resource": {"id":"Fld-5b8e98550000cdb801371afb0c7b682c"},
+    "changedAt": "2021-11-20T20:14:43+02:00"
+  }],
+  "files": []
+}

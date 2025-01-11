@@ -94,8 +94,8 @@
     "propertyClasses": [{"id":"PC-Name"},{"id":"PC-Description"},{"id":"PC-Type"}],
     "changedAt": "2016-05-26T08:59:00+02:00"
   },{
-    "id": "RC-Diagram",
-    "title": "SpecIF:Diagram",
+    "id": "RC-View",
+    "title": "SpecIF:View",
     "description": [{"text":"A 'Diagram' is a graphical model view with a specific communication purpose, e.g. a business process or system composition."}],
     "instantiation": ["user"],
     "icon": "&#9635;",
@@ -137,10 +137,10 @@
   "statementClasses": [{
     "id": "SC-shows",
     "title": "SpecIF:shows",
-    "description": [{"text":"'Diagram' shows 'Model-Element'"}],
+    "description": [{"text":"'View' shows 'Model-Element'"}],
     "instantiation": ["auto"],
     "propertyClasses": [{"id":"PC-Name"},{"id":"PC-Description"}],
-    "subjectClasses": [{"id":"RC-Diagram"}],
+    "subjectClasses": [{"id":"RC-View"}],
     "objectClasses": [{"id":"RC-Actor"}, {"id":"RC-State"}, {"id":"RC-Event"}],
     "changedAt": "2018-05-10T11:54:00+01:00"
   },{
@@ -179,16 +179,16 @@
       }],
       "changedAt": "2020-03-06T08:32:00+01:00"
     },{
-      "id": "Folder-SystemModel",
+      "id": "Folder-SystemModels",
       "class": {"id":"RC-Folder"},
       "properties": [{
         "class": {"id":"PC-Name"},
-        "values": [[{"text":"System Model"}]]
+        "values": [[{"text":"System Models"}]]
       }],
       "changedAt": "2020-03-06T08:32:00+01:00"
     },{
       "id": "Diagram-aec0df7900010000017001eaf53e8876",
-      "class": {"id":"RC-Diagram"},
+      "class": {"id":"RC-View"},
       "properties": [{
         "class": {"id":"PC-Name"},
         "values": [[{"text":"IT-Integration: FiCo-Application and FiCo-Data"}]]
@@ -329,8 +329,8 @@
       }],
       "changedAt": "2020-10-17T10:00:00+01:00"
     },{
-      "id": "N-Folder-SystemModel",
-      "resource": {"id":"Folder-SystemModel"},
+      "id": "N-Folder-SystemModels",
+      "resource": {"id":"Folder-SystemModels"},
       "nodes": [{
         "id": "N-Diagram-aec0df7900010000017001eaf53e8876",
         "resource": {"id":"Diagram-aec0df7900010000017001eaf53e8876"},

@@ -47,9 +47,9 @@
     "changedAt": "2018-05-10T11:54:00+01:00"
   }],
   "resourceClasses": [{
-    "id": "RC-Diagram",
-    "title": "SpecIF:Diagram",
-    "description": [{"text":"A 'Diagram' is a graphical model view with a specific communication purpose, e.g. a business process or system composition."}],
+    "id": "RC-View",
+    "title": "SpecIF:View",
+    "description": [{"text":"A 'View' is a graphical model view with a specific communication purpose, e.g. a business process or system composition."}],
     "instantiation": ["user"],
     "icon": "&#9635;",
     "propertyClasses": [{"id":"PC-Name"},{"id":"PC-Description"},{"id":"PC-Diagram"},{"id":"PC-Type"}],
@@ -82,10 +82,10 @@
   "statementClasses": [{
     "id": "SC-shows",
     "title": "SpecIF:shows",
-    "description": [{"text":"'Diagram' shows 'Model-Element'"}],
+    "description": [{"text":"'View' shows 'Model-Element'"}],
     "instantiation": ["auto"],
     "propertyClasses": [{"id":"PC-Name"},{"id":"PC-Description"}],
-    "subjectClasses": [{"id":"RC-Diagram"}],
+    "subjectClasses": [{"id":"RC-View"}],
     "objectClasses": [{"id":"RC-Actor"}, {"id":"RC-State"}, {"id":"RC-Event"}],
     "changedAt": "2018-05-10T11:54:00+01:00"
   },{
@@ -109,7 +109,7 @@
   }],
   "resources": [{
     "id": "Diagram-aec0df7900010000017001eaf53e8876",
-    "class": {"id":"RC-Diagram"},
+    "class": {"id":"RC-View"},
     "properties": [{
       "class": {"id":"PC-Name"},
       "values": [[{

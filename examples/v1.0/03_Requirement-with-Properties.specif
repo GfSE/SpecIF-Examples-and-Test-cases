@@ -45,7 +45,7 @@
     }],
     "statementClasses": [],
     "resources": [{
-        "id": "Req-5ba3512b0000bca",
+        "id": "Req-12b005ba00bca35",
         "title": "Minimum button size",
         "class": "RC-Requirement",
         "properties": [{
@@ -60,7 +60,7 @@
     "statements": [],
     "hierarchies": [{
         "id": "N-bca801377e3d1525",
-        "resource": "Req-5ba3512b0000bca",
+        "resource": "Req-12b005ba00bca35",
         "changedAt": "2019-05-29T13:19:28.546Z"
     }]
 }

@@ -8,8 +8,8 @@
     }
   ],
   "generator": "SpecIF Modellintegrator und Editor",
-  "generatorVersion": "1.2.s.16",
-  "createdAt": "2024-10-20T20:54:00.977Z",
+  "generatorVersion": "1.2.a.11",
+  "createdAt": "2025-01-26T17:06:19.300Z",
   "rights": {
     "title": "Creative Commons 4.0 CC BY-SA",
     "url": "https://creativecommons.org/licenses/by-sa/4.0/"
@@ -40,7 +40,7 @@
     },
     {
       "id": "DT-Priority",
-      "changedAt": "2020-03-26T22:59:00+02:00",
+      "changedAt": "2016-05-26T08:59:00+02:00",
       "title": "SpecIF:Priority",
       "description": [
         {
@@ -108,13 +108,8 @@
   "propertyClasses": [
     {
       "id": "PC-Name",
-      "changedAt": "2020-03-26T22:59:00+02:00",
+      "changedAt": "2018-05-10T11:54:00+01:00",
       "title": "dcterms:title",
-      "description": [
-        {
-          "text": "A name given to the resource."
-        }
-      ],
       "dataType": {
         "id": "DT-ShortString"
       },
@@ -136,43 +131,6 @@
     },
     {
       "id": "PC-Diagram",
-      "changedAt": "2021-02-21T08:59:00+02:00",
-      "title": "SpecIF:Diagram",
-      "description": [
-        {
-          "text": "A partial graphical representation (diagram) of a model."
-        }
-      ],
-      "dataType": {
-        "id": "DT-Text"
-      },
-      "format": "xhtml"
-    },
-    {
-      "id": "PC-Type",
-      "changedAt": "2018-05-10T11:54:00+01:00",
-      "title": "dcterms:type",
-      "dataType": {
-        "id": "DT-ShortString"
-      },
-      "format": "plain"
-    },
-    {
-      "id": "PC-Priority",
-      "changedAt": "2020-03-26T22:59:00+02:00",
-      "title": "SpecIF:Priority",
-      "description": [
-        {
-          "text": "The 'Priority' of the resource."
-        }
-      ],
-      "dataType": {
-        "id": "DT-Priority"
-      },
-      "format": "plain"
-    },
-    {
-      "id": "PC-Diagram-8382315068",
       "changedAt": "2023-02-26T14:40:17.601Z",
       "title": "SpecIF:Diagram",
       "description": [
@@ -189,7 +147,7 @@
       "format": "xhtml"
     },
     {
-      "id": "PC-Type-8382315068",
+      "id": "PC-Type",
       "changedAt": "2023-02-26T20:18:04.451Z",
       "title": "dcterms:type",
       "description": [
@@ -203,18 +161,62 @@
         "id": "DT-String-LE32"
       },
       "format": "plain"
+    },
+    {
+      "id": "PC-Priority",
+      "changedAt": "2020-03-26T22:59:00+02:00",
+      "title": "SpecIF:Priority",
+      "description": [
+        {
+          "text": "The 'Priority' of the resource."
+        }
+      ],
+      "dataType": {
+        "id": "DT-Priority"
+      },
+      "format": "plain"
     }
   ],
   "resourceClasses": [
     {
       "id": "RC-Folder",
-      "changedAt": "2016-05-26T08:59:00+02:00",
+      "changedAt": "2024-03-02T15:28:50.414Z",
       "title": "SpecIF:Heading",
       "description": [
         {
-          "text": "Folder with title and text for chapters or descriptive paragraphs."
+          "text": "A 'Heading' is a chapter title at any level with optional description.",
+          "language": "en"
+        },
+        {
+          "text": "Eine 'Überschrift' in einem Dokument ist der Titel eines Kapitels. Sie kann eine Beschreibung haben, die als Einleitung oder Zusammenfassung des Kapitels genutzt werden kann.",
+          "language": "de"
         }
       ],
+      "revision": "1.1",
+      "instantiation": [
+        "auto",
+        "user"
+      ],
+      "extends": {
+        "id": "RC-Paragraph"
+      },
+      "isHeading": true
+    },
+    {
+      "id": "RC-Paragraph",
+      "changedAt": "2023-07-16T09:30:25.850Z",
+      "title": "SpecIF:Paragraph",
+      "description": [
+        {
+          "text": "<p>A 'Paragraph' is an unspecified information in a document at any level.</p>",
+          "language": "en"
+        },
+        {
+          "text": "<p>Ein 'Textabschnitt' in einem Dokument auf beliebiger Ebene.</p>",
+          "language": "de"
+        }
+      ],
+      "revision": "1.1",
       "instantiation": [
         "auto",
         "user"
@@ -227,10 +229,12 @@
           "id": "PC-Description"
         },
         {
+          "id": "PC-Diagram"
+        },
+        {
           "id": "PC-Type"
         }
-      ],
-      "isHeading": true
+      ]
     },
     {
       "id": "RC-View",
@@ -238,7 +242,7 @@
       "title": "SpecIF:View",
       "description": [
         {
-          "text": "A 'Diagram' is a graphical model view with a specific communication purpose, e.g. a business process or system composition."
+          "text": "A 'View' is a graphical model view with a specific communication purpose, e.g. a business process or system composition."
         }
       ],
       "icon": "▣",
@@ -337,7 +341,7 @@
     },
     {
       "id": "RC-Requirement",
-      "changedAt": "2020-03-26T22:59:00+02:00",
+      "changedAt": "2021-02-22T08:59:00+02:00",
       "title": "IREB:Requirement",
       "description": [
         {
@@ -359,64 +363,6 @@
           "id": "PC-Priority"
         }
       ]
-    },
-    {
-      "id": "RC-Paragraph",
-      "changedAt": "2023-07-16T09:30:25.850Z",
-      "title": "SpecIF:Paragraph",
-      "description": [
-        {
-          "text": "<p>A 'Paragraph' is an unspecified information in a document at any level.</p>",
-          "language": "en"
-        },
-        {
-          "text": "<p>Ein 'Textabschnitt' in einem Dokument auf beliebiger Ebene.</p>",
-          "language": "de"
-        }
-      ],
-      "revision": "1.1",
-      "instantiation": [
-        "auto",
-        "user"
-      ],
-      "propertyClasses": [
-        {
-          "id": "PC-Name"
-        },
-        {
-          "id": "PC-Description"
-        },
-        {
-          "id": "PC-Diagram-8382315068"
-        },
-        {
-          "id": "PC-Type-8382315068"
-        }
-      ]
-    },
-    {
-      "id": "RC-Folder-8382315068",
-      "changedAt": "2024-03-02T15:28:50.414Z",
-      "title": "SpecIF:Heading",
-      "description": [
-        {
-          "text": "A 'Heading' is a chapter title at any level with optional description.",
-          "language": "en"
-        },
-        {
-          "text": "Eine 'Überschrift' in einem Dokument ist der Titel eines Kapitels. Sie kann eine Beschreibung haben, die als Einleitung oder Zusammenfassung des Kapitels genutzt werden kann.",
-          "language": "de"
-        }
-      ],
-      "revision": "1.1",
-      "instantiation": [
-        "auto",
-        "user"
-      ],
-      "extends": {
-        "id": "RC-Paragraph"
-      },
-      "isHeading": true
     }
   ],
   "statementClasses": [
@@ -444,17 +390,6 @@
         {
           "id": "RC-View"
         }
-      ],
-      "objectClasses": [
-        {
-          "id": "RC-Actor"
-        },
-        {
-          "id": "RC-State"
-        },
-        {
-          "id": "RC-Event"
-        }
       ]
     },
     {
@@ -470,9 +405,6 @@
         "auto"
       ],
       "propertyClasses": [
-        {
-          "id": "PC-Name"
-        },
         {
           "id": "PC-Description"
         }
@@ -502,9 +434,6 @@
       ],
       "propertyClasses": [
         {
-          "id": "PC-Name"
-        },
-        {
           "id": "PC-Description"
         }
       ],
@@ -531,6 +460,11 @@
       "instantiation": [
         "user"
       ],
+      "propertyClasses": [
+        {
+          "id": "PC-Description"
+        }
+      ],
       "subjectClasses": [
         {
           "id": "RC-Actor"
@@ -546,7 +480,180 @@
       ]
     }
   ],
+  "files": [
+    {
+      "id": "F-10376758211",
+      "changedAt": "2020-03-06T16:08:18.000Z",
+      "title": "files_and_images/Very-Simple-Model-FMC.svg",
+      "type": "image/svg+xml"
+    }
+  ],
   "resources": [
+    {
+      "id": "Folder-Introduction",
+      "changedAt": "2025-02-07T08:32:00+01:00",
+      "class": {
+        "id": "RC-Folder"
+      },
+      "properties": [
+        {
+          "class": {
+            "id": "PC-Name"
+          },
+          "values": [
+            [
+              {
+                "text": "Introduction"
+              }
+            ]
+          ]
+        },
+        {
+          "class": {
+            "id": "PC-Description"
+          },
+          "values": [
+            [
+              {
+                "text": "<div>This is a minimal showcase for a model with model-elements and related requirements. It covers pretty much all characteristics neeeded in such cases (including 'statements on statements'), so that transformations and expressive power of other data formats can be evaluated.</div>"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Folder-SystemModel",
+      "changedAt": "2020-03-06T08:32:00+01:00",
+      "class": {
+        "id": "RC-Folder"
+      },
+      "properties": [
+        {
+          "class": {
+            "id": "PC-Name"
+          },
+          "values": [
+            [
+              {
+                "text": "System Model"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Diagram-aec0df7900010000017001eaf53e8876",
+      "changedAt": "2020-03-06T08:32:00+01:00",
+      "class": {
+        "id": "RC-View"
+      },
+      "properties": [
+        {
+          "class": {
+            "id": "PC-Name"
+          },
+          "values": [
+            [
+              {
+                "text": "IT-Integration: FiCo-Application and FiCo-Data"
+              }
+            ]
+          ]
+        },
+        {
+          "class": {
+            "id": "PC-Diagram"
+          },
+          "values": [
+            [
+              {
+                "text": "<div><p class=\"inline-label\">Model Diagram:</p><p><object type=\"image/svg+xml\" data=\"files_and_images/Very-Simple-Model-FMC.svg\">Notation: FMC Block Diagram</object></p></div>"
+              }
+            ]
+          ]
+        },
+        {
+          "class": {
+            "id": "PC-Type"
+          },
+          "values": [
+            [
+              {
+                "text": "FMC Block Diagram"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "MEl-50fbfe8f0029b1a8016ea86245a9d83a",
+      "changedAt": "2020-03-06T09:04:00+01:00",
+      "class": {
+        "id": "RC-Actor"
+      },
+      "properties": [
+        {
+          "class": {
+            "id": "PC-Name"
+          },
+          "values": [
+            [
+              {
+                "text": "FiCo-Application"
+              }
+            ]
+          ]
+        },
+        {
+          "class": {
+            "id": "PC-Description"
+          },
+          "values": [
+            [
+              {
+                "text": "<div><p>IT-Application for Finance and Controlling.</p></div>"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "MEl-50feddc00029b1a8016e2872e78ecadc",
+      "changedAt": "2020-03-06T09:03:00+01:00",
+      "class": {
+        "id": "RC-State"
+      },
+      "properties": [
+        {
+          "class": {
+            "id": "PC-Name"
+          },
+          "values": [
+            [
+              {
+                "text": "FiCo-Data"
+              }
+            ]
+          ]
+        },
+        {
+          "class": {
+            "id": "PC-Description"
+          },
+          "values": [
+            [
+              {
+                "text": "<div><p>Finance and Controlling Data, such as cost-units per project with budget, accrued cost etc.</p></div>"
+              }
+            ]
+          ]
+        }
+      ]
+    },
     {
       "id": "Folder-Requirements",
       "changedAt": "2020-03-06T08:32:00+01:00",
@@ -698,142 +805,10 @@
       ]
     },
     {
-      "id": "Folder-SystemModels",
-      "changedAt": "2020-03-06T08:32:00+01:00",
+      "id": "FolderGlossary-10875487071",
+      "changedAt": "2025-01-26T17:05:57.582Z",
       "class": {
         "id": "RC-Folder"
-      },
-      "properties": [
-        {
-          "class": {
-            "id": "PC-Name"
-          },
-          "values": [
-            [
-              {
-                "text": "System Models"
-              }
-            ]
-          ]
-        }
-      ]
-    },
-    {
-      "id": "Diagram-aec0df7900010000017001eaf53e8876",
-      "changedAt": "2020-03-06T08:32:00+01:00",
-      "class": {
-        "id": "RC-View"
-      },
-      "properties": [
-        {
-          "class": {
-            "id": "PC-Name"
-          },
-          "values": [
-            [
-              {
-                "text": "IT-Integration: FiCo-Application and FiCo-Data"
-              }
-            ]
-          ]
-        },
-        {
-          "class": {
-            "id": "PC-Diagram"
-          },
-          "values": [
-            [
-              {
-                "text": "<div><p class=\"inline-label\">Model Diagram:</p><p><object type=\"image/svg+xml\" data=\"files_and_images/Very-Simple-Model-FMC.svg\">Notation: FMC Block Diagram</object></p></div>"
-              }
-            ]
-          ]
-        },
-        {
-          "class": {
-            "id": "PC-Type"
-          },
-          "values": [
-            [
-              {
-                "text": "FMC Block Diagram"
-              }
-            ]
-          ]
-        }
-      ]
-    },
-    {
-      "id": "MEl-50fbfe8f0029b1a8016ea86245a9d83a",
-      "changedAt": "2020-03-06T09:04:00+01:00",
-      "class": {
-        "id": "RC-Actor"
-      },
-      "properties": [
-        {
-          "class": {
-            "id": "PC-Name"
-          },
-          "values": [
-            [
-              {
-                "text": "FiCo-Application"
-              }
-            ]
-          ]
-        },
-        {
-          "class": {
-            "id": "PC-Description"
-          },
-          "values": [
-            [
-              {
-                "text": "<div><p>IT-Application for Finance and Controlling.</p></div>"
-              }
-            ]
-          ]
-        }
-      ]
-    },
-    {
-      "id": "MEl-50feddc00029b1a8016e2872e78ecadc",
-      "changedAt": "2020-03-06T09:03:00+01:00",
-      "class": {
-        "id": "RC-State"
-      },
-      "properties": [
-        {
-          "class": {
-            "id": "PC-Name"
-          },
-          "values": [
-            [
-              {
-                "text": "FiCo-Data"
-              }
-            ]
-          ]
-        },
-        {
-          "class": {
-            "id": "PC-Description"
-          },
-          "values": [
-            [
-              {
-                "text": "<div><p>Finance and Controlling Data, such as cost-units per project with budget, accrued cost etc.</p></div>"
-              }
-            ]
-          ]
-        }
-      ]
-    },
-    {
-      "id": "FolderGlossary-10875487071",
-      "changedAt": "2024-10-20T20:53:46.398Z",
-      "class": {
-        "id": "RC-Folder-8382315068"
       },
       "properties": [
         {
@@ -859,7 +834,7 @@
         },
         {
           "class": {
-            "id": "PC-Type-8382315068"
+            "id": "PC-Type"
           },
           "values": [
             [
@@ -874,11 +849,25 @@
   ],
   "statements": [
     {
-      "id": "Sshw-aec0df7900010000017001eaf53e8876-50fbfe8f0029b1a8016ea86245a9d83a",
+      "id": "SVis-aec0df7900010000017001eaf53e8876-50fbfe8f0029b1a8016ea86245a9d83a",
       "changedAt": "2020-03-06T08:32:00+01:00",
       "class": {
         "id": "SC-shows"
       },
+      "properties": [
+        {
+          "class": {
+            "id": "PC-Description"
+          },
+          "values": [
+            [
+              {
+                "text": "'FMC Block Diagram' shows 'FiCo-Application'"
+              }
+            ]
+          ]
+        }
+      ],
       "subject": {
         "id": "Diagram-aec0df7900010000017001eaf53e8876"
       },
@@ -887,11 +876,25 @@
       }
     },
     {
-      "id": "Sshw-aec0df7900010000017001eaf53e8876-50feddc00029b1a8016e2872e78ecadc",
+      "id": "SVis-aec0df7900010000017001eaf53e8876-50feddc00029b1a8016e2872e78ecadc",
       "changedAt": "2020-03-06T08:32:00+01:00",
       "class": {
         "id": "SC-shows"
       },
+      "properties": [
+        {
+          "class": {
+            "id": "PC-Description"
+          },
+          "values": [
+            [
+              {
+                "text": "'FMC Block Diagram' shows 'FiCo-Data'"
+              }
+            ]
+          ]
+        }
+      ],
       "subject": {
         "id": "Diagram-aec0df7900010000017001eaf53e8876"
       },
@@ -900,11 +903,25 @@
       }
     },
     {
-      "id": "Swri-50fbfe8f0029b1a8016ea86245a9d83a-50feddc00029b1a8016e2872e78ecadc",
+      "id": "SWri-50fbfe8f0029b1a8016ea86245a9d83a-50feddc00029b1a8016e2872e78ecadc",
       "changedAt": "2020-03-06T09:05:00+01:00",
       "class": {
         "id": "SC-writes"
       },
+      "properties": [
+        {
+          "class": {
+            "id": "PC-Description"
+          },
+          "values": [
+            [
+              {
+                "text": "'FiCo-Application' writes 'FiCo-Data'"
+              }
+            ]
+          ]
+        }
+      ],
       "subject": {
         "id": "MEl-50fbfe8f0029b1a8016ea86245a9d83a"
       },
@@ -913,11 +930,25 @@
       }
     },
     {
-      "id": "Srea-50fbfe8f0029b1a8016ea86245a9d83a-50feddc00029b1a8016e2872e78ecadc",
+      "id": "SRea-50fbfe8f0029b1a8016ea86245a9d83a-50feddc00029b1a8016e2872e78ecadc",
       "changedAt": "2020-03-06T09:05:00+01:00",
       "class": {
         "id": "SC-reads"
       },
+      "properties": [
+        {
+          "class": {
+            "id": "PC-Description"
+          },
+          "values": [
+            [
+              {
+                "text": "'FiCo-Application' reads 'FiCo-Data'"
+              }
+            ]
+          ]
+        }
+      ],
       "subject": {
         "id": "MEl-50fbfe8f0029b1a8016ea86245a9d83a"
       },
@@ -931,6 +962,20 @@
       "class": {
         "id": "SC-satisfies"
       },
+      "properties": [
+        {
+          "class": {
+            "id": "PC-Description"
+          },
+          "values": [
+            [
+              {
+                "text": "'FiCo-Data' satisfies 'Data Volume'"
+              }
+            ]
+          ]
+        }
+      ],
       "subject": {
         "id": "MEl-50feddc00029b1a8016e2872e78ecadc"
       },
@@ -944,6 +989,20 @@
       "class": {
         "id": "SC-satisfies"
       },
+      "properties": [
+        {
+          "class": {
+            "id": "PC-Description"
+          },
+          "values": [
+            [
+              {
+                "text": "'FiCo-Data' satisfies 'Consistency'"
+              }
+            ]
+          ]
+        }
+      ],
       "subject": {
         "id": "MEl-50feddc00029b1a8016e2872e78ecadc"
       },
@@ -957,23 +1016,114 @@
       "class": {
         "id": "SC-satisfies"
       },
+      "properties": [
+        {
+          "class": {
+            "id": "PC-Description"
+          },
+          "values": [
+            [
+              {
+                "text": "'FiCo-Application' satisfies 'Response Time'"
+              }
+            ]
+          ]
+        }
+      ],
       "subject": {
         "id": "MEl-50fbfe8f0029b1a8016ea86245a9d83a"
       },
       "object": {
         "id": "Req-2b9016e2872e78ecadc50feddc0013Ac"
       }
-    }
-  ],
-  "files": [
+    },
     {
-      "id": "F-10376758211",
-      "changedAt": "2020-03-06T16:08:18.000Z",
-      "title": "files_and_images/Very-Simple-Model-FMC.svg",
-      "type": "image/svg+xml"
+      "id": "SVis-aec0df7900010000017001eaf53e8876-SWri-50fbfe8f0029b1a8016ea86245a9d83a-50feddc00029b1a8016e2872e78ecadc",
+      "changedAt": "2025-01-26T08:32:00+01:00",
+      "class": {
+        "id": "SC-shows"
+      },
+      "properties": [
+        {
+          "class": {
+            "id": "PC-Name"
+          },
+          "values": [
+            [
+              {
+                "text": "SpecIF:shows"
+              }
+            ]
+          ]
+        },
+        {
+          "class": {
+            "id": "PC-Description"
+          },
+          "values": [
+            [
+              {
+                "text": "'FMC Block Diagram' shows 'FiCo-Application writes FiCo-Data'"
+              }
+            ]
+          ]
+        }
+      ],
+      "subject": {
+        "id": "Diagram-aec0df7900010000017001eaf53e8876"
+      },
+      "object": {
+        "id": "SWri-50fbfe8f0029b1a8016ea86245a9d83a-50feddc00029b1a8016e2872e78ecadc"
+      }
+    },
+    {
+      "id": "SVis-aec0df7900010000017001eaf53e8876-SRea-50fbfe8f0029b1a8016ea86245a9d83a-50feddc00029b1a8016e2872e78ecadc",
+      "changedAt": "2025-01-26T08:32:00+01:00",
+      "class": {
+        "id": "SC-shows"
+      },
+      "properties": [
+        {
+          "class": {
+            "id": "PC-Name"
+          },
+          "values": [
+            [
+              {
+                "text": "SpecIF:shows"
+              }
+            ]
+          ]
+        },
+        {
+          "class": {
+            "id": "PC-Description"
+          },
+          "values": [
+            [
+              {
+                "text": "'FMC Block Diagram' shows 'FiCo-Application reads FiCo-Data'"
+              }
+            ]
+          ]
+        }
+      ],
+      "subject": {
+        "id": "Diagram-aec0df7900010000017001eaf53e8876"
+      },
+      "object": {
+        "id": "SRea-50fbfe8f0029b1a8016ea86245a9d83a-50feddc00029b1a8016e2872e78ecadc"
+      }
     }
   ],
   "nodes": [
+    {
+      "id": "N-Folder-Introduction",
+      "resource": {
+        "id": "Folder-Introduction"
+      },
+      "changedAt": "2025-02-07T10:00:00+01:00"
+    },
     {
       "id": "N-Folder-Requirements",
       "resource": {
@@ -1005,9 +1155,9 @@
       ]
     },
     {
-      "id": "N-Folder-SystemModels",
+      "id": "N-Folder-SystemModel",
       "resource": {
-        "id": "Folder-SystemModels"
+        "id": "Folder-SystemModel"
       },
       "changedAt": "2020-10-17T10:00:00+01:00",
       "nodes": [
@@ -1041,21 +1191,21 @@
       "resource": {
         "id": "FolderGlossary-10875487071"
       },
-      "changedAt": "2024-10-20T20:53:46.398Z",
+      "changedAt": "2025-01-26T17:05:57.582Z",
       "nodes": [
         {
           "id": "N-9559304043",
           "resource": {
             "id": "MEl-50fbfe8f0029b1a8016ea86245a9d83a"
           },
-          "changedAt": "2024-10-20T20:53:46.398Z"
+          "changedAt": "2025-01-26T17:05:57.582Z"
         },
         {
           "id": "N-12075661949",
           "resource": {
             "id": "MEl-50feddc00029b1a8016e2872e78ecadc"
           },
-          "changedAt": "2024-10-20T20:53:46.398Z"
+          "changedAt": "2025-01-26T17:05:57.582Z"
         }
       ]
     }

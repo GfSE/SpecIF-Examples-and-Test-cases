@@ -136,7 +136,6 @@
       "description": "'View' shows 'Model-Element'",
       "instantiation": ["auto"],
       "subjectClasses": ["RC-View"],
-      "objectClasses": ["RC-Actor", "RC-State", "RC-Event"],
       "changedAt": "2018-05-10T11:54:00+01:00"
     },{
       "id": "SC-writes",
@@ -163,7 +162,21 @@
       "objectClasses": [ "RC-Requirement" ],
       "changedAt": "2016-05-26T08:59:00+02:00"
     }],
-    "resources": [{
+    "resources": [
+    {
+      "id": "Folder-Introduction",
+      "title": "Introduction",
+      "class": "RC-Folder",
+      "properties": [{
+        "class": "PC-Name",
+        "value": "Introduction"
+      },{
+        "class": "PC-Description",
+        "value": "<div>This is a minimal showcase for a model with model-elements and related requirements. It covers pretty much all characteristics neeeded in such cases (including 'statements on statements'), so that transformations and expressive power of other data formats can be evaluated.</div>"
+      }],
+      "changedAt": "2025-02-07T08:32:00+01:00"
+    },
+    {
       "id": "Folder-Requirements",
       "title": "Requirements",
       "class": "RC-Folder",
@@ -270,28 +283,44 @@
       "changedAt": "2020-10-17T10:00:00+01:00"
     }],
     "statements": [{
-      "id": "Sshw-aec0df7900010000017001eaf53e8876-50fbfe8f0029b1a8016ea86245a9d83a",
+      "id": "SVis-aec0df7900010000017001eaf53e8876-50fbfe8f0029b1a8016ea86245a9d83a",
       "description": "'FMC Block Diagram' shows 'FiCo-Application'",
       "class": "SC-shows",
       "subject": "Diagram-aec0df7900010000017001eaf53e8876",
       "object": "MEl-50fbfe8f0029b1a8016ea86245a9d83a",
       "changedAt": "2020-03-06T08:32:00+01:00"
     },{
-      "id": "Sshw-aec0df7900010000017001eaf53e8876-50feddc00029b1a8016e2872e78ecadc",
+      "id": "SVis-aec0df7900010000017001eaf53e8876-50feddc00029b1a8016e2872e78ecadc",
       "description": "'FMC Block Diagram' shows 'FiCo-Data'",
       "class": "SC-shows",
       "subject": "Diagram-aec0df7900010000017001eaf53e8876",
       "object": "MEl-50feddc00029b1a8016e2872e78ecadc",
       "changedAt": "2020-03-06T08:32:00+01:00"
+    }, {
+      "id": "SVis-aec0df7900010000017001eaf53e8876-SWri-50fbfe8f0029b1a8016ea86245a9d83a-50feddc00029b1a8016e2872e78ecadc",
+      "title": "SpecIF:shows",
+      "description": "'FMC Block Diagram' shows 'FiCo-Application writes FiCo-Data'",
+      "class": "SC-shows",
+      "subject": "Diagram-aec0df7900010000017001eaf53e8876",
+      "object": "SWri-50fbfe8f0029b1a8016ea86245a9d83a-50feddc00029b1a8016e2872e78ecadc",
+      "changedAt": "2025-01-26T08:32:00+01:00"
+    }, {
+      "id": "SVis-aec0df7900010000017001eaf53e8876-SRea-50fbfe8f0029b1a8016ea86245a9d83a-50feddc00029b1a8016e2872e78ecadc",
+      "title": "SpecIF:shows",
+      "description": "'FMC Block Diagram' shows 'FiCo-Application reads FiCo-Data'",
+      "class": "SC-shows",
+      "subject": "Diagram-aec0df7900010000017001eaf53e8876",
+      "object": "SRea-50fbfe8f0029b1a8016ea86245a9d83a-50feddc00029b1a8016e2872e78ecadc",
+      "changedAt": "2025-01-26T08:32:00+01:00"
     },{
-      "id": "Swri-50fbfe8f0029b1a8016ea86245a9d83a-50feddc00029b1a8016e2872e78ecadc",
+      "id": "SWri-50fbfe8f0029b1a8016ea86245a9d83a-50feddc00029b1a8016e2872e78ecadc",
       "description": "'FiCo-Application' writes 'FiCo-Data'",
       "class": "SC-writes",
       "subject": "MEl-50fbfe8f0029b1a8016ea86245a9d83a",
       "object": "MEl-50feddc00029b1a8016e2872e78ecadc",
       "changedAt": "2020-03-06T09:05:00+01:00"
     },{
-      "id": "Srea-50fbfe8f0029b1a8016ea86245a9d83a-50feddc00029b1a8016e2872e78ecadc",
+      "id": "SRea-50fbfe8f0029b1a8016ea86245a9d83a-50feddc00029b1a8016e2872e78ecadc",
       "description": "'FiCo-Application' reads 'FiCo-Data'",
       "class": "SC-reads",
       "subject": "MEl-50fbfe8f0029b1a8016ea86245a9d83a",
@@ -320,6 +349,10 @@
       "changedAt": "2020-10-17T10:00:00+01:00"
     }],
     "hierarchies": [{
+      "id": "N-Folder-Introduction",
+      "resource": "Folder-Introduction",
+      "changedAt": "2025-02-07T10:00:00+01:00"
+    },{
       "id": "N-Folder-Requirements",
       "resource": "Folder-Requirements",
       "nodes": [{
